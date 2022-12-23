@@ -3,15 +3,15 @@ import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
-
+import Services from "../components/Services";
 export default function Home() {
   return (
     <>
-      <SeoHead title='LaslesVPN Landing Page' />
+      <SeoHead title='Scholar Nest' />
       <Layout>
         <Hero />
+        <Services/>
         <Feature />
-        <Pricing />
       </Layout>
     </>
   );

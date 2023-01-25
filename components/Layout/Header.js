@@ -42,8 +42,8 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-              About
-            </LinkScroll>     
+              Company
+            </LinkScroll>
             <LinkScroll
               activeClass="active"
               to="pricing"
@@ -60,25 +60,26 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Our Services
-            </LinkScroll>        
+              Solutions
+            </LinkScroll>
+
             <LinkScroll
               activeClass="active"
-              to="testimoni"
+              to="feature"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("testimoni");
+                setActiveLink("feature");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "testimoni"
+                (activeLink === "feature"
                   ? " text-orange-500 animation-active "
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Testimonial
+              Learn with Us
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -96,12 +97,19 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Feature
+              Career
             </LinkScroll>
+
             <LinkScroll
               activeClass="active"
               to="https://blog.com"
-              onClick={()=>window.open('https://wordpress-856641-3134839.cloudwaysapps.com/', '_blank').focus()
+              onClick={() =>
+                window
+                  .open(
+                    "https://wordpress-856641-3134839.cloudwaysapps.com/",
+                    "_blank"
+                  )
+                  .focus()
               }
               spy={true}
               smooth={true}

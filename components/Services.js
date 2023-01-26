@@ -7,6 +7,7 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import CaseStudyCard from "./Layout/CaseStudyCard";
 
 const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -47,7 +48,7 @@ const Services = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                    src="/assets/career.png"
                     width={cardWidth}
                     height={cardHeight}
                     alt="Free Plan"
@@ -75,7 +76,7 @@ const Services = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Standard.png"
+                    src="/assets/cloud-computing.png"
                     width={cardWidth}
                     height={cardHeight}
                     alt="Standard Plan"
@@ -104,7 +105,7 @@ const Services = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Premium.png"
+                    src="/assets/stats.png"
                     width={cardWidth}
                     height={cardHeight}
                     alt="Premium Plan"
@@ -141,6 +142,7 @@ const Services = () => {
               className="py-12 w-full px-8 mt-16"
               variants={scrollAnimation}
             >
+              <CaseStudyCard />
               {/* <Maps className="w-full h-auto" /> */}
             </motion.div>
           </ScrollAnimationWrapper>
@@ -204,7 +206,7 @@ const Services = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    collaborate <br /> Join Us!
+                    connect with us to collaborate <br /> Join Us!
                   </h5>
                   <p>Lets discover the digital world with us.</p>
                 </div>

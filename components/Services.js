@@ -11,8 +11,8 @@ import CaseStudyCard from "./Layout/CaseStudyCard";
 
 const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const cardWidth = 145;
-  const cardHeight = 165;
+  const cardWidth = 185;
+  const cardHeight = 185;
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
@@ -25,13 +25,13 @@ const Services = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Our Services
+              Solutions
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Lets Discover Our Services
+              {/* Lets Discover Our Services */}
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">

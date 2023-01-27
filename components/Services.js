@@ -7,7 +7,7 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import CaseStudyCard from "./Layout/CaseStudyCard";
+import { Card, Grid, Text, Link } from "@nextui-org/react";
 
 const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -124,7 +124,147 @@ const Services = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16">
+        {/**555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */}
+        <div className="flex flex-col w-full">
+          <ScrollAnimationWrapper>
+            <motion.h3
+              variants={scrollAnimation}
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
+            >
+              Case Studies
+            </motion.h3>
+            <motion.p
+              variants={scrollAnimation}
+              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
+            >
+              {/* Lets Discover Our Services */}
+            </motion.p>
+          </ScrollAnimationWrapper>
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div variants={scrollAnimation}>
+                <Card css={{ p: "$6", mw: "400px" }}>
+                  <Card.Header>
+                    <img
+                      alt="nextui logo"
+                      src="/assets/stats.png"
+                      width="34px"
+                      height="34px"
+                    />
+                    <Grid.Container css={{ pl: "$6" }}>
+                      <Grid xs={12}>
+                        <Text h4 css={{ lineHeight: "$xs" }}>
+                          Next UI
+                        </Text>
+                      </Grid>
+                      <Grid xs={12}>
+                        <Text css={{ color: "$accents8" }}>nextui.org</Text>
+                      </Grid>
+                    </Grid.Container>
+                  </Card.Header>
+                  <Card.Body css={{ py: "$2" }}>
+                    <Text>
+                      Make beautiful websites regardless of your design
+                      experience.
+                    </Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <Link
+                      icon
+                      color="primary"
+                      target="_blank"
+                      href="https://github.com/nextui-org/nextui"
+                    >
+                      Visit source code on GitHub.
+                    </Link>
+                  </Card.Footer>
+                </Card>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div variants={scrollAnimation}>
+                <Card css={{ p: "$6", mw: "400px" }}>
+                  <Card.Header>
+                    <img
+                      alt="nextui logo"
+                      src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+                      width="34px"
+                      height="34px"
+                    />
+                    <Grid.Container css={{ pl: "$6" }}>
+                      <Grid xs={12}>
+                        <Text h4 css={{ lineHeight: "$xs" }}>
+                          Next UI
+                        </Text>
+                      </Grid>
+                      <Grid xs={12}>
+                        <Text css={{ color: "$accents8" }}>nextui.org</Text>
+                      </Grid>
+                    </Grid.Container>
+                  </Card.Header>
+                  <Card.Body css={{ py: "$2" }}>
+                    <Text>
+                      Make beautiful websites regardless of your design
+                      experience.
+                    </Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <Link
+                      icon
+                      color="primary"
+                      target="_blank"
+                      href="https://github.com/nextui-org/nextui"
+                    >
+                      Visit source code on GitHub.
+                    </Link>
+                  </Card.Footer>
+                </Card>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div variants={scrollAnimation}>
+                <Card css={{ p: "$6", mw: "400px" }}>
+                  <Card.Header>
+                    <img
+                      alt="nextui logo"
+                      src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+                      width="34px"
+                      height="34px"
+                    />
+                    <Grid.Container css={{ pl: "$6" }}>
+                      <Grid xs={12}>
+                        <Text h4 css={{ lineHeight: "$xs" }}>
+                          Next UI
+                        </Text>
+                      </Grid>
+                      <Grid xs={12}>
+                        <Text css={{ color: "$accents8" }}>nextui.org</Text>
+                      </Grid>
+                    </Grid.Container>
+                  </Card.Header>
+                  <Card.Body css={{ py: "$2" }}>
+                    <Text>
+                      Make beautiful websites regardless of your design
+                      experience.
+                    </Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <Link
+                      icon
+                      color="primary"
+                      target="_blank"
+                      href="https://github.com/nextui-org/nextui"
+                    >
+                      Visit source code on GitHub.
+                    </Link>
+                  </Card.Footer>
+                </Card>
+              </motion.div>
+            </ScrollAnimationWrapper>
+          </div>
+        </div>
+        {/**555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */}
+        {/* <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -142,8 +282,7 @@ const Services = () => {
               className="py-12 w-full px-8 mt-16"
               variants={scrollAnimation}
             >
-              <CaseStudyCard />
-              {/* <Maps className="w-full h-auto" /> */}
+              <Maps className="w-full h-auto" /> 
             </motion.div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
@@ -151,8 +290,8 @@ const Services = () => {
               className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"
               variants={scrollAnimation}
             >
-              {/* <Netflix className="h-18 w-auto" /> */}
-              {/*  <img
+              <Netflix className="h-18 w-auto" />
+               <img
                 src="/assets/Icon/amazon.png"
                 className="h-14 w-auto mt-4 lg:mt-2"
                 alt=""
@@ -176,10 +315,10 @@ const Services = () => {
                 src="/assets/Icon/spotify.png"
                 className="h-12 w-auto mt-2 lg:mt-0"
                 alt=""
-              /> */}
+              />
             </motion.div>
           </ScrollAnimationWrapper>
-        </div>
+        </div> */}
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3

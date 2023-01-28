@@ -4,6 +4,8 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Lottie from 'lottie-react';
+import landingLottie from "./landing-animation.json";
 
 const Hero = ({
   listUser = [
@@ -25,6 +27,12 @@ const Hero = ({
   ],
 }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: landingLottie
+  };
 
   return (
     <div
@@ -47,14 +55,7 @@ const Hero = ({
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-                <Image
-                  src="/assets/ai.gif"
-                  alt="VPN Illustrasi"
-                  quality={100}
-                  width={312}
-                  height={283}
-                  layout="responsive"
-                />
+              <iframe width='600px' height='400px' src="https://embed.lottiefiles.com/animation/79793"></iframe>
               </motion.div>
             </div>
           </motion.div>

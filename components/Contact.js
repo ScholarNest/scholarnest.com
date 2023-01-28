@@ -17,8 +17,9 @@ const Feature = () => {
   return (
     <div
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="feature"
+    
     >
+      
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
@@ -33,30 +34,28 @@ const Feature = () => {
           </motion.div>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
-
+        
         <motion.div className="flex flex-col items-end justify-center pt-28 ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Solutions.
+            Contact Us
           </h3>
           <p className="my-2 text-black-500">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
           </p>
-          <ul className="text-black-500 self-start list-inside ml-8">
-            {features.map((feature, index) => (
-              <motion.li
-                className="relative circle-check custom-list"
-                custom={{duration: 2 + index}}
-                variants={scrollAnimation}
-                key={feature}
-                whileHover={{
-                scale : 1.1,
-                transition: {
-                  duration: .2
-                }
-                }}>
-                  {feature}
-              </motion.li>
-              )
-            )}
+          <ul className="text-black-500 self-start ml-8">
+
+           <form action="/send-data-here" method="post">
+           <motion.li>
+          <label for="first">First name:</label>
+          <input type="text" id="first" name="first" />
+          </motion.li>
+          <motion.li>
+          <label for="last">Last name:</label>
+          <input type="text" id="last" name="last" />
+          </motion.li>
+          <button type="submit">Submit</button>
+          </form>
           </ul>
         </motion.div>
         </ScrollAnimationWrapper>

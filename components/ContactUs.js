@@ -98,7 +98,7 @@ export default function ContactUs() {
             </p>
           </div>
           <h1 className="text-4xl font-bold mt-4 dark:text-gray-50 text-gray-700">
-            Lets talk about your projects.
+           How we can help you with our solutions.
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             Fill the form and send in your queries. I will respond as soon as I
@@ -107,7 +107,7 @@ export default function ContactUs() {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
+          className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-green-500"
         >
           <h1 className="text-2xl font-bold dark:text-gray-50">
             Send a message
@@ -189,7 +189,7 @@ export default function ContactUs() {
           <div className="flex flex-row items-center justify-start">
             <button
               type="submit"
-              className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+              className="px-10 mt-8 py-2 bg-green-500 text-white-500 font-light rounded-md text-lg flex flex-row items-center"
             >
               {buttonText}
               <svg

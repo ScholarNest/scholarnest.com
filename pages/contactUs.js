@@ -1,12 +1,14 @@
-import Footer from "../components/Layout/Footer";
+import ContactUs_ from "../components/ContactUs";
 import Header from "../components/Layout/Header";
-import Feature from "../components/Feature";
-import Contact from "../components/Contact"
-import ContactPage from "../components/ContactPage";
+import Footer from "../components/Layout/Footer";
 function ContactUs() {
   return(
   <>
-  <ContactPage/>
+  <Header/>
+  <div style={{paddingTop:'5%',paddingBottom:'25%'}}>
+  <ContactUs_/>
+  </div>
+  <Footer/>
   </>
   )
 }

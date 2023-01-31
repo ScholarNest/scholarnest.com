@@ -3,88 +3,88 @@ import LogoVPN from "../../public/assets/scholarnest-logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import classes from "./Footer.module.css";
+
 const Footer = () => {
   return (
-    <div className="bg-white-300 pt-44 pb-24">
-      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-          {/* <LogoVPN className="h-8 w-auto mb-6" /> */}
-          <img alt="nextui logo" src="/assets/logo-v3.png" />
-          <p className="mb-4">
-            {/* <strong className="font-medium">ScholarNest</strong> */}
-            {/* virtual network that has unique features and has high security. */}
-          </p>
-          <div className="flex w-full mt-2 mb-8 -mx-2">
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Facebook className="h-6 w-6" />
+    <div className={classes.footer}>
+      <div className={classes.contain}>
+        <div className={classes.col1}>
+          <div>
+            <img alt="Site logo" src="/assets/scholarnest-logo.jpg" />
+          </div>
+          <div className={classes.mail}>
+            <div className={classes.maillogo}>
+              <img alt="Email" src="/assets/mail.png" />
             </div>
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Twitter className="h-6 w-6" />
-            </div>
-            <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Instagram className="h-6 w-6" />
+            <div className={classes.mailaddress}>
+              <p>contact@scholarnest.com</p>
             </div>
           </div>
-          <p className="text-gray-400">
-            ©{new Date().getFullYear()} - ScholarNest
-          </p>
+          <div>
+            <div className={classes.social}>
+              <div className={classes.sociallogo}>
+                <img alt="Linkedin" src="/assets/linkedin.png" />
+              </div>
+              <div className={classes.sociallogo}>
+                <img alt="facebook" src="/assets/facebook.png" />
+              </div>
+              <div className={classes.sociallogo}>
+                <img alt="tweeter" src="/assets/tweeter.png" />
+              </div>
+              <div className={classes.sociallogo}>
+                <img alt="youtube" src="/assets/youtube.png" />
+              </div>
+              <div className={classes.sociallogo}>
+                <img alt="instagram" src="/assets/instagram.png" />
+              </div>
+              <div className={classes.sociallogo}>
+                <img alt="github" src="/assets/github.png" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Services</p>
-          <ul className="text-black-500 ">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Download{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Pricing{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Locations{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Server{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Countries{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Blog{" "}
-            </li>
+        <div className={classes.col2}>
+          <div className={classes.colh1}>
+            <h1>COMPANY</h1>
+          </div>
+          <ul>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Help & Support (FAQs)</li>
           </ul>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              ScholarNest ?{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              FAQ{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tutorials{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              About Us{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Privacy Policy{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Terms of Service{" "}
-            </li>
+        <div className={classes.col2}>
+          <div className={classes.colh1}>
+            <h1>LINKS</h1>
+          </div>
+          <ul>
+            <li>Subscription</li>
+            <li>Blog</li>
+            <li>Teach</li>
+            <li>Forum</li>
           </ul>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Affiliate{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Become Partner{" "}
-            </li>
-          </ul>
+        <div className={classes.col3}>
+          <h1>NEWS LETTER</h1>
+        </div>
+        <div className={classes.clearfix}></div>
+      </div>
+      <div className={classes.contain}>
+        <hr className={classes.hr} />
+        <div className={classes.copyrightdiv}>
+          <div className={classes.copyrightcol}>
+            <p>
+              ©{new Date().getFullYear()} - ScholarNest Technologies Pvt. Ltd.
+            </p>
+          </div>
+          <div className={classes.copyrightcol}>
+            <div className={classes.privacymenu}>
+              <div className={classes.menuitem}>Privacy</div>
+              <div className={classes.menuitem}>Terms</div>
+              <div className={classes.menuitem}>Sitemap</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

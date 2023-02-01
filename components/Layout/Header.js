@@ -5,6 +5,8 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/scholarnest-logo.svg";
 
+import company from "../../pages/company"
+
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -17,18 +19,18 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+          "fixed top-0 w-full  z-30 bg-black-700 transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <img alt="nextui logo" src="/assets/logo-100-v2.jpg" />
+            <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
               activeClass="active"
-              to="about"
+              href="/company"
               spy={true}
               smooth={true}
               duration={1000}
@@ -46,7 +48,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="pricing"
+              href="/solutions"
               spy={true}
               smooth={true}
               duration={1000}
@@ -65,7 +67,7 @@ const Header = () => {
 
             <LinkScroll
               activeClass="active"
-              to="/contactus"
+              href="contactUs"
               onClick={() =>
                 window
                   .open(
@@ -92,7 +94,7 @@ const Header = () => {
 
             <LinkScroll
               activeClass="active"
-              to="feature"
+              href="/learnwithUs"
               spy={true}
               smooth={true}
               duration={1000}
@@ -110,7 +112,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="feature"
+              href="/career"
               spy={true}
               smooth={true}
               duration={1000}

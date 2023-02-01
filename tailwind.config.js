@@ -23,6 +23,7 @@ module.exports = {
       black: {
         500: "#4F5665",
         600: "#0B132A",
+        700: "#000000"
       },
       orange: {
         100: "#FFECEC",

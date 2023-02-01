@@ -11,14 +11,14 @@ import { Card, Grid, Text, Link } from "@nextui-org/react";
 
 const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const cardWidth = 185;
-  const cardHeight = 185;
+  const cardWidth = 1000;
+  const cardHeight = 553;
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="pricing"
     >
-      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-0 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -34,8 +34,8 @@ const Services = () => {
               {/* Lets Discover Our Services */}
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-0">
+            <ScrollAnimationWrapper className="flex justify-center" width={cardWidth}>
               <motion.div
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
@@ -105,7 +105,7 @@ const Services = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/stats.png"
+                    src="/assets/dataengineering.jpg"
                     width={cardWidth}
                     height={cardHeight}
                     alt="Premium Plan"
@@ -124,7 +124,6 @@ const Services = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        {/**555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */}
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -263,7 +262,6 @@ const Services = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        {/**555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */}
         {/* <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -347,7 +345,7 @@ const Services = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    connect with us to  <br /> Collaborate!
+                    Connect with us to  <br /> Collaborate!
                   </h5>
                   <p>Lets discover the digital world with us.</p>
                 </div>

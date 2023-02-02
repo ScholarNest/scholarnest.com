@@ -5,7 +5,7 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/scholarnest-logo.svg";
 
-import company from "../../pages/company"
+import company from "../../pages/company";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -25,12 +25,14 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
+            <Link href="/"><img alt="nextui logo" src="/assets/scholarnest-logo.jpg" /></Link>
+            
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
               activeClass="active"
-              href="/company"
+              to="/company"
+              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -49,6 +51,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="/solutions"
+              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -68,14 +71,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="contactUs"
-              onClick={() =>
-                window
-                  .open(
-                    "/contactUs",
-                    "_blank"
-                  )
-                  .focus()
-              }
+              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -95,6 +91,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="/learnwithUs"
+              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -113,6 +110,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="/career"
+              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}

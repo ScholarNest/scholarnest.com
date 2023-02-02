@@ -4,6 +4,7 @@ import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
 import classes from "./Footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -24,22 +25,34 @@ const Footer = () => {
           <div>
             <div className={classes.social}>
               <div className={classes.sociallogo}>
-                <img alt="Linkedin" src="/assets/linkedin.png" />
+                <Link href="https://www.linkedin.com/company/ScholarNest/">
+                  <img alt="Linkedin" src="/assets/linkedin.png" />
+                </Link>
               </div>
               <div className={classes.sociallogo}>
-                <img alt="facebook" src="/assets/facebook.png" />
+                <Link href="https://www.facebook.com/ScholarNestTechnologies">
+                  <img alt="Facebook" src="/assets/facebook.png" />
+                </Link>
               </div>
               <div className={classes.sociallogo}>
-                <img alt="tweeter" src="/assets/tweeter.png" />
+                <Link href="https://twitter.com/ScholarNest">
+                  <img alt="Tweeter" src="/assets/tweeter.png" />
+                </Link>
               </div>
               <div className={classes.sociallogo}>
-                <img alt="youtube" src="/assets/youtube.png" />
+                <Link href="https://www.youtube.com/channel/UCQBys-g4SkBW0DGc6s80jHQ">
+                  <img alt="youtube" src="/assets/youtube.png" />
+                </Link>
               </div>
               <div className={classes.sociallogo}>
-                <img alt="instagram" src="/assets/instagram.png" />
+                <Link href="https://www.instagram.com/scholarnest/">
+                  <img alt="Instagram" src="/assets/instagram.png" />
+                </Link>
               </div>
               <div className={classes.sociallogo}>
-                <img alt="github" src="/assets/github.png" />
+                <Link href="https://github.com/ScholarNest">
+                  <img alt="youtube" src="/assets/github.png" />
+                </Link>
               </div>
             </div>
           </div>

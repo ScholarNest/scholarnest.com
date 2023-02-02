@@ -1,4 +1,13 @@
+import Footer from "../components/Layout/Footer";
+import Header from "../components/Layout/Header";
+
 function Company() {
-  return <div>Welcome to company</div>;
+  return (
+    <>
+      <Header />
+      <div style={{ paddingTop: "5%", paddingBottom: "25%" }}>Company</div>
+      <Footer />
+    </>
+  );
 }
 export default Company;

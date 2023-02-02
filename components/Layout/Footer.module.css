@@ -48,6 +48,7 @@
 .social {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 3%;
 }
 .sociallogo {
   width: 60%;

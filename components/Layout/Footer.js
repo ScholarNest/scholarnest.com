@@ -80,6 +80,9 @@ const Footer = () => {
         </div>
         <div className={classes.col3}>
           <h1>NEWS LETTER</h1>
+          <div className={classes.form}>
+            <input type="Email" placeholder='Your email here'></input>
+          </div>
         </div>
         <div className={classes.clearfix}></div>
       </div>

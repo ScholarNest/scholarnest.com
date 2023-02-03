@@ -23,7 +23,8 @@ module.exports = {
       black: {
         500: "#4F5665",
         600: "#0B132A",
-        700: "#000000"
+        700: "#000000",
+        100: "#ffffff",
       },
       orange: {
         100: "#FFECEC",
@@ -34,7 +35,7 @@ module.exports = {
       },
       white: {
         300: "#F8F8F8",
-        500: "#fff",
+        500: "#ffffff",
       },
       gray: {
         100: "#EEEFF2",

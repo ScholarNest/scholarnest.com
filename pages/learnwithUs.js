@@ -1,14 +1,17 @@
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
+import Learnwithus from "../components/Learcwithus";
 
-function LearnWithUs() {
+function learnWithUs() {
   return (
     <>
       <Header />
-      <div style={{ paddingTop: "5%", paddingBottom: "25%" }}>LearnWithUs</div>
+      <div style={{ paddingTop: "5%", paddingBottom: "25%" }}>
+        <Learnwithus />
+      </div>
       <Footer />
     </>
   );
 }
 
-export default LearnWithUs;
+export default learnWithUs;

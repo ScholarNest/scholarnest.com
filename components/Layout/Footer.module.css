@@ -53,6 +53,7 @@
 .sociallogo {
   width: 60%;
   margin: auto;
+  cursor:pointer;
 }
 .footer .col2 {
   width: 20%;
@@ -109,6 +110,12 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
+}
+.formcontainer{
+
+}
+.form{
+  padding-top: 10%;
 }
 .social ul li {
   display: inline-block;

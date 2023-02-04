@@ -1,14 +1,17 @@
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
+import Solutions from "../components/Solutions";
 
-function Solutions() {
+function solutions() {
   return (
     <>
       <Header />
-      <div style={{ paddingTop: "5%", paddingBottom: "25%" }}>Footer</div>
+      <div style={{ paddingTop: "5%", paddingBottom: "25%" }}>
+        <Solutions />
+      </div>
       <Footer />
     </>
   );
 }
 
-export default Solutions;
+export default solutions;

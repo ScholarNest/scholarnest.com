@@ -91,23 +91,59 @@ export default function ContactUs() {
   return (
     <main>
       <header className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
-        <div className="mx-auto mb-10 md:mt-20">
+        <div className="mx-auto mb-10 md:mt-10">
           <div className="badge bg-green-500 inline-block rounded-xl">
-            <p className="font-light text-base px-4 py-1 text-white-500">
-              Lets talk
-            </p>
+            {/* <p className="font-light text-base px-4 py-1 text-white-500">
+            Let's get in touch
+            </p> */}
           </div>
           <h1 className="text-4xl font-bold mt-4 dark:text-gray-50 text-gray-700">
-           How we can help you with our solutions.
+          Let's get in touch
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-            Fill the form and send in your queries. I will respond as soon as I
-            can. Alternatively, You can reach out to me at my email address.
+          ScholarNest Contact information
+          </p>
+          <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          Partnership & Sales:
+          </h1>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          Want to find out how we can help your team to get skilled or interested in partnering with ScholarNest?
+          </p>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          Let’s talk! To get in touch.
+          </p>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          sales@scholarnest.com
+          </p>
+          <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          Become an Instructor:
+          </h1>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          Do you want to work with us as an instructor, create and sell courses at ScholarNest?          </p>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          Welcome! To get in touch.
+          </p>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          teach@scholarnest.com          
+          </p>
+          <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          Support:
+          </h1>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          Do you want to submit a correction or have any other concerns?
+          Write to us in the following emails         
+          </p>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          support@scholarnest.com          
+          </p>
+          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          support@scholarnest.com          
           </p>
         </div>
+        
         <form
           onSubmit={handleSubmit}
-          className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-green-500"
+          className="rounded-lg shadow-xl flex flex-col px-8 py-20 bg-white dark:bg-green-500"
         >
           <h1 className="text-2xl font-bold dark:text-gray-50">
             Send a message
@@ -126,7 +162,7 @@ export default function ContactUs() {
               setFullname(e.target.value);
             }}
             name="fullname"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
           />
           {errors?.fullname && (
             <p className="text-red-500">Fullname cannot be empty.</p>
@@ -145,7 +181,7 @@ export default function ContactUs() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
           />
           {errors?.email && (
             <p className="text-red-500">Email cannot be empty.</p>
@@ -164,7 +200,7 @@ export default function ContactUs() {
             onChange={(e) => {
               setSubject(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
           />
           {errors?.subject && (
             <p className="text-red-500">Subject cannot be empty.</p>
@@ -181,7 +217,7 @@ export default function ContactUs() {
             onChange={(e) => {
               setMessage(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
           ></textarea>
           {errors?.message && (
             <p className="text-red-500">Message body cannot be empty.</p>
@@ -189,7 +225,7 @@ export default function ContactUs() {
           <div className="flex flex-row items-center justify-start">
             <button
               type="submit"
-              className="px-10 mt-8 py-2 bg-green-500 text-white-500 font-light rounded-md text-lg flex flex-row items-center"
+              className="px-10 mt-8 py-2 bg-yellow-500 text-white-500 font-light rounded-md text-lg flex flex-row items-center"
             >
               {buttonText}
               <svg

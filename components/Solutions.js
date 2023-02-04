@@ -12,7 +12,7 @@ const Solutions = () => {
       {
         title: "title0",
         src: "/assets/dataengineering.jpg",
-        description: "Dummy Text Dummy Text Dummy Text Dummy Text ",
+        description: " Dummy Text Dummy Text ",
       },
       {
         title: "title1",
@@ -57,7 +57,7 @@ const Solutions = () => {
     ],
   };
   return (
-    <div className="grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 gap-0 lg:gap-5 py-8 lg:py-12 px-6 sm:px-0 lg:px-0">
+    <div className="grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-10 py-8 lg:py-12 px-6 sm:px-0 lg:px-10">
       {data.solution.map((solution, index) => (
         <ScrollAnimationWrapper className="flex justify-center">
           <motion.div variants={scrollAnimation}>
@@ -68,13 +68,13 @@ const Solutions = () => {
                     src={solution.src}
                     objectFit="cover"
                     width="100%"
-                    height={140}
+                    height="100%"
                     alt={solution.title}
                   />
                   <Row wrap="wrap" justify="space-between" align="center">
                     <Text>{solution.title}</Text>
-                    <Text p>{solution.description}</Text>
-                    <Link to="#">read more</Link>
+                    <Text>{solution.description}</Text>
+                    <Link to="#">read more </Link>
                   </Row>
                 </Card.Body>
               </Card>

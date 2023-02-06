@@ -47,13 +47,14 @@
 }
 .social {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  column-gap: 3%;
+  display: flex;
+  column-gap: 5%;
+  align-items: flex-end;
 }
 .sociallogo {
-  width: 60%;
+  width: 50%;
   margin: auto;
-  cursor:pointer;
+  cursor: pointer;
 }
 .footer .col2 {
   width: 20%;
@@ -111,17 +112,11 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.formcontainer{
-
+.formcontainer {
 }
-.form{
+.form {
   padding-top: 10%;
 }
-.social ul li {
-  display: inline-block;
-  padding-right: 5px !important;
-}
-
 .footer .col ul li:hover {
   color: #ffffff;
   transition: 0.1s;
@@ -139,15 +134,19 @@
     width: 1200px;
     margin: 0 auto;
     padding: 15px 15px 15px 15px;
+    display: block;
   }
 }
 @media only screen and (max-width: 1139px) {
-  .contain .social {
+  .contain {
     width: 1000px;
-    display: block;
+    display: grid;
   }
-  .social h1 {
-    margin: 0px;
+  .social {
+    display: flex;
+  }
+  .sociallogo {
+    width: 20%;
   }
 }
 @media only screen and (max-width: 950px) {

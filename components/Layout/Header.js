@@ -69,7 +69,7 @@ const Header = () => {
               Solutions
             </LinkScroll>
 
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               href="contactUs"
               onClick={() => window("/contactUs", "_blank").focus()}
@@ -87,7 +87,7 @@ const Header = () => {
               }
             >
               Contact Us
-            </LinkScroll>
+            </LinkScroll> */}
 
             <LinkScroll
               activeClass="active"
@@ -134,7 +134,7 @@ const Header = () => {
               onClick={() =>
                 window
                   .open(
-                    "https://wordpress-856641-3134839.cloudwaysapps.com/",
+                    "https://www.scholarnest.com/blog/",
                     "_blank"
                   )
                   .focus()

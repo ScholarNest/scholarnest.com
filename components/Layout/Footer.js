@@ -1,8 +1,4 @@
 import React from "react";
-import LogoVPN from "../../public/assets/scholarnest-logo.svg";
-import Facebook from "../../public/assets/Icon/facebook.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
-import Instagram from "../../public/assets/Icon/instagram.svg";
 import classes from "./Footer.module.css";
 import Link from "next/link";
 
@@ -81,7 +77,7 @@ const Footer = () => {
         <div className={classes.col3}>
           <h1>NEWS LETTER</h1>
           <div className={classes.form}>
-            <input type="Email" placeholder='Your email here'></input>
+            <input type="Email" placeholder="Your email here"></input>
           </div>
         </div>
         <div className={classes.clearfix}></div>

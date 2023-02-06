@@ -24,14 +24,15 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
-            <Link href="/"><img alt="nextui logo" src="/assets/scholarnest-logo.jpg" /></Link>
-            
+          <div className="col-start-1 col-end-2 flex items-center cursor-pointer">
+            <Link href="/">
+              <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
+            </Link>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-100  items-center">
             <LinkScroll
               activeClass="active"
-              to="/company"
+              href="/company"
               onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}

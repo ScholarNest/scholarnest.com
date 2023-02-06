@@ -98,49 +98,49 @@ export default function ContactUs() {
             </p> */}
           </div>
           <h1 className="text-4xl font-bold mt-4 dark:text-gray-50 text-gray-700">
-          Let's get in touch
+            Let's get in touch
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          ScholarNest Contact information
+            ScholarNest Contact information
           </p>
           <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
-          Partnership & Sales:
+            Partnership & Sales:
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          Want to find out how we can help your team to get skilled or interested in partnering with ScholarNest?
+            Want to find out how we can help your team to get skilled or interested in partnering with ScholarNest?
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          Let’s talk! To get in touch.
+            Let’s talk! To get in touch.
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          sales@scholarnest.com
+            sales@scholarnest.com
           </p>
           <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
-          Become an Instructor:
+            Become an Instructor:
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          Do you want to work with us as an instructor, create and sell courses at ScholarNest?          </p>
+            Do you want to work with us as an instructor, create and sell courses at ScholarNest?          </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          Welcome! To get in touch.
+            Welcome! To get in touch.
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          teach@scholarnest.com          
+            teach@scholarnest.com
           </p>
           <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
-          Support:
+            Support:
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          Do you want to submit a correction or have any other concerns?
-          Write to us in the following emails         
+            Do you want to submit a correction or have any other concerns?
+            Write to us in the following emails
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          support@scholarnest.com          
+            support@scholarnest.com
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-          support@scholarnest.com          
+            support@scholarnest.com
           </p>
         </div>
-        
+
         <form
           onSubmit={handleSubmit}
           className="rounded-lg shadow-xl flex flex-col px-8 py-20 bg-white dark:bg-green-500"

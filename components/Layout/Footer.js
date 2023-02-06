@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
           <ul>
             <li>About Us</li>
-            <li>Contact</li>
+            <li><Link href="http://localhost:3000/contactUs">Contact</Link></li>
             <li>Help & Support (FAQs)</li>
           </ul>
         </div>

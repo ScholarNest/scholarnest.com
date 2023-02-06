@@ -107,7 +107,8 @@ export default function ContactUs() {
             Partnership & Sales:
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-            Want to find out how we can help your team to get skilled or interested in partnering with ScholarNest?
+            Want to find out how we can help your team to get skilled or
+            interested in partnering with ScholarNest?
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             Let’s talk! To get in touch.
@@ -119,7 +120,9 @@ export default function ContactUs() {
             Become an Instructor:
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-            Do you want to work with us as an instructor, create and sell courses at ScholarNest?          </p>
+            Do you want to work with us as an instructor, create and sell
+            courses at ScholarNest?{" "}
+          </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             Welcome! To get in touch.
           </p>
@@ -130,14 +133,14 @@ export default function ContactUs() {
             Support:
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-            Do you want to submit a correction or have any other concerns?
-            Write to us in the following emails
+            Do you want to submit a correction or have any other concerns? Write
+            to us in the following emails
           </p>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             support@scholarnest.com
           </p>
-          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
-            support@scholarnest.com
+          <p className="text-sm text-blue-700 mt-4 font-light dark:text-gray-200">
+            privacy@scholarnest.com
           </p>
         </div>
 

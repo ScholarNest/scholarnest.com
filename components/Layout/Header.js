@@ -33,7 +33,6 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="/company"
-              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -52,7 +51,6 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="/solutions"
-              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -72,7 +70,6 @@ const Header = () => {
             {/* <LinkScroll
               activeClass="active"
               href="contactUs"
-              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -92,7 +89,6 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               href="/learnwithUs"
-              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -130,7 +126,7 @@ const Header = () => {
 
             <LinkScroll
               activeClass="active"
-              to="https://blog.com"
+              to="https://blog.scholarnest.com"
               onClick={() =>
                 window
                   .open(

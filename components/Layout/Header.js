@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-// Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/scholarnest-logo.svg";
@@ -31,6 +30,7 @@ const Header = () => {
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-100  items-center">
             <LinkScroll
+              legacyBehavior={true}
               activeClass="active"
               href="/company"
               spy={true}
@@ -48,14 +48,17 @@ const Header = () => {
             >
               Company
             </LinkScroll>
+        
             <LinkScroll
+              legacyBehavior={true}
               activeClass="active"
               href="/solutions"
+              onClick={() => window("/solutions", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("pricing");
+                setActiveLink("solutions");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -67,14 +70,16 @@ const Header = () => {
               Solutions
             </LinkScroll>
 
-            {/* <LinkScroll
+            <LinkScroll
+              legacyBehavior={true}
               activeClass="active"
-              href="contactUs"
+              href="/contactUs"
+              onClick={() => window("/contactUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("testimoni");
+                setActiveLink("contactUs");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -84,11 +89,13 @@ const Header = () => {
               }
             >
               Contact Us
-            </LinkScroll> */}
+            </LinkScroll>
 
             <LinkScroll
+              legacyBehavior={true}
               activeClass="active"
               href="/learnwithUs"
+              onClick={() => window("/learnwithUs", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -105,18 +112,19 @@ const Header = () => {
               Learn with Us
             </LinkScroll>
             <LinkScroll
+            legacyBehavior={true}
               activeClass="active"
               href="/career"
-              onClick={() => window("/contactUs", "_blank").focus()}
+              onClick={() => window("/career", "_blank").focus()}
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("feature");
+                setActiveLink("career");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "feature"
+                (activeLink === "career"
                   ? " text-orange-500 animation-active "
                   : " text-black-100 hover:text-orange-500 ")
               }

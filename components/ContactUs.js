@@ -89,6 +89,7 @@ export default function ContactUs() {
     console.log(fullname, email, subject, message);
   };
   return (
+    <>
     <main>
       <header className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
         <div className="mx-auto mb-10 md:mt-10">
@@ -142,6 +143,7 @@ export default function ContactUs() {
           <p className="text-sm text-blue-700 mt-4 font-light dark:text-gray-200">
             privacy@scholarnest.com
           </p>
+         
         </div>
 
         <form
@@ -154,9 +156,9 @@ export default function ContactUs() {
 
           <label
             htmlFor="fullname"
-            className="text-gray-500 font-light mt-8 dark:text-gray-50"
+            className="font-light mt-8 dark:text-gray-50"
           >
-            Full name<span className="text-red-500 dark:text-gray-50">*</span>
+            Full name<span className="text-danger fw-bold dark:text-gray-50">*</span>
           </label>
           <input
             type="text"
@@ -173,9 +175,9 @@ export default function ContactUs() {
 
           <label
             htmlFor="email"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
+            className=" font-light mt-4 dark:text-gray-50"
           >
-            E-mail<span className="text-red-500">*</span>
+            E-mail<span className="text-danger fw-bold dark:text-gray-50">*</span>
           </label>
           <input
             type="email"
@@ -192,9 +194,9 @@ export default function ContactUs() {
 
           <label
             htmlFor="subject"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
+            className="font-light mt-4 dark:text-gray-50"
           >
-            Subject<span className="text-red-500">*</span>
+            Subject<span className="text-danger fw-bold dark:text-gray-50">*</span>
           </label>
           <input
             type="text"
@@ -210,9 +212,9 @@ export default function ContactUs() {
           )}
           <label
             htmlFor="message"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
+            className="font-light mt-4 dark:text-gray-50"
           >
-            Message<span className="text-red-500">*</span>
+            Message<span className="text-danger fw-bold dark:text-gray-50">*</span>
           </label>
           <textarea
             name="message"
@@ -259,7 +261,14 @@ export default function ContactUs() {
             )}
           </div>
         </form>
+    
       </header>
+      
     </main>
+    <br />
+    <br />
+    <br />
+    <br />
+    </>
   );
 }

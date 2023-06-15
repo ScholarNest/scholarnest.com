@@ -1,0 +1,37 @@
+/* .wave-border{
+    position: relative;
+    padding: 2rem;
+    background-color: black !important;
+    border-radius: 15px;
+  }
+  .wave-border:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 25px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    transform: skew(-15deg);
+  }
+  
+  .wave-border:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 25px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #f0f0f0, #ffffff);
+    transform: skew(15deg);
+  } */
+  .carousel .control-arrow {
+    height: 30px;
+    line-height: 30px;
+  }

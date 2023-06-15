@@ -4,7 +4,7 @@ import React from "react";
 const ButtonPrimary = ({ children, addClass }) => {
   const router = useRouter();
   const redirect = () => {
-    router.push("/contactUs");
+    router.push("/solutions");
   };
 
   return (

@@ -1,13 +1,16 @@
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import CompanyTemplate from "../components/CompanyTemplate";
 
-function Company() {
+function company() {
   return (
     <>
       <Header />
-      <div style={{ paddingTop: "5%", paddingBottom: "25%" }}>Company</div>
+      <div  style={{marginTop:"112px"}}>
+      <CompanyTemplate /> 
+      </div>
       <Footer />
     </>
   );
 }
-export default Company;
+export default company;

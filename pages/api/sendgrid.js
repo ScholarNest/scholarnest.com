@@ -53,6 +53,88 @@ async function sendEmail(req, res) {
   //   // console.log(error);
   //   return res.status(error.statusCode || 500).json({ error: error.message });
   // }
+  
+  let nodemailer = require('nodemailer')
+  const data = req.body;
+  console.log("data is",data)
+  const transporter = nodemailer.createTransport({
+       port: 465,
+       host: "smtp.elasticemail.com",
+       auth: {
+         user: "duadarsh13@gmail.com",
+         pass: "EA9EE3A3C7327A7F3B6AF1DB6E1D4E40D6FC"
+       },
+       secure: true,
+     })
+     const htmlContent= `<div><p>Hii</p>
+     <p>There is an inquiry from ${data.fullname} (${data.email}) through <a href="#"> www.scholarnest.com </a> with below details.
+ 
+      </p>
+      <p>
+       Name: ${data.fullname} <br />
+       Email id: ${data.email} <br />
+       Subject : ${data.subject}  <br />
+       Message: ${data.message} <br />
+      </p>
+   <p> Thanks! <br />
+   Scholarnest Information Technology & Services , Bangalore, India <br />
+   <a href="#"> scholarnest@gmail.com </a> | <a href="#"> www.scholarnest.com </a>
+   </p>
+   <img   src="http://localhost:3000/assets/scholarnest-logo.jpg"  alt="Logo" /> 
+</div>
+
+ `
+
+const htmlContentclient =`<div><p>Hii</p>
+     <p> Your query has been received and we will get back to you soon. </p>
+   
+  
+   <p> Thanks! <br />
+   Scholarnest Information Technology & Services , Bangalore, India <br />
+   <a href="#"> scholarnest@gmail.com </a> | <a href="#"> www.scholarnest.com </a>
+   </p>
+   <img   src="http://localhost:3000/assets/scholarnest-logo.jpg"  alt="Logo" /> 
+</div>
+
+ `
+
+   
+
+    //  console.log(image)
+     const mailData = {
+       from:'duadarsh13@gmail.com',
+       to: 'adarsh.pvt13@gmail.com',
+       subject: 'Inquiry from Scholarnest.com',
+   
+   
+       html:htmlContent
+     }
+     const mailDataClient={
+      from:'duadarsh13@gmail.com',
+      to: `${data.email}`,
+      subject: 'Response to your query at scholarnest.com',
+  
+  
+      html:htmlContentclient
+     }
+     transporter.sendMail(mailData, function (err, info) {
+       if(err)
+         console.log(err)
+       else
+       {
+       console.log(info)
+       }
+         
+     })
+      if(err)
+        console.log(err)
+      else
+      {
+       console.log(info)
+      }
+        
+    }) transporter.sendMail(mailDataClient, function (err, info) {
+    
 
   return res.status(200).json({ error: "" });
 }

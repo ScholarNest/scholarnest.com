@@ -1,0 +1,7 @@
+.gradient{
+
+background-color:rgba(211,229,255,255);
+padding:15px;
+display:flex;
+flex-direction:row;
+}

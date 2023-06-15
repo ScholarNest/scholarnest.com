@@ -1,0 +1,31 @@
+.submenu,.submenuSol{
+display:none;
+position:absolute;
+width:100vw;
+top:40px;
+left:-36vw !important;
+z-index:2;
+}
+.submenuSol{
+left:-48vw !important;
+}
+.menu:hover > .submenu{
+display:block;
+}
+.menuSol:hover > .submenuSol{
+display:block;
+}
+.hoverSubmenu{
+    transition: all .2s ease-in-out;
+}
+.hoverSubmenu:hover{
+    transform: scale(1.1);
+}
+.hoverSubmenu:hover > h1{
+color:red !important;
+}
+.bnt:hover{
+background-color:rgb(220 38 38);
+color:white;
+
+}

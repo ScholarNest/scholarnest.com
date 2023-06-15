@@ -1,21 +1,40 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/scholarnest-logo.svg";
-
+import { FaAngleDown } from 'react-icons/fa';
+import classes from './Header.module.css';
 import company from "../../pages/company";
-
+import {AiOutlineArrowRight} from "react-icons/ai"
+import { list } from "postcss";
 const Header = () => {
+
+
+
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
+  const router = useRouter();
+
+  
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
     });
+
   }, []);
+  function hoverCareer(e){
+    e.preventDefault();
+    document.getElementById("menu").style.display="block";
+  }
+  function MouseOutCareer(e){
+    e.preventDefault();
+    // document.getElementById("menu").style.display="none";
+  }
   return (
     <>
+     
       <header
         className={
           "fixed top-0 w-full  z-30 bg-black-700 transition-all " +
@@ -24,36 +43,94 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center cursor-pointer">
-            <Link href="/">
+            <LinkScroll onClick={() =>   router.push("/")} href="/">
               <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
-            </Link>
+            </LinkScroll>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-100  items-center">
-            <LinkScroll
+            <a
               legacyBehavior={true}
               activeClass="active"
-              href="/company"
+              // href="/company"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
                 setActiveLink("about");
               }}
+              // onMouseOver={hoverCareer}
+              // onMouseLeave={MouseOutCareer}
+              // onClick={() => window("/company", "_blank").focus()}
               className={
+                classes.menu+" " +
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
                   ? " text-orange-500 animation-active "
                   : " text-black-100 hover:text-orange-500 a")
               }
             >
-              Company
-            </LinkScroll>
-        
+              <div onClick={() =>   router.push("/company")} style={{display:"flex",flexDirection:"row"}}>Company <FaAngleDown style={{marginTop:"6px"}}/> </div>
+              <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"}  id="menu" >
+              <div className="row">
+                <div className="col-3 py-3">
+                <img  style={{height:"150px"}} src="/assets/b2b.jpg"/>  
+               {/* <GrPersonalComputer  size={120} /> */}
+                <h1 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Company</h1>
+               
+                <p>
+                We have experience with many analytics platforms and can help you navigate the market.                </p>
+                </div>
+                <div className="col-9">
+                  <div  className="row p-4">
+                   
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                      <a href="/company#about">
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>About</h1>
+                      <p>All information about company.</p>
+                      </a>
+                    </div>
+                    
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                      <a href="/company#approach">
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Approach</h1>
+                      <p>A way of dealing with problems.</p>
+                      </a>
+                    </div>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                     <a href="/company#portfolio">
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Portfolio</h1>
+                      <p> Collection of a wide range of assets.</p>
+                      </a>
+                    </div>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                     <a href="/company#techexpertise">
+                     <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Tech Expertise</h1>
+                      <p>Domain of expertise in technologies. </p>
+                      </a>
+                    </div>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                      <a href="/career">                    
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career</h1>
+                      <p>Route to career page.</p>
+                      </a> 
+                    </div>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                       <a href="/contactUs">
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Contact</h1>
+                      <p>Contact us for more details.</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+                </a>
+            
             <LinkScroll
               legacyBehavior={true}
               activeClass="active"
-              href="/solutions"
-              onClick={() => window("/solutions", "_blank").focus()}
+              // href="/solutions"
+             
               spy={true}
               smooth={true}
               duration={1000}
@@ -61,16 +138,71 @@ const Header = () => {
                 setActiveLink("solutions");
               }}
               className={
+                classes.menuSol +" " +
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "pricing"
                   ? " text-orange-500 animation-active "
                   : " text-black-100 hover:text-orange-500 ")
               }
             >
-              Solutions
-            </LinkScroll>
+                 <div  onClick={() =>   router.push("/solutions")} style={{display:"flex",flexDirection:"row"}}>Solutions <FaAngleDown style={{marginTop:"6px"}}/> </div>
+                 <div className={classes.submenuSol + " bg-light py-1 px-6 sm:px-1 md:px-10"}  id="menu" >
+              <div className="row">
+                <div className="col-3 py-3">
+                <img  style={{height:"120px"}} src="/assets/data.jpg"/>  
+               {/* <GrPersonalComputer  size={120} /> */}
+                <h1 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Solutions</h1>
+               
+                <p> Digital solutions combining strategy, technology, automation and people.</p>       
+                <button onClick={() =>   router.push("/solutions")} class={classes.bnt +" btn  text-orange-500 border-orange-500 my-4"} style={{border:"1px solid",display:"flex",flexDirection:"row"}}>Explore  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"2px"}} /></button>
+                         </div>
+                <div className="col-9">
+                  <div  className="row p-4">
+                    <div onClick={() =>   router.push("/manageservices")}  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                                          <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Managed Services</h1>
+                      <p>Services we offering.</p>
+                      
+                    </div>
+                    
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <LinkScroll onClick={() =>   router.push("/technologyconsulting")} >
 
-            <LinkScroll
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Technology Consulting</h1>
+                      <p>Technology Consulting Support.</p>
+                      </LinkScroll>
+                    </div>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <LinkScroll onClick={() =>   router.push("/academy")} >
+
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Academy</h1>
+                      <p>  Self Paced, instructor Led and many more. </p>
+                      </LinkScroll>
+
+                    </div>
+                  
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <LinkScroll onClick={() =>   router.push("/staffaugmentation")}>
+
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Staff Augmentation</h1>
+                      <p>Outsourcing strategy that is used to staff a project.</p>
+                                    
+                                          </LinkScroll>
+
+                    </div>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <LinkScroll onClick={() =>   router.push("/externaljobs")}>
+
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>External jobs</h1>
+                      <p>Job lists for other companies job seekers.</p>
+                      </LinkScroll>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+            </LinkScroll>
+            
+            {/* <LinkScroll
               legacyBehavior={true}
               activeClass="active"
               href="/contactUs"
@@ -89,8 +221,8 @@ const Header = () => {
               }
             >
               Contact Us
-            </LinkScroll>
-
+            </LinkScroll> */}
+{/* 
             <LinkScroll
               legacyBehavior={true}
               activeClass="active"
@@ -110,12 +242,12 @@ const Header = () => {
               }
             >
               Learn with Us
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
             legacyBehavior={true}
               activeClass="active"
               href="/career"
-              onClick={() => window("/career", "_blank").focus()}
+              onClick={() => window.open("/career", "_self").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -159,15 +291,10 @@ const Header = () => {
               Blog
             </LinkScroll>
           </ul>
-          {/* <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
-          </div> */}
+         
         </nav>
+        {/* style={{zIndex:"10",display:"none",position:"relative",bottom:"10px"}} */}
+        
       </header>
       {/* Mobile Navigation */}
 
@@ -305,6 +432,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
+      
       {/* End Mobile Navigation */}
     </>
   );

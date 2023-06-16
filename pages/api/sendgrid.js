@@ -126,14 +126,15 @@ const htmlContentclient =`<div><p>Hii</p>
        }
          
      })
+  transporter.sendMail(mailDataClient, function (err, info) {
       if(err)
         console.log(err)
       else
       {
        console.log(info)
-      }
-        
-    }) transporter.sendMail(mailDataClient, function (err, info) {
+      }     
+    }) 
+    
     
 
   return res.status(200).json({ error: "" });

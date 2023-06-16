@@ -7,7 +7,6 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Lottie from "lottie-react";
 import landingLottie from "./landing-animation.json";
 import { Carousel } from 'react-responsive-carousel';
-import Head from "next/head";
 
 const Hero = ({
   listUser = [

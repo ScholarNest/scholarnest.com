@@ -102,18 +102,7 @@ const CareerTemplate = ({props}) => {
         document.getElementById("applyForm").style.height="0";
       }
     })
-  //   Email.send({
-  //     Host : "smtp.elasticemail.com",
-  //     Username : "duadarsh13@gmail.com",
-  //     Password : "EA9EE3A3C7327A7F3B6AF1DB6E1D4E40D6FC",
-  //     To : 'adarsh2dubey@gmail.com',
-  //     From : "duadarsh13@gmail.com",
-  //     Subject : "New job application",
-  //     Body :"<html><h2>{body}</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-      
-  // }).then(
-  //   message => alert("You have succesfully submitted the form..Thank you !")
-  // );
+
   }
   return (
     <>

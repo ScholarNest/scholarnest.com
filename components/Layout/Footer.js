@@ -58,11 +58,10 @@ const Footer = () => {
             <h1>COMPANY</h1>
           </div>
           <ul>
-            <li>About Us</li>
-            <li>Academy</li>
+          <li><Link href="/company"> About Us</Link></li>
+            <li><Link href="/academy">Academy</Link></li>
 
-            <li><Link href="http://localhost:3000/contactUs">Contact</Link></li>
-            <li>Help & Support (FAQs)</li>
+            <li><Link href="/contactUs">Contact</Link></li>
           </ul>
         </div>
         <div className={classes.col2}>

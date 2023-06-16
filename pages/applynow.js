@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
-import CareerTemplate from "../components/Layout/careerTemplate";
+import CareerTemplate from "../components/Layout/CareerTemplate";
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from "react";
 

@@ -58,9 +58,11 @@ flex-direction:row;
   width:100vw; 
 }
 .aboutBox h1{
-  font-size: 20px;
-  font-weight:bold;
+  font-size: 30px;
   margin:15px 0;
+}
+.caseStudyHead{
+  font-size: 20px;
 }
 .aboutBox p{
   font-size:16px;
@@ -92,8 +94,8 @@ height:350px;
   font-size:16px;
 }
 .techExpertiseImg{
-  height: 150px;
-  width: 150px; 
+  height: 100px;
+  width: 250px; 
   margin: 0 auto;
   objectFit:contain; 
 }
@@ -102,7 +104,7 @@ height:350px;
   .bannerImg{
     height:90vh;
   }
-  .bannerDetails h3{
+  .bannerDetails h3, .caseStudyHead{
   font-size:16px;
   }
   .bannerDetails p, .aboutBox p, .letsConnect p{
@@ -112,7 +114,7 @@ height:350px;
   font-size:30px;
  }
  .aboutBox h1{
-  font-size: 16px;
+  font-size: 24px;
 }
 .letsConnect h3{
   font-size:20px;
@@ -138,14 +140,14 @@ height:350px;
   .bannerImg{
     height:70vh;
   }
-  .bannerDetails h3{
+  .bannerDetails h3, .caseStudyHead{
   font-size:12px;
   }
   .bannerDetails p, .aboutBox p, .letsConnect p{
     font-size:10px;
   } 
   .aboutBox h1{
-    font-size: 12px;
+    font-size: 20px;
   }
   .careerHead{
     font-size:20px;

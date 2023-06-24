@@ -16,29 +16,33 @@ const CompanyTemplate = () => {
   const router = useRouter();
 
   const logos = [
-    { id: 1, image: "/assets/Icon/bigdata.webp" },
-    { id: 2, image: "/assets/Icon/hadoop1.svg " },
-    { id: 3, image: "/assets/Icon/sql.svg" },
-    { id: 4, image: "/assets/Icon/dataengine.webp" },
-    { id: 5, image: "/assets/Icon/apache.png" },
-    { id: 6, image: "/assets/Icon/pyspark.webp" },
-    { id: 7, image: "/assets/Icon/databricks.png" },
-    { id: 8, image: "/assets/Icon/python.svg" }
+    { id: 1, image: "/assets/techExpertise/apache.png" },
+    { id: 2, image: "/assets/techExpertise/aws.jpg" },
+    { id: 3, image: "/assets/techExpertise/azure.png" },
+    { id: 4, image: "/assets/techExpertise/azuredatafactory.png" },
+    { id: 5, image: "/assets/techExpertise/databricks.png" },
+    { id: 6, image: "/assets/techExpertise/googlecloud.png" },
+    { id: 7, image: "/assets/techExpertise/hadoop.png" },
+    { id: 8, image: "/assets/techExpertise/kafka.png" },
+    { id: 9, image: "/assets/techExpertise/msfabrics.svg" },
+    { id: 10, image: "/assets/techExpertise/powerbi.png" },
+    { id: 11, image: "/assets/techExpertise/snowflake.png" },
+    { id: 12, image: "/assets/techExpertise/synapse.png" }
 
   ];
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 7,
+      items: 4,
       slidesToSlide: 2,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 430 },
+      breakpoint: { max: 1024, min: 600 },
       items: 2,
       slidesToSlide:2,
     },
     mobile: {
-      breakpoint: { max: 430, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },
@@ -154,7 +158,8 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} variants={scrollAnimation}>
-               <Card.Header> <h3 class={classes.h3style}> Data Engineering </h3> </Card.Header>
+               <Card.Header> <h3 class={classes.caseStudyHead}> Data Engineering </h3> </Card.Header>
+         
                 <Card.Body css={{ py: "$2" }}>
                   <img src="/assets/learn1.jpg" alt="1" />
                 </Card.Body>
@@ -178,6 +183,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} variants={scrollAnimation}>
 
+              <Card.Header> <h3 class={classes.caseStudyHead}>Buisness Analytics </h3> </Card.Header>
 
                 <Card.Body css={{ py: "$2" }}>
                   <img src="/assets/learn2.jpg" alt="1" />
@@ -189,8 +195,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                     target="_blank"
                     href="https://github.com/nextui-org/nextui"
                   >
-                    Delivering transformative consumer experiences
-                  </Link>
+  A systematic approach to designing, modeling, and insights discovery                  </Link>
 
                 </Card.Footer>
 
@@ -198,6 +203,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} variants={scrollAnimation}>
+              <Card.Header> <h3 class={classes.caseStudyHead}> Skill Development </h3> </Card.Header>
 
                 <Card.Body css={{ py: "$2" }}>
                   <img src="/assets/learn3.jpg" alt="1" />
@@ -209,8 +215,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                     target="_blank"
                     href="https://github.com/nextui-org/nextui"
                   >
-                    How a global cruise company realised digital transformation.
-                  </Link>
+Upskilling, mentoring, supporting, and building high-potential teams                   </Link>
                 </Card.Footer>
 
               </motion.div>
@@ -222,8 +227,8 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
       <br />
       <br />
       <br />
-      <div id="techexpertise" style={{ margin: "5px" }} className="row justify-center">
-        <h1 style={{ fontSize: "20px", fontWeight: "bold", margin: "20px 0" }}>Capabilities
+      <div id="techexpertise" style={{ margin: "5px" }} className={classes.aboutBox+" row justify-center"}>
+        <h1 >Capabilities
         </h1>
         <hr />
         <br />
@@ -268,7 +273,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
           <motion.div  variants={scrollAnimation} style={{width:"50%"}}>
             <motion.div  variants={scrollAnimation} style={{margin:"25% 5%"}}>
             <motion.h1 class={classes.careerHead} >Career at ScholarNest</motion.h1>
-            <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.h3>
+            <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential. Find what inspires and drives you.</motion.h3>
             <motion.button className={classes.careerButton +
        " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
       } onClick={() =>  router.push("/career")} style={{display:"flex",flexDirection:"row"}}>Visit our career page </motion.button>
@@ -292,7 +297,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
               <h3 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
               </h3>
-              <p>Lets discover the digital world with us.</p>
+              <p>Let's work together to drive the business decisions.</p>
             </div>
             <button className={
               "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>

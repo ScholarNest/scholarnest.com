@@ -78,15 +78,15 @@ router.push({
   return (
     <>
     <div>
-       <img style={{height:"110vh",width:"100vw"}}  src={props.img} alt="Solution" />
-       <div style={{width:"500px", position :"relative", bottom:"50px",margin:"0 auto",backgroundColor:"white"}}>
+       <img  class={classes.bannerImg}  src={props.img} alt="Solution" />
+       <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >{props.name}</h1>
       
        </div>
-       <p class="text-center" style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>{props.details} </p>
+       <p class={classes.det+" text-center"} style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>{props.details} </p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
-        <div className="col-6" style={{backgroundColor:"purple"}}>
+        <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"  style={{backgroundColor:"purple"}}>
          
             <h2 class={classes.caseheading}>Current Jobs at various organisations</h2>
            <h3 class={classes.subheading}>Automation enabled releases into production environments with the click of a button </h3>
@@ -94,61 +94,54 @@ router.push({
            <button onClick={() => window.open("/externaljobs#table", "_self").focus()} class="hover:shadow-orange-md transition-all outline-none  btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Explore jobs  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
           
         </div>
-        <div style={{padding:"0",margin:"auto 0"}} className="col-6">
+        <div style={{padding:"0",margin:"auto 0"}}  className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
         <img  src="/assets/pexels.jpg" alt="Solution" />
 
         </div>
      </div>
     </div>
-    
-    <div id="table" class="p-8 gap-4 pt-10 lg:px-40 bg-blue-50 dark:bg-blue-900 ">
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 pt-10">
-            <h1 class="font-medium leading-tight text-2xl mt-0 mb-0 text-blue-600">Job opportunities at various organization</h1>
-      <div>
-        <form onSubmit={searchinList} className="flex justify-end my-2 px-2" >
-        <input
-          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-          type="search"
-          name="search"
-          placeholder="Search by job title"
-          value={search}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        <button  class="px-2 h-10 py-2 " style={{color:"white", marginLeft:"5px",backgroundColor:"blue",borderRadius:"10px"}}> <FaSearch size={20} /></button>
-        </form>
-        <h4 class="font-small leading-tight text-1xl mt-0 mb-2 text-blue-600">
-  <table class="table-auto w-full border divide-y divide-gray-200">
-  <thead>
-    <tr >
-      <th class="px-4 py-2 border  text-center bg-gray-100">Job title</th>
-      <th class="px-4 py-2 border  text-center bg-gray-100">Organization</th>
-      <th class="px-4 py-2 border  text-center bg-gray-100">Location</th>
-      <th class="px-4 py-2 border  text-center bg-gray-100">Domain</th>
-      <th class="px-4 py-2 border  text-center bg-gray-100">Date</th>
-      <th class="px-4 py-2 border   text-center bg-gray-100">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    {tablelist.map((data)=>
-     <tr>
-     <td class="px-4 py-2 border  text-center">{data.title} </td>
-     <td class="px-4 py-2 border  text-center">{data.organization}</td>
-     <td class="px-4 py-2 border  text-center">{data.location}</td>
-     <td class="px-4 py-2 border  text-center" >{data.Domain}</td>
-     <td class="px-4 py-2 border  text-center">{data.Date}</td>
-     <td onClick={()=>applyNow(data)} class="px-4 py-2 border  text-center"  style={{ color:"blue",textDecoration:"underline",cursor:"pointer"}}>  Apply</td>
-   </tr>
-    )}
-   
-  
-  </tbody>
-</table>
+    <div class={classes.careerTableTop+" bg-blue-50 dark:bg-blue-900 mx-auto"}>
+          <h1 class="font-medium leading-tight ml-1 mt-0 mb-0 text-blue-600">Job opportunities with us</h1>
+            <form onSubmit={searchinList} className="flex justify-end my-2 px-2" >
+              <input
+                className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                type="search"
+                name="search"
+                placeholder="Search by job title"
+                value={search}
+                onChange={(e) => setSearchText(e.target.value)}
+              />
+              <button class="px-2 h-10 py-2 " style={{ color: "white", marginLeft: "5px", backgroundColor: "blue", borderRadius: "10px" }}> <FaSearch size={20} /></button>
+            </form>
+            <div class={classes.careerTable+" mx-auto"}  >
+              <table class="table w-full border divide-y divide-gray-200">
+                <thead>
+                  <tr >
+                    <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Job title</th>
+                    <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Location</th>
+                    <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Domain</th>
+                    <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Date</th>
+                    <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border   text-center bg-gray-100">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {list.map((data) =>
+                    <tr>
+                      <td onClick={() => applyNow(data)} class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center"> <a style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}>{data.title} </a>   </td>
+                      <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.location}</td>
+                      <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center" >{data.Domain}</td>
+                      <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td>
+                      <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.status}</td>
+                    </tr>
+                  )}
 
-            </h4>
-       </div>
-           
-        </div>
-        </div>
+
+                </tbody>
+              </table>
+              </div>
+          
+          </div>
+
         <br />
         <br />
         <br />

@@ -7,7 +7,7 @@ function Academy() {
   return (
     <>
       <Header />
-      <div style={{marginTop:"112px"}}>
+      <div style={{marginTop:"91px"}}>
       <AcademySolution />
       </div>
       <Footer />

@@ -10,7 +10,8 @@
     
     
 }
-.solDivstyle{
+
+.solDivstyle,.solnsDivstyle{
    cursor:pointer;
     background-color:white;
     opacity:0.7;
@@ -19,7 +20,7 @@
     box-shadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px";
     transition: all .2s ease-in-out;
     }
-.solDivstyle:hover{
+.solDivstyle:hover, .solnsDivstyle:hover{
     transform: scale(1.1);
 }
 .caseheading{
@@ -29,22 +30,21 @@
 border-radius:4px;
 }
 .caseheading,.subheading{
-
 margin-left: 10%;
-
 padding:6px;
-
-font-size:1.3rem;
+font-size:20px;
 }
 .subheading{
 color:white;
 }
 .styleDiv{
     padding:10px;
-    height:370px;
   
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     
+}
+.head{
+  font-size:30px;
 }
 .styleDiv:hover{
     background-color:rgb(251 251 249);
@@ -71,7 +71,7 @@ color:white;
   text-align: center;
   background-color:white;
   opacity:0.5;
-  font-size:2.3rem;
+  font-size:30px;
   color: black;
   padding:10px;
   font-weight:bold;
@@ -81,10 +81,7 @@ color:white;
   transform: translate(-50%, -50%);
 }
 
-.content h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
+
 .extraText {
   position: absolute;
   bottom: 10px;
@@ -133,8 +130,25 @@ height:350px;
 .caseStudyBox h1, .partnersBox h1{
   font-size:30px;
 }
-.caseStudyBox p{
+.caseStudyBox p,.det{
   font-size:16px;
+}
+.solutionsBox{
+  border-bottom:1px solid white;
+}
+
+.careerTable {
+  font-size:16px;
+  }
+  .careerTableTop{
+      width:75vw;
+  }
+  .careerTableTop h1{
+      font-size:30px;
+  }
+
+.icons{
+  font-size:70px;
 }
 @media only screen and (max-width: 600px) {
  
@@ -144,13 +158,13 @@ height:350px;
   .bannerDetails h3{
   font-size:16px;
   }
-  .bannerDetails p, .detailBox p{
+  .bannerDetails p, .detailBox p, .solnsDivstyle p, .det , .extraText{
     font-size:12px;
   }
  .heading{
   font-size:30px;
  }
- .detailBox h1{
+ .detailBox h1, .head,.content, .careerTableTop h1{
   font-size: 24px;
  
 }
@@ -161,38 +175,84 @@ height:350px;
 .caseStudyBox h1, .partnersBox h1{
   font-size:24px;
 }
-.caseStudyBox p{
+.caseStudyBox p, .careerTable{
   font-size:12px;
+}
+.icons{
+  font-size:50px;
+}
+.caseheading,.subheading{
+  margin-left: 8%;
+}
+.careerTableTop{
+  width:95vw;
 }
 }
 @media only screen and (max-width: 430px) {
-  
+  .careerTableTop{
+    width:98vw;
+  }
   .bannerImg{
     height:70vh;
   }
   .bannerDetails h3{
   font-size:12px;
   }
-  .bannerDetails p, .detailBox p{
+  .bannerDetails p, .detailBox p, .solnsDivstyle p, .det, .extraText, .careerTable{
     font-size:10px;
   } 
-  .detailBox h1{
+  .detailBox h1 , .careerTableTop h1{
     font-size: 20px;
   }
   .h3style{
     font-size:12px;
     
   }
-  .caseStudyBox h1 , .partnersBox h1{
+  .caseStudyBox h1 , .partnersBox h1,.head, .content{
     font-size:20px;
   }
   .caseStudyBox p{
     font-size:12px;
   }
+  .caseheading,.subheading{
+    font-size:12px;
+    }
+    .icons{
+      font-size:35px;
+    }
 }
 @media only screen and (max-width: 320px) {
   .heading{
     font-size:24px;
    } 
-   
+   .caseheading,.subheading{
+    font-size:10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .caseheading{
+    margin-top:5%;
+  }
+  .solnsDivstyle{
+    border-bottom:1px solid black;
+  }
+  
+}
+@media only screen and (max-width: 918px) {
+  .caseheading{
+    margin-top:10%;
+  }
+  
+  
+  .caseheading,.subheading{
+    font-size:16px;
+    }
+  
+}
+@media only screen and (max-width: 950px) {
+  
+ .careerTableTop{
+  width:85vw;
+}
+
 }

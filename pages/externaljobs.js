@@ -11,7 +11,7 @@ function ExternalJobs() {
   return (
     <>
       <Header />
-      <div style={{marginTop:"112px"}}>
+      <div style={{marginTop:"91px"}}>
       <ExternalJob props={props} />
       </div>
       <Footer />

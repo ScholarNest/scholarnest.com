@@ -3,8 +3,9 @@ import React, { useState } from "react";
 export default function ContactUs() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
+  const [phone, setphone] = useState("");
   const [message, setMessage] = useState("");
+  const [companyname, setCompanyname] = useState("");
 
   //   Form validation
   const [errors, setErrors] = useState({});
@@ -27,10 +28,7 @@ export default function ContactUs() {
       tempErrors["email"] = true;
       isValid = false;
     }
-    if (subject.length <= 0) {
-      tempErrors["subject"] = true;
-      isValid = false;
-    }
+    
     if (message.length <= 0) {
       tempErrors["message"] = true;
       isValid = false;
@@ -53,8 +51,9 @@ export default function ContactUs() {
       const res = await fetch("/api/sendgrid", {
         body: JSON.stringify({
           email: email,
+          companyname:companyname,
           fullname: fullname,
-          subject: subject,
+          phone: phone,
           message: message,
         }),
         headers: {
@@ -74,7 +73,7 @@ export default function ContactUs() {
         setFullname("");
         setEmail("");
         setMessage("");
-        setSubject("");
+        setphone("");
         return;
       }
       setShowSuccessMessage(true);
@@ -84,9 +83,9 @@ export default function ContactUs() {
       setFullname("");
       setEmail("");
       setMessage("");
-      setSubject("");
+      setphone("");
     }
-    console.log(fullname, email, subject, message);
+    console.log(fullname, email, phone, message);
   };
   return (
     <>
@@ -193,22 +192,22 @@ export default function ContactUs() {
           )}
 
           <label
-            htmlFor="subject"
+            htmlFor="phone"
             className="font-light mt-4 dark:text-gray-50"
           >
-            Subject<span className="text-danger fw-bold dark:text-gray-50">*</span>
+            phone
           </label>
           <input
             type="text"
-            name="subject"
-            value={subject}
+            name="phone"
+            value={phone}
             onChange={(e) => {
-              setSubject(e.target.value);
+              setphone(e.target.value);
             }}
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
           />
-          {errors?.subject && (
-            <p className="text-red-500">Subject cannot be empty.</p>
+          {errors?.phone && (
+            <p className="text-red-500">phone cannot be empty.</p>
           )}
           <label
             htmlFor="message"

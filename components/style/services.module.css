@@ -1,37 +1,143 @@
-/* .wave-border{
-    position: relative;
-    padding: 2rem;
-    background-color: black !important;
-    border-radius: 15px;
-  }
-  .wave-border:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border-radius: 25px;
-    background-color: #fff;
-    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
-    transform: skew(-15deg);
-  }
-  
-  .wave-border:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border-radius: 25px;
-    background-color: #fff;
-    background-image: linear-gradient(to bottom, #f0f0f0, #ffffff);
-    transform: skew(15deg);
-  } */
+
   .carousel .control-arrow {
     height: 30px;
     line-height: 30px;
   }
+  .solutionPara{
+   width:65%;
+   margin:auto;
+   font-size:16px;
+
+   }
+   
+   .solDivstyle{
+    backgroundColor:white;
+    cursor:pointer;
+    opacity:0.7; 
+    borderRadius:10px;
+    boxShadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .h3style{
+    font-size:20px;
+    font-weight:bold;
+    color:black;
+  }
+  .feedbackBox{
+    width:75vw;
+    margin:auto auto;
+  }
+  .feedbackBox h1{
+    font-size:30px;
+    text-align:center;
+  }
+  .feedbackBox h3{
+    font-size:20px;
+    text-align:center;
+  }
+  .feedbackBox p{
+    font-size:16px;
+    text-align:center;
+  }
+  .icons{
+    font-size:70px;
+  }
+  .solutionHead{
+    font-size:30px;
+  }
+  .letsConnect h3{
+    font-size:24px;
+  }
+  .letsConnect p{
+    font-size:16px;
+  }
+  @media only screen and (max-width: 850px) {
+    .solutionPara{
+    width:95%;
+    font-size:12px;
+   }
+  
+}
+@media only screen and (max-width: 600px) {
+  
+  .h3style{
+    font-size:16px;
+  }
+  .solDivstyle p, .letsConnect p{
+    font-size:12px;
+  }
+  .icons{
+    font-size:55px;
+  }
+  .solutionPara{
+    font-size:12px;
+ 
+  }
+  .solutionHead{
+    font-size:24px;
+  }
+  .feedbackBox{
+    width:85vw;
+  }
+  .feedbackBox h1{
+    font-size:24px;
+  }
+  .feedbackBox p{
+    font-size:12px;
+    text-align:center;
+  }
+  .feedbackBox h3{
+    font-size:16px;
+    text-align:center;
+  }
+  .letsConnect h3{
+    font-size:20px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .h3style{
+    font-size:12px;
+  }
+  .solDivstyle p,.letsConnect p{
+    font-size:10px;
+  }
+  .solDivstyle{
+    border-bottom:0.25px solid black;
+  }
+  .icons{
+    font-size:40px;
+  }
+  .solutionPara{
+    font-size:10px;
+    }
+    .solutionHead{
+      font-size:20px;
+    }
+    .feedbackBox{
+      width:95vw;
+    }
+    .feedbackBox h1{
+      font-size:20px;
+    }
+    .feedbackBox p{
+      font-size:10px;
+      text-align:center;
+    }
+    .feedbackBox h3{
+      font-size:12px;
+      text-align:center;
+    }
+    .letsConnect h3{
+      font-size:16px;
+    }
+}
+@media only screen and (max-width: 290px) {
+  
+  .bannerButton{
+ margin:auto auto;
+ font-size:10px;
+ }
+ .icons{
+  font-size:30px;
+}
+
+}

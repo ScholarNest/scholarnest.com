@@ -46,11 +46,7 @@ const responsive = {
   },
 };
 
-  const h3style={
-    fontSize:"20px",
-    color:"black",
-    margin:"10px auto"
-  }
+ 
   
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const SolutionData=[
@@ -86,10 +82,10 @@ const responsive = {
   return (
   <>
     <div class="py-0">
-       <img style={{height:"110vh",width:"100vw"}}  src="/assets/pexels.jpg" alt="Solution" />
-       <div style={{width:"800px", position :"relative", bottom:"50px",margin:"0 auto",backgroundColor:"white"}}>
+       <img class={classes.bannerImg}  src="/assets/pexels.jpg" alt="Solution" />
+       <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Solutions</h1>
-       <h3 style={{fontWeight:"500",backgroundColor:"white",padding:"10px",margin:"12px auto",fontSize:"1.4rem",width:"625px",textAlign:"center"}}>Combining strategy, technology, automation and people</h3>
+       <h3 >Combining strategy, technology, automation and people</h3>
        <p class="text-center">Thriving in a complex digital world isn’t easy. The ability to continually innovate must be at the core of your organisation. We work with you and your teams to define, structure and build the organisational and technical capabilities needed to transform into a modern digital business. </p>
        </div>
      <br />
@@ -118,10 +114,10 @@ const responsive = {
   
 <div className="div">
   
-        <motion.div variants={scrollAnimation}  style={{color:"black",backgroundColor:"rgb(251 251 249)",padding:"10px"}}>
+        <motion.div variants={scrollAnimation}  class={classes.detailBox} style={{color:"black",backgroundColor:"rgb(251 251 249)",padding:"10px"}}>
         <br />
         <br />
-         <h1 style={{fontSize:"30px"}} className="text-center">
+         <h1  className="text-center">
             Our Offerings
           </h1>
           <br />
@@ -131,10 +127,10 @@ const responsive = {
         <div className="row text-start justify-content-center " style={{ borderBottom:"1px solid white",margin:"0"}}> 
          {
           SolutionData.map((info)=>(
-            <div onClick={() => window.open(info.link, "_self").focus()}   className={ classes.solDivstyle +" col-3 p-3"}>
+            <div onClick={() => window.open(info.link, "_self").focus()}   className={ classes.solDivstyle +" col-lg-3 col-sm-5 col-md-3 col-5 p-lg-3 p-sm-2 p-md-2 p-1"}>
            <CiCompass1 color="black" size={40} />
           
-            <h3  style={h3style} >{info.title}</h3>
+            <h3  class={classes.h3style} >{info.title}</h3>
             
             <p>{info.details}</p>
            
@@ -146,83 +142,7 @@ const responsive = {
            </div>
           ))
          }
-        {/* <div onClick={() => window.open("/manageservices", "_self").focus()}   className={ classes.solDivstyle +" col-3 p-3"}>
-           <CiCompass1 color="black" size={40} />
-          
-            <h3  style={h3style} >Managed Services</h3>
-            
-            <p>Practice of outsourcing the responsibility.</p>
-           
-            <div class="text-end" style={{marginLeft:"auto"}} >
-            <button  
- class="mx-auto"><BsFillArrowRightCircleFill color="black" size={25}/></button>
 
-            </div>
-           </div>
-           <div onClick={() => window.open("/technologyconsulting", "_self").focus()}  className={ classes.solDivstyle +" col-3 p-3"}>
-           <MdAdsClick color="black" size={40} />
-           
-            <h3  style={h3style}> Technology Consulting</h3>
-        
-            <p>Technology consultanting  can help improve an organization. </p>
-          
-            <div class="text-end" style={{marginLeft:"auto"}} >
-            <button class="mx-auto"><BsFillArrowRightCircleFill color="black" size={25}/></button>
-
-            </div>
-           </div>
-          
-           <div onClick={() => window.open("/academy", "_self").focus()} className={ classes.solDivstyle +" col-3 p-3"}>
-           <CiSliderVertical color="black" size={40} />
-           
-            <h3 style={h3style}>Academy</h3>
-           
-            <p>Self Paced, instructor Led and many more.</p>
-            <div class="text-end" style={{marginLeft:"auto"}} >
-            <button onClick={() => window.open("/academy", "_self").focus()} class="mx-auto"><BsFillArrowRightCircleFill color="black" size={25}/></button>
-
-            </div>
-           </div>
-           
-         
-          
-        </div>
-
-
-        <div className="row justify-content-center text-start mt-1"> 
-      
-      <div onClick={() => window.open("/staffaugmentation", "_self").focus()}  className={ classes.solDivstyle +" col-3 p-3"}>
-         <CiCompass1 color="black" size={40} />
-         
-          <h3 style={h3style}>Staff Augmentation</h3>
-       
-          <p> Use to respond to the business objectives. </p>
-          
-          <div class="text-end" style={{marginLeft:"auto"}} >
-            <button  class="mx-auto"><BsFillArrowRightCircleFill color="black" size={25}/></button>
-
-            </div>
-         </div>
-         
-        
-         <div onClick={() => window.open("/externaljobs", "_self").focus()} className={ classes.solDivstyle +" col-3 p-3"}>
-         <CiSliderVertical color="black" size={40} />
-      
-          <h3 style={h3style}>External Jobs</h3>
-         
-          <p>Different job lists for  job seekers.</p>
-       
-          <div class="text-end" style={{marginLeft:"auto"}} >
-            <button  class="mx-auto"><BsFillArrowRightCircleFill color="black" size={25}/></button>
-
-            </div>
-         </div>
-         
-       
-       
- 
-  
-{/* </Carousel> */}
 </div> 
         </ motion.div>
         
@@ -231,14 +151,13 @@ const responsive = {
 
 
        
-       <div className="flex flex-col w-full">
+       <div className={classes.caseStudyBox+" flex flex-col w-full"}>
           <ScrollAnimationWrapper>
             <br />
             <br />
             <motion.h1
-              style={{fontSize:"30px"}}
               variants={scrollAnimation}
-              className="text-center my-3 text-2xl sm:text-3xl lg:text-4xl leading-relaxed"
+              className="text-center my-3  leading-relaxed"
             >
               Case Studies
             </motion.h1>
@@ -311,10 +230,10 @@ const responsive = {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div class="mx-3">
+        <div class={classes.partnersBox+" mx-3"}>
           <br />
           <br />
-          <h1 class="text-center mt-5 mb-4" style={{fontSize:"30px"}} >Partners & Customers</h1>
+          <h1 class="text-center mt-5 mb-4"  >Partners & Customers</h1>
           <hr />
           <Carousel
       swipeable={false}
@@ -329,12 +248,11 @@ const responsive = {
       customTransition="all .5"
       transitionDuration={700}
       containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
       
     >
       {logos.map((logo) => (
-        <img style={{height:"120px",width:"150px",margin:"0",objectFit:"contain"}} key={logo.id} src={logo.image} alt={`Logo ${logo.id}`} />
+        <img style={{height:"120px",width:"150px",margin:"0 auto",objectFit:"contain"}} key={logo.id} src={logo.image} alt={`Logo ${logo.id}`} />
     
       ))}
     </Carousel>

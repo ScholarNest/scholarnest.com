@@ -5,3 +5,59 @@ padding:15px;
 display:flex;
 flex-direction:row;
 }
+.careerHead{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+.featuresDet h3{
+    font-size:30px;
+}
+.careerDet{
+    font-size:20px;
+}
+.careerButton,.featuresDet p{
+    font-size:16px;
+}
+.careerImg{
+    height:450px;
+}
+@media only screen and (max-width: 600px) {
+    .careerHead{
+        font-size:24px;
+        font-weight:bold;
+        margin-bottom:20px;
+    }
+    .featuresDet h3{
+        font-size:24px;
+    }
+    
+    .careerDet{
+        font-size:16px;
+    }
+    .careerButton,.featuresDet p{
+        font-size:12px;
+    }
+    .careerImg{
+        height:350px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .careerHead{
+        font-size:20px;
+        font-weight:bold;
+        margin-bottom:20px;
+    }
+    .featuresDet h3{
+        font-size:20px;
+    }
+    .careerDet{
+        font-size:12px;
+    }
+    .careerButton, .featuresDet p{
+        font-size:10px;
+    }
+    .careerImg{
+        height:250px;
+    }
+}

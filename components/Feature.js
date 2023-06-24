@@ -24,16 +24,16 @@ const Feature = () => {
         <motion.div  variants={scrollAnimation} class={classes.gradient}>
           <motion.div  variants={scrollAnimation} style={{width:"50%"}}>
             <motion.div  variants={scrollAnimation} style={{margin:"25% 5%"}}>
-            <motion.h1  style={{fontSize:"30px",fontWeight:"bold",marginBottom:"20px"}}>Career at ScholarNest</motion.h1>
-            <motion.h3>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.h3>
-            <motion.button className={
-       "my-4 py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
-      } onClick={() =>  router.push("/career")} style={{display:"flex",flexDirection:"row"}}>Visit our career page  <AiOutlineArrowRight style={{marginLeft:"1px",marginTop:"5px"}} /></motion.button>
+            <motion.h1 class={classes.careerHead} >Career at ScholarNest</motion.h1>
+            <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.h3>
+            <motion.button className={classes.careerButton +
+       " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
+      } onClick={() =>  router.push("/career")} style={{display:"flex",flexDirection:"row"}}>Visit our career page </motion.button>
             </motion.div>
            
           </motion.div>
           <motion.div  variants={scrollAnimation} style={{marginLeft:"auto"}}>
-          <img style={{height:"450px" }} src="/assets/Careers.png"/>  
+          <img class={classes.careerImg}  src="/assets/Careers.png"/>  
 
           </motion.div>
         </motion.div>
@@ -46,7 +46,7 @@ const Feature = () => {
       id="feature"
     >
     
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 ">
+      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 ">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
@@ -61,8 +61,8 @@ const Feature = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
 
-        <motion.div className="flex flex-col items-end justify-center pt-28 ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+        <motion.div className={classes.featuresDet+ " flex flex-col lg:pt-28 pt-8 pb-3 ml-auto w-full lg:w-9/12"} variants={scrollAnimation}>
+          <h3 className="text-3xl lg:text-4xl  font-medium leading-relaxed text-black-600">
             We Provide Many Solutions.
           </h3>
           <p className="my-2 text-black-500">
@@ -80,7 +80,9 @@ const Feature = () => {
                   duration: .2
                 }
                 }}>
+                  <p>
                   {feature}
+                  </p>
               </motion.li>
               )
             )}

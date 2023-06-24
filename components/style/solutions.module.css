@@ -93,3 +93,106 @@ color:white;
   font-size: 16px;
   font-weight: bold;
 }
+.h3style{
+  font-size:20px;
+  font-weight:bold;
+  color:black;
+}
+
+.bannerDetails{
+  width:80vw;
+  position :relative;
+  bottom:50px;
+  margin:0 auto;
+  background-color:white;
+}
+.bannerDetails h3{
+  font-weight:500;
+  background-color:white;
+  padding:10px;
+  margin:12px auto;
+  font-size:1.4rem;
+  width:100%;
+  text-align:center;
+
+}
+.bannerImg{
+  height:110vh;
+  width:100vw; 
+}
+.detailBox h1{
+  font-size: 30px;
+}
+.detailBox p{
+  font-size:16px;
+}
+.aboutImage{
+width:100vw;
+height:350px;
+}
+.caseStudyBox h1, .partnersBox h1{
+  font-size:30px;
+}
+.caseStudyBox p{
+  font-size:16px;
+}
+@media only screen and (max-width: 600px) {
+ 
+  .bannerImg{
+    height:90vh;
+  }
+  .bannerDetails h3{
+  font-size:16px;
+  }
+  .bannerDetails p, .detailBox p{
+    font-size:12px;
+  }
+ .heading{
+  font-size:30px;
+ }
+ .detailBox h1{
+  font-size: 24px;
+ 
+}
+.h3style{
+  font-size:16px;
+  margin:5px 0;
+}
+.caseStudyBox h1, .partnersBox h1{
+  font-size:24px;
+}
+.caseStudyBox p{
+  font-size:12px;
+}
+}
+@media only screen and (max-width: 430px) {
+  
+  .bannerImg{
+    height:70vh;
+  }
+  .bannerDetails h3{
+  font-size:12px;
+  }
+  .bannerDetails p, .detailBox p{
+    font-size:10px;
+  } 
+  .detailBox h1{
+    font-size: 20px;
+  }
+  .h3style{
+    font-size:12px;
+    
+  }
+  .caseStudyBox h1 , .partnersBox h1{
+    font-size:20px;
+  }
+  .caseStudyBox p{
+    font-size:12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .heading{
+    font-size:24px;
+   } 
+   
+}

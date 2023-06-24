@@ -71,9 +71,10 @@ async function sendEmail(req, res) {
  
       </p>
       <p>
+       Company Name: ${data.companyname} <br />
        Name: ${data.fullname} <br />
        Email id: ${data.email} <br />
-       Subject : ${data.subject}  <br />
+       Phone : ${data.phone}  <br />
        Message: ${data.message} <br />
       </p>
    <p> Thanks! <br />

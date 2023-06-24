@@ -6,7 +6,7 @@ function company() {
   return (
     <>
       <Header />
-      <div  style={{marginTop:"112px"}}>
+      <div  style={{marginTop:"90px"}}>
       <CompanyTemplate /> 
       </div>
       <Footer />

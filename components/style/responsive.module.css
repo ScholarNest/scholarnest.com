@@ -1,0 +1,74 @@
+.bannerDetails{
+    position: absolute;
+    top:15vh;
+    left:50px;
+    color:white;
+    
+}
+.bannerDetails h1{
+font-size:30px;
+}
+.bannerDetails p{
+font-size:16px;
+}
+@media only screen and (max-width: 1139px) {
+    .bannerDetails{
+    position: absolute;
+    top:10vh;
+   }
+}
+@media only screen and (max-width: 950px) {
+    .bannerDetails{
+    position: absolute;
+    top:7vh;
+   }
+  
+ 
+}
+@media only screen and (max-width: 600px) {
+    .bannerDetails{
+    position: absolute;
+    top:4vh;
+    left:20px;
+
+   }
+   .bannerDetails h1{
+    font-size:24px;
+    }
+    .bannerDetails p{
+    font-size:12px;
+    }
+   
+ 
+}
+@media only screen and (max-width: 430px) {
+    .bannerDetails{
+    position: absolute;
+    top:2vh;
+    left:15px;
+
+   }
+   .bannerButton{
+   font-size:10px;
+   }
+   .bannerDetails h1{
+    font-size:16px;
+    }
+    .bannerDetails p{
+    font-size:10px;
+    }
+  
+}
+@media only screen and (max-width: 290px) {
+    
+    .bannerButton{
+   margin:auto auto;
+   font-size:10px;
+   }
+   .bannerDetails{
+    position: absolute;
+    top:0.35vh;
+    left:5px;
+
+   }
+}

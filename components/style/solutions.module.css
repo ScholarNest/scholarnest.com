@@ -181,7 +181,7 @@ height:350px;
 .icons{
   font-size:50px;
 }
-.caseheading,.subheading{
+.caseSub h2, .caseSub h3, .caseSub button{
   margin-left: 8%;
 }
 .careerTableTop{
@@ -191,6 +191,9 @@ height:350px;
 @media only screen and (max-width: 430px) {
   .careerTableTop{
     width:98vw;
+  }
+  .caseSub h2, .caseSub h3, .caseSub button{
+    margin-left: 4%;
   }
   .bannerImg{
     height:70vh;
@@ -227,6 +230,9 @@ height:350px;
    } 
    .caseheading,.subheading{
     font-size:10px;
+    }
+    .caseSub h2, .caseSub h3, .caseSub button{
+      margin-left: 1%;
     }
 }
 @media only screen and (max-width: 768px) {

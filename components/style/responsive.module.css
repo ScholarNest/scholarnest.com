@@ -21,7 +21,7 @@ font-size:16px;
 .careerTable {
 font-size:16px;
 }
-.careerTableTop{
+.careerTableTop, .intern {
     width:75vw;
 }
 .careerTableTop h1{
@@ -39,6 +39,9 @@ font-size:16px;
     top:7vh;
    }
    .careerTableTop{
+    width:85vw;
+}
+.intern{
     width:85vw;
 }
  
@@ -66,9 +69,10 @@ font-size:16px;
     .careerTable {
         font-size:12px;
     }
-    .careerTableTop{
+    .careerTableTop, .intern{
         width:95vw;
     }
+
 }
 @media only screen and (max-width: 430px) {
     .bannerDetails{
@@ -98,9 +102,7 @@ font-size:16px;
         .careerTable, .intern p {
             font-size:10px;
             }
-            .careerTableTop{
-                width:98vw;
-            }
+           
 }
 @media only screen and (max-width: 290px) {
     
@@ -117,4 +119,5 @@ font-size:16px;
    .careerTable {
     font-size:6px;
     }
+   
 }

@@ -86,7 +86,7 @@ router.push({
        <p class={classes.det+" text-center"} style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>{props.details} </p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
-        <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"  style={{backgroundColor:"purple"}}>
+        <div className={classes.caseSub+" col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 px-auto"}  style={{backgroundColor:"purple"}}>
          
             <h2 class={classes.caseheading}>Current Jobs at various organisations</h2>
            <h3 class={classes.subheading}>Automation enabled releases into production environments with the click of a button </h3>
@@ -100,8 +100,11 @@ router.push({
         </div>
      </div>
     </div>
+    <br />
+    <br />
+    <br />
     <div class={classes.careerTableTop+" bg-blue-50 dark:bg-blue-900 mx-auto"}>
-          <h1 class="font-medium leading-tight ml-1 mt-0 mb-0 text-blue-600">Job opportunities with us</h1>
+          <h1 class="font-medium leading-tight ml-1 mt-4 mb-0 text-blue-600">External Job opportunities</h1>
             <form onSubmit={searchinList} className="flex justify-end my-2 px-2" >
               <input
                 className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"

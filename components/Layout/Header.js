@@ -41,13 +41,13 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-1")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav style={{boxSizing:"border-box"}} className="max-w-screen-xl px-6 sm:px-5 md:px-5 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center cursor-pointer">
             <LinkScroll onClick={() =>   router.push("/")} href="/">
               <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
             </LinkScroll>
           </div>
-          <ul className="hidden lg:flex col-start-4 col-end-8 text-black-100  items-center">
+          <ul className="hidden md:flex lg:flex col-start-4 col-end-8 text-black-100  items-center">
             <a
               legacyBehavior={true}
               activeClass="active"
@@ -298,7 +298,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 w-full shadow-t ">
+      <nav className="fixed lg:hidden md:hidden bottom-0 left-0 right-0 z-20 w-full shadow-t ">
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <a

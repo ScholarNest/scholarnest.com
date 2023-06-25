@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={classes.contain}>
         <div className={classes.col1}>
           <div>
-            <img alt="Site logo" src="/assets/scholarnest-logo.jpg" />
+          <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
           </div>
           <div className={classes.mail}>
             <div className={classes.maillogo}>

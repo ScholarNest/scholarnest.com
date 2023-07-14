@@ -18,7 +18,7 @@ const AcademySolution = () => {
   return (
     <>
       <div>
-        <img class={classes.bannerImg} src="/assets/academy.jpg" alt="Solution" />
+        <img class={classes.bannerImg} src="/assets/solutions/Academy.jpg" alt="Academy Solution" />
         <div className={classes.bannerDetails}>
           <h1 class={classes.heading} >Academy</h1>
 
@@ -35,7 +35,7 @@ const AcademySolution = () => {
 
           </div>
           <div style={{ padding: "0", margin: "auto 0" }} className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" >
-            <img src="/assets/pexels.jpg" alt="Solution" />
+            <img src="/assets/solutions/business-mirror.jpg" alt="Solution" />
 
           </div>
         </div>

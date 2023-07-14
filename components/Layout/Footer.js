@@ -5,21 +5,20 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={classes.footer}>
-      <div className={classes.contain}>
-        <div className={classes.col1}>
-          <div>
-          <img alt="nextui logo" src="/assets/scholarnest-logo.jpg" />
+      <div className=" row p-lg-4 p-2 mx-1 justify-content-between text-white">
+        <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="d-flex">
+          <img alt="logo" src="/assets/scholarnest-logo.jpg" />
           </div>
-          <div className={classes.mail}>
-            <div className={classes.maillogo}>
-              <img alt="Email" src="/assets/mail.png" />
-            </div>
-            <div className={classes.mailaddress}>
+          <div className="d-flex p-2">
+            
+              <img style={{height:"20px",marginRight:"5px"}} alt="Email" src="/assets/mail.png" />
+  
               <p>contact@scholarnest.com</p>
-            </div>
+        
           </div>
           <div>
-            <div className={classes.social}>
+            <div className="d-flex ">
               <div className={classes.sociallogo}>
                 <Link href="https://www.linkedin.com/company/ScholarNest/">
                   <img alt="Linkedin" src="/assets/linkedin.png" />
@@ -53,52 +52,62 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={classes.col2}>
-          <div className={classes.colh1}>
-            <h1>COMPANY</h1>
-          </div>
-          <ul>
+        <div className="col-6 col-sm-4 col-md-3 p-3 col-lg-3 col-xl-3 col-xxl-3">
+      
+            <h1 style={{ fontFamily:"Arial,Helvetica,sans-serif",
+    fontSize:"15px"}}>COMPANY</h1>
+          
+          <ul class={classes.footerLink}>
           <li><Link href="/company"> About Us</Link></li>
             <li><Link href="/academy">Academy</Link></li>
 
             <li><Link href="/contactUs">Contact</Link></li>
           </ul>
         </div>
-        <div className={classes.col2}>
-          <div className={classes.colh1}>
-            <h1>LINKS</h1>
-          </div>
-          <ul>
+        <div className="col-6 col-sm-4 p-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+          
+            <h1 style={{ fontFamily:"Arial,Helvetica,sans-serif",
+    fontSize:"15px"}}>LINKS</h1>
+
+          <ul class={classes.footerLink}>
             <li>Subscription</li>
             <li>Blog</li>
             <li>Teach</li>
             <li>Forum</li>
           </ul>
         </div>
-        <div className={classes.col3}>
-          <h1>NEWS LETTER</h1>
+        <div className="col-12 col-sm-4 col-md-6 p-3 col-lg-3 col-xl-3 col-xxl-3">
+          <h1 style={{ fontFamily:"Arial,Helvetica,sans-serif",
+    fontSize:"15px"}}>NEWS LETTER</h1>
           <div className={classes.form}>
             <input type="Email" placeholder="Your email here"></input>
           </div>
         </div>
-        <div className={classes.clearfix}></div>
+  
       </div>
+
+      <br />
       <div className={classes.contain}>
         <hr className={classes.hr} />
-        <div className={classes.copyrightdiv}>
-          <div className={classes.copyrightcol}>
+        <div className="row mx-1 py-3 text-center text-light">
+        <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-md-6">
+            <div className="row d-flex justify-content-between">
+              <div className="col">Privacy</div>
+              <div className="col">Terms</div>
+              <div className="col">Sitemap</div>
+            </div>
+          </div>
+          <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-md-6">
             <p>
               ©{new Date().getFullYear()} - ScholarNest Technologies Pvt. Ltd.
             </p>
           </div>
-          <div className={classes.copyrightcol}>
-            <div className={classes.privacymenu}>
-              <div className={classes.menuitem}>Privacy</div>
-              <div className={classes.menuitem}>Terms</div>
-              <div className={classes.menuitem}>Sitemap</div>
-            </div>
-          </div>
+      
         </div>
+
+      
+
+      
       </div>
     </div>
   );

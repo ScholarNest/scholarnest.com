@@ -16,19 +16,18 @@ const CompanyTemplate = () => {
   const router = useRouter();
 
   const logos = [
-    { id: 1, image: "/assets/techExpertise/apache.png" },
-    { id: 2, image: "/assets/techExpertise/aws.jpg" },
-    { id: 3, image: "/assets/techExpertise/azure.png" },
-    { id: 4, image: "/assets/techExpertise/azuredatafactory.png" },
-    { id: 5, image: "/assets/techExpertise/databricks.png" },
-    { id: 6, image: "/assets/techExpertise/googlecloud.png" },
-    { id: 7, image: "/assets/techExpertise/hadoop.png" },
-    { id: 8, image: "/assets/techExpertise/kafka.png" },
-    { id: 9, image: "/assets/techExpertise/msfabrics.svg" },
-    { id: 10, image: "/assets/techExpertise/powerbi.png" },
-    { id: 11, image: "/assets/techExpertise/snowflake.png" },
-    { id: 12, image: "/assets/techExpertise/synapse.png" }
-
+    { id: 1, image: "/assets/company/capabilities/apache.svg" },
+    { id: 2, image: "/assets/company/capabilities/aws.svg" },
+    { id: 3, image: "/assets/company/capabilities/azure.svg" },
+    { id: 4, image: "/assets/company/capabilities/azurelogo.svg" },
+    { id: 5, image: "/assets/company/capabilities/azuresynapse.svg" },
+    { id: 6, image: "/assets/company/capabilities/databricks.svg" },
+    { id: 7, image: "/assets/company/capabilities/googlecloud.svg" },
+    { id: 8, image: "/assets/company/capabilities/hadoop.svg" },
+    { id: 9, image: "/assets/company/capabilities/kafka.svg" },
+    { id: 10, image: "/assets/company/capabilities/microsoft fabric.svg" },
+    { id: 11, image: "/assets/company/capabilities/powerbi.svg" },
+    { id: 12, image: "/assets/company/capabilities/snowflake.svg" }
   ];
   const responsive = {
     desktop: {
@@ -52,7 +51,7 @@ const CompanyTemplate = () => {
 
     <>
       <div class="py-0">
-        <img class={classes.bannerImg} src="/assets/company.jpg" alt="Company" />
+        <img class={classes.bannerImg} src="/assets/company/company.jpg" alt="Company" />
         <div className={classes.bannerDetails} >
           <h1 class={classes.heading} >Company</h1>
           <h3 >Combining strategy, technology, skills and people</h3>
@@ -83,7 +82,7 @@ Every modern enterprise lives and breathes data daily. Without access to a skill
         layout="responsive"
         height={'80%'}
         width={'135%'}
-              src="/assets/about.jpeg"
+              src="/assets/company/aboutus.jpg"
                alt="About" />
 
 
@@ -99,7 +98,7 @@ Every modern enterprise lives and breathes data daily. Without access to a skill
         </h1>
         <div className="col-12 col-lg-6 col-sm-12 col-md-6 my-auto p-3">
           <Image
-            src="/assets/cloudcomputing.jpg"
+            src="/assets/company/approach.jpg"
             alt="Approach"
             layout="responsive"
             height={'80%'}
@@ -158,10 +157,10 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} variants={scrollAnimation}>
-               <Card.Header> <h3 class={classes.caseStudyHead}> Data Engineering </h3> </Card.Header>
+               {/* <Card.Header> <h3 class={classes.caseStudyHead}> Data Engineering </h3> </Card.Header> */}
          
                 <Card.Body css={{ py: "$2" }}>
-                  <img src="/assets/learn1.jpg" alt="1" />
+                  <img src="/assets/company/portfolio/dataEngineering.jpg" alt="1" />
                 </Card.Body>
                 <Card.Footer >
           <Link
@@ -183,10 +182,10 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} variants={scrollAnimation}>
 
-              <Card.Header> <h3 class={classes.caseStudyHead}>Buisness Analytics </h3> </Card.Header>
+              {/* <Card.Header> <h3 class={classes.caseStudyHead}>Buisness Analytics </h3> </Card.Header> */}
 
                 <Card.Body css={{ py: "$2" }}>
-                  <img src="/assets/learn2.jpg" alt="1" />
+                  <img src="/assets/company/portfolio/businessAnalytics.jpg" alt="2" />
                 </Card.Body>
                 <Card.Footer style={{display:"flex",flexDirection:"column"}}>
                   <Link
@@ -203,10 +202,10 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} variants={scrollAnimation}>
-              <Card.Header> <h3 class={classes.caseStudyHead}> Skill Development </h3> </Card.Header>
+              {/* <Card.Header> <h3 class={classes.caseStudyHead}> Skill Development </h3> </Card.Header> */}
 
                 <Card.Body css={{ py: "$2" }}>
-                  <img src="/assets/learn3.jpg" alt="1" />
+                  <img src="/assets/company/portfolio/skillDevelopment.jpg" alt="3" />
                 </Card.Body>
                 <Card.Footer>
                   <Link
@@ -280,8 +279,8 @@ Upskilling, mentoring, supporting, and building high-potential teams            
             </motion.div>
            
           </motion.div>
-          <motion.div  variants={scrollAnimation} style={{marginLeft:"auto"}}>
-          <img class={classes.careerImg}  src="/assets/Careers.png"/>  
+          <motion.div class="my-auto "  variants={scrollAnimation} style={{marginLeft:"auto"}}>
+          <img class={classes.careerImg}  src="/assets/career/career.jpg"/>  
 
           </motion.div>
         </motion.div>

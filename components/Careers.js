@@ -199,7 +199,7 @@ export default function Careers() {
     <main>
 
       {/* section 1 */}
-      <div class="p-8 gap-4 pt-10 lg:px-20 bg-blue-50 dark:bg-blue-900 ">
+      <div class="p-4 gap-2 pt-5 lg:px-40 ">
         <div class={classes.careerPage + " grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 pt-10"}>
           <h1 class="font-medium leading-tight  mt-0 mb-2 text-blue-600">Rockstars wanted!</h1>
           <h3 class="font-small leading-tight  mt-0 mb-2 text-blue-600">
@@ -234,8 +234,12 @@ export default function Careers() {
       </div>
 
       {/* section 3 */}
+      <div class="p-4 gap-2 pt-1 lg:px-40">
+      <h1 class={classes.headJob+" font-medium leading-tight ml-1 mt-0 mb-0 text-blue-600"}>Job opportunities with us</h1>
+
+      </div>
+
       <div class={classes.careerTableTop+" bg-blue-50 dark:bg-blue-900 mx-auto"}>
-          <h1 class="font-medium leading-tight ml-1 mt-0 mb-0 text-blue-600">Job opportunities with us</h1>
             <form onSubmit={searchinList} className="flex justify-end my-2 px-2" >
               <input
                 className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
@@ -278,13 +282,11 @@ export default function Careers() {
 
 
       {/* section 4*/}
-
-      <div class={classes.intern +" gap-2 pt-1  bg-blue-50 mx-auto dark:bg-blue-900 "}>
-        <h1 class="font-medium leading-tight ml-1  mt-0 mb-2 text-blue-600">Internship opportunities</h1>
-
-        <div class="row p-lg-4 p-md-3 p-sm-2 p-1 ">
-          <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xl-6 p-lg-4 p-md-4 p-xl-4 p-sm-2 p-1 bg-cyan-400 rounded-md h-400 flex items-center justify-center">
-            <img src="https://www.irisidea.com/wp-content/uploads/2022/12/interhsip-irisidea-1024x384.jpg" alt="..." />
+      <div class="p-4 gap-2 pt-1 lg:px-40">
+      <h1 class={classes.headJob+" font-medium leading-tight ml-1  mt-0 mb-2 text-blue-600"}>Internship opportunities</h1>
+      <div class={classes.aboveIntern+" row p-lg-4 p-md-3 p-sm-2 p-1 "}>
+          <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xl-6 p-lg-2 p-md-2 p-xl-1 p-sm-1 p-1 bg-cyan-400 rounded-md h-400 flex items-center justify-center">
+            <img  src="/assets/career/internship.jpg" alt="Internship" />
           </div>
           {/* image right section */}
           <div class="p-1 col-12 col-lg-6 col-md-6 col-sm-12 col-xl-6  bg-blue-50 dark:bg-blue-900 ">
@@ -302,6 +304,10 @@ export default function Careers() {
           </div>
 
         </div>
+      </div>
+      <div class={classes.intern +" gap-2 pt-1  bg-blue-50 mx-auto dark:bg-blue-900 "}>
+
+    
         <div class={classes.careerTableTop+" bg-blue-50 dark:bg-blue-900 mx-auto mt-2"}>
             <form onSubmit={searchinList} className="flex justify-end my-2 px-2" >
               <input

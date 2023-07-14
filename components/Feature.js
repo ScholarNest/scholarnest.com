@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import classes from './style/features.module.css';
-import {AiOutlineArrowRight} from "react-icons/ai"
 const features = [
   "24*7 Service.",
   "Expertise In Industry.",
@@ -16,6 +15,9 @@ const features = [
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const router = useRouter();
+
+  
+
   return (
   <>
       <div className="my-2">
@@ -32,36 +34,38 @@ const Feature = () => {
             </motion.div>
            
           </motion.div>
-          <motion.div  variants={scrollAnimation} style={{marginLeft:"auto"}}>
-          <img class={classes.careerImg}  src="/assets/Careers.png"/>  
+          <motion.div class="my-auto "  variants={scrollAnimation} style={{marginLeft:"auto"}}>
+          <img class={classes.careerImg}  src="/assets/career/career.jpg"/>  
 
           </motion.div>
         </motion.div>
       </ScrollAnimationWrapper>
     </div>
     <div
-    style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px'}}
+     
+    style={{backgroundColor: "rgb(251 251 249)", boxShadow: 'rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px'}}
 
-      className=" max-w-screen-xl mb-4 sm:mt-5 sm:mb-12 px-6 sm:px-8 lg:px-16 mx-2"
+      className="w-100 mb-4 sm:mt-5 sm:mb-12 px-6 sm:px-8 lg:px-16  mx-auto"
       id="feature"
     >
     
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 ">
         <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+          <motion.div className="h-full w-full p-4" variants={scrollAnimation}> 
             <Image
-              src="/assets/robot.png"
-              alt="VPN Illustrasi"
+              src="/assets/solutions/business.jpg"
+              alt="We provide many solutions"
               layout="responsive"
               quality={100}
-              height={244}
-              width={308}
+              height={420}
+              width={540}
             />
-          </motion.div>
+        </motion.div> 
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
-
-        <motion.div className={classes.featuresDet+ " flex flex-col lg:pt-28 pt-8 pb-3 ml-auto w-full lg:w-9/12"} variants={scrollAnimation}>
+        <motion.div className={classes.featuresDet+ " flex flex-col lg:pt-28 pt-8 pb-5 mx-auto  w-full lg:w-9/12"} variants={scrollAnimation}>
+       
+          <div class="mx-auto text-start">
           <h3 className="text-3xl lg:text-4xl  font-medium leading-relaxed text-black-600">
             We Provide Many Solutions.
           </h3>
@@ -87,7 +91,9 @@ const Feature = () => {
               )
             )}
           </ul>
+          </div>
         </motion.div>
+        
         </ScrollAnimationWrapper>
       </div>
     </div>

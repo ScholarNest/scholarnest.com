@@ -8,7 +8,7 @@
 .bannerDetails h1,.careerPageVideo h1,.intern h1{
 font-size:30px;
 }
-.bannerDetails p, .careerPageVideo li, .intern p{
+.bannerDetails p, .careerPageVideo li, .aboveIntern p,.intern p{
 font-size:16px;
 }
 .careerPage h1{
@@ -24,7 +24,7 @@ font-size:16px;
 .careerTableTop, .intern {
     width:75vw;
 }
-.careerTableTop h1{
+.headJob{
     font-size:30px;
 }
 @media only screen and (max-width: 1139px) {
@@ -53,10 +53,10 @@ font-size:16px;
     left:20px;
 
    }
-   .bannerDetails h1,.careerPageVideo h1,.careerTableTop h1,.intern h1{
+   .bannerDetails h1,.careerPageVideo h1,.headJob{
     font-size:24px;
     }
-    .bannerDetails p,.careerPageVideo li,.intern p{
+    .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p{
     font-size:12px;
     }
    
@@ -96,10 +96,10 @@ font-size:16px;
     .careerPage h3{
         font-size:12px;
     }
-    .careerPageVideo h1,.careerTableTop h1, .intern h1{
+    .careerPageVideo h1,.headJob{
         font-size:20px;
         }
-        .careerTable, .intern p {
+        .careerTable, .intern p,.aboveIntern p {
             font-size:10px;
             }
            

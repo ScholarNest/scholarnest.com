@@ -15,23 +15,26 @@ import {  CiSliderVertical } from 'react-icons/ci';
 const Solutions = () => {
 
 
-  const logos=[ { id: 1, image: "/assets/logo4.png" },
-  { id: 2, image: "/assets/logo3.png" },
-  { id: 3, image: "/assets/logo4.png" },
-  { id: 4, image: "/assets/logo7.png" },
-  { id: 5, image: "/assets/logo6.png" },
-  { id: 6, image: "/assets/logo4.png" },
-  { id: 7, image: "/assets/logo3.png" },
-  { id: 8, image: "/assets/logo6.png" },
-  { id: 9, image: "/assets/logo7.png" },
-  { id: 10, image: "/assets/logo4.png" }
+  const logos=[ 
+  { id: 1, image: "/assets/partners/apache .svg" },
+  { id: 2, image: "/assets/partners/aws.svg" },
+  { id: 3, image: "/assets/partners/databricks.svg" },
+  { id: 4, image: "/assets/partners/docker.svg" },
+  { id: 5, image: "/assets/partners/hashicorp.svg" },
+
+
+  // { id: 6, image: "/assets/logo4.png" },
+  // { id: 7, image: "/assets/logo3.png" },
+  // { id: 8, image: "/assets/logo6.png" },
+  // { id: 9, image: "/assets/logo7.png" },
+  // { id: 10, image: "/assets/logo4.png" }
 
 ];
 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 7,
+    items: 5,
     slidesToSlide: 2,
   },
   tablet: {
@@ -52,28 +55,33 @@ const responsive = {
   const SolutionData=[
     {
    title:"Managed Services",
-   link:"/manageservices",
-   details:"Practice of outsourcing the responsibility."
+   link:"/managedservices",
+   details:"Practice of outsourcing the responsibility.",
+   imgsrc:"/assets/Icon/managedservices.svg"
    },
    {
     title:"Technology Consulting",
     link:"/technologyconsulting",
-    details:"Technology consultanting  can help improve an organization."
+    details:"Technology consultanting  can help improve an organization.",
+    imgsrc:"/assets/Icon/technologyconsulting.svg"
     },
     {
       title:"Academy",
       link:"/academy",
-      details:"Self Paced, instructor Led and many more."
+      details:"Self Paced, instructor Led and many more.",
+      imgsrc:"/assets/Icon/academy.svg"
     },
     {
       title:"Staff Augmentation",
       link:"/staffaugmentation",
-      details:"Use to respond to the business objectives."
+      details:"Use to respond to the business objectives.",
+      imgsrc:"/assets/Icon/staffaugmentation.svg"
     },
     {
       title:"External Jobs",
       link:"/externaljobs",
-      details:"Different job lists for  job seekers."
+      details:"Different job lists for  job seekers.",
+      imgsrc:"/assets/Icon/externaljobs.svg"
     },
 
 ]
@@ -82,7 +90,7 @@ const responsive = {
   return (
   <>
     <div class="py-0">
-       <img class={classes.bannerImg}  src="/assets/pexels.jpg" alt="Solution" />
+       <img class={classes.bannerImg}  src="/assets/solutions/SolutionBanner.jpg" alt="Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Solutions</h1>
        <h3 >Combining strategy, technology, automation and people</h3>
@@ -91,26 +99,6 @@ const responsive = {
      <br />
     </div>
     
-    {/* // <div className="grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-10 py-8 lg:py-12 px-6 sm:px-0 lg:px-10">
-    //   {data.solution.map((solution, index) => (
-
-    //     <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    //       <img class="w-full" src={solution.src} alt="Mountain" />
-    //       <div class="px-6 py-4">
-    //         <div class="font-bold text-xl mb-2">{solution.title}</div>
-    //         <p class="text-gray-700 text-base">
-    //           {solution.description}
-    //         </p>
-    //       </div>
-    //       {/* <div class="px-6 pt-4 pb-2">
-    //     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    //     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-    //     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-    //   </div> 
-       </div>
-
-    //   ))}
-     </div> */}
   
 <div className="div">
   
@@ -128,10 +116,15 @@ const responsive = {
          {
           SolutionData.map((info)=>(
             <div onClick={() => window.open(info.link, "_self").focus()}   className={ classes.solDivstyle +" col-lg-3 col-sm-5 col-md-3 col-5 p-lg-3 p-sm-2 p-md-2 p-1"}>
-           <CiCompass1 color="black" size={40} />
+           {/* <CiCompass1 color="black" size={40} /> */}
+         <div style={{display:"flex",flexDirection:"row"}}>
+           <img src={info.imgsrc} />
+         
+            <h3  class={classes.h3style + " ml-2 my-1"} >{info.title}</h3>
+            </div>
           
-            <h3  class={classes.h3style} >{info.title}</h3>
-            
+           
+
             <p>{info.details}</p>
            
             <div class="text-end" style={{marginLeft:"auto"}} >
@@ -150,7 +143,7 @@ const responsive = {
 
 
 
-       
+     
        <div className={classes.caseStudyBox+" flex flex-col w-full"}>
           <ScrollAnimationWrapper>
             <br />
@@ -174,16 +167,18 @@ const responsive = {
               <motion.div style={{boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}} variants={scrollAnimation}>
                
                   <Card.Body css={{ py: "$2" }}>
-                  <img  src="/assets/learn1.jpg" alt="1" />
+                  <img  src="/assets/solutions/CaseStudy/1.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
                     <Link
                       icon
                       color="primary"
                       target="_blank"
-                      href="https://github.com/nextui-org/nextui"
+                      href="#"
                     >
+                      <p>
                      How freewill drives new innovation through partnership.
+                     </p>
                     </Link>
                   </Card.Footer>
                
@@ -194,16 +189,18 @@ const responsive = {
                 
                 
                   <Card.Body css={{ py: "$2" }}>
-                  <img  src="/assets/learn2.jpg" alt="1" />
+                  <img  src="/assets/solutions/CaseStudy/2.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
                     <Link
                       icon
                       color="primary"
                       target="_blank"
-                      href="https://github.com/nextui-org/nextui"
+                      href="#"
                     >
-                      Delivering transformative consumer experiences
+                      <p>
+                      Delivering transformative consumer experiences to the clients.
+                      </p>
                     </Link>
                   </Card.Footer>
                
@@ -213,16 +210,18 @@ const responsive = {
               <motion.div style={{boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}}variants={scrollAnimation}>
                 
                   <Card.Body css={{ py: "$2" }}>
-                  <img  src="/assets/learn3.jpg" alt="1" />
+                  <img  src="/assets/solutions/CaseStudy/3.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
                     <Link
                       icon
                       color="primary"
                       target="_blank"
-                      href="https://github.com/nextui-org/nextui"
+                      href="#"
                     >
+                      <p>
                       How a global cruise company realised digital transformation.
+                      </p>
                     </Link>
                   </Card.Footer>
                

@@ -73,7 +73,7 @@ const Header = () => {
               <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"}  id="menu" >
               <div className="row">
                 <div className="col-3 py-3">
-                <img  style={{height:"150px"}} src="/assets/b2b.jpg"/>  
+                <img  style={{height:"150px"}} src="/assets/homepage/companyHeader.jpg"/>  
                {/* <GrPersonalComputer  size={120} /> */}
                 <h1 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Company</h1>
                
@@ -149,7 +149,7 @@ const Header = () => {
                  <div className={classes.submenuSol + " bg-light py-1 px-6 sm:px-1 md:px-10"}  id="menu" >
               <div className="row">
                 <div className="col-3 py-3">
-                <img  style={{height:"120px"}} src="/assets/data.jpg"/>  
+                <img  style={{height:"120px",width:"100%"}} src="/assets/homepage/solutionsHeader.jpg"/>  
                {/* <GrPersonalComputer  size={120} /> */}
                 <h1 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Solutions</h1>
                
@@ -158,7 +158,7 @@ const Header = () => {
                          </div>
                 <div className="col-9">
                   <div  className="row  p-4">
-                    <div onClick={() =>   router.push("/manageservices")}  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div onClick={() =>   router.push("/managedservices")}  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                                           <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Managed Services</h1>
                       <p>Services we offering.</p>
                       
@@ -192,7 +192,7 @@ const Header = () => {
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/externaljobs")}>
 
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>External jobs</h1>
+                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career Enhancement</h1>
                       <p>Job lists for other companies job seekers.</p>
                       </LinkScroll>
                     </div>

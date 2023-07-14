@@ -6,7 +6,7 @@ import {  AiOutlineArrowRight} from 'react-icons/ai';
 import { motion } from "framer-motion";
 
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
-const ExternalJob = ({props}) => {
+const ExternalJob = () => {
   const router = useRouter();
 
   const [search, setSearchText] = useState("");
@@ -78,12 +78,12 @@ router.push({
   return (
     <>
     <div>
-       <img  class={classes.bannerImg}  src={props.img} alt="Solution" />
+       <img  class={classes.bannerImg}  src="/assets/solutions/CareerEnhancement.jpg" alt="Career Enhancement" />
        <div className={classes.bannerDetails}>
-       <h1 class={classes.heading} >{props.name}</h1>
+       <h1 class={classes.heading} >Career Enhancement</h1>
       
        </div>
-       <p class={classes.det+" text-center"} style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>{props.details} </p>
+       <p class={classes.det+" text-center"} style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>Job openings are a measure of demand that takes into account actual growth and estimated replacement needs. Both job postings and job openings are helpful for assessing the demand for an occupation but it's important to understand the strengths and weaknesses of each. </p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className={classes.caseSub+" col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 px-auto"}  style={{backgroundColor:"purple"}}>
@@ -95,7 +95,7 @@ router.push({
           
         </div>
         <div style={{padding:"0",margin:"auto 0"}}  className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
-        <img  src="/assets/pexels.jpg" alt="Solution" />
+        <img  src="/assets/solutions/business-mirror.jpg" alt="Solution" />
 
         </div>
      </div>

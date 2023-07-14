@@ -21,6 +21,7 @@ flex-direction:row;
 }
 .careerImg{
     height:450px;
+    margin:auto auto;
 }
 @media only screen and (max-width: 600px) {
     .careerHead{

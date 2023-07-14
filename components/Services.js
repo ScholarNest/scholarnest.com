@@ -31,36 +31,32 @@ const Services = () => {
     {
       title: "Managed Services",
       about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
-      link: "/manageservices",
-      logo: <CiCompass1 className={classes.icons} color='black' />
+      link: "/managedservices",
+      imgsrc:"/assets/Icon/managed services-70 px.svg"
     },
     {
       title: "Technology Consulting",
       about: "Technology consultants take a strategic look on how technology can help improve an organization, which includes architecting and realizing exceptional value from technology. Both help companies better connect with customers, improve resilience, and drive sustainable .",
       link: "/technologyconsulting",
-      logo: <MdAdsClick className={classes.icons} color="black"  /> 
-
+      imgsrc:"/assets/Icon/technology consulting-70 px.svg"
     },
     {
       title: "Academy",
       about: "Self Paced, instructor Led, resume review, mock interviews, Mentorship call, project internships, Corporate bootcamps, profile registration",
       link: "/academy",
-      logo: <CiSliderVertical className={classes.icons} color="black"  />
-
+      imgsrc:"/assets/Icon/academy-70 px.svg"
     },
     {
       title: "Staff Augmentation",
       about: "Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required.",
       link: "/staffaugmentation",
-      logo: <CiCompass1 className={classes.icons} color='black'  />
-
+      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
     },
     {
-      title: "External Jobs",
+      title: "Career Enhancement",
       about: "Here providing different different job lists for other companies and application submission form for job seekers.",
       link: "/externaljobs",
-      logo: <CiSliderVertical className={classes.icons} color="black"  />
-
+      imgsrc:"/assets/Icon/external jobs-70 px.svg"
     },
   ]
 
@@ -83,9 +79,11 @@ const Services = () => {
               {solutions.map((sol) => (
                 <div onClick={() => router.push(sol.link)} className={classes.solDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
                   {/* <CiCompass1 color="black" size={70} /> */}
-                  {sol.logo}
+                  <div style={{display:"flex",flexDirection:"row"}}>
+                  <img className={classes.icons} src={sol.imgsrc} />
                   <br />
-                  <h3 className={classes.h3style + " "} >{sol.title}</h3>
+                  <h3 className={classes.h3style + " my-auto ml-2"} >{sol.title}</h3>
+                  </div>
                   <br />
                   <p>{sol.about}</p>
                   <br />

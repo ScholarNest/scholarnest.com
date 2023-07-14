@@ -11,7 +11,7 @@
     
 }
 
-.solDivstyle,.solnsDivstyle{
+.solDivstyle,.solnsDivstyle,.eachServicesDivstyle{
    cursor:pointer;
     background-color:white;
     opacity:0.7;
@@ -20,8 +20,16 @@
     box-shadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px";
     transition: all .2s ease-in-out;
     }
-.solDivstyle:hover, .solnsDivstyle:hover{
+    .eachServicesDivstyle:hover, .solDivstyle:hover, .solnsDivstyle:hover{
     transform: scale(1.1);
+}
+.eachServicesDivstyle{
+  margin:0;
+}
+.solDivstyle img{
+  height:30px;
+  width:30px;
+  margin-right:5px;
 }
 .caseheading{
     max-width:460px;
@@ -148,7 +156,7 @@ height:350px;
   }
 
 .icons{
-  font-size:70px;
+  height:50px;
 }
 @media only screen and (max-width: 600px) {
  
@@ -158,7 +166,7 @@ height:350px;
   .bannerDetails h3{
   font-size:16px;
   }
-  .bannerDetails p, .detailBox p, .solnsDivstyle p, .det , .extraText{
+  .bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
     font-size:12px;
   }
  .heading{
@@ -166,6 +174,11 @@ height:350px;
  }
  .detailBox h1, .head,.content, .careerTableTop h1{
   font-size: 24px;
+ 
+}
+.solDivstyle img{
+  height:24px;
+  width:5px;
  
 }
 .h3style{
@@ -179,7 +192,7 @@ height:350px;
   font-size:12px;
 }
 .icons{
-  font-size:50px;
+  height:40px;
 }
 .caseSub h2, .caseSub h3, .caseSub button{
   margin-left: 8%;
@@ -201,7 +214,7 @@ height:350px;
   .bannerDetails h3{
   font-size:12px;
   }
-  .bannerDetails p, .detailBox p, .solnsDivstyle p, .det, .extraText, .careerTable{
+  .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
     font-size:10px;
   } 
   .detailBox h1 , .careerTableTop h1{
@@ -221,7 +234,11 @@ height:350px;
     font-size:12px;
     }
     .icons{
-      font-size:35px;
+      height:30px;
+    }
+    .solDivstyle img{
+      height:20px;
+      width:20px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -239,7 +256,7 @@ height:350px;
   .caseheading{
     margin-top:5%;
   }
-  .solnsDivstyle{
+  .solnsDivstyle,.eachServicesDivstyle{
     border-bottom:1px solid black;
   }
   

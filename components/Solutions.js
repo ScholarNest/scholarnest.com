@@ -78,7 +78,7 @@ const responsive = {
       imgsrc:"/assets/Icon/staffaugmentation.svg"
     },
     {
-      title:"External Jobs",
+      title:"Career Enhancement",
       link:"/externaljobs",
       details:"Different job lists for  job seekers.",
       imgsrc:"/assets/Icon/externaljobs.svg"

@@ -90,14 +90,14 @@ export default function ContactUs() {
   return (
     <>
     <main>
-      <header className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
-        <div className="mx-auto mb-10 md:mt-10">
+      <header className="p-8 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
+        <div className="mx-auto mb-5 mt-5 md:mt-10">
           <div className="badge bg-green-500 inline-block rounded-xl">
             {/* <p className="font-light text-base px-4 py-1 text-white-500">
             Let's get in touch
             </p> */}
           </div>
-          <h1 className="text-4xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          <h1 className="text-4xl font-bold  mt-md-2 mt-4 dark:text-gray-50 text-gray-700">
             Let's get in touch
           </h1>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
@@ -136,10 +136,10 @@ export default function ContactUs() {
             Do you want to submit a correction or have any other concerns? Write
             to us in the following emails
           </p>
-          <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
+          <p className="text-sm text-gray-700 mt-2 font-light dark:text-gray-200">
             support@scholarnest.com
           </p>
-          <p className="text-sm text-blue-700 mt-4 font-light dark:text-gray-200">
+          <p className="text-sm text-blue-700  font-light dark:text-gray-200">
             privacy@scholarnest.com
           </p>
          

@@ -75,7 +75,7 @@ const ManagedServices = () => {
       <br />
       <div className="row  text-start  " style={{margin:"0", height: "auto", borderBottom: "1px solid white" }}>
               {ManagedServicesData.map((sol) => (
-                <div onClick={() => router.push(sol.link)} className={classes.solnsDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
+                <div onClick={() => router.push(sol.link)} className={classes.eachServicesDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
                   {/* <CiCompass1 color="black" size={70} /> */}
                   <div style={{display:"flex",flexDirection:"row"}}>
                   <img className={classes.icons} src={sol.imgsrc} />

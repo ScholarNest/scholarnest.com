@@ -1,14 +1,12 @@
 .submenu,.submenuSol{
 display:none;
-position:absolute;
+position:fixed;
 width:100vw;
-top:40px;
-left:-36vw !important;
+top:70px;
+left:0 !important;
 z-index:2;
 }
-.submenuSol{
-left:-48vw !important;
-}
+
 .menu:hover > .submenu{
 display:block;
 }
@@ -16,6 +14,7 @@ display:block;
 display:block;
 }
 .hoverSubmenu{
+    width:230px;
     transition: all .2s ease-in-out;
 }
 .hoverSubmenu:hover{
@@ -28,4 +27,11 @@ color:red !important;
 background-color:rgb(220 38 38);
 color:white;
 
+}
+
+@media only screen and (max-width: 818px) {
+.hoverSubmenu{
+    width:200px;
+
+}
 }

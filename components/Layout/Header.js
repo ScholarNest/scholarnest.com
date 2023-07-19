@@ -83,38 +83,38 @@ const Header = () => {
                 <div className="col-9">
                   <div  className="row justify-content-center p-4">
                    
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                       <a href="/company#about">
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>About</h1>
                       <p>All information about company.</p>
                       </a>
                     </div>
                     
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                       <a href="/company#approach">
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Approach</h1>
                       <p>A way of dealing with problems.</p>
                       </a>
                     </div>
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                      <a href="/company#portfolio">
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Portfolio</h1>
                       <p> Collection of a wide range of assets.</p>
                       </a>
                     </div>
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                      <a href="/company#techexpertise">
                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Capabilities</h1>
                       <p>Domain of expertise in technologies. </p>
                       </a>
                     </div>
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                       <a href="/career">                    
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career</h1>
                       <p>Route to career page.</p>
                       </a> 
                     </div>
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                        <a href="/contactUs">
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Contact</h1>
                       <p>Contact us for more details.</p>
@@ -158,20 +158,20 @@ const Header = () => {
                          </div>
                 <div className="col-9">
                   <div  className="row  p-4">
-                    <div onClick={() =>   router.push("/managedservices")}  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div onClick={() =>   router.push("/managedservices")}  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                                           <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Managed Services</h1>
                       <p>Services we offering.</p>
                       
                     </div>
                     
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/technologyconsulting")} >
 
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Technology Consulting</h1>
                       <p>Technology Consulting Support.</p>
                       </LinkScroll>
                     </div>
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/academy")} >
 
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Academy</h1>
@@ -180,7 +180,7 @@ const Header = () => {
 
                     </div>
                   
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/staffaugmentation")}>
 
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Staff Augmentation</h1>
@@ -189,7 +189,7 @@ const Header = () => {
                                           </LinkScroll>
 
                     </div>
-                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",width:"230px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+                    <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/externaljobs")}>
 
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career Enhancement</h1>

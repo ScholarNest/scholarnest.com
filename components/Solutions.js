@@ -9,9 +9,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
-import {  MdAdsClick } from 'react-icons/md';
-import {  CiCompass1 } from 'react-icons/ci';
-import {  CiSliderVertical } from 'react-icons/ci';
+
 const Solutions = () => {
 
 
@@ -90,7 +88,7 @@ const responsive = {
   return (
   <>
     <div class="py-0">
-       <img class={classes.bannerImg}  src="/assets/solutions/SolutionBanner.jpg" alt="Solution" />
+       <Image height="600px" width="1000px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt="Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Solutions</h1>
        <h3 >Combining strategy, technology, automation and people</h3>

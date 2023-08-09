@@ -2,12 +2,7 @@ import React from 'react'
 import { useRouter } from "next/router";
 import classes from "./style/solutions.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import { motion } from "framer-motion";
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { MdAdsClick } from 'react-icons/md';
-import { CiCompass1 } from 'react-icons/ci';
-import { CiSliderVertical } from 'react-icons/ci';
-import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
+
 import Image from 'next/image';
 
 const AcademySolution = () => {
@@ -18,12 +13,12 @@ const AcademySolution = () => {
   return (
     <>
       <div>
-        <img class={classes.bannerImg} src="/assets/solutions/Academy.jpg" alt="Academy Solution" />
+        <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/Academy.jpg" alt="Academy Solution" />
         <div className={classes.bannerDetails}>
           <h1 class={classes.heading} >Academy</h1>
 
         </div>
-        <p class={classes.det+" text-center"} style={{ position: "relative", bottom: "40px", margin: "auto 3vw" }}>Self Paced, instructor Led, resume review, mock interviews, Mentorship call, project internships, Corporate bootcamps, profile registration. </p>
+        <p class={classes.det+" text-center"} >Self Paced, instructor Led, resume review, mock interviews, Mentorship call, project internships, Corporate bootcamps, profile registration. </p>
         <br />
         <div style={{ padding: "0", margin: "auto 0" }} className="row">
           <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"  style={{ backgroundColor: "purple" }}>

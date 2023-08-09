@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
-import {  MdAdsClick } from 'react-icons/md';
-import {  CiCompass1 } from 'react-icons/ci';
-import {  CiSliderVertical } from 'react-icons/ci';
+import Image from "next/image";
+
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
 const StaffAugmentations = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -133,12 +132,12 @@ const StaffAugmentations = () => {
   return (
     <>
     <div>
-       <img class={classes.bannerImg}  src="/assets/solutions/StaffAugmentation.jpg" alt="Staff Augmentation Solution" />
+       <Image height="500px" width="1100px" layout="responsive" src="/assets/solutions/StaffAugmentation.jpg" alt="Staff Augmentation Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Staff Augmentation</h1>
       
        </div>
-       <p  style={{ position: "relative", bottom: "40px", margin: "auto 3vw" }} class={classes.det+" text-center"}>Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required. Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required. One possible advantage of this approach is that it may leverage existing resources as well as utilize outsourced services and contract workers. The goal of the exercise is to handle staffing requirements with an existing set of talents. Numerous consulting companies offer staff augmentation services.[3] It has been estimated that staff augmentation as an industry will reach $45 billion in 2015.The trend in staff augmentation is occurring because of the abundance of IT resources, declining rates, and narrowing margins for companies that need these services. </p>
+       <p   class={classes.det+" text-center"}>Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required. Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required. One possible advantage of this approach is that it may leverage existing resources as well as utilize outsourced services and contract workers. The goal of the exercise is to handle staffing requirements with an existing set of talents. Numerous consulting companies offer staff augmentation services.[3] It has been estimated that staff augmentation as an industry will reach $45 billion in 2015.The trend in staff augmentation is occurring because of the abundance of IT resources, declining rates, and narrowing margins for companies that need these services. </p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>

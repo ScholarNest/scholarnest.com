@@ -3,9 +3,9 @@ import { FaSearch } from 'react-icons/fa';
 import { useRouter } from "next/router";
 import classes from "./style/solutions.module.css";
 import {  AiOutlineArrowRight} from 'react-icons/ai';
-import { motion } from "framer-motion";
+import Image from "next/image";
 
-import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
+
 const ExternalJob = () => {
   const router = useRouter();
 
@@ -78,12 +78,12 @@ router.push({
   return (
     <>
     <div>
-       <img  class={classes.bannerImg}  src="/assets/solutions/CareerEnhancement.jpg" alt="Career Enhancement" />
+       <Image height="500px" width="1100px" layout="responsive"   src="/assets/solutions/CareerEnhancement.jpg" alt="Career Enhancement" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Career Enhancement</h1>
       
        </div>
-       <p class={classes.det+" text-center"} style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>Job openings are a measure of demand that takes into account actual growth and estimated replacement needs. Both job postings and job openings are helpful for assessing the demand for an occupation but it's important to understand the strengths and weaknesses of each. </p>
+       <p class={classes.det+" text-center"} >Job openings are a measure of demand that takes into account actual growth and estimated replacement needs. Both job postings and job openings are helpful for assessing the demand for an occupation but it's important to understand the strengths and weaknesses of each. </p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className={classes.caseSub+" col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 px-auto"}  style={{backgroundColor:"purple"}}>

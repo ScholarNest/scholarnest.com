@@ -51,7 +51,7 @@ const CompanyTemplate = () => {
 
     <>
       <div class="py-0">
-        <img class={classes.bannerImg} src="/assets/company/company.jpg" alt="Company" />
+        <Image height="500px" width="1100px" layout="responsive"  src="/assets/company/company.jpg" alt="Company" />
         <div className={classes.bannerDetails} >
           <h1 class={classes.heading} >Company</h1>
           <h3 >Combining strategy, technology, skills and people</h3>

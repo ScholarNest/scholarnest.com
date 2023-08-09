@@ -6,10 +6,10 @@
     overflow: hidden;
   }
   
-  .banner-image {
+  /* .banner-image {
     width: 100%;
     height: auto;
-  }
+  } */
   
   .banner-wave {
     position: absolute;
@@ -53,10 +53,7 @@ flex-direction:row;
   text-align:center;
 
 }
-.bannerImg{
-  height:110vh;
-  width:100vw; 
-}
+
 .aboutBox h1{
   font-size: 30px;
   margin:15px 0;
@@ -101,9 +98,7 @@ height:350px;
 }
 @media only screen and (max-width: 600px) {
  
-  .bannerImg{
-    height:90vh;
-  }
+
   .bannerDetails h3, .caseStudyHead{
   font-size:16px;
   }
@@ -137,8 +132,10 @@ height:350px;
 }
 @media only screen and (max-width: 430px) {
   
-  .bannerImg{
-    height:70vh;
+  .bannerDetails{
+   
+    bottom:30px;
+  
   }
   .bannerDetails h3, .caseStudyHead{
   font-size:12px;

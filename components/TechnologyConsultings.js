@@ -4,9 +4,8 @@ import classes from "./style/solutions.module.css";
 import {  AiOutlineArrowRight} from 'react-icons/ai';
 import { motion } from "framer-motion";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
-import {  MdAdsClick } from 'react-icons/md';
-import {  CiCompass1 } from 'react-icons/ci';
-import {  CiSliderVertical } from 'react-icons/ci';
+import Image from "next/image";
+
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
@@ -38,12 +37,12 @@ const TechnologyConsultings = () => {
   return (
     <>
     <div>
-       <img class={classes.bannerImg}  src="/assets/solutions/Technologyconsulting.jpg" alt="Technology Consulting" />
+       <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/Technologyconsulting.jpg" alt="Technology Consulting" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Technology Consulting</h1>
       
        </div>
-       <p class={classes.det+" text-center"} style={{position:"relative",bottom:"40px",margin:"auto 3vw"}}>Technology consultants take a strategic look on how technology can help improve an organization, which includes architecting and realizing exceptional value from technology. Both help companies better connect with customers, improve resilience, and drive sustainable growth. As business integrators, we work on transformational engagements, helping our clients solve complex business problems using technology as an enabler. </p>
+       <p class={classes.det+" text-center"} >Technology consultants take a strategic look on how technology can help improve an organization, which includes architecting and realizing exceptional value from technology. Both help companies better connect with customers, improve resilience, and drive sustainable growth. As business integrators, we work on transformational engagements, helping our clients solve complex business problems using technology as an enabler. </p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>

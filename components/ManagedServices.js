@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
-import {  MdAdsClick } from 'react-icons/md';
-import {  CiCompass1 } from 'react-icons/ci';
-import {  CiSliderVertical } from 'react-icons/ci';
+import Image from "next/image";
+
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
 const ManagedServices = () => {
   const router = useRouter();
@@ -37,7 +36,7 @@ const ManagedServices = () => {
   return (
     <>
     <div>
-       <img class={classes.bannerImg}   src="/assets/solutions/ManagedServices.jpg" alt="Managed Services" />
+       <Image height="500px" width="1100px" layout="responsive"   src="/assets/solutions/ManagedServices.jpg" alt="Managed Services" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Managed Services</h1>
       

@@ -2,7 +2,7 @@
    color:rgb(35,110,172);
     
 
-    padding:10px;
+    padding:5px 10px;
     margin:auto;
     font-size:2.7rem;
     font-weight:bold;
@@ -10,7 +10,11 @@
     
     
 }
-
+.det{
+  position:relative;
+  bottom:35px;
+  margin:10px 3vw;
+}
 .solDivstyle,.solnsDivstyle,.eachServicesDivstyle{
    cursor:pointer;
     background-color:white;
@@ -160,9 +164,7 @@ height:350px;
 }
 @media only screen and (max-width: 600px) {
  
-  .bannerImg{
-    height:90vh;
-  }
+  
   .bannerDetails h3{
   font-size:16px;
   }
@@ -200,8 +202,21 @@ height:350px;
 .careerTableTop{
   width:95vw;
 }
+.bannerDetails{
+ 
+  bottom:35px;
+ 
+}
 }
 @media only screen and (max-width: 430px) {
+  .heading{
+    font-size:24px;
+   } 
+  .bannerDetails{
+ 
+    bottom:35px;
+   
+  }
   .careerTableTop{
     width:98vw;
   }

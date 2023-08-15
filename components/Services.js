@@ -1,8 +1,6 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import Testimoni from "./Testimoni";
-import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
+
 import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -11,10 +9,7 @@ import { Card, Grid, Text, Link } from "@nextui-org/react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
-import { MdAdsClick } from 'react-icons/md';
-import { CiCompass1 } from 'react-icons/ci';
-import { CiSliderVertical } from 'react-icons/ci';
+
 import { useRouter } from "next/router";
 import classes from "./style/services.module.css";
 
@@ -103,200 +98,10 @@ const Services = () => {
         className="w-full pt-12"
         id="pricing"
       >
-        {/* <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-0 mx-auto flex flex-col w-full text-center justify-center">
         
-         Case Study 
-        <div style={{backgroundColor:"white !important"}} className=" flex flex-col w-full">
-          <ScrollAnimationWrapper>
-           <br />
-           <motion.h1
-              variants={scrollAnimation}
-            style={{fontSize:"30px",color:"black"}}
-            >
-              Case Studies
-            </motion.h1>
-        
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >
-              {/* Lets Discover Our Services 
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div style={{boxShadow:"none"}}variants={scrollAnimation}>
-                <Card css={{ p: "$6", mw: "400px" }}>
-                  <Card.Header>
-                    <img
-                      alt="nextui logo"
-                      src="/assets/stats.png"
-                      width="34px"
-                      height="34px"
-                    />
-                    <Grid.Container css={{ pl: "$6" }}>
-                      <Grid xs={12}>
-                        <Text h4 css={{ lineHeight: "$xs" }}>
-                          Next UI
-                        </Text>
-                      </Grid>
-                      <Grid xs={12}>
-                        <Text css={{ color: "$accents8" }}>nextui.org</Text>
-                      </Grid>
-                    </Grid.Container>
-                  </Card.Header>
-                  <Card.Body css={{ py: "$2" }}>
-                    <Text>
-                      Make beautiful websites regardless of your design
-                      experience.
-                    </Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="https://github.com/nextui-org/nextui"
-                    >
-                      Visit source code on GitHub.
-                    </Link>
-                  </Card.Footer>
-                </Card>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div style={{boxShadow:"none"}} variants={scrollAnimation}>
-                <Card css={{ p: "$6", mw: "400px" }}>
-                  <Card.Header>
-                    <img
-                      alt="nextui logo"
-                      src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                      width="34px"
-                      height="34px"
-                    />
-                    <Grid.Container css={{ pl: "$6" }}>
-                      <Grid xs={12}>
-                        <Text h4 css={{ lineHeight: "$xs" }}>
-                          Next UI
-                        </Text>
-                      </Grid>
-                      <Grid xs={12}>
-                        <Text css={{ color: "$accents8" }}>nextui.org</Text>
-                      </Grid>
-                    </Grid.Container>
-                  </Card.Header>
-                  <Card.Body css={{ py: "$2" }}>
-                    <Text>
-                      Make beautiful websites regardless of your design
-                      experience.
-                    </Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="https://github.com/nextui-org/nextui"
-                    >
-                      Visit source code on GitHub.
-                    </Link>
-                  </Card.Footer>
-                </Card>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div style={{boxShadow:"none"}}variants={scrollAnimation}>
-                <Card css={{ p: "$6", mw: "400px" }}>
-                  <Card.Header>
-                    <img
-                      alt="nextui logo"
-                      src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                      width="34px"
-                      height="34px"
-                    />
-                    <Grid.Container css={{ pl: "$6" }}>
-                      <Grid xs={12}>
-                        <Text h4 css={{ lineHeight: "$xs" }}>
-                          Next UI
-                        </Text>
-                      </Grid>
-                      <Grid xs={12}>
-                        <Text css={{ color: "$accents8" }}>nextui.org</Text>
-                      </Grid>
-                    </Grid.Container>
-                  </Card.Header>
-                  <Card.Body css={{ py: "$2" }}>
-                    <Text>
-                      Make beautiful websites regardless of your design
-                      experience.
-                    </Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="https://github.com/nextui-org/nextui"
-                    >
-                      Visit source code on GitHub.
-                    </Link>
-                  </Card.Footer>
-                </Card>
-              </motion.div>
-            </ScrollAnimationWrapper>
-          
-          </div>
-        </div>
-       
-
-      </div> */}
 
       </div>
-      {/*     
-    <br />
-    <br /> */}
-      {/* <motion.div className="p-3" style={{backgroundColor:"rgb(251 251 249)",opacity:"0.8"}} >
-      <br />
-      <br />
-      <h2 style={{textAlign:"center",fontSize:"30px"}}>ScholarNest by the numbers</h2>
-      <br />
-      <br />
-      <div className="container">
-      <div className="row justify-content-md-center">
-        <div className="col-2" style={{broderRadius:"50%",height:"200px"}}>
-          <div style={{fontWeight:"bold",width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"white",textAlign:"center",border:"1px solid blue"}}> 
-         
-          <h3 style={{color:"blue",fontSize:"25px",marginTop:"30%"}}>50+</h3>
-          <p style={{textAlign:"center",width:"85px",margin:"auto",fontSize:"13px"}}>Data Experts</p>
-          
-          </div>
-      </div>
-      <div className="col-2" style={{broderRadius:"50%"}}>
-          <div style={{fontWeight:"bold",width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"white",textAlign:"center",border:"1px solid blue"}}> 
-          <h3 style={{color:"blue",fontSize:"25px",marginTop:"30%"}}>5+</h3>
-          <p style={{width:"85px",margin:"auto",fontSize:"13px"}}>Continents</p>
-          </div>
-      </div>
-      <div className="col-2" style={{broderRadius:"50%"}}>
-          <div style={{fontWeight:"bold",width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"white",textAlign:"center",border:"1px solid blue"}}>
-          <h3 style={{color:"blue",fontSize:"25px",marginTop:"30%"}}>50+</h3>
-          <p style={{width:"85px",margin:"auto",fontSize:"13px"}}>Clients</p>
-          </div>
-      </div>
-      <div className="col-2" style={{broderRadius:"50%"}}>
-          <div style={{fontWeight:"bold",width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"white",textAlign:"center",border:"1px solid blue"}}>
-          <h3 style={{color:"blue",fontSize:"25px",marginTop:"30%"}}>$2bn+</h3>
-          <p style={{width:"85px",margin:"auto",fontSize:"13px"}}>Buisness Impact</p>
-
-          </div>
-      </div>
-    
-</div>
-      </div>
-    
-    </motion.div> */}
-      {/* <div style={{backgroundColor:"#E5E4E2"}} className="container my-4 py-4 px-2"> */}
-      {/* <br /> */}
+ 
       <br />
       <div class={classes.feedbackBox} >
         <h1 class=" text-center my-2"  >What our customers say</h1>

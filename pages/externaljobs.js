@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
-import ExternalJob from "../components/externalJob";
+import ExternalJob from "../components/Solutions/externalJob";
 
 function ExternalJobs() {
   const props={

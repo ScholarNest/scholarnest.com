@@ -1,33 +1,32 @@
 import React,{ useMemo } from 'react'
 import { useRouter } from "next/router";
-import classes from "./style/solutions.module.css";
+import classes from "../style/solutions.module.css";
 import {  AiOutlineArrowRight} from 'react-icons/ai';
 import { motion } from "framer-motion";
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Image from "next/image";
 
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
-const TechnologyConsultings = () => {
+const ManagedServices = () => {
   const router = useRouter();
-
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const ServicesData=[
+  const ManagedServicesData=[
     {
-      title: "Technology Consulting 1",
+      title: "Managed Services 1",
       about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
       link: "#",
       imgsrc:"/assets/Icon/managed services-70 px.svg"
     },
     {
-      title: "Technology Consulting 2",
+      title: "Managed Services 2",
       about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
       link: "#",
       imgsrc:"/assets/Icon/technology consulting-70 px.svg"
     },
     {
-      title: "Technology Consulting 3",
+      title: "Managed Services 3",
       about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
       link: "#",
       imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
@@ -37,12 +36,12 @@ const TechnologyConsultings = () => {
   return (
     <>
     <div>
-       <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/Technologyconsulting.jpg" alt="Technology Consulting" />
+       <Image height="500px" width="1100px" layout="responsive"   src="/assets/solutions/ManagedServices.jpg" alt="Managed Services" />
        <div className={classes.bannerDetails}>
-       <h1 class={classes.heading} >Technology Consulting</h1>
+       <h1 class={classes.heading} >Managed Services</h1>
       
        </div>
-       <p class={classes.det+" text-center"} >Technology consultants take a strategic look on how technology can help improve an organization, which includes architecting and realizing exceptional value from technology. Both help companies better connect with customers, improve resilience, and drive sustainable growth. As business integrators, we work on transformational engagements, helping our clients solve complex business problems using technology as an enabler. </p>
+       <p class={classes.det+" text-center"}>Offload your work to us to reduce costs, improve service quality, and free your internal teams to do work that's specific to your business.</p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>
@@ -50,7 +49,7 @@ const TechnologyConsultings = () => {
             <h2 class={classes.caseheading}>How do we help you with our managed services </h2>
            <h3 class={classes.subheading}>Automation enabled releases into production environments with the click of a button </h3>
             
-           <button  onClick={() =>router.push("/technologyconsulting#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
+           <button  onClick={() =>router.push("/manageservices#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
           
         </div>
         <div style={{padding:"0",margin:"auto 0"}} className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
@@ -63,19 +62,18 @@ const TechnologyConsultings = () => {
     <br />
     <br />
     <br />
-   
+  
     
    {/* Cards for each solution */}
-   <div id="learnMore"    className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"}> 
+   <div id="learnMore"   className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} > 
 
-      <h1  class={classes.head+ " text-center my-3"}>Offerings</h1>   
-    
-     <br />
-     <br />
-     <br />
-     <br />
+      <h1  class={classes.head+" text-center my-3"}>Offerings</h1>   
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="row  text-start  " style={{margin:"0", height: "auto", borderBottom: "1px solid white" }}>
-              {ServicesData.map((sol) => (
+              {ManagedServicesData.map((sol) => (
                 <div onClick={() => router.push(sol.link)} className={classes.eachServicesDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
                   {/* <CiCompass1 color="black" size={70} /> */}
                   <div style={{display:"flex",flexDirection:"row"}}>
@@ -91,14 +89,44 @@ const TechnologyConsultings = () => {
               ))}
 
             </div>
+      {/* <div style={{margin:"0"}}  className={classes.solnsDivstyle+" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1"}>
+         <CiCompass1 class={classes.icons} color="black"  />
+         <br />
+          <h3 className={classes.h3style} >Managed Services 1</h3>
+          <br />
+          <p>Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.</p>
+          <br />
+          <button  ><BsFillArrowRightCircleFill color="black" size={25}/></button>
+         </div>
+         <div  style={{margin:"0"}}  className={classes.solnsDivstyle+" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1"}>
+         <MdAdsClick class={classes.icons} color="black" />
+         <br />
+          <h3  className={classes.h3style}> Managed Services 2</h3>
+          <br />
+          <p>Technology consultants take a strategic look on how technology can help improve an organization, which includes architecting and realizing exceptional value from technology. Both help companies better connect with customers, improve resilience, and drive sustainable growth.</p>
+          <br />
+          <button><BsFillArrowRightCircleFill color="black" size={25}/></button>
+         </div>
+        
+         <div style={{margin:"0"}}  className={classes.solnsDivstyle+" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1"}>
+         <CiSliderVertical class={classes.icons} color="black" />
+         <br />
+          <h3 className={classes.h3style}>Managed Services 3</h3>
+          <br />
+          <p>Self Paced, instructor Led, resume review, mock interviews, Mentorship call, project internships, Corporate bootcamps, profile registration</p>
+          <br />
+          <button><BsFillArrowRightCircleFill color="black" size={25}/></button>
+         </div> */}
          
        
       </div>
   <br />
   <br />
-
+  <br />
+  <br />
+  <br />
     {/* Case Studies */}
-    <h1 class={classes.head+" text-center my-3"}>Case Studies</h1>   
+    <h1  class={classes.head+" text-center my-3"}>Case Studies</h1>   
 
     <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
@@ -175,4 +203,4 @@ const TechnologyConsultings = () => {
     </>
   )
 }
-export default  TechnologyConsultings ;
+export default  ManagedServices;

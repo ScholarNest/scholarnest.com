@@ -1,10 +1,10 @@
 import React, {useState,useMemo} from 'react'
 import { useRouter } from "next/router";
-import classes from "./style/solutions.module.css";
+import classes from "../style/solutions.module.css";
 import {  AiOutlineArrowRight} from 'react-icons/ai';
 import { motion } from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Image from "next/image";
 
@@ -137,7 +137,7 @@ const StaffAugmentations = () => {
        <h1 class={classes.heading} >Staff Augmentation</h1>
       
        </div>
-       <p   class={classes.det+" text-center"}>Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required. Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required. One possible advantage of this approach is that it may leverage existing resources as well as utilize outsourced services and contract workers. The goal of the exercise is to handle staffing requirements with an existing set of talents. Numerous consulting companies offer staff augmentation services.[3] It has been estimated that staff augmentation as an industry will reach $45 billion in 2015.The trend in staff augmentation is occurring because of the abundance of IT resources, declining rates, and narrowing margins for companies that need these services. </p>
+       <p   class={classes.det+" text-center"}>Our staff augmentation offering allows organizations not only to focus on the growth and development of their business but also supplements it by giving them access to skilled and experienced manpower when its needed.</p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>

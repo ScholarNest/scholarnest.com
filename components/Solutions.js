@@ -54,31 +54,31 @@ const responsive = {
     {
    title:"Managed Services",
    link:"/managedservices",
-   details:"Practice of outsourcing the responsibility.",
+   details:"Offload your work to us to reduce costs, improve service quality, and free your internal teams to do work that's specific to your business.",
    imgsrc:"/assets/Icon/managedservices.svg"
    },
    {
     title:"Technology Consulting",
     link:"/technologyconsulting",
-    details:"Technology consultanting  can help improve an organization.",
+    details:"We focus on working closely with organizations to strategize the best use of information technology in achieving their business objectives",
     imgsrc:"/assets/Icon/technologyconsulting.svg"
     },
     {
       title:"Academy",
       link:"/academy",
-      details:"Self Paced, instructor Led and many more.",
+      details:"We help individuals and organizations with an integrated set of interactive online learning system that provide trainers, learners, and others involved in education with information, tools, and resources to streamline professional skills and knowledge development across all functions and roles.",
       imgsrc:"/assets/Icon/academy.svg"
     },
     {
       title:"Staff Augmentation",
       link:"/staffaugmentation",
-      details:"Use to respond to the business objectives.",
+      details:"Our staff augmentation offering allows organizations not only to focus on the growth and development of their business but also supplements it by giving them access to skilled and experienced manpower when its needed.",
       imgsrc:"/assets/Icon/staffaugmentation.svg"
     },
     {
       title:"Career Enhancement",
       link:"/externaljobs",
-      details:"Different job lists for  job seekers.",
+      details:"Explore various open jobs matching your skills and apply for your dream job to elevate your career.",
       imgsrc:"/assets/Icon/externaljobs.svg"
     },
 
@@ -156,8 +156,7 @@ const responsive = {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              With a track-record gained over 23 years, we are trusted by organisations, big and small, from a wide range of industries and stages of growth.
-              {/* Lets Discover Our Services */}
+Since our inception, we have been consistently helping people and organizations with our top niche services and solutions and the goal is to keep improving the experience of our clients.              {/* Lets Discover Our Services */}
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -175,8 +174,7 @@ const responsive = {
                       href="#"
                     >
                       <p>
-                     How freewill drives new innovation through partnership.
-                     </p>
+                      Through our cloud computing service delivery, we are helping organizations with the “the cloud” to offer faster innovation, flexible resources, and economies of scale.                     </p>
                     </Link>
                   </Card.Footer>
                
@@ -197,8 +195,7 @@ const responsive = {
                       href="#"
                     >
                       <p>
-                      Delivering transformative consumer experiences to the clients.
-                      </p>
+                      With our Data Engineering services, organizations made informed decisions in real-time. This led to faster response times, better customer service, and improved efficiency across the organization.                      </p>
                     </Link>
                   </Card.Footer>
                
@@ -218,8 +215,7 @@ const responsive = {
                       href="#"
                     >
                       <p>
-                      How a global cruise company realised digital transformation.
-                      </p>
+                      We have been transforming lives through our innovative skill learning services in various ways. Along with technologies, mentorship and career guidance help people and organization achieve their upskilling goals efficiently.                       </p>
                     </Link>
                   </Card.Footer>
                

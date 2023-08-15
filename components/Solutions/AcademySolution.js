@@ -1,8 +1,8 @@
 import React from 'react'
 import { useRouter } from "next/router";
-import classes from "./style/solutions.module.css";
+import classes from "../style/solutions.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
-
+import TestiMoni from './Testimoni.js'
 import Image from 'next/image';
 
 const AcademySolution = () => {
@@ -18,7 +18,7 @@ const AcademySolution = () => {
           <h1 class={classes.heading} >Academy</h1>
 
         </div>
-        <p class={classes.det+" text-center"} >Self Paced, instructor Led, resume review, mock interviews, Mentorship call, project internships, Corporate bootcamps, profile registration. </p>
+        <p class={classes.det+" text-center"} >We help individuals and organizations with an integrated set of interactive online learning system that provide trainers, learners, and others involved in education with information, tools, and resources to streamline professional skills and knowledge development across all functions and roles.</p>
         <br />
         <div style={{ padding: "0", margin: "auto 0" }} className="row">
           <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"  style={{ backgroundColor: "purple" }}>
@@ -119,69 +119,10 @@ const AcademySolution = () => {
       <br />
       <br />
       <br />
-      {/* Case Studies */}
-      {/* <h1 style={{ fontSize: "30px" }} class="text-center my-3">Case Studies</h1>
+      <h1  class={classes.head+" text-center my-3"}>What Our Customer Say</h1>
+      <br />
 
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-
-        <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} >
-
-          <Card.Body css={{ py: "$2" }}>
-            <img src="/assets/learn1.jpg" alt="1" />
-          </Card.Body>
-          <Card.Footer>
-            <Link
-              icon
-              color="primary"
-              target="_blank"
-              href="https://github.com/nextui-org/nextui"
-            >
-              How freewill drives new innovation through partnership.
-            </Link>
-          </Card.Footer>
-
-        </motion.div>
-
-
-        <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }}>
-
-
-          <Card.Body css={{ py: "$2" }}>
-            <img src="/assets/learn2.jpg" alt="1" />
-          </Card.Body>
-          <Card.Footer>
-            <Link
-              icon
-              color="primary"
-              target="_blank"
-              href="https://github.com/nextui-org/nextui"
-            >
-              Delivering transformative consumer experiences
-            </Link>
-          </Card.Footer>
-
-        </motion.div>
-
-
-        <motion.div style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }}>
-
-          <Card.Body css={{ py: "$2" }}>
-            <img src="/assets/learn3.jpg" alt="1" />
-          </Card.Body>
-          <Card.Footer>
-            <Link
-              icon
-              color="primary"
-              target="_blank"
-              href="https://github.com/nextui-org/nextui"
-            >
-              How a global cruise company realised digital transformation.
-            </Link>
-          </Card.Footer>
-
-        </motion.div>
-
-      </div> */}
+  <TestiMoni />
       <br />
       <br />
       <br />

@@ -3,9 +3,9 @@ import React, { useState } from "react";
 // import react slick
 import Slider from "react-slick";
 import Image from "next/image";
-import Stars from "../public/assets/Icon/stars.svg";
-import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
-import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import Stars from "../../public/assets/Icon/stars.svg";
+import ArrowBack from "../../public/assets/Icon/eva_arrow-back-fill.svg";
+import ArrowNext from "../../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Testimoni = ({
   listTestimoni = [
@@ -83,9 +83,11 @@ const Testimoni = ({
 
   return (
     <>
+     
       <Slider
         {...settings}
         arrows={false}
+        dots={false}
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
@@ -122,7 +124,7 @@ const Testimoni = ({
         ))}
       </Slider>
       <div className="flex w-full items-center justify-end">
-        <div className="flex flex-none justify-between w-auto mt-14">
+        <div className="flex flex-none justify-between w-auto me-2 mt-14">
           <div
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}

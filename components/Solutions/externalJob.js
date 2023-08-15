@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaSearch } from 'react-icons/fa';
 import { useRouter } from "next/router";
-import classes from "./style/solutions.module.css";
+import classes from "../style/solutions.module.css";
 import {  AiOutlineArrowRight} from 'react-icons/ai';
 import Image from "next/image";
 
@@ -83,7 +83,7 @@ router.push({
        <h1 class={classes.heading} >Career Enhancement</h1>
       
        </div>
-       <p class={classes.det+" text-center"} >Job openings are a measure of demand that takes into account actual growth and estimated replacement needs. Both job postings and job openings are helpful for assessing the demand for an occupation but it's important to understand the strengths and weaknesses of each. </p>
+       <p class={classes.det+" text-center"} >Explore various open jobs matching your skills and apply for your dream job to elevate your career.</p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className={classes.caseSub+" col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 px-auto"}  style={{backgroundColor:"purple"}}>

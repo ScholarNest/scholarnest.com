@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
-import AcademySolution from "../components/AcademySolution";
+import AcademySolution from "../components/Solutions/AcademySolution";
 
 function Academy() {
  

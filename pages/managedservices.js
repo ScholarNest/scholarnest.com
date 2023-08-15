@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
-import ManagedServices from "../components/ManagedServices";
+import ManagedServices from "../components/Solutions/ManagedServices";
 
 function ManageServices() {
 

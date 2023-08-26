@@ -5,6 +5,45 @@
     color:white;
     
 }
+.bannerDetailsCareer{
+    width:80vw;
+    position :relative;
+    bottom:50px;
+    margin:0 auto;
+    background-color:white;
+  }
+  .heading{
+    color:rgb(35,110,172);
+     
+ 
+     padding:5px 10px;
+     margin:auto;
+     font-size:2.7rem;
+     font-weight:bold;
+     text-align:center;
+     
+     
+ }
+ .det{
+   position:relative;
+   bottom:35px;
+   font-size:16px;
+   margin:10px 3vw;
+ }
+ .caseheading{
+    max-width:460px;
+    background-color:white;
+    margin-top:10%;
+border-radius:4px;
+}
+.caseheading,.subheading{
+margin-left: 10%;
+padding:6px;
+font-size:20px;
+}
+.subheading{
+color:white;
+}
 .bannerDetails h1,.careerPageVideo h1,.intern h1{
 font-size:30px;
 }
@@ -27,12 +66,44 @@ font-size:16px;
 .headJob{
     font-size:30px;
 }
+.mentorr , .resumeBuilder{
+    background-image: linear-gradient(to right, #fcbb83 , #fd9a73, #ff9a80, #ff7c7c);
+    height:120px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.mentorr h1, .resumeBuilder h1{
+    font-weight:bold;
+    font-size:24px;
+}
+.resumeBuilder{
+    background-image: linear-gradient(to right, #3fdc88,#31cf8c ,#36d98f,#27ca91);
+}
+.mentorr:hover , .resumeBuilder:hover{
+    cursor:pointer;
+    transform:scale(1.01);
+}
+@media only screen and (max-width: 500px) {
+    .caseheading,.subheading{
+      font-size:12px !important;
+      }
+  }
 @media only screen and (max-width: 1139px) {
     .bannerDetails{
     position: absolute;
     top:10vh;
    }
 }
+@media only screen and (max-width: 918px) {
+    .caseheading{
+      margin-top:10%;
+    }
+    
+    
+    .caseheading,.subheading{
+      font-size:16px;
+      }
+    
+  }
 @media only screen and (max-width: 950px) {
     .bannerDetails{
     position: absolute;
@@ -46,6 +117,14 @@ font-size:16px;
 }
  
 }
+@media only screen and (max-width: 768px) {
+    .caseheading{
+      margin-top:5%;
+    }
+    .mentorr h1, .resumeBuilder h1{
+        font-size:20px;
+    }
+  }
 @media only screen and (max-width: 600px) {
     .bannerDetails{
     position: absolute;
@@ -53,10 +132,16 @@ font-size:16px;
     left:20px;
 
    }
+   .mentorr h1, .resumeBuilder h1{
+    font-size:16px;
+}
+   .heading{
+    font-size:30px;
+   }
    .bannerDetails h1,.careerPageVideo h1,.headJob{
     font-size:24px;
     }
-    .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p{
+    .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
     font-size:12px;
     }
    
@@ -72,7 +157,11 @@ font-size:16px;
     .careerTableTop, .intern{
         width:95vw;
     }
-
+    .bannerDetailsCareer{
+ 
+        bottom:30px;
+       
+      }
 }
 @media only screen and (max-width: 430px) {
     .bannerDetails{
@@ -80,6 +169,9 @@ font-size:16px;
     top:2vh;
     left:15px;
 
+   }
+   .heading{
+    font-size:24px;
    }
    .bannerButton{
    font-size:10px;
@@ -104,11 +196,16 @@ font-size:16px;
             }
            
 }
-@media only screen and (max-width: 290px) {
-    
+@media only screen and (max-width: 320px) {
+    .caseheading,.subheading{
+        font-size:10px;
+        }
     .bannerButton{
    margin:auto auto;
    font-size:10px;
+   }
+   .heading{
+    font-size:20px;
    }
    .bannerDetails{
     position: absolute;

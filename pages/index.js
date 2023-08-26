@@ -1,6 +1,7 @@
 import Feature from "../components/Feature";
 import Pricing from "../components/Pricing";
-import Hero from "../components/Hero";
+
+import LazyHero from "../components/LazyHero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import Services from "../components/Services";
@@ -9,7 +10,7 @@ export default function Home() {
     <>
       <SeoHead title='Scholar Nest' />
       <Layout>
-        <Hero />
+        <LazyHero />
         <Services/>
         <Feature />
       </Layout>

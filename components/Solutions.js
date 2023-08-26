@@ -77,7 +77,7 @@ const responsive = {
     },
     {
       title:"Career Enhancement",
-      link:"/externaljobs",
+      link:"/career",
       details:"Explore various open jobs matching your skills and apply for your dream job to elevate your career.",
       imgsrc:"/assets/Icon/externaljobs.svg"
     },

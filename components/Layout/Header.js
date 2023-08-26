@@ -69,7 +69,7 @@ const Header = () => {
                   : " text-black-100 hover:text-orange-500 a")
               }
             >
-              <div onClick={() =>   router.push("/company")} style={{display:"flex",flexDirection:"row"}}>Company <FaAngleDown style={{marginTop:"6px"}}/> </div>
+              <div  style={{display:"flex",flexDirection:"row"}}><a href="/company"> Company</a> <FaAngleDown style={{marginTop:"6px"}}/> </div>
               <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"}  id="menu" >
               <div className="row">
                 <div className="col-3 py-3">
@@ -126,7 +126,7 @@ const Header = () => {
       </div>
                 </a>
             
-            <LinkScroll
+            <a
               legacyBehavior={true}
               activeClass="active"
               // href="/solutions"
@@ -145,7 +145,7 @@ const Header = () => {
                   : " text-black-100 hover:text-orange-500 ")
               }
             >
-                 <div  onClick={() =>   router.push("/solutions")} style={{display:"flex",flexDirection:"row"}}>Solutions <FaAngleDown style={{marginTop:"6px"}}/> </div>
+                 <div style={{display:"flex",flexDirection:"row"}}><a href="/solutions"> Solutions </a> <FaAngleDown style={{marginTop:"6px"}}/> </div>
                  <div className={classes.submenuSol + " bg-light py-1 px-6 sm:px-1 md:px-10"}  id="menu" >
               <div className="row">
                 <div className="col-3 py-3">
@@ -190,7 +190,7 @@ const Header = () => {
 
                     </div>
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
-                    <LinkScroll onClick={() =>   router.push("/externaljobs")}>
+                    <LinkScroll onClick={() =>   router.push("/career")}>
 
                       <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career Enhancement</h1>
                       <p>Job lists for other companies job seekers.</p>
@@ -200,18 +200,17 @@ const Header = () => {
                 </div>
               </div>
       </div>
-            </LinkScroll>
+            </a>
             
-            {/* <LinkScroll
+            <a
               legacyBehavior={true}
               activeClass="active"
-              href="/contactUs"
-              onClick={() => window("/contactUs", "_blank").focus()}
+              href="/academy"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("contactUs");
+                setActiveLink("academy");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -220,8 +219,8 @@ const Header = () => {
                   : " text-black-100 hover:text-orange-500 ")
               }
             >
-              Contact Us
-            </LinkScroll> */}
+              Academy
+            </a>
 {/* 
             <LinkScroll
               legacyBehavior={true}
@@ -243,11 +242,11 @@ const Header = () => {
             >
               Learn with Us
             </LinkScroll> */}
-            <LinkScroll
+            <a
             legacyBehavior={true}
               activeClass="active"
               href="/career"
-              onClick={() => window.open("/career", "_self").focus()}
+              // onClick={() => window.open("/career", "_self").focus()}
               spy={true}
               smooth={true}
               duration={1000}
@@ -262,7 +261,7 @@ const Header = () => {
               }
             >
               Career
-            </LinkScroll>
+            </a>
 
             <LinkScroll
               activeClass="active"

@@ -16,40 +16,98 @@ const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const router = useRouter();
 
-  
+
 
   return (
-  <>
+    <>
       <div className="my-2">
-      <ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
 
-        <motion.div  variants={scrollAnimation} class={classes.gradient}>
-          <motion.div  variants={scrollAnimation} style={{width:"50%"}}>
-            <motion.div  variants={scrollAnimation} style={{margin:"25% 5%"}}>
-            <motion.h1 class={classes.careerHead} >Career at ScholarNest</motion.h1>
-            <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.h3>
-            <motion.button className={classes.careerButton +
-       " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
-      } onClick={() =>  router.push("/career")} style={{display:"flex",flexDirection:"row"}}>Visit our career page </motion.button>
+          <motion.div variants={scrollAnimation} class={classes.gradient}>
+            <motion.div variants={scrollAnimation} style={{ width: "50%" }}>
+              <motion.div variants={scrollAnimation} style={{ margin: "25% 5%" }}>
+                <motion.h1 class={classes.careerHead} >Career at ScholarNest</motion.h1>
+                <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.h3>
+                <motion.button className={classes.careerButton +
+                  " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
+                } onClick={() => router.push("/career")} style={{ display: "flex", flexDirection: "row" }}>Visit Our Career Page </motion.button>
+              </motion.div>
+
             </motion.div>
-           
-          </motion.div>
-          <motion.div class="my-auto "  variants={scrollAnimation} style={{marginLeft:"auto"}}>
-          <img class={classes.careerImg}  src="/assets/career/career.jpg"/>  
+            <motion.div class="my-auto " variants={scrollAnimation} style={{ marginLeft: "auto" }}>
+              <img class={classes.careerImg} src="/assets/career/career.jpg" />
 
+            </motion.div>
           </motion.div>
-        </motion.div>
-      </ScrollAnimationWrapper>
-    </div>
-    <div
-     
-    style={{backgroundColor: "rgb(251 251 249)", boxShadow: 'rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px'}}
+        </ScrollAnimationWrapper>
+      </div>
+      <br />
+      <br />
 
-      className="w-100 mb-4 sm:mt-5 sm:mb-12 px-6 sm:px-8 lg:px-16  mx-auto"
-      id="feature"
-    >
-    
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 ">
+      <div
+
+        style={{ backgroundColor: "rgb(251 251 249)" }}
+
+        className={classes.blogDet + " w-100 mb-4 mx-auto"}
+        id="feature"
+      >
+ <br />
+        <h1 class=" text-center my-2"  >Latest Updates</h1>
+
+        <div className={" mx-auto justify-content-center  row text-start  p-2"} >
+
+
+          <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
+            <a href="https://blog.scholarnest.com/different-ways-to-create-spark-dataframe/" target="_blank">
+              <div className={classes.styleDiv}>
+                <Image width={600}
+                  height={400} src="/assets/homepage/blogs/1.jpg" />
+                <br />
+                <h3 class={classes.h3style+" mb-1"} >Different ways to create spark dataframe</h3>
+
+                <p>Apache Spark is a powerful open-source distributed computing framework that provides efficient and scalable processing of large datasets...</p>
+
+                <a class={classes.anchorTag+" my-1"} href="https://blog.scholarnest.com/different-ways-to-create-spark-dataframe/" target="_blank">Read More</a>
+               </div>
+            </a>
+
+          </div>
+          <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
+            <a href="https://blog.scholarnest.com/deep-dive-into-spark-memory-allocation/" target="_blank">
+              <div className={classes.styleDiv}>
+                <Image width={600}
+                  height={400} src="/assets/homepage/blogs/2.jpg" />
+                <br />
+
+                <h3 class={classes.h3style+" my-1"} >Deep dive into spark memory allocation</h3>
+                <p>In this blog post, I will explain the memory allocation for the Spark driver and executor. If you are here, I assume you are already familiar with Apache Spark...</p>
+                <a class={classes.anchorTag+" my-1"} href="https://blog.scholarnest.com/deep-dive-into-spark-memory-allocation/" target="_blank">Read More</a>
+
+              </div>
+            </a>
+
+
+
+          </div>
+
+          <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-3 p-xl-4 p-md-2 p-sm-2 p-1">
+            <a href="https://blog.scholarnest.com/what-is-apache-kafka/" target="_blank">
+              <div className={classes.styleDiv}>
+                <Image width={600}
+                  height={400} src="/assets/homepage/blogs/3.jpg"  />
+                <br />
+                <h3 class={classes.h3style +" my-1"} >What is Apache kafka?</h3>
+                <p>Apache Kafka is a distributed streaming platform that is built on the principles of a messaging system.Apache Kafka’s implementation started as a messaging system to create a robust data pipeline....</p>
+                <a class={classes.anchorTag+" my-1"} href="https://blog.scholarnest.com/what-is-apache-kafka/" target="_blank">Read More</a>
+
+              </div>
+
+            </a>
+          </div>
+
+
+        </div>
+        {/* <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 ">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}> 
             <Image
@@ -95,8 +153,8 @@ const Feature = () => {
         </motion.div>
         
         </ScrollAnimationWrapper>
+      </div> */}
       </div>
-    </div>
 
     </>
   );

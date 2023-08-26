@@ -6,7 +6,7 @@ function Career() {
   return (
     <>
       <Header />
-      <div style={{paddingTop:'5%',paddingBottom:'25%'}}>
+      <div  style={{marginTop:"90px"}}>
       <Careers/>
       </div>
       <Footer />

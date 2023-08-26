@@ -1,0 +1,9 @@
+.page {
+    opacity: 0;
+    transition: opacity 0.8s ease; /* Adjust the transition timing as needed */
+  }
+  
+  .page.visible {
+    opacity: 1;
+  }
+  

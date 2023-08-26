@@ -23,6 +23,43 @@ flex-direction:row;
     height:450px;
     margin:auto auto;
 }
+.blogDet h1{
+        font-size:30px;
+        text-align:center;
+        
+}
+
+.styleDiv{
+    padding:10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+}
+.styleDiv:hover{
+    background-color:rgb(251 251 249);
+    cursor:pointer;
+    transform: scale(1.02);
+
+}
+.h3style{
+    font-size:20px;
+    font-weight:600;
+    color:black;
+  }
+  .h3style:hover{
+    color:#F53855;
+    pointer:cursor;
+}
+  .styleDiv p{
+    font-size:16px;
+  }
+  .anchorTag{
+    color:grey;
+    font-size:12px;
+    text-decoration: underline;
+  }
+  .anchorTag:hover{
+    color:#F53855;
+}
 @media only screen and (max-width: 600px) {
     .careerHead{
         font-size:24px;
@@ -32,8 +69,10 @@ flex-direction:row;
     .featuresDet h3{
         font-size:24px;
     }
-    
-    .careerDet{
+    .blogDet h1{
+        font-size:24px;
+}
+    .careerDet,.h3style{
         font-size:16px;
     }
     .careerButton,.featuresDet p{
@@ -49,11 +88,18 @@ flex-direction:row;
         font-weight:bold;
         margin-bottom:20px;
     }
+    .blogDet h1{
+        font-size:20px;
+}
     .featuresDet h3{
         font-size:20px;
     }
     .careerDet{
         font-size:12px;
+    }
+    .h3style{
+        font-size:14px;
+
     }
     .careerButton, .featuresDet p{
         font-size:10px;

@@ -6,7 +6,9 @@ top:69px;
 left:0 !important;
 z-index:2;
 }
-
+.headerr{
+    height:92px !important;
+}
 .menu:hover > .submenu{
 display:block;
 }

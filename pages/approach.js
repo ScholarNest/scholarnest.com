@@ -6,7 +6,7 @@ function Approach() {
   return (
     <>
       <Header />
-      <div style={{paddingTop:'5%',paddingBottom:'25%'}}>
+      <div >
       Approach Page
       </div>
       <Footer />

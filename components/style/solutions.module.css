@@ -155,7 +155,6 @@ height:350px;
 position:absolute;
 top:25vh;
 left:15px;
-width:65vw;
 }
 .topbannerDetailsInAcademy .btn{
   background-color:#F53855;
@@ -164,15 +163,67 @@ width:65vw;
 
 }
 .topbannerDetailsInAcademy p{
-  text-align:center;
+  font-size:16px;
+  /* font-weight:500; */
+  width:75vw;
+}
+.topbannerDetailsInAcademy h1{
+  font-size:30px;
+}
+
+@media only screen and (max-width: 1139px) {
+  .topbannerDetailsInAcademy{
+  position: absolute;
+  top:18vh;
+ }
+}
+@media only screen and (max-width: 950px) {
+  
+  .careerTableTop{
+   width:85vw;
+ }
+ /* .bannerDetails{
+   position: absolute;
+   top:7vh;
+  } */
+ 
+ }
+ @media only screen and (max-width: 918px) {
+  .caseheading{
+    margin-top:10%;
+  }
+  
+  
+  .caseheading,.subheading{
+    font-size:16px;
+    }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .caseheading{
+    margin-top:5%;
+  }
+  .solnsDivstyle,.eachServicesDivstyle{
+    border-bottom:1px solid black;
+  }
+  .topbannerDetailsInAcademy h1{
+    font-size:24px;
+  }
+  .topbannerDetailsInAcademy p{
+  width:90vw;
+  }
+   
+ .topbannerDetailsInAcademy{
+  top:13vh !important;
+ }
 }
 @media only screen and (max-width: 600px) {
- 
-  
+
   .bannerDetails h3{
   font-size:16px;
   }
-  .bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
+  .styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
     font-size:12px;
   }
  .heading{
@@ -181,6 +232,13 @@ width:65vw;
  .detailBox h1, .head,.content, .careerTableTop h1{
   font-size: 24px;
  
+}
+.topbannerDetailsInAcademy h1{
+  font-size:20px !important;
+}
+.topbannerDetailsInAcademy p,.topbannerDetailsInAcademy .btn{
+  font-size:12px;
+  
 }
 .solDivstyle img{
   height:24px;
@@ -212,10 +270,23 @@ width:65vw;
  
 }
 }
+
 @media only screen and (max-width: 500px) {
   .caseheading,.subheading{
     font-size:12px !important;
     }
+    .topbannerDetailsInAcademy h1{
+      font-size:18px !important;
+    }
+    .topbannerDetailsInAcademy{
+      top:13vh !important;
+     }
+     .topbannerDetailsInAcademy .btn{
+         
+     padding :3px 35px;
+    
+    }
+   
 }
 @media only screen and (max-width: 430px) {
   .heading{
@@ -238,8 +309,8 @@ width:65vw;
   .bannerDetails h3{
   font-size:12px;
   }
-  .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
-    font-size:10px;
+  .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
+    font-size:10px !important;
   } 
   .detailBox h1 , .careerTableTop h1{
     font-size: 20px;
@@ -262,8 +333,22 @@ width:65vw;
       height:20px;
       width:20px;
     }
+    .topbannerDetailsInAcademy h1{
+      font-size:14px !important;
+    }
+    .topbannerDetailsInAcademy .btn {
+      font-size:10px !important;
+    }
+    .topbannerDetailsInAcademy p{
+      font-size:10px;
+      
+    }
+    .topbannerDetailsInAcademy .btn{
+         padding :1px 25px;
+     
+     }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
   .heading{
     font-size:24px;
    } 
@@ -273,31 +358,18 @@ width:65vw;
     .caseSub h2, .caseSub h3, .caseSub button{
       margin-left: 1%;
     }
-}
-@media only screen and (max-width: 768px) {
-  .caseheading{
-    margin-top:5%;
-  }
-  .solnsDivstyle,.eachServicesDivstyle{
-    border-bottom:1px solid black;
-  }
-  
-}
-@media only screen and (max-width: 918px) {
-  .caseheading{
-    margin-top:10%;
-  }
-  
-  
-  .caseheading,.subheading{
-    font-size:16px;
+    .topbannerDetailsInAcademy h1{
+      font-size:12px !important;
     }
-  
-}
-@media only screen and (max-width: 950px) {
-  
- .careerTableTop{
-  width:85vw;
-}
-
+    .topbannerDetailsInAcademy .btn {
+      font-size:8px !important;
+    }
+    .topbannerDetailsInAcademy p{
+      font-size:8px;
+      
+    }
+    .topbannerDetailsInAcademy .btn{
+         padding :1px 15px;
+     
+     }
 }

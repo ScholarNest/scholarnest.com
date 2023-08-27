@@ -6,6 +6,7 @@ import Image from "next/image";
 import Stars from "../../public/assets/Icon/stars.svg";
 import ArrowBack from "../../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../../public/assets/Icon/eva_arrow-next-fill.svg";
+import classes from "../style/responsive.module.css";
 
 const Testimoni = ({
   listTestimoni = [
@@ -95,7 +96,7 @@ const Testimoni = ({
           <div className="px-3 flex items-stretch" key={index}>
             <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-                <div className="flex order-2 xl:order-1">
+                <div className={classes.testimoni+" flex order-2 xl:order-1 "}>
                   <Image
                     src={listTestimonis.image}
                     height={50}

@@ -17,7 +17,7 @@ function ApplyNow(props) {
   return (
     <>
        <Header />
-      <div style={{marginTop:"112px"}}>
+      <div >
       <CareerTemplate props={router.query} />
 
       </div>

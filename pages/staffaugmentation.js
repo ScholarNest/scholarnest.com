@@ -7,7 +7,7 @@ function StaffAugmentation() {
   return (
     <>
       <Header />
-      <div style={{marginTop:"91px"}}>
+      <div >
       <StaffAugmentations />
       </div>
       <Footer />

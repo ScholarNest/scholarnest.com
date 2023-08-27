@@ -22,7 +22,7 @@ const Hero = () => {
   return (
 
     <>
-      <div style={{ marginTop: "92px" }}>
+      <div>
         <Carousel dynamicHeight={true} autoPlay
           infiniteLoop
           interval={7000} // Adjust the interval time as desired

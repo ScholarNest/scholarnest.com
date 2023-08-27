@@ -6,7 +6,7 @@ function Career() {
   return (
     <>
       <Header />
-      <div  style={{marginTop:"90px"}}>
+      <div >
       <Careers/>
       </div>
       <Footer />

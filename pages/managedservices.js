@@ -8,7 +8,7 @@ function ManageServices() {
   return (
     <>
       <Header />
-      <div style={{marginTop:"91px"}}>
+      <div>
       <ManagedServices  />
       </div>
       <Footer />

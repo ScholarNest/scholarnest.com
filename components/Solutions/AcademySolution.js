@@ -70,7 +70,7 @@ const AcademySolution = () => {
   return (
     <>
       <div>
-        <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/Academy.jpg" alt="Academy Solution" />
+        <Image height="500px" width="1100px" layout="responsive"  src="/assets/apache.jpg" alt="Academy Solution" />
         <div className={classes.bannerDetails}>
           <h1 class={classes.heading} >Academy</h1>
 
@@ -93,14 +93,14 @@ const AcademySolution = () => {
         </div> */}
       </div>
       <div className={classes.topbannerDetailsInAcademy+ " " + " text-light flex flex-col items-start row-start-2 sm:row-start-1"}>
-              <h1 className=" text-2xl lg:text-4xl xl:text-5xl  p-2 font-medium leading-normal">
+              <h1 className="  font-medium leading-normal">
               Master Data Engineering with Spark | Databricks
               </h1>
-              <p style={{ color: "white"}} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2">
+              <p style={{ color: "white"}} className="mt-xl-3 mb-xl-7 mt-lg-4 mb-lg-6 mt-2 mb-1 mt-md-3 mb-lg-6 mt-sm-2 mb-sm-1">
               Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self Paced or Instructor-led
               </p>
 
-              <button class={classes.btn +" btn"}><a href="https://www.scholarnest.in/collections">Get Started </a></button>
+              <button class={classes.btn +" btn mt-sm-2"}>Get Started </button>
 
             </div>
       

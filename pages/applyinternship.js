@@ -17,7 +17,7 @@ function ApplyInternship(props) {
   return (
     <>
        <Header />
-      <div style={{marginTop:"112px"}}>
+      <div >
       < InternTemplate props={router.query} />
 
       </div>

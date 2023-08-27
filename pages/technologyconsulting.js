@@ -7,7 +7,7 @@ function TechnologyConsulting() {
   return (
     <>
       <Header />
-      <div style={{marginTop:"91px"}}>
+      <div >
       <TechnologyConsultings />
       </div>
       <Footer />

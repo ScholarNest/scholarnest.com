@@ -82,6 +82,9 @@ font-size:16px;
     cursor:pointer;
     transform:scale(1.01);
 }
+.testimoni p{
+    font-size:16px;
+}
 @media only screen and (max-width: 500px) {
     .caseheading,.subheading{
       font-size:12px !important;
@@ -194,7 +197,9 @@ font-size:16px;
         .careerTable, .intern p,.aboveIntern p {
             font-size:10px;
             }
-           
+            .testimoni p{
+                font-size:10px !important;
+            }    
 }
 @media only screen and (max-width: 320px) {
     .caseheading,.subheading{

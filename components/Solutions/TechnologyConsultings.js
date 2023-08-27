@@ -91,10 +91,11 @@ const Faqs=[
         </div>
         <p class={classes.det + " text-center"} >As business integrators, Our Technology Strategy and advisory practice function on transformational engagements, supporting our clients in solving complicated business concerns using technology as an enabler.</p>
 
+  
+
+        <div style={{ margin: "auto 8px" , backgroundColor: "rgb(251 251 249)"}} className={classes.techService+" row"}>
         <h1 class={classes.head + " text-center my-3"}>Technology is Here</h1>
         <br />
-
-        <div style={{ margin: "auto 8px" }} className={classes.techService+" row"}>
           <div className={" col-12 col-lg-6 col-sm-12 col-md-12"}>
             <p class="p-2">
    
@@ -214,9 +215,11 @@ const Faqs=[
 
         <br />
         <br />
+    
+        <div style={{ backgroundColor: "rgb(251 251 249)"}} className="container-fluid  ">
+        <br />
         <h1 class={classes.head + " text-center my-3"} >Frequently Asked Questions</h1>
         <br />
-        <div className="container-fluid  ">
           {
             Faqs.map((quest)=>{
               function openSolution(ques_id){

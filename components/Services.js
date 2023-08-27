@@ -25,31 +25,31 @@ const Services = () => {
   const solutions = [
     {
       title: "Managed Services",
-      about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
+      about: "Simplify your operations and elevate efficiency with our Managed Services solutions. We take care of the complexities, allowing you to focus on what matters most – your core business. Experience seamless management, support, and optimization, tailored to your unique needs.",
       link: "/managedservices",
       imgsrc:"/assets/Icon/managed services-70 px.svg"
     },
     {
       title: "Technology Consulting",
-      about: "Technology consultants take a strategic look on how technology can help improve an organization, which includes architecting and realizing exceptional value from technology. Both help companies better connect with customers, improve resilience, and drive sustainable .",
+      about: "Unlock the full potential of your business with our expert Technology Consulting services. From strategy to implementation, we offer tailored solutions that drive innovation and growth. Let our seasoned consultants guide you through the complexities of technology to achieve your goals.",
       link: "/technologyconsulting",
       imgsrc:"/assets/Icon/technology consulting-70 px.svg"
     },
     {
       title: "Academy",
-      about: "Self Paced, instructor Led, resume review, mock interviews, Mentorship call, project internships, Corporate bootcamps, profile registration",
+      about: "Empower your journey in data engineering at our Academy, mastering Spark and Databricks technologies. Gain hands-on expertise in crafting data-driven solutions and enhancing efficiency. Unleash your potential in the world of data with our comprehensive training.",
       link: "/academy",
       imgsrc:"/assets/Icon/academy-70 px.svg"
     },
     {
       title: "Staff Augmentation",
-      about: "Staff augmentation is an outsourcing strategy that is used to staff a project and respond to the business objectives. The technique consists of evaluating the existing staff and then determining which additional skills are required.",
+      about: "Fuel your team's capabilities with our Staff Augmentation services. Access specialized talent that seamlessly integrates into your projects, driving innovation and efficiency. Experience flexibility and scalability in meeting your project needs.",
       link: "/staffaugmentation",
       imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
     },
     {
       title: "Career Enhancement",
-      about: "Here providing different different job lists for other companies and application submission form for job seekers.",
+      about: "Invest in your future with career growth and enhancement opportunities. Develop new skills, explore fresh horizons, and unlock your full potential. Forge a path toward professional excellence and personal satisfaction.",
       link: "/externaljobs",
       imgsrc:"/assets/Icon/external jobs-70 px.svg"
     },
@@ -63,7 +63,7 @@ const Services = () => {
           <br />
           <br />
           <h1 className={classes.solutionHead+" text-center"}>
-            Solutions
+            Technology Solutions Consulting & Services
           </h1>
           <br />
           <h3 className={classes.solutionPara + " text-center "}>With Expertise in Digital, Engineering and cloud, We deliver Solutions that fulfill the traditional, transformational and future needs of clients across the globe. </h3>

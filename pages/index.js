@@ -1,6 +1,5 @@
 import Feature from "../components/Feature";
 import Pricing from "../components/Pricing";
-
 import LazyHero from "../components/LazyHero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
@@ -8,7 +7,8 @@ import Services from "../components/Services";
 export default function Home() {
   return (
     <>
-      <SeoHead title='Scholar Nest' />
+      <SeoHead title='Build your Business and Career with us | Scholarnest India' description='Elevate your tech capabilities with our expert services. From staff augmentation to cloud computing and technology consulting, we specialize in Spark & Databricks training and data engineering. Unlock the power of data-driven innovation.' />
+
       <Layout>
         <LazyHero />
         <Services/>

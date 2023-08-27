@@ -1,10 +1,12 @@
 .bannerDetails{
     position: absolute;
     top:15vh;
-    left:50px;
+    left:25px;
     color:white;
-    
+    margin-right:20px !important;
+
 }
+
 .bannerDetailsCareer{
     width:80vw;
     position :relative;
@@ -44,7 +46,7 @@ font-size:20px;
 .subheading{
 color:white;
 }
-.bannerDetails h1,.careerPageVideo h1,.intern h1{
+.bannerDetails h2,.careerPageVideo h1,.intern h1{
 font-size:30px;
 }
 .bannerDetails p, .careerPageVideo li, .aboveIntern p,.intern p{
@@ -85,28 +87,21 @@ font-size:16px;
 .testimoni p{
     font-size:16px;
 }
-@media only screen and (max-width: 500px) {
-    .caseheading,.subheading{
-      font-size:12px !important;
-      }
-  }
+.bannerButton{
+    font-size:16px;
+    padding :10px 25px;
+    background-color:#F53855;
+     border-radius:5px;
+     margin-top:10px;
+    }
+
 @media only screen and (max-width: 1139px) {
     .bannerDetails{
     position: absolute;
     top:10vh;
    }
 }
-@media only screen and (max-width: 918px) {
-    .caseheading{
-      margin-top:10%;
-    }
-    
-    
-    .caseheading,.subheading{
-      font-size:16px;
-      }
-    
-  }
+
 @media only screen and (max-width: 950px) {
     .bannerDetails{
     position: absolute;
@@ -120,6 +115,17 @@ font-size:16px;
 }
  
 }
+@media only screen and (max-width: 918px) {
+    .caseheading{
+      margin-top:10%;
+    }
+    
+    
+    .caseheading,.subheading{
+      font-size:16px;
+      }
+    
+  }
 @media only screen and (max-width: 768px) {
     .caseheading{
       margin-top:5%;
@@ -141,10 +147,10 @@ font-size:16px;
    .heading{
     font-size:30px;
    }
-   .bannerDetails h1,.careerPageVideo h1,.headJob{
+   .bannerDetails h2,.careerPageVideo h1,.headJob{
     font-size:24px;
     }
-    .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
+   .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
     font-size:12px;
     }
    
@@ -166,6 +172,11 @@ font-size:16px;
        
       }
 }
+@media only screen and (max-width: 500px) {
+    .caseheading,.subheading{
+      font-size:12px !important;
+      }
+  }
 @media only screen and (max-width: 430px) {
     .bannerDetails{
     position: absolute;
@@ -178,8 +189,9 @@ font-size:16px;
    }
    .bannerButton{
    font-size:10px;
+   padding:4px 20px;
    }
-   .bannerDetails h1{
+   .bannerDetails h2{
     font-size:16px;
     }
     .bannerDetails p,.careerPageVideo li{
@@ -201,13 +213,14 @@ font-size:16px;
                 font-size:10px !important;
             }    
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
     .caseheading,.subheading{
         font-size:10px;
         }
     .bannerButton{
    margin:auto auto;
-   font-size:10px;
+   font-size:8px;
+   margin-top:3px;
    }
    .heading{
     font-size:20px;
@@ -216,7 +229,13 @@ font-size:16px;
     position: absolute;
     top:0.35vh;
     left:5px;
-
+    right:5px;
+   }
+   .bannerDetails h2{
+    font-size:14px;
+   }
+   .bannerDetails p{
+    font-size:8px;
    }
    .careerTable {
     font-size:6px;

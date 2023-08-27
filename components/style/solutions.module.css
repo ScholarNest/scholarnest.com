@@ -35,6 +35,9 @@
   width:30px;
   margin-right:5px;
 }
+.Faqs{
+  display:none;
+}
 .caseheading{
     max-width:460px;
     background-color:white;
@@ -66,7 +69,8 @@ color:white;
  background:url("/assets/1.jpg");
  
 }
-
+.techService{
+}
 
 .content {
   text-align: center;

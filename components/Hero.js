@@ -32,46 +32,43 @@ const Hero = () => {
           showStatus={false}
           stopOnHover={false}>
           <div >
-            <Image height="500px" width="1100px" layout="responsive" style={{ height: "700px" }} src="/assets/homepage/newbanner1.jpg" />
+            <Image height="575px" width="1100px" layout="responsive" style={{ height: "700px" }} src="/assets/homepage/newbanner1.jpg" alt=" Data Engineering with Spark & Databricks" />
 
             {/* <Image src="/assets/aii.jpg" alt="Example" layout="responsive" width={1200} height={700} /> */}
 
             <div className={classes.bannerDetails + " " + "flex flex-col text-white items-start row-start-2 sm:row-start-1"}>
-              <h1 className="font-medium  leading-normal">
-                Build Your Success With <strong>ScholarNest</strong>.
-              </h1>
+              <h2 className="font-medium  leading-normal">
+                Kick Start Your Data Engineering with Spark & Databricks.
+              </h2>
               <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2">
-                Build Your Success With Scholarnest Learn the skills matters the
-                most
+                Master Data Engineering with Spark & Databricks at Scholarnest. Unlock advanced skills for seamless data processing and transformation.
               </p>
-              <ButtonPrimary class="bannerButton">Get Started</ButtonPrimary>
+              <button class={classes.bannerButton}>Get Started</button>
             </div>
           </div>
           <div >
-            <Image height="500px" width="1100px" layout="responsive" src="/assets/homepage/newbanner2.jpg" />
+            <Image height="575px" width="1100px" layout="responsive" src="/assets/homepage/newbanner2.jpg" alt='Technology Consulting Solutions & Services' />
             <div className={classes.bannerDetails + " " + "text-white flex flex-col  items-start row-start-2 sm:row-start-1"}>
-              <h1 className=" text-2xl lg:text-4xl xl:text-5xl font-medium  leading-normal">
-                Build Your Success With <strong>ScholarNest</strong>.
-              </h1>
-              <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2">
-                Build Your Success With Scholarnest Learn the skills matters the
-                most
-              </p>
-              <ButtonPrimary class="bannerButton">Get Started</ButtonPrimary>
+              <h2 className="font-medium  leading-normal">
+                Elevate Your Business with Expert Technology Consulting Solutions & Services
+
+              </h2>
+              <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2  leading-normal">
+              Experience seamless operations through our managed services, while our technology consulting drives innovation. Enhance your team with top talent through staff augmentation.              </p>
+              <button class={classes.bannerButton}>Get Started</button>
             </div>
           </div>
           <div>
-            <Image height="500px" width="1100px" layout="responsive" src="/assets/homepage/newbanner3.jpg" />
+            <Image height="575px" width="1100px" layout="responsive" src="/assets/homepage/newbanner3.jpg" alt="Career Guidance and Enhancement"/>
             <div className={classes.bannerDetails + " " + " text-light flex flex-col items-start row-start-2 sm:row-start-1"}>
-              <h1 className=" text-2xl lg:text-4xl xl:text-5xl font-medium leading-normal">
-                Build Your Success With <strong>ScholarNest</strong>.
-              </h1>
+              <h2 className=" font-medium leading-normal">
+              From Aspiration to Achievement: Career Guidance and Progression           
+                 </h2>
               <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2">
-                Build Your Success With Scholarnest Learn the skills matters the
-                most
+              Navigate your path to success with our career guidance expertise. Unlock opportunities for growth and skill enhancement, propelling you towards a brighter future.
               </p>
 
-              <ButtonPrimary >Get Started</ButtonPrimary>
+              <button class={classes.bannerButton}>Get Started</button>
 
             </div>
           </div>

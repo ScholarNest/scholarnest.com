@@ -124,7 +124,7 @@ const Faqs=[
                className="img-fluid rounded mx-auto"
                layout='responsive'
              height="330px" width="600px"
-              src="/assets/solutions/techConsultingSolution.avif"
+              src="/assets/solutions/techConsultingSolution.jpg"
               alt="Technology Consulting Services" />
 
 

@@ -1,12 +1,18 @@
-import React from 'react'
+import React,{useMemo} from 'react'
 import { useRouter } from "next/router";
 import classes from "../style/solutions.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import TestiMoni from './Testimoni.js'
 import Image from 'next/image';
 
+import getScrollAnimation from "../../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
+import { motion } from "framer-motion";
+
 const AcademySolution = () => {
   const router = useRouter();
+  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
  const courseList=[
   {
     heading:"Course Bundle - Master Data Engineering",
@@ -65,17 +71,38 @@ const AcademySolution = () => {
       date:"13/10/2023"
     }
   ]
-
+  const Faqs = [
+    {
+      id: "faq1",
+      ques: "How will these courses benefit my career?",
+      ans: "Mastering PySpark and Databricks is highly valuable in the data engineering and analytics field. These skills are sought after by companies dealing with large datasets, making you an asset for roles related to data processing, analysis, and transformation. Your proficiency can lead to enhanced job opportunities and career growth."
+    },
+    {
+      id: "faq2",
+      ques: "How can Databricks enhance my data engineering skills?",
+      ans: "Databricks offers a unified platform for data engineering tasks, enabling you to process, transform, and analyze data seamlessly. Learning Databricks equips you with the skills to handle complex data engineering workflows efficiently."
+    },
+    {
+      id: "faq3",
+      ques: "Are the courses self-paced or instructor-led?",
+      ans: "We offer both options. Our self-paced courses allow you to learn at your convenience, while our instructor-led courses provide guided learning with real-time interaction and support."
+    },
+    {
+      id: "faq4",
+      ques: " How do I enroll in a course?",
+      ans: "Enrolling is simple. Visit our course page, select the course that aligns with your goals, and follow the enrollment instructions. If you need any help or assistance, please don't hesitate to contact our support team."
+    }
+  ]
 
   return (
     <>
       <div>
-        <Image height="500px" width="1100px" layout="responsive"  src="/assets/apache.jpg" alt="Academy Solution" />
+        <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/banner.png" alt="Data Engineering with Spark and DataBricks" />
         <div className={classes.bannerDetails}>
-          <h1 class={classes.heading} >Academy</h1>
+          <h2 class={classes.heading} >Welcome to Our Academy: Your Gateway to Learning Excellence</h2>
 
         </div>
-        <p class={classes.det+" text-center"} >We help individuals and organizations with an integrated set of interactive online learning system that provide trainers, learners, and others involved in education with information, tools, and resources to streamline professional skills and knowledge development across all functions and roles.</p>
+        <p class={classes.det+" text-center"} >We provide individuals and organizations with a cohesive and interactive online learning ecosystem. This platform equips trainers, learners, and education stakeholders with information, tools, and resources for seamless skill and knowledge enhancement across various functions and roles.</p>
     
         {/* <div style={{ padding: "0", margin: "auto 0" }} className="row">
           <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"  style={{ backgroundColor: "purple" }}>
@@ -93,12 +120,11 @@ const AcademySolution = () => {
         </div> */}
       </div>
       <div className={classes.topbannerDetailsInAcademy+ " " + " text-light flex flex-col items-start row-start-2 sm:row-start-1"}>
-              <h2 className="  font-medium leading-normal">
-              Master Data Engineering with Spark | Databricks
-              </h2>
+              <h1 className="  font-medium leading-normal">
+              Become a Data Engineering Expert with Spark | Databricks
+                            </h1>
               <p style={{ color: "white"}} className="mt-xl-3 mb-xl-7 mt-lg-4 mb-lg-6 mt-2 mb-1 mt-md-3 mb-lg-6 mt-sm-2 mb-sm-1">
-              Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self Paced or Instructor-led
-              </p>
+              We provide individuals and organizations with a cohesive and interactive online learning ecosystem. This platform equips trainers, learners, and education stakeholders with information, tools, and resources for seamless skill and knowledge enhancement across various functions and roles.    </p>
 
               <button class={classes.btn +" btn mt-sm-2"}>Get Started </button>
 
@@ -171,6 +197,44 @@ const AcademySolution = () => {
   })
  }
 
+<div style={{ backgroundColor: "rgb(251 251 249)" }} className="container-fluid  ">
+        <br />
+        <h2 class={classes.head + " text-center my-3"} >Frequently Asked Questions</h2>
+        <br />
+        {
+          Faqs.map((quest) => {
+            function openSolution(ques_id) {
+              const elem = document.getElementById(ques_id)
+              if (elem.style.display === "none") {
+                elem.style.display = "flex";
+              } else {
+                elem.style.display = "none";
+              }
+            }
+            return (
+              <div class="my-2 border" >
+                <div style={{ cursor: "pointer" }} onClick={() => { openSolution(quest.id) }} className="row rounded mx-auto bg-light p-3 w-100 justify-content-between question">
+                  <h3 class={classes.h3style + " col-10 d-flex"}><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2 bi-cursor" viewBox="0 0 16 16">
+                    <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z" />
+                  </svg> {quest.ques}</h3>
+                  <a class="col-1  text-end" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi align-self-end bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class={classes.Faqs + " p-3 w-100 mx-auto"} id={quest.id}>
+                  <p>{quest.ans} </p>
+                </div>
+              </div>
+            )
+          })
+        }
+
+
+
+
+      </div>
 
 
 </div>
@@ -183,6 +247,24 @@ const AcademySolution = () => {
   <TestiMoni />
       <br />
       <br />
+      <ScrollAnimationWrapper className="w-full">
+        <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
+          <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
+            <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+              <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                Connect with us to <br />  Collaborate!
+              </h2>
+              <p>Lets discover the digital world with us.</p>
+            </div>
+            <button className={
+              "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
+          </div>
+          <div
+            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
+            style={{ filter: "blur(114px)" }}
+          ></div>
+        </motion.div>
+      </ScrollAnimationWrapper>
       <br />
       <br />
       <br />

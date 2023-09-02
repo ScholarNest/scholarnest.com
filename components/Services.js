@@ -77,7 +77,7 @@ const Services = () => {
                   <div style={{display:"flex",flexDirection:"row"}}>
                   <img className={classes.icons} src={sol.imgsrc} />
                   <br />
-                  <p className={classes.h3style + " my-auto ml-2"} >{sol.title}</p>
+                  <h3 className={classes.h3style + " my-auto ml-2"} >{sol.title}</h3>
                   </div>
                   <br />
                   <p>{sol.about}</p>

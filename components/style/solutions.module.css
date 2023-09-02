@@ -178,7 +178,7 @@ left:15px;
   /* font-weight:500; */
   width:75vw;
 }
-.topbannerDetailsInAcademy h2{
+.topbannerDetailsInAcademy h1{
   font-size:30px;
 }
 
@@ -218,7 +218,7 @@ left:15px;
   .solnsDivstyle,.eachServicesDivstyle{
     border-bottom:1px solid black;
   }
-  .topbannerDetailsInAcademy h2{
+  .topbannerDetailsInAcademy h1{
     font-size:24px;
   }
   .topbannerDetailsInAcademy p{
@@ -244,7 +244,7 @@ left:15px;
   font-size: 24px;
  
 }
-.topbannerDetailsInAcademy h2{
+.topbannerDetailsInAcademy h1{
   font-size:20px !important;
 }
 .topbannerDetailsInAcademy p,.topbannerDetailsInAcademy .btn{
@@ -286,8 +286,8 @@ left:15px;
   .caseheading,.subheading{
     font-size:12px !important;
     }
-    .topbannerDetailsInAcademy h2{
-      font-size:18px !important;
+    .topbannerDetailsInAcademy h1{
+      font-size:16px !important;
     }
     .topbannerDetailsInAcademy{
       top:13vh !important;
@@ -347,7 +347,7 @@ left:15px;
       height:20px;
       width:20px;
     }
-    .topbannerDetailsInAcademy h2{
+    .topbannerDetailsInAcademy h1{
       font-size:14px !important;
     }
     .topbannerDetailsInAcademy .btn {
@@ -372,7 +372,8 @@ left:15px;
     .caseSub h2, .caseSub h3, .caseSub button{
       margin-left: 1%;
     }
-    .topbannerDetailsInAcademy h2{
+    .topbannerDetailsInAcademy h1
+    {
       font-size:12px !important;
     }
     .topbannerDetailsInAcademy .btn {

@@ -94,7 +94,7 @@ const Faqs=[
   
 
         <div style={{ margin: "auto 8px" , backgroundColor: "rgb(251 251 249)"}} className={classes.techService+" row"}>
-        <h1 class={classes.head + " text-center my-3"}>Technology is Here</h1>
+        <h2 class={classes.head + " text-center my-3"}>Technology is Here</h2>
         <br />
           <div className={" col-12 col-lg-6 col-sm-12 col-md-12"}>
             <p class="p-2">
@@ -139,7 +139,7 @@ const Faqs=[
       {/* Cards for each solution */}
       <div id="learnMore" className={classes.solutionsBox + " mx-auto justify-content-center  row text-start  p-3"}>
 
-        <h1 class={classes.head + " text-center my-3"}>Sector Expertise</h1>
+        <h2 class={classes.head + " text-center my-3"}>Sector Expertise</h2>
 
 
         <br />
@@ -168,9 +168,9 @@ const Faqs=[
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-              <h3 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+              <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
-              </h3>
+              </h2>
               <p>Lets discover the digital world with us.</p>
             </div>
             <button className={
@@ -186,7 +186,7 @@ const Faqs=[
       <div class={classes.partnersBox+" mx-3"}>
          
           <br />
-          <h1 class="text-center mt-5 mb-4"  >Partners & Customers</h1>
+          <h2 class="text-center mt-5 mb-4"  >Partners & Customers</h2>
           <hr />
           <Carousel
       swipeable={false}
@@ -218,7 +218,7 @@ const Faqs=[
     
         <div style={{ backgroundColor: "rgb(251 251 249)"}} className="container-fluid  ">
         <br />
-        <h1 class={classes.head + " text-center my-3"} >Frequently Asked Questions</h1>
+        <h2 class={classes.head + " text-center my-3"} >Frequently Asked Questions</h2>
         <br />
           {
             Faqs.map((quest)=>{
@@ -257,7 +257,7 @@ const Faqs=[
           <br />
         
       {/* Case Studies */}
-      <h1 class={classes.head + " text-center my-3"}>Case Studies</h1>
+      <h2 class={classes.head + " text-center my-3"}>Case Studies</h2>
 
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
         <ScrollAnimationWrapper className="flex justify-center">

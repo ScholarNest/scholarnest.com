@@ -54,7 +54,7 @@ flex-direction:row;
 
 }
 
-.aboutBox h1{
+.aboutBox h2{
   font-size: 30px;
   margin:15px 0;
 }
@@ -108,7 +108,7 @@ height:350px;
  .heading{
   font-size:30px;
  }
- .aboutBox h1{
+ .aboutBox h2{
   font-size: 24px;
 }
 .letsConnect h3{
@@ -143,7 +143,7 @@ height:350px;
   .bannerDetails p, .aboutBox p, .letsConnect p{
     font-size:10px;
   } 
-  .aboutBox h1{
+  .aboutBox h2{
     font-size: 20px;
   }
   .careerHead{

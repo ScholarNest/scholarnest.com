@@ -54,8 +54,8 @@ const Footer = () => {
         </div>
         <div className="col-6 col-sm-4 col-md-3 p-3 col-lg-3 col-xl-3 col-xxl-3">
       
-            <h1 style={{ fontFamily:"Arial,Helvetica,sans-serif",
-    fontSize:"15px"}}>COMPANY</h1>
+            <h4 style={{ fontFamily:"Arial,Helvetica,sans-serif",
+    fontSize:"15px"}}>COMPANY</h4>
           
           <ul class={classes.footerLink}>
           <li><Link href="/company"> About Us</Link></li>
@@ -66,8 +66,8 @@ const Footer = () => {
         </div>
         <div className="col-6 col-sm-4 p-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
           
-            <h1 style={{ fontFamily:"Arial,Helvetica,sans-serif",
-    fontSize:"15px"}}>LINKS</h1>
+            <h4 style={{ fontFamily:"Arial,Helvetica,sans-serif",
+    fontSize:"15px"}}>LINKS</h4>
 
           <ul class={classes.footerLink}>
             <li>Subscription</li>
@@ -77,8 +77,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-12 col-sm-4 col-md-6 p-3 col-lg-3 col-xl-3 col-xxl-3">
-          <h1 style={{ fontFamily:"Arial,Helvetica,sans-serif",
-    fontSize:"15px"}}>NEWS LETTER</h1>
+          <h4 style={{ fontFamily:"Arial,Helvetica,sans-serif",
+    fontSize:"15px"}}>NEWS LETTER</h4>
           <div className={classes.form}>
             <input type="Email" placeholder="Your email here"></input>
           </div>

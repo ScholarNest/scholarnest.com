@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import {  AiFillBulb} from 'react-icons/ai';
 import {  AiOutlineCopy} from 'react-icons/ai';
-import {  CiTimer} from 'react-icons/ci';
 import {  AiOutlineMail} from 'react-icons/ai';
 const InternTemplate = ({props}) => {
 

@@ -93,9 +93,9 @@ const AcademySolution = () => {
         </div> */}
       </div>
       <div className={classes.topbannerDetailsInAcademy+ " " + " text-light flex flex-col items-start row-start-2 sm:row-start-1"}>
-              <h1 className="  font-medium leading-normal">
+              <h2 className="  font-medium leading-normal">
               Master Data Engineering with Spark | Databricks
-              </h1>
+              </h2>
               <p style={{ color: "white"}} className="mt-xl-3 mb-xl-7 mt-lg-4 mb-lg-6 mt-2 mb-1 mt-md-3 mb-lg-6 mt-sm-2 mb-sm-1">
               Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self Paced or Instructor-led
               </p>
@@ -110,7 +110,7 @@ const AcademySolution = () => {
       {/* Cards for each solution */}
       <div id="learnMore"  style={{ backgroundColor: "rgb(251 251 249)"}} className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} >
 
-        <h1 class={classes.head+ " text-center my-3"}>Our Course Offerings</h1>
+        <h2 class={classes.head+ " text-center my-3"}>Our Course Offerings</h2>
 
          {
           courseList.map((data,index)=>{
@@ -142,7 +142,7 @@ const AcademySolution = () => {
       <br />
      
 
-      <h1  class={classes.head+" text-center my-3"}>Upcoming Courses</h1>
+      <h2  class={classes.head+" text-center my-3"}>Upcoming Courses</h2>
       <br />
       <div className={" mx-auto justify-content-center  row text-start  p-2"} >
  
@@ -177,7 +177,7 @@ const AcademySolution = () => {
       <br />
       <br />
       <br />
-      <h1  class={classes.head+" text-center my-3"}>What Our Learners Say</h1>
+      <h2  class={classes.head+" text-center my-3"}>What Our Learners Say</h2>
       <br />
 
   <TestiMoni />

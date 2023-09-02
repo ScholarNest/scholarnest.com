@@ -23,7 +23,7 @@ flex-direction:row;
     height:450px;
     margin:auto auto;
 }
-.blogDet h1{
+.blogDet h2{
         font-size:30px;
         text-align:center;
         
@@ -69,7 +69,7 @@ flex-direction:row;
     .featuresDet h3{
         font-size:24px;
     }
-    .blogDet h1{
+    .blogDet h2{
         font-size:24px;
 }
     .careerDet,.h3style{
@@ -88,7 +88,7 @@ flex-direction:row;
         font-weight:bold;
         margin-bottom:20px;
     }
-    .blogDet h1{
+    .blogDet h2{
         font-size:20px;
 }
     .featuresDet h3{

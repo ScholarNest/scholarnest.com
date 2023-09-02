@@ -75,7 +75,7 @@ const Header = () => {
                 <div className="col-3 py-3">
                 <img  style={{height:"150px"}} src="/assets/homepage/companyHeader.jpg"/>  
                {/* <GrPersonalComputer  size={120} /> */}
-                <h1 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Company</h1>
+                <h4 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Company</h4>
                
                 <p>
                 We have experience with many analytics platforms and can help you navigate the market.                </p>
@@ -85,38 +85,38 @@ const Header = () => {
                    
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                       <a href="/company#about">
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>About</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>About</h4>
                       <p>All information about company.</p>
                       </a>
                     </div>
                     
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                       <a href="/company#approach">
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Approach</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Approach</h4>
                       <p>A way of dealing with problems.</p>
                       </a>
                     </div>
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                      <a href="/company#portfolio">
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Portfolio</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Portfolio</h4>
                       <p> Collection of a wide range of assets.</p>
                       </a>
                     </div>
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                      <a href="/company#techexpertise">
-                     <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Capabilities</h1>
+                     <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Capabilities</h4>
                       <p>Domain of expertise in technologies. </p>
                       </a>
                     </div>
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                       <a href="/career">                    
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career</h4>
                       <p>Route to career page.</p>
                       </a> 
                     </div>
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                        <a href="/contactUs">
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Contact</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Contact</h4>
                       <p>Contact us for more details.</p>
                       </a>
                     </div>
@@ -151,7 +151,7 @@ const Header = () => {
                 <div className="col-3 py-3">
                 <img  style={{height:"120px",width:"100%"}} src="/assets/homepage/solutionsHeader.jpg"/>  
                {/* <GrPersonalComputer  size={120} /> */}
-                <h1 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Solutions</h1>
+                <h4 style={{fontWeight:"bold",fontSize:"1.3rem",color:"black",marginTop:"8px",marginBottom:"6px"}}>Solutions</h4>
                
                 <p> Digital solutions combining strategy, technology, automation and people.</p>       
                 <button onClick={() =>   router.push("/solutions")} class={classes.bnt +" btn  text-orange-500 border-orange-500 my-4"} style={{border:"1px solid",display:"flex",flexDirection:"row"}}>Explore  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"2px"}} /></button>
@@ -159,7 +159,7 @@ const Header = () => {
                 <div className="col-9">
                   <div  className="row  p-4">
                     <div onClick={() =>   router.push("/managedservices")}  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"95px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
-                                          <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Managed Services</h1>
+                                          <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Managed Services</h4>
                       <p>Services we offering.</p>
                       
                     </div>
@@ -167,14 +167,14 @@ const Header = () => {
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/technologyconsulting")} >
 
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Technology Consulting</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Technology Consulting</h4>
                       <p>Technology Consulting Support.</p>
                       </LinkScroll>
                     </div>
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/academy")} >
 
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Academy</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Academy</h4>
                       <p>  Self Paced, instructor Led and many more. </p>
                       </LinkScroll>
 
@@ -183,7 +183,7 @@ const Header = () => {
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/staffaugmentation")}>
 
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Staff Augmentation</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Staff Augmentation</h4>
                       <p>Outsourcing strategy that is used to staff a project.</p>
                                     
                                           </LinkScroll>
@@ -192,7 +192,7 @@ const Header = () => {
                     <div  class={classes.hoverSubmenu+" "+"py-2 m-3"} style={{height:"97px",padding:"10px",borderLeft:"1px solid blue",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                     <LinkScroll onClick={() =>   router.push("/career")}>
 
-                      <h1 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career Enhancement</h1>
+                      <h4 style={{color:"black",fontSize:"1rem",fontWeight:"bold",marginBottom:"4px"}}>Career Enhancement</h4>
                       <p>Job lists for other companies job seekers.</p>
                       </LinkScroll>
                     </div>

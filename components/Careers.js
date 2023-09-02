@@ -283,7 +283,7 @@ export default function Careers() {
           <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12 my-auto  bg-blue-50 dark:bg-blue-900 ">
 
             <div class={classes.careerPageVideo + " grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 "}>
-              <h1 class="font-medium leading-tight text-3xl mt-0 mb-2 pl-2 text-blue-600">Benefits and rewards</h1>
+              <h2 class="font-medium leading-tight text-3xl mt-0 mb-2 pl-2 text-blue-600">Benefits and rewards</h2>
               <ul class="list-disc pl-12">
                 <li>We recognize individual and team performance with a host of Awards time to time.</li>
                 <li>We encourage employees to explore their full potential and be motivated to be a team player and take up as much responsibility as they are willing and capable of.</li>
@@ -299,7 +299,7 @@ export default function Careers() {
 <br />
       {/* section 3 */}
       <div class="p-4 gap-2 pt-1 lg:px-40">
-      <h1 class={classes.headJob+" font-medium leading-tight ml-1 mt-0 mb-0 text-blue-600"}>Job opportunities with us</h1>
+      <h2 class={classes.headJob+" font-medium leading-tight ml-1 mt-0 mb-0 text-blue-600"}>Job opportunities with us</h2>
 
       </div>
 
@@ -347,7 +347,7 @@ export default function Careers() {
 
       {/* section 4*/}
       <div class="p-4 gap-2 pt-1 lg:px-40">
-      <h1 class={classes.headJob+" font-medium leading-tight ml-1  mt-0 mb-2 text-blue-600"}>Internship opportunities</h1>
+      <h2 class={classes.headJob+" font-medium leading-tight ml-1  mt-0 mb-2 text-blue-600"}>Internship opportunities</h2>
       <div class={classes.aboveIntern+" row p-lg-4 p-md-3 p-sm-2 p-1 "}>
           <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xl-6 p-lg-2 p-md-2 p-xl-1 p-sm-1 p-1 bg-cyan-400 rounded-md h-400 flex items-center justify-center">
             <img  src="/assets/career/internship.jpg" alt="Internship" />
@@ -413,7 +413,7 @@ export default function Careers() {
           
           </div>
       </div>
-      <h1 class={classes.headJob+"  p-4 gap-2 pt-1 lg:px-40 font-medium leading-tight ml-4  mt-0 mb-2 text-blue-600"}>External Job opportunities</h1>
+      <h2 class={classes.headJob+"  p-4 gap-2 pt-1 lg:px-40 font-medium leading-tight ml-4  mt-0 mb-2 text-blue-600"}>External Job opportunities</h2>
 
       <div id="table" class={classes.careerTableTop+" bg-blue-50 dark:bg-blue-900 mx-auto"}>
             <form onSubmit={searchinExternalList} className="flex justify-end my-2 px-2" >
@@ -461,7 +461,7 @@ export default function Careers() {
           <div  className={classes.mentorr + " col-8 col-sm-5"}>
 
           <div class="row h-75 align-items-center justify-content-end me-1  " >
-                    <h1 class="text-center mt-4">Guidance/Mentorship    </h1>
+                    <h2 class="text-center mt-4">Guidance/Mentorship    </h2>
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
@@ -472,7 +472,7 @@ export default function Careers() {
               <div  className={classes.resumeBuilder+" col-8 col-sm-5"}>
 
               <div class="row h-75 align-items-center justify-content-end me-1  " >
-                    <h1 class="text-center mt-4">Resume Builder   </h1>
+                    <h2 class="text-center mt-4">Resume Builder   </h2>
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>

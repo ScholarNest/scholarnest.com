@@ -46,13 +46,13 @@ font-size:20px;
 .subheading{
 color:white;
 }
-.bannerDetails h2,.careerPageVideo h1,.intern h1{
+.bannerDetails h2,.careerPageVideo h2,.intern h2{
 font-size:30px;
 }
 .bannerDetails p, .careerPageVideo li, .aboveIntern p,.intern p{
 font-size:16px;
 }
-.careerPage h1{
+.careerPage h2{
     font-size:40px;
     font-weight:bold;
 }
@@ -73,7 +73,7 @@ font-size:16px;
     height:120px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.mentorr h1, .resumeBuilder h1{
+.mentorr h2, .resumeBuilder h2{
     font-weight:bold;
     font-size:24px;
 }
@@ -130,7 +130,7 @@ font-size:16px;
     .caseheading{
       margin-top:5%;
     }
-    .mentorr h1, .resumeBuilder h1{
+    .mentorr h2, .resumeBuilder h2{
         font-size:20px;
     }
   }
@@ -141,20 +141,20 @@ font-size:16px;
     left:20px;
 
    }
-   .mentorr h1, .resumeBuilder h1{
+   .mentorr h2, .resumeBuilder h2{
     font-size:16px;
 }
    .heading{
     font-size:30px;
    }
-   .bannerDetails h2,.careerPageVideo h1,.headJob{
+   .bannerDetails h2,.careerPageVideo h2 , .headJob{
     font-size:24px;
     }
    .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
     font-size:12px;
     }
    
-    .careerPage h1{
+    .careerPage h2{
         font-size:30px;
     }
     .careerPage h3{
@@ -197,13 +197,13 @@ font-size:16px;
     .bannerDetails p,.careerPageVideo li{
     font-size:10px;
     }
-    .careerPage h1{
+    .careerPage h2{
         font-size:24px;
     }
     .careerPage h3{
         font-size:12px;
     }
-    .careerPageVideo h1,.headJob{
+    .careerPageVideo h2, .headJob{
         font-size:20px;
         }
         .careerTable, .intern p,.aboveIntern p {

@@ -103,9 +103,9 @@ const responsive = {
         <motion.div variants={scrollAnimation}  class={classes.detailBox} style={{color:"black",backgroundColor:"rgb(251 251 249)",padding:"10px"}}>
         <br />
         <br />
-         <h1  className="text-center">
+         <h2  className="text-center">
             Our Offerings
-          </h1>
+          </h2>
           <br />
        
           {/* <Carousel autoPlay={true} autoFocus={true} infiniteLoop={true} showStatus="false" showIndicators="false"> */}
@@ -146,12 +146,12 @@ const responsive = {
           <ScrollAnimationWrapper>
             <br />
             <br />
-            <motion.h1
+            <motion.h2
               variants={scrollAnimation}
               className="text-center my-3  leading-relaxed"
             >
               Case Studies
-            </motion.h1>
+            </motion.h2>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
@@ -226,7 +226,7 @@ Since our inception, we have been consistently helping people and organizations 
         <div class={classes.partnersBox+" mx-3"}>
           <br />
           <br />
-          <h1 class="text-center mt-5 mb-4"  >Partners & Customers</h1>
+          <h2 class="text-center mt-5 mb-4"  >Partners & Customers</h2>
           <hr />
           <Carousel
       swipeable={false}

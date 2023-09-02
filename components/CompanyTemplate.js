@@ -62,8 +62,9 @@ const CompanyTemplate = () => {
 
       <div id="about" style={{ margin: "0", backgroundColor: "rgb(251 251 249)" }} className={classes.aboutBox + " row"}>
 
-        <h1 >About ScholarNest
-        </h1>
+        <h2 >About ScholarNest
+        </h2>
+
 
         <div className="col-12 col-lg-6 col-sm-12 col-md-6 p-3">
           <p>
@@ -94,8 +95,8 @@ Every modern enterprise lives and breathes data daily. Without access to a skill
       <br />
       <br />
       <div id="approach" style={{ margin: "0" }} className={classes.aboutBox + " row"}>
-        <h1>Approach
-        </h1>
+        <h2>Approach
+        </h2>
         <div className="col-12 col-lg-6 col-sm-12 col-md-6 my-auto p-3">
           <Image
             src="/assets/company/approach.jpg"
@@ -140,8 +141,8 @@ We focus on you and will be proactive, dynamic, and responsive to your needs.
       <br />
       <br />
       <div id="portfolio" style={{ margin: "0", backgroundColor: "rgb(251 251 249)" }} className={classes.aboutBox + " row"}>
-        <h1 >Portfolio
-        </h1>
+        <h2 >Portfolio
+        </h2>
 
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
@@ -227,8 +228,8 @@ Upskilling, mentoring, supporting, and building high-potential teams            
       <br />
       <br />
       <div id="techexpertise" style={{ margin: "5px" }} className={classes.aboutBox+" row justify-center"}>
-        <h1 >Capabilities
-        </h1>
+        <h2 >Capabilities
+        </h2>
         <hr />
         <br />
         <Carousel
@@ -271,7 +272,7 @@ Upskilling, mentoring, supporting, and building high-potential teams            
         <motion.div  variants={scrollAnimation} class={classes.gradient}>
           <motion.div  variants={scrollAnimation} style={{width:"50%"}}>
             <motion.div  variants={scrollAnimation} style={{margin:"25% 5%"}}>
-            <motion.h1 class={classes.careerHead} >Career at ScholarNest</motion.h1>
+            <motion.h2 class={classes.careerHead} >Career at ScholarNest</motion.h2>
             <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential. Find what inspires and drives you.</motion.h3>
             <motion.button className={classes.careerButton +
        " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "

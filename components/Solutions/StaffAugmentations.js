@@ -163,7 +163,7 @@ const StaffAugmentations = () => {
    {/* Cards for each solution */}
    <div id="learnMore"    className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"}  > 
 
-      <h1 class={classes.head+" text-center my-3"}>Offerings</h1>   
+      <h2 class={classes.head+" text-center my-3"}>Offerings</h2>   
     
      
          
@@ -195,7 +195,7 @@ const StaffAugmentations = () => {
   <br />
 
     {/* Case Studies */}
-    <h1  class={classes.head+" text-center my-3"}>Case Studies</h1>   
+    <h2 class={classes.head+" text-center my-3"}>Case Studies</h2>   
     <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div style={{boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}} variants={scrollAnimation}>
@@ -269,9 +269,9 @@ const StaffAugmentations = () => {
           onSubmit={handleSubmit}
           className="rounded-lg shadow-xl flex flex-col px-8 py-20 bg-white dark:bg-green-500"
         >
-          <h1 style={{fontSize:"30px"}}>
+          <h2 style={{fontSize:"30px"}}>
             Send your staffing requirements
-          </h1>
+          </h2>
           <div className="row">
             <div className="col">
 

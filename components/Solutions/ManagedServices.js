@@ -67,7 +67,7 @@ const ManagedServices = () => {
    {/* Cards for each solution */}
    <div id="learnMore"   className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} > 
 
-      <h1  class={classes.head+" text-center my-3"}>Offerings</h1>   
+      <h2  class={classes.head+" text-center my-3"}>Offerings</h2>   
       <br />
       <br />
       <br />
@@ -126,7 +126,7 @@ const ManagedServices = () => {
   <br />
   <br />
     {/* Case Studies */}
-    <h1  class={classes.head+" text-center my-3"}>Case Studies</h1>   
+    <h2  class={classes.head+" text-center my-3"}>Case Studies</h2>   
 
     <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">

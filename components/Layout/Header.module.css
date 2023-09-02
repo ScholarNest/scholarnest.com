@@ -22,7 +22,7 @@ display:block;
 .hoverSubmenu:hover{
     transform: scale(1.1);
 }
-.hoverSubmenu:hover > h1{
+.hoverSubmenu:hover > h4{
 color:red !important;
 }
 .bnt:hover{

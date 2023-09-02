@@ -50,7 +50,7 @@ const Services = () => {
     {
       title: "Career Enhancement",
       about: "Invest in your future with career growth and enhancement opportunities. Develop new skills, explore fresh horizons, and unlock your full potential. Forge a path toward professional excellence and personal satisfaction.",
-      link: "/externaljobs",
+      link: "/career",
       imgsrc:"/assets/Icon/external jobs-70 px.svg"
     },
   ]
@@ -66,7 +66,7 @@ const Services = () => {
             Technology Solutions Consulting & Services
           </h1>
           <br />
-          <h3 className={classes.solutionPara + " text-center "}>With Expertise in Digital, Engineering and cloud, We deliver Solutions that fulfill the traditional, transformational and future needs of clients across the globe. </h3>
+          <p className={classes.solutionPara + " text-center "}>With Expertise in Digital, Engineering and cloud, We deliver Solutions that fulfill the traditional, transformational and future needs of clients across the globe. </p>
           <div style={{ width: "90%", margin: "0 auto" }} className="my-4 text-light">
             {/* <Carousel autoPlay={true} autoFocus={true} infiniteLoop={true} showStatus="false" showIndicators="false"> */}
 
@@ -77,7 +77,7 @@ const Services = () => {
                   <div style={{display:"flex",flexDirection:"row"}}>
                   <img className={classes.icons} src={sol.imgsrc} />
                   <br />
-                  <h3 className={classes.h3style + " my-auto ml-2"} >{sol.title}</h3>
+                  <p className={classes.h3style + " my-auto ml-2"} >{sol.title}</p>
                   </div>
                   <br />
                   <p>{sol.about}</p>
@@ -104,7 +104,7 @@ const Services = () => {
  
       <br />
       <div class={classes.feedbackBox} >
-        <h1 class=" text-center my-2"  >What our customers say</h1>
+        <h2 class=" text-center my-2"  >What our customers say</h2>
         <br />
         <Carousel
           dynamicHeight={false}
@@ -123,7 +123,7 @@ const Services = () => {
                 <p style={{ margin: "5px" }} > <strong style={{color: "black" }}>❝ </strong>It feels like they are part of our team. While the project is ongoing, the results thus far have met the expectations of the internal team. NashTech utilises best practices to achieve results and successfully integrates with the internal team. The team is dedicated, hard-working, and knowledgeable.
                   <strong style={{color: "black" }}> ❞</strong></p>
               </div>
-              <h2 className="text-center my-2 text-dark fw-bold">Jeff Dutton</h2>
+              <h3 className="text-center my-2 text-dark fw-bold">Jeff Dutton</h3>
               <p class="mb-3">Infosight Data platform architect</p>
 
             </div>
@@ -151,9 +151,9 @@ const Services = () => {
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-              <h3 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+              <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
-              </h3>
+              </h2>
               <p>Lets discover the digital world with us.</p>
             </div>
             <button className={

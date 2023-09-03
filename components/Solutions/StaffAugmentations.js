@@ -7,31 +7,125 @@ import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Image from "next/image";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
 const StaffAugmentations = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const ServicesData=[
     {
-      title: "Staff Augmentation 1",
-      about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
+      title: "Technology Expertise",
+      about: "Access highly skilled professionals in various technology domains, from software development to data science, ensuring your projects are executed with precision and innovation.",
       link: "#",
       imgsrc:"/assets/Icon/managed services-70 px.svg"
     },
     {
-      title: "Staff Augmentation 2",
-      about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
+      title: "Flexible Workforce",
+      about: "Scale your team up or down based on project demands without the commitment of permanent hires. Our staff augmentation provides the flexibility you need to adapt quickly.",
       link: "#",
       imgsrc:"/assets/Icon/technology consulting-70 px.svg"
     },
     {
-      title: "Staff Augmentation 3",
-      about: "Managed services is the practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
+      title: "Project-Based Support",
+      about: "Augment your team for specific projects, gaining specialized talent exactly when and where you need it, enhancing project efficiency and delivery.",
+      link: "#",
+      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
+    },
+    {
+      title: "Domain-Specific Knowledge",
+      about: "Tap into professionals with industry-specific knowledge who understand your sector's unique challenges and contribute insights to drive optimal outcomes.",
+      link: "#",
+      imgsrc:"/assets/Icon/managed services-70 px.svg"
+    },
+    {
+      title:"Immediate Productivity",
+      about:"Our experts seamlessly integrate into your team, bringing their skills and experience to the table, resulting in rapid onboarding and immediate contributions.",
+      link: "#",
+      imgsrc:"/assets/Icon/technology consulting-70 px.svg"
+    },
+    {
+      title: "Cost-Effective Solution",
+      about:"Avoid the expenses associated with full-time hires. With staff augmentation, you get the skills you need without the overhead costs.",
+      link: "#",
+      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
+    },
+    {
+      title: "Reduced Recruitment Burden",
+      about:"Skip lengthy recruitment processes. We handle talent acquisition, screening, and selection, saving you time and resources.",
+      link: "#",
+      imgsrc:"/assets/Icon/managed services-70 px.svg"
+    },
+    {
+      title:"Scalable Resources",
+      about:"Seamlessly adapt to changing project demands. Our staff augmentation resources can be quickly adjusted to align with evolving requirements.",
+      link: "#",
+      imgsrc:"/assets/Icon/technology consulting-70 px.svg"
+    },
+    {
+      title: "Global Talent Pool",
+      about:"Access a diverse talent pool with professionals from around the world, bringing a range of perspectives and expertise to your projects.",
       link: "#",
       imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
     },
 
 ]
+const logos=[ 
+  { id: 1, image: "/assets/partners/apache .svg" },
+  { id: 2, image: "/assets/partners/aws.svg" },
+  { id: 3, image: "/assets/partners/databricks.svg" },
+  { id: 4, image: "/assets/partners/docker.svg" },
+  { id: 5, image: "/assets/partners/hashicorp.svg" },
+
+
+  // { id: 6, image: "/assets/logo4.png" },
+  // { id: 7, image: "/assets/logo3.png" },
+  // { id: 8, image: "/assets/logo6.png" },
+  // { id: 9, image: "/assets/logo7.png" },
+  // { id: 10, image: "/assets/logo4.png" }
+
+];
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 2,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
+};
+
+const Faqs=[
+  {
+    id:"faq1",
+    ques:"What industries benefit from staff augmentation?",
+    ans:"Staff augmentation is beneficial for various industries, including IT, software development, healthcare, finance, engineering, and more. It allows organizations to access specialized skills without the commitment of permanent hires.",
+  },
+  {
+    id:"faq2",
+    ques:"How quickly can I onboard augmented staff for my project?",
+    ans:"Our streamlined onboarding process ensures that qualified professionals can join your team quickly. The time frame depends on the complexity of the role and specific project requirements.",
+      },
+  {
+    id:"faq3",
+    ques:"How does staff augmentation enhance project success?",
+    ans:"Augmented professionals bring specialized skills and expertise, contributing to efficient project execution. They help bridge skill gaps, meet deadlines, and ensure high-quality deliverables.",
+  },
+{
+  id:"faq4",
+  ques: "How do you ensure the quality of augmented professionals?",
+  ans:"We thoroughly screen and vet all professionals before they join our talent pool. Our selection process ensures that you receive skilled and experienced individuals who can contribute effectively to your projects."
+  } 
+]
+
   const [fullname, setFullname] = useState("");
   const [companyname, setCompanyname] = useState("");
   const [email, setEmail] = useState("");
@@ -132,24 +226,24 @@ const StaffAugmentations = () => {
   return (
     <>
     <div>
-       <Image height="500px" width="1100px" layout="responsive" src="/assets/solutions/StaffAugmentation.jpg" alt="Staff Augmentation Solution" />
+       <Image height="500px" width="1100px" layout="responsive" src="/assets/solutions/StaffAugmentation.jpg" alt="Staff Augmentation Services" />
        <div className={classes.bannerDetails}>
-       <h1 class={classes.heading} >Staff Augmentation</h1>
+       <h1 class={classes.heading} >Staff Augmentation Services</h1>
       
        </div>
-       <p   class={classes.det+" text-center"}>Our staff augmentation offering allows organizations not only to focus on the growth and development of their business but also supplements it by giving them access to skilled and experienced manpower when its needed.</p>
+       <p   class={classes.det+" text-center"}>Empower your projects with our Staff Augmentation Services. We provide skilled professionals who seamlessly integrate into your team, ensuring immediate productivity and expertise. Whether you need temporary support or specialized talent, our staff augmentation solutions enhance your workforce and drive project success.</p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>
          
-            <h2 class={classes.caseheading}>How do we help you with our managed services </h2>
-           <h3 class={classes.subheading}>Automation enabled releases into production environments with the click of a button </h3>
+            <h2 class={classes.caseheading}>How do we help you with our Staff Augmentation Services</h2>
+           <h3 class={classes.subheading}>We assist you with our Staff Augmentation Services by seamlessly integrating skilled professionals into your projects, aligning with your specific needs. Our tailored solutions provide on-demand expertise, optimizing your workforce for efficiency and success. Whether you require short-term support or long-term talent, we bridge the resource gap to achieve your goals.</h3>
             
            <button  onClick={() =>router.push("/staffaugmentation#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
           
         </div>
-        <div style={{padding:"0",margin:"auto 0"}} className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
-        <img  src="/assets/solutions/business-mirror.jpg" alt="Solution" />
+        <div style={{padding:"0",margin:"auto 0", height:"100%"}} className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
+        <img class="h-100" src="/assets/solutions/business-mirror.jpg" alt="Solution" />
 
         </div>
      </div>
@@ -163,7 +257,7 @@ const StaffAugmentations = () => {
    {/* Cards for each solution */}
    <div id="learnMore"    className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"}  > 
 
-      <h2 class={classes.head+" text-center my-3"}>Offerings</h2>   
+      <h2 class={classes.head+" text-center my-3"}>Staff Augmentation Services Offerings</h2>   
     
      
          
@@ -417,7 +511,74 @@ const StaffAugmentations = () => {
         </form>
           <br />
           <br />
+          <div class={classes.partnersBox+" mx-3"}>
+          <br />
+          <br />
+          <h2 class="text-center mt-5 mb-4"  >Partners & Customers</h2>
+          <hr />
+          <Carousel
+      swipeable={false}
+      draggable={false}
+      showDots={false}
+      responsive={responsive}
+      ssr={true} // means to render carousel on server-side.
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={2000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={700}
+      containerClass="carousel-container"
+      dotListClass="custom-dot-list-style"
+      
+    >
+      {logos.map((logo) => (
+        <img style={{height:"120px",width:"150px",margin:"0 auto",objectFit:"contain"}} key={logo.id} src={logo.image} alt={`Logo ${logo.id}`} />
+    
+      ))}
+    </Carousel>
+        </div>
+        <br />
+        <div style={{ backgroundColor: "rgb(251 251 249)"}} className="container-fluid  ">
+        <br />
+        <h2 class={classes.head + " text-center my-3"} >Frequently Asked Questions</h2>
+        <br />
+          {
+            Faqs.map((quest)=>{
+              function openSolution(ques_id){
+                const elem = document.getElementById(ques_id)
+                if (elem.style.display === "none") {
+                  elem.style.display = "flex";
+                } else {
+                  elem.style.display = "none";
+                }
+              }
+              return(
+                <div class="my-2 border" >
+                <div style={{cursor:"pointer"}} onClick={() => { openSolution(quest.id) }} className="row rounded mx-auto bg-light p-3 w-100 justify-content-between question">
+                  <h3 class={classes.h3style+" col-10 d-flex"}><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2 bi-cursor" viewBox="0 0 16 16">
+                    <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z" />
+                  </svg> {quest.ques}</h3>
+                  <a class="col-1  text-end" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi align-self-end bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                  </svg>
+                  </a>
+                </div>
+                <div class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
+                  <p>{quest.ans} </p>
+                </div>
+              </div>
+              )
+            })
+          }
+          
+        
+
          
+          </div>
+          <br />
+          <br />
     </>
   )
 }

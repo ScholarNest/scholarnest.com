@@ -294,7 +294,7 @@ export default function Careers() {
 
 
       {/* section 2 */}
-      <div class="bg-blue-50 dark:bg-blue-900 ">
+      <div  style={{backgroundColor:"rgb(251 251 249)"}} class=" dark:bg-blue-900 ">
         <div class="row mx-0 pt-10">
           {/* iframe */}
           <div className={classes.caseSub + " col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 px-auto"} style={{ backgroundColor: "purple" }}>
@@ -306,7 +306,7 @@ export default function Careers() {
 
           </div>
           {/* video right section */}
-          <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12 my-auto  bg-blue-50 dark:bg-blue-900 ">
+          <div  class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12 my-auto  bg-blue-50 dark:bg-blue-900 ">
 
             <div class={classes.careerPageVideo + " grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 "}>
               <h2 class="font-medium leading-tight text-3xl mt-0 mb-2 pl-2 text-blue-600">Benefits and rewards</h2>
@@ -375,7 +375,7 @@ export default function Careers() {
 
 
       {/* section 4*/}
-      <div class="p-4 gap-2 pt-1 lg:px-40">
+      <div  style={{backgroundColor:"rgb(251 251 249)"}} class="p-4 gap-2 pt-1 lg:px-40">
         <h2 class={classes.headJob + " font-medium leading-tight ml-1  mt-0 mb-2 text-blue-600"}>Internship opportunities</h2>
         <div class={classes.aboveIntern + " row p-lg-4 p-md-3 p-sm-2 p-1 "}>
           <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xl-6 p-lg-2 p-md-2 p-xl-1 p-sm-1 p-1 bg-cyan-400 rounded-md h-400 flex items-center justify-center">

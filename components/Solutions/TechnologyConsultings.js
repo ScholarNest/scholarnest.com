@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";

@@ -6,7 +6,10 @@
     margin-right:20px !important;
    
 }
-
+.bannerDetails p{
+    width:68vw;
+    text-align:start;
+}
 .bannerDetailsCareer{
     width:80vw;
     position :relative;
@@ -123,6 +126,10 @@ font-size:16px;
     position: absolute;
     top:7vh;
    }
+   .bannerDetails p{
+    width:95vw;
+    text-align:center;
+}
    .careerTableTop{
     width:85vw;
 }

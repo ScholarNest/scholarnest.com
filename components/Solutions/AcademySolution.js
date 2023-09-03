@@ -121,12 +121,12 @@ const AcademySolution = () => {
       </div>
       <div className={classes.topbannerDetailsInAcademy+ " " + " text-light flex flex-col items-start row-start-2 sm:row-start-1"}>
               <h1 className="  font-medium leading-normal">
-              Become a Data Engineering Expert with Spark | Databricks
+              Become a Data Engineering Expert with Spark | <strong style={{color:"#F53855"}}>  Databricks </strong>
                             </h1>
               <p style={{ color: "white"}} className="mt-xl-3 mb-xl-7 mt-lg-4 mb-lg-6 mt-2 mb-1 mt-md-3 mb-lg-6 mt-sm-2 mb-sm-1">
               We provide individuals and organizations with a cohesive and interactive online learning ecosystem. This platform equips trainers, learners, and education stakeholders with information, tools, and resources for seamless skill and knowledge enhancement across various functions and roles.    </p>
 
-              <button class={classes.btn +" btn mt-sm-2"}>Get Started </button>
+              {/* <button class={classes.btn +" btn mt-sm-2"}>Get Started </button> */}
 
             </div>
       

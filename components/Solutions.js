@@ -47,40 +47,57 @@ const responsive = {
   },
 };
 
- 
+const Faqs=[
+  {
+    id:"faq1",
+    ques:"What is technology consulting?",
+    ans:"Technology consulting involves providing expert guidance and strategic advice to businesses on utilizing technology effectively. Consultants assess the client's needs, challenges, and goals, then design tailored solutions that align with their objectives. This can include optimizing IT infrastructure, implementing software solutions, advising on digital transformation, and ensuring technology aligns with business strategies. The aim is to enhance efficiency, innovation, and competitiveness through informed technology decisions."
+  },
+  {
+    id:"faq2",
+    ques:"How do I get support for data engineering?",
+    ans:"As a technology consultant, we are here to provide comprehensive support for data engineering. We will assess your specific requirements, design tailored data pipelines, and recommend suitable tools and frameworks. Whether it's optimizing data integration, transforming processes, or ensuring quality, we will guide you through every step to achieve efficient and effective data engineering solutions."
+  },
+  {
+    id:"faq3",
+    ques:"Why do we need cloud computing?",
+    ans:"Cloud computing offers numerous benefits for businesses. It enhances scalability, allowing you to effortlessly adjust resources as needed. It improves accessibility, enabling remote collaboration and access to data from anywhere. Cloud computing also reduces infrastructure costs, eliminates the need for extensive hardware, and enhances data security through advanced measures. Ultimately, it streamlines operations, accelerates innovation, and ensures a competitive edge in today's dynamic business landscape."
+  }
+]
+
   
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const SolutionData=[
     {
    title:"Managed Services",
    link:"/managedservices",
-   details:"Offload your work to us to reduce costs, improve service quality, and free your internal teams to do work that's specific to your business.",
+   details:"Experience hassle-free operations with our Managed Services solutions. We handle the complexities, ensuring your systems run smoothly while you focus on core business activities. From IT management to support, we offer tailored solutions for seamless efficiency. Elevate your business with our expert management and optimization services.",
    imgsrc:"/assets/Icon/managedservices.svg"
    },
    {
     title:"Technology Consulting",
     link:"/technologyconsulting",
-    details:"We focus on working closely with organizations to strategize the best use of information technology in achieving their business objectives",
+    details:"Navigate the ever-evolving tech landscape with our Technology Consulting services. Our seasoned experts offer strategic insights, guiding your business through digital transformations. From optimizing operations to embracing innovative solutions, we tailor strategies to meet your unique goals. Experience the power of informed decisions and unlock new dimensions of success.",
     imgsrc:"/assets/Icon/technologyconsulting.svg"
     },
-    {
-      title:"Academy",
-      link:"/academy",
-      details:"We help individuals and organizations with an integrated set of interactive online learning system that provide trainers, learners, and others involved in education with information, tools, and resources to streamline professional skills and knowledge development across all functions and roles.",
-      imgsrc:"/assets/Icon/academy.svg"
-    },
+    // {
+    //   title:"Academy",
+    //   link:"/academy",
+    //   details:"We help individuals and organizations with an integrated set of interactive online learning system that provide trainers, learners, and others involved in education with information, tools, and resources to streamline professional skills and knowledge development across all functions and roles.",
+    //   imgsrc:"/assets/Icon/academy.svg"
+    // },
     {
       title:"Staff Augmentation",
       link:"/staffaugmentation",
-      details:"Our staff augmentation offering allows organizations not only to focus on the growth and development of their business but also supplements it by giving them access to skilled and experienced manpower when its needed.",
+      details:"Elevate your team's capabilities with Staff Augmentation. Access a pool of skilled professionals to seamlessly integrate with your projects, bolstering expertise and productivity. Our flexible solutions ensure you have the right talent, precisely when you need it. Supercharge your projects and meet your goals with our Staff Augmentation services.",
       imgsrc:"/assets/Icon/staffaugmentation.svg"
     },
-    {
-      title:"Career Enhancement",
-      link:"/career",
-      details:"Explore various open jobs matching your skills and apply for your dream job to elevate your career.",
-      imgsrc:"/assets/Icon/externaljobs.svg"
-    },
+    // {
+    //   title:"Career Enhancement",
+    //   link:"/career",
+    //   details:"Explore various open jobs matching your skills and apply for your dream job to elevate your career.",
+    //   imgsrc:"/assets/Icon/externaljobs.svg"
+    // },
 
 ]
 
@@ -88,9 +105,9 @@ const responsive = {
   return (
   <>
     <div class="py-0">
-       <Image height="600px" width="1000px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt="Solution" />
+       <Image height="600px" width="1000px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt=" Business Solution" />
        <div className={classes.bannerDetails}>
-       <h1 class={classes.heading} >Solutions</h1>
+       <h1 class={classes.heading} > Business Solution</h1>
        <h3 >Combining strategy, technology, automation and people</h3>
        <p class="text-center">Thriving in a complex digital world isn’t easy. The ability to continually innovate must be at the core of your organisation. We work with you and your teams to define, structure and build the organisational and technical capabilities needed to transform into a modern digital business. </p>
        </div>
@@ -253,6 +270,68 @@ Since our inception, we have been consistently helping people and organizations 
         <br />
         <br />
         <br />
+        <div style={{ backgroundColor: "rgb(251 251 249)"}} className="container-fluid  ">
+        <br />
+        <h2 class={classes.head + " text-center my-3"} >Frequently Asked Questions</h2>
+        <br />
+          {
+            Faqs.map((quest)=>{
+              function openSolution(ques_id){
+                const elem = document.getElementById(ques_id)
+                if (elem.style.display === "none") {
+                  elem.style.display = "flex";
+                } else {
+                  elem.style.display = "none";
+                }
+              }
+              return(
+                <div class="my-2 border" >
+                <div style={{cursor:"pointer"}} onClick={() => { openSolution(quest.id) }} className="row rounded mx-auto bg-light p-3 w-100 justify-content-between question">
+                  <h3 class={classes.h3style+" col-10 d-flex"}><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi me-2 bi-cursor" viewBox="0 0 16 16">
+                    <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z" />
+                  </svg> {quest.ques}</h3>
+                  <a class="col-1  text-end" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi align-self-end bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                  </svg>
+                  </a>
+                </div>
+                <div class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
+                  <p>{quest.ans} </p>
+                </div>
+              </div>
+              )
+            })
+          }
+          
+        
+
+         
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <ScrollAnimationWrapper className="w-full">
+        <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
+          <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
+            <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+              <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                Connect with us to <br />  Collaborate!
+              </h2>
+              <p>Lets discover the digital world with us.</p>
+            </div>
+            <button className={
+              "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
+          </div>
+          <div
+            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
+            style={{ filter: "blur(114px)" }}
+          ></div>
+        </motion.div>
+      </ScrollAnimationWrapper>
+  
+          <br />
         <br />
         <br />
        

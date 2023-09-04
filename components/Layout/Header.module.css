@@ -37,3 +37,30 @@ color:white;
 
 }
 }
+.rightMenu{
+    width:215px;
+    height:97vh;
+    display:none;
+    opacity:0.93;
+    background-color:black;
+    position:fixed;
+    right:0;
+    z-index:3;
+    color:white;
+    padding-left:30px;
+    padding-top:20px;
+    transition: width 2s linear 1s;
+}
+.rightMenu h3{
+    height:50px;
+    color: white;
+    font-size:1rem;
+    font-weight:bold;
+    margin:auto auto;
+    /* text-align:center; */
+}
+.rightMenu  li{
+    list-style-type: square;
+    color:#F53855;
+   
+}

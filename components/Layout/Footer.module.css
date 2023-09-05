@@ -20,6 +20,9 @@ height:30px;
  margin-top:10px;
  color:#b6b6b6;
 }
+.footer p{
+  color:#b6b6b6;
+}
 
 
 @media only screen and (max-width: 768px) {

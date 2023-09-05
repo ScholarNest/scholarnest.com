@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Link from 'next/link';
 import { useRouter } from "next/router";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -33,13 +33,22 @@ const Header = () => {
       elem.style.display="none";
     }
   }
+//   function hoverCompany(e){ 
+//     e.preventDefault();
+//     document.getElementById("menu1").style.display="block";
+//   }
+// function MouseOutCompany(e){
+// e.preventDefault();
+// document.getElementById("menu1").style.display="none";
+
+// }
 
   return (
     <>
 
       <header
         className={classes.headerr +
-          "fixed top-0 w-full  z-30 bg-black-700 transition-all " +
+          "fixed top-0 w-full  z-200 bg-black-700 transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-1")
         }
       >
@@ -50,16 +59,14 @@ const Header = () => {
             </LinkScroll>
           </div>
           <ul className="hidden md:flex lg:flex col-start-4 col-end-8 text-black-100  items-center">
-            <a
-              legacyBehavior={true}
-              activeClass="active"
+            <li
+             
               // href="/company"
-              spy={true}
+           
               smooth={true}
               duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
+             
+         
               // onMouseOver={hoverCareer}
               // onMouseLeave={MouseOutCareer}
               // onClick={() => window("/company", "_blank").focus()}
@@ -72,7 +79,7 @@ const Header = () => {
               }
             >
               <div style={{ display: "flex", flexDirection: "row" }}><a href="/company"> Company</a> <FaAngleDown style={{ marginTop: "6px" }} /> </div>
-              <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"} id="menu" >
+              <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"} id="menu1" >
                 <div className="row">
                   <div className="col-3 py-3">
                     <img style={{ height: "150px" }} src="/assets/homepage/companyHeader.jpg" />
@@ -126,19 +133,17 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </li>
 
-            <a
+            <li
               legacyBehavior={true}
               activeClass="active"
               // href="/solutions"
 
-              spy={true}
+          
               smooth={true}
               duration={1000}
-              onSetActive={() => {
-                setActiveLink("solutions");
-              }}
+           
               className={
                 classes.menuSol + " " +
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -202,7 +207,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </li>
 
             <a
               legacyBehavior={true}
@@ -276,7 +281,7 @@ const Header = () => {
           </ul>
           <div class="row justify-content-end pt-1 lg:hidden md:hidden">
             <svg onClick={openRightMenu} xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list col-10 col-sm-6  mt-3" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </div>
           

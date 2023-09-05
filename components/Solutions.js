@@ -50,14 +50,14 @@ const responsive = {
 const Faqs=[
   {
     id:"faq1",
-    ques:"What is technology consulting?",
-    ans:"Technology consulting involves providing expert guidance and strategic advice to businesses on utilizing technology effectively. Consultants assess the client's needs, challenges, and goals, then design tailored solutions that align with their objectives. This can include optimizing IT infrastructure, implementing software solutions, advising on digital transformation, and ensuring technology aligns with business strategies. The aim is to enhance efficiency, innovation, and competitiveness through informed technology decisions."
-  },
+    ques:"How does staff augmentation work?",
+    ans:"Staff augmentation is a strategic approach to scaling your team with specialized talent. It involves seamlessly integrating external professionals into your projects to address skill gaps or workload spikes. We carefully match your requirements with our pool of skilled experts, allowing you to extend your team's capabilities without the complexities of full-time hiring. With staff augmentation, you retain control over projects while benefiting from additional expertise, flexibility, and efficient project execution"
+    },
   {
     id:"faq2",
-    ques:"How do I get support for data engineering?",
-    ans:"As a technology consultant, we are here to provide comprehensive support for data engineering. We will assess your specific requirements, design tailored data pipelines, and recommend suitable tools and frameworks. Whether it's optimizing data integration, transforming processes, or ensuring quality, we will guide you through every step to achieve efficient and effective data engineering solutions."
-  },
+    ques:"When is technology consulting necessary?",
+    ans:"Technology consulting becomes necessary when you seek expert guidance to navigate complex technological landscapes. It's essential when considering digital transformations, implementing new solutions, or optimizing existing processes. Whether you're facing challenges, aiming for innovation, or require strategic IT insights, technology consulting helps align your business goals with tailored tech strategies. Our experts provide invaluable advice, ensuring you make informed decisions and stay competitive in today's rapidly evolving business environment."
+     },
   {
     id:"faq3",
     ques:"Why do we need cloud computing?",
@@ -108,7 +108,7 @@ const Faqs=[
        <Image height="600px" width="1000px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt=" Business Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} > Business Solution</h1>
-       <h3 >Combining strategy, technology, automation and people</h3>
+       <h2 >Combining strategy, technology, automation and people</h2>
        <p class="text-center">Thriving in a complex digital world isn’t easy. The ability to continually innovate must be at the core of your organisation. We work with you and your teams to define, structure and build the organisational and technical capabilities needed to transform into a modern digital business. </p>
        </div>
      <br />
@@ -296,7 +296,7 @@ Since our inception, we have been consistently helping people and organizations 
                   </svg>
                   </a>
                 </div>
-                <div class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
+                <div  style={{display:"none"}}  class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
                   <p>{quest.ans} </p>
                 </div>
               </div>
@@ -324,10 +324,7 @@ Since our inception, we have been consistently helping people and organizations 
             <button className={
               "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
           </div>
-          <div
-            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-            style={{ filter: "blur(114px)" }}
-          ></div>
+         
         </motion.div>
       </ScrollAnimationWrapper>
   

@@ -237,7 +237,7 @@ const Faqs=[
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>
          
             <h2 class={classes.caseheading}>How do we help you with our Staff Augmentation Services</h2>
-           <h3 class={classes.subheading}>We assist you with our Staff Augmentation Services by seamlessly integrating skilled professionals into your projects, aligning with your specific needs. Our tailored solutions provide on-demand expertise, optimizing your workforce for efficiency and success. Whether you require short-term support or long-term talent, we bridge the resource gap to achieve your goals.</h3>
+           <p class={classes.subheading}>We assist you with our Staff Augmentation Services by seamlessly integrating skilled professionals into your projects, aligning with your specific needs. Our tailored solutions provide on-demand expertise, optimizing your workforce for efficiency and success. Whether you require short-term support or long-term talent, we bridge the resource gap to achieve your goals.</p>
             
            <button  onClick={() =>router.push("/staffaugmentation#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
           
@@ -565,7 +565,7 @@ const Faqs=[
                   </svg>
                   </a>
                 </div>
-                <div class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
+                <div  style={{display:"none"}}  class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
                   <p>{quest.ans} </p>
                 </div>
               </div>
@@ -574,7 +574,7 @@ const Faqs=[
           }
           
         
-
+          <br />
          
           </div>
           <br />

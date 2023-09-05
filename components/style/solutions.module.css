@@ -47,7 +47,7 @@
 .caseheading{
     max-width:460px;
     background-color:white;
-    margin-top:18%;
+    margin-top:10%;
 border-radius:4px;
 }
 .caseheading,.subheading{
@@ -57,6 +57,7 @@ font-size:20px;
 }
 .subheading{
 color:white;
+font-size:16px;
 }
 .styleDiv{
     padding:10px;
@@ -114,7 +115,7 @@ color:white;
   margin:0 auto;
   background-color:white;
 }
-.bannerDetails h3{
+.bannerDetails h2{
   font-weight:500;
   background-color:white;
   padding:10px;
@@ -203,11 +204,7 @@ left:15px;
   .caseheading{
     margin-top:10%;
   }
-  
-  
-  .caseheading,.subheading{
-    font-size:16px;
-    }
+
   
 }
 
@@ -231,10 +228,10 @@ left:15px;
 }
 @media only screen and (max-width: 600px) {
 
-  .bannerDetails h3{
+ .caseheading, .bannerDetails h2{
   font-size:16px;
   }
-  .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
+ .subheading, .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
     font-size:12px;
   }
  .heading{
@@ -283,9 +280,7 @@ left:15px;
 }
 
 @media only screen and (max-width: 500px) {
-  .caseheading,.subheading{
-    font-size:12px !important;
-    }
+ 
     .topbannerDetailsInAcademy h1{
       font-size:16px !important;
     }
@@ -320,10 +315,10 @@ left:15px;
   .bannerImg{
     height:70vh;
   }
-  .bannerDetails h3{
+  .caseheading,.bannerDetails h2{
   font-size:12px;
   }
-  .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
+  .subheading, .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
     font-size:10px !important;
   } 
   .detailBox h2, .careerTableTop h1{
@@ -366,9 +361,7 @@ left:15px;
   .heading{
     font-size:24px;
    } 
-   .caseheading,.subheading{
-    font-size:10px;
-    }
+   
     .caseSub h2, .caseSub h3, .caseSub button{
       margin-left: 1%;
     }

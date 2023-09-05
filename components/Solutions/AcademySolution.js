@@ -124,7 +124,7 @@ const AcademySolution = () => {
               Become a Data Engineering Expert with Spark | <strong style={{color:"#F53855"}}>  Databricks </strong>
                             </h1>
               <p style={{ color: "white"}} className="mt-xl-3 mb-xl-7 mt-lg-4 mb-lg-6 mt-2 mb-1 mt-md-3 mb-lg-6 mt-sm-2 mb-sm-1">
-              We provide individuals and organizations with a cohesive and interactive online learning ecosystem. This platform equips trainers, learners, and education stakeholders with information, tools, and resources for seamless skill and knowledge enhancement across various functions and roles.    </p>
+              Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.    </p>
 
               {/* <button class={classes.btn +" btn mt-sm-2"}>Get Started </button> */}
 
@@ -223,7 +223,7 @@ const AcademySolution = () => {
                     </svg>
                   </a>
                 </div>
-                <div class={classes.Faqs + " p-3 w-100 mx-auto"} id={quest.id}>
+                <div style={{display:"none"}} class={classes.Faqs + " p-3 w-100 mx-auto"} id={quest.id}>
                   <p>{quest.ans} </p>
                 </div>
               </div>
@@ -231,7 +231,7 @@ const AcademySolution = () => {
           })
         }
 
-
+<br />
 
 
       </div>
@@ -259,10 +259,7 @@ const AcademySolution = () => {
             <button className={
               "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
           </div>
-          <div
-            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-            style={{ filter: "blur(114px)" }}
-          ></div>
+     
         </motion.div>
       </ScrollAnimationWrapper>
       <br />

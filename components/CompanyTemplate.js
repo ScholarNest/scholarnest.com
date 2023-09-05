@@ -302,10 +302,7 @@ Upskilling, mentoring, supporting, and building high-potential teams            
             <button className={
               "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
           </div>
-          <div
-            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-            style={{ filter: "blur(114px)" }}
-          ></div>
+       
         </motion.div>
       </ScrollAnimationWrapper>
       <br />

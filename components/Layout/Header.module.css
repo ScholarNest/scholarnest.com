@@ -8,6 +8,7 @@ z-index:2;
 }
 .headerr{
     height:92px !important;
+    position:fixed;
 }
 .menu:hover > .submenu{
 display:block;

@@ -48,6 +48,7 @@ font-size:20px;
 }
 .subheading{
 color:white;
+font-size:16px;
 }
 .bannerDetails h2,.careerPageVideo h2,.intern h2{
 font-size:30px;
@@ -144,10 +145,6 @@ font-size:16px;
     }
     
     
-    .caseheading,.subheading{
-      font-size:16px;
-      }
-    
   }
 @media only screen and (max-width: 768px) {
     .caseheading{
@@ -168,7 +165,7 @@ font-size:16px;
     font-size:16px;
     margin:5px 0;
   }
-   .mentorr h2, .resumeBuilder h2{
+ .caseheading,  .mentorr h2, .resumeBuilder h2{
     font-size:16px;
 }
    .heading{
@@ -177,7 +174,7 @@ font-size:16px;
    .bannerDetails h2,.careerPageVideo h2 , .headJob{
     font-size:24px;
     }
-    .letsConnect p,    .Faqs p,  .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
+   .subheading, .letsConnect p,    .Faqs p,  .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
     font-size:12px;
     }
    
@@ -202,11 +199,7 @@ font-size:16px;
         font-size:20px;
       }
 }
-@media only screen and (max-width: 500px) {
-    .caseheading,.subheading{
-      font-size:12px !important;
-      }
-  }
+
 @media only screen and (max-width: 430px) {
     .bannerDetails{
     position: absolute;
@@ -214,7 +207,7 @@ font-size:16px;
     left:15px;
 
    }
-   .h3style{
+   .caseheading,.h3style{
     font-size:12px;
     
   }
@@ -228,7 +221,7 @@ font-size:16px;
    .bannerDetails h2{
     font-size:16px;
     }
-    .letsConnect p,  .Faqs p,.bannerDetails p,.careerPageVideo li{
+ .subheading,  .letsConnect p,  .Faqs p,.bannerDetails p,.careerPageVideo li{
     font-size:10px;
     }
     .careerPage h2{
@@ -251,9 +244,7 @@ font-size:16px;
               }
 }
 @media only screen and (max-width: 340px) {
-    .caseheading,.subheading{
-        font-size:10px;
-        }
+ 
     .bannerButton{
    margin:auto auto;
    font-size:8px;

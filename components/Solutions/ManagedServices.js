@@ -37,9 +37,9 @@ const ManagedServices = () => {
 const Faqs=[
   {
     id:"faq1",
-    ques:"What is technology consulting?",
+    ques:"What are managed services, and how do they benefit my organization?",
     ans:"Managed services are comprehensive solutions that encompass cloud computing, data engineering, data science, and analytics. They benefit your organization by providing expert support, optimizing operations, ensuring data security, and enabling you to focus on core business objectives while we handle the technical complexities."
-  },
+      },
   {
     id:"faq2",
     ques:"What is the typical scope of Managed Cloud Computing Services?",
@@ -103,7 +103,7 @@ const responsive = {
         <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>
          
             <h2 class={classes.caseheading}>How do we help you with our managed services </h2>
-           <h3 class={classes.subheading}>Our managed services empower your data-centric endeavors across data science, cloud computing, and data engineering. We deliver expert support, ensuring seamless operations, scalability, and optimization. Trust us to navigate the complexities, so you can focus on innovation and growth.</h3>
+           <p class={classes.subheading}>Our managed services empower your data-centric endeavors across data science, cloud computing, and data engineering. We deliver expert support, ensuring seamless operations, scalability, and optimization. Trust us to navigate the complexities, so you can focus on innovation and growth.</p>
             
            <button  onClick={() =>router.push("/manageservices#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
           
@@ -306,7 +306,7 @@ const responsive = {
                   </svg>
                   </a>
                 </div>
-                <div class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
+                <div  style={{display:"none"}}  class={classes.Faqs+" p-3 w-100 mx-auto"} id={quest.id}>
                   <p>{quest.ans} </p>
                 </div>
               </div>
@@ -315,7 +315,7 @@ const responsive = {
           }
           
         
-
+          <br />
          
           </div>
           <br />
@@ -334,10 +334,7 @@ const responsive = {
             <button className={
               "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
           </div>
-          <div
-            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-            style={{ filter: "blur(114px)" }}
-          ></div>
+       
         </motion.div>
       </ScrollAnimationWrapper>
   

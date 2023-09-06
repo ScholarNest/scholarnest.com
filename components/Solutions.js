@@ -70,13 +70,13 @@ const Faqs=[
   const SolutionData=[
     {
    title:"Managed Services",
-   link:"/managedservices",
+   link:"/managed-services-and-solutions",
    details:"Experience hassle-free operations with our Managed Services solutions. We handle the complexities, ensuring your systems run smoothly while you focus on core business activities. From IT management to support, we offer tailored solutions for seamless efficiency. Elevate your business with our expert management and optimization services.",
    imgsrc:"/assets/Icon/managedservices.svg"
    },
    {
     title:"Technology Consulting",
-    link:"/technologyconsulting",
+    link:"/technology-consulting",
     details:"Navigate the ever-evolving tech landscape with our Technology Consulting services. Our seasoned experts offer strategic insights, guiding your business through digital transformations. From optimizing operations to embracing innovative solutions, we tailor strategies to meet your unique goals. Experience the power of informed decisions and unlock new dimensions of success.",
     imgsrc:"/assets/Icon/technologyconsulting.svg"
     },
@@ -88,7 +88,7 @@ const Faqs=[
     // },
     {
       title:"Staff Augmentation",
-      link:"/staffaugmentation",
+      link:"/staff-augmentation",
       details:"Elevate your team's capabilities with Staff Augmentation. Access a pool of skilled professionals to seamlessly integrate with your projects, bolstering expertise and productivity. Our flexible solutions ensure you have the right talent, precisely when you need it. Supercharge your projects and meet your goals with our Staff Augmentation services.",
       imgsrc:"/assets/Icon/staffaugmentation.svg"
     },

@@ -1,13 +1,17 @@
 .bannerDetails{
     position: absolute;
-    top:15vh;
+    top:50px;
     left:25px;
+  
     color:white;
     margin-right:20px !important;
-   
+    text-align:start;
+}
+.bannerDetails h2{
+    width:70vw;
 }
 .bannerDetails p{
-    width:68vw;
+    width:50vw;
     text-align:start;
 }
 .bannerDetailsCareer{
@@ -115,22 +119,19 @@ font-size:16px;
       .letsConnect p{
         font-size:16px;
       }
-@media only screen and (max-width: 1139px) {
+/* @media only screen and (max-width: 1139px) {
     .bannerDetails{
     position: absolute;
     top:10vh;
    }
-}
+} */
 
 @media only screen and (max-width: 950px) {
     .bannerDetails{
     position: absolute;
-    top:7vh;
+    top:20px;
    }
-   .bannerDetails p{
-    width:95vw;
-    text-align:center;
-}
+
    .careerTableTop{
     width:85vw;
 }
@@ -150,17 +151,13 @@ font-size:16px;
     .caseheading{
       margin-top:5%;
     }
-    .mentorr h2, .resumeBuilder h2{
+    .bannerDetails h2, .mentorr h2, .resumeBuilder h2{
         font-size:20px;
     }
+   
   }
 @media only screen and (max-width: 600px) {
-    .bannerDetails{
-    position: absolute;
-    top:4vh;
-    left:20px;
-
-   }
+ 
    .h3style{
     font-size:16px;
     margin:5px 0;
@@ -171,8 +168,12 @@ font-size:16px;
    .heading{
     font-size:30px;
    }
-   .bannerDetails h2,.careerPageVideo h2 , .headJob{
+  .careerPageVideo h2 , .headJob{
     font-size:24px;
+    }
+    .bannerDetails h2{
+        font-size:20px;
+
     }
    .subheading, .letsConnect p,    .Faqs p,  .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
     font-size:12px;
@@ -203,7 +204,7 @@ font-size:16px;
 @media only screen and (max-width: 430px) {
     .bannerDetails{
     position: absolute;
-    top:2vh;
+
     left:15px;
 
    }
@@ -243,10 +244,10 @@ font-size:16px;
                 font-size:16px;
               }
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 360px) {
  
     .bannerButton{
-   margin:auto auto;
+   /* margin:auto auto; */
    font-size:8px;
    margin-top:3px;
    }
@@ -255,12 +256,12 @@ font-size:16px;
    }
    .bannerDetails{
     position: absolute;
-    top:0.35vh;
-    left:5px;
-    right:5px;
+  
+    left:15px;
+  
    }
    .bannerDetails h2{
-    font-size:14px;
+    font-size:12px;
    }
    .bannerDetails p{
     font-size:8px;

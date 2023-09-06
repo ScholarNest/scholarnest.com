@@ -118,7 +118,7 @@ const Header = () => {
                         </a>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/career">
+                        <a href="/career-guidance-and-enhancement">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Career</h4>
                           <p>Route to career page.</p>
                         </a>
@@ -165,21 +165,21 @@ const Header = () => {
                   </div>
                   <div className="col-9">
                     <div className="row  p-4">
-                      <div onClick={() => router.push("/managedservices")} class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "95px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                      <div onClick={() => router.push("/managed-services-and-solutions")} class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "95px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
                         <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Managed Services</h4>
                         <p>Services we offering.</p>
 
                       </div>
 
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll onClick={() => router.push("/technologyconsulting")} >
+                        <LinkScroll onClick={() => router.push("/technology-consulting")} >
 
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Technology Consulting</h4>
                           <p>Technology Consulting Support.</p>
                         </LinkScroll>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll onClick={() => router.push("/academy")} >
+                        <LinkScroll onClick={() => router.push("/scholarnest-academy")} >
 
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Academy</h4>
                           <p>  Self Paced, instructor Led and many more. </p>
@@ -188,7 +188,7 @@ const Header = () => {
                       </div>
 
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll onClick={() => router.push("/staffaugmentation")}>
+                        <LinkScroll onClick={() => router.push("/staff-augmentation")}>
 
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Staff Augmentation</h4>
                           <p>Outsourcing strategy that is used to staff a project.</p>
@@ -197,7 +197,7 @@ const Header = () => {
 
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll onClick={() => router.push("/career")}>
+                        <LinkScroll onClick={() => router.push("/career-guidance-and-enhancement")}>
 
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Career Enhancement</h4>
                           <p>Job lists for other companies job seekers.</p>
@@ -212,7 +212,7 @@ const Header = () => {
             <a
               legacyBehavior={true}
               activeClass="active"
-              href="/academy"
+              href="/scholarnest-academy"
               spy={true}
               smooth={true}
               duration={1000}
@@ -232,7 +232,7 @@ const Header = () => {
             <a
               legacyBehavior={true}
               activeClass="active"
-              href="/career"
+              href="/career-guidance-and-enhancement"
               // onClick={() => window.open("/career", "_self").focus()}
               spy={true}
               smooth={true}
@@ -346,7 +346,7 @@ const Header = () => {
               Solutions
             </a>
             <a
-              href="/career"
+              href="/career-guidance-and-enhancement"
               className={
                 "px-2 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "pricing"
@@ -400,13 +400,13 @@ const Header = () => {
        </nav>
       <div id="rightMenu" className={classes.rightMenu}>
       <ul>
-      <li> <h3 onClick={()=>{router.push("/academy")}}>Academy </h3></li>
+      <li> <h3 onClick={()=>{router.push("/scholarnest-academy")}}>Academy </h3></li>
 
         <li>
-       <h3 onClick={()=>{router.push("/managedservices")}}> Managed Services</h3></li>
-       <li> <h3 onClick={()=>{router.push("/technologyconsulting")}}>Technology Consulting </h3></li>
-       <li><h3 onClick={()=>{router.push("/staffaugmentation")}}>Staff Augmentation </h3></li>
-       <li><h3 onClick={()=>{router.push("/career")}}> Career Enhancement</h3></li>
+       <h3 onClick={()=>{router.push("/managed-services-and-solutions")}}> Managed Services</h3></li>
+       <li> <h3 onClick={()=>{router.push("/technology-consulting")}}>Technology Consulting </h3></li>
+       <li><h3 onClick={()=>{router.push("/staff-augmentation")}}>Staff Augmentation </h3></li>
+       <li><h3 onClick={()=>{router.push("/career-guidance-and-enhancement")}}> Career Enhancement</h3></li>
       </ul>
       </div>
       {/* End Mobile Navigation */}

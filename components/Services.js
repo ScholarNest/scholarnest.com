@@ -26,31 +26,31 @@ const Services = () => {
     {
       title: "Managed Services",
       about: "Simplify your operations and elevate efficiency with our Managed Services solutions. We take care of the complexities, allowing you to focus on what matters most – your core business. Experience seamless management, support, and optimization, tailored to your unique needs.",
-      link: "/managedservices",
+      link: "/managed-services-and-solutions",
       imgsrc:"/assets/Icon/managed services-70 px.svg"
     },
     {
       title: "Technology Consulting",
       about: "Unlock the full potential of your business with our expert Technology Consulting services. From strategy to implementation, we offer tailored solutions that drive innovation and growth. Let our seasoned consultants guide you through the complexities of technology to achieve your goals.",
-      link: "/technologyconsulting",
+      link: "/technology-consulting",
       imgsrc:"/assets/Icon/technology consulting-70 px.svg"
     },
     {
       title: "Academy",
       about: "Empower your journey in data engineering at our Academy, mastering Spark and Databricks technologies. Gain hands-on expertise in crafting data-driven solutions and enhancing efficiency. Unleash your potential in the world of data with our comprehensive training.",
-      link: "/academy",
+      link: "/scholarnest-academy",
       imgsrc:"/assets/Icon/academy-70 px.svg"
     },
     {
       title: "Staff Augmentation",
       about: "Fuel your team's capabilities with our Staff Augmentation services. Access specialized talent that seamlessly integrates into your projects, driving innovation and efficiency. Experience flexibility and scalability in meeting your project needs.",
-      link: "/staffaugmentation",
+      link: "/staff-augmentation",
       imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
     },
     {
       title: "Career Enhancement",
       about: "Invest in your future with career growth and enhancement opportunities. Develop new skills, explore fresh horizons, and unlock your full potential. Forge a path toward professional excellence and personal satisfaction.",
-      link: "/career",
+      link: "/career-guidance-and-enhancement",
       imgsrc:"/assets/Icon/external jobs-70 px.svg"
     },
   ]

@@ -276,7 +276,7 @@ Upskilling, mentoring, supporting, and building high-potential teams            
             <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential. Find what inspires and drives you.</motion.h3>
             <motion.button className={classes.careerButton +
        " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
-      } onClick={() =>  router.push("/career")} style={{display:"flex",flexDirection:"row"}}>Visit our career page </motion.button>
+      } onClick={() =>  router.push("/career-guidance-and-enhancement")} style={{display:"flex",flexDirection:"row"}}>Visit our career page </motion.button>
             </motion.div>
            
           </motion.div>

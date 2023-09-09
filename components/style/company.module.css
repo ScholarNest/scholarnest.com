@@ -96,6 +96,11 @@ height:350px;
   margin: 0 auto;
   objectFit:contain; 
 }
+@media only screen and (max-width: 640px) {
+  .letsConnect{
+    text-align:center;
+  }  
+}
 @media only screen and (max-width: 600px) {
  
 

@@ -297,19 +297,19 @@ export default function Careers() {
       <div  style={{backgroundColor:"rgb(251 251 249)"}} class=" dark:bg-blue-900 ">
         <div class="row mx-0 pt-10">
           {/* iframe */}
-          <div className={classes.caseSub + " col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12 px-auto"} style={{ backgroundColor: "purple" }}>
-
+          <div className={classes.caseSub + " col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12 px-auto  d-flex justify-content-center align-items-center"} style={{ backgroundColor: "purple" }}>
+     <div class="my-auto">
             <h2 class={classes.caseheading}>Current Jobs at various organisations</h2>
             <p class={classes.subheading}>Discover a range of current job openings that cater to various skill sets and expertise. Elevate your professional journey by exploring these exciting prospects and taking the next step towards your dream job.</p>
-
-            <button onClick={() => window.open("/career#table", "_self").focus()} class="hover:shadow-orange-md transition-all outline-none  btn my-4" style={{ marginLeft: "10%", border: "1px solid white", display: "flex", flexDirection: "row", color: "white" }}>Explore jobs  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "5px" }} /></button>
-
+        
+            <button onClick={() => window.open("/career-guidance-and-enhancement#table", "_self").focus()} class="hover:shadow-orange-md transition-all outline-none  btn my-4" style={{ marginLeft: "10px", border: "1px solid white", display: "flex", flexDirection: "row", color: "white" }}>Explore jobs  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "5px" }} /></button>
+            </div>
           </div>
           {/* video right section */}
-          <div  class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12 my-auto  bg-blue-50 dark:bg-blue-900 ">
+          <div  class="col-lg-8 col-xl-8 col-md-8 col-12 col-sm-12 my-auto  bg-blue-50 dark:bg-blue-900 ">
 
             <div class={classes.careerPageVideo + " grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-8 "}>
-              <h2 class="font-medium leading-tight text-3xl mt-0 mb-2 pl-2 text-blue-600">Benefits and rewards</h2>
+              <h2 class="font-medium leading-tight text-3xl mt-3 mb-2 pl-2 text-blue-600">Benefits and rewards</h2>
               <ul class="list-disc pl-12">
                 <li>At our core, we inspire employees to unlock their full potential and thrive as collaborative team players, embracing responsibilities that match their capabilities and ambitions. </li>
                 <li>Our experts serve as guides through the professional landscape, equipping you with insights for a fulfilling journey ahead.</li>
@@ -489,7 +489,7 @@ export default function Careers() {
       <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
-            <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+            <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
               <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
               </h2>

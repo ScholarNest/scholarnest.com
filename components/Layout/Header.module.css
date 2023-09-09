@@ -9,6 +9,7 @@ z-index:2;
 .headerr{
     height:92px !important;
     position:fixed;
+    z-index:4 !important;
 }
 .menu:hover > .submenu{
 display:block;
@@ -41,15 +42,16 @@ color:white;
 .rightMenu{
     width:215px;
     height:97vh;
-    display:none;
+    /* display:none; */
     opacity:0.93;
     background-color:black;
     position:fixed;
     right:0;
+    top:0;
     z-index:3;
     color:white;
     padding-left:30px;
-    padding-top:20px;
+    padding-top:100px;
     transition: width 2s linear 1s;
 }
 .rightMenu h3{

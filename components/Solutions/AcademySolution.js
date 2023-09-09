@@ -1,4 +1,4 @@
-import React,{useMemo} from 'react'
+import React,{useMemo,useState} from 'react'
 import { useRouter } from "next/router";
 import classes from "../style/solutions.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const AcademySolution = () => {
   const router = useRouter();
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+  
  const courseList=[
   {
     heading:"Course Bundle - Master Data Engineering",
@@ -22,7 +22,7 @@ const AcademySolution = () => {
   },
   {
     heading:"Mastering PySpark",
-    desc:"Self-Placed/Instructor Lead",
+    desc:"Self-Placed",
     imgPath:"/assets/solutions/AcademySolutions/2.jpg",
     link:"https://www.scholarnest.in/courses/mastering-pyspark"
   },
@@ -53,22 +53,16 @@ const AcademySolution = () => {
  ]
   const upcomingCourse=[
     {
-      heading:"Apache Kafka Advance",
-      desc:"Apache Kafka's advanced features and concepts enable it to handle complex data streaming scenarios with high reliability and scalability.",
-      imgPath:"/assets/solutions/AcademySolutions/upcoming1.png",
+      heading:"Course Bundle - Master Data Engineering",
+      desc:"Instructor Led Course",
+      imgPath:"/assets/solutions/AcademySolutions/1.png",
       date:"13/10/2023"
     },
     {
-      heading:"Apache Kafka Advance",
-      desc:"Apache Kafka's advanced features and concepts enable it to handle complex data streaming scenarios with high reliability and scalability.",
-      imgPath:"/assets/solutions/AcademySolutions/upcoming1.png",
-      date:"13/10/2023"
-    },
-    {
-      heading:"Apache Kafka Advance",
-      desc:"Apache Kafka's advanced features and concepts enable it to handle complex data streaming scenarios with high reliability and scalability.",
-      imgPath:"/assets/solutions/AcademySolutions/upcoming1.png",
-      date:"13/10/2023"
+      heading:"Mastering PySpark",
+      desc:"Instructor Led Course",
+      imgPath:"/assets/solutions/AcademySolutions/2.jpg",
+      date:"Soon...."
     }
   ]
   const Faqs = [
@@ -97,7 +91,7 @@ const AcademySolution = () => {
   return (
     <>
       <div>
-        <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/banner.png" alt="Data Engineering with Spark and DataBricks" />
+        <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/banner2.png" alt="Data Engineering with Spark and DataBricks" />
         <div className={classes.bannerDetails}>
           <h2 class={classes.heading} >Welcome to Our Academy: Your Gateway to Learning Excellence</h2>
 
@@ -123,10 +117,10 @@ const AcademySolution = () => {
               <h1 className="  font-medium leading-normal">
               Become a Data Engineering Expert with Spark | <strong style={{color:"#F53855"}}>  Databricks </strong>
                             </h1>
-              <p style={{ color: "white"}} className="mt-xl-3 mb-xl-7 mt-lg-4 mb-lg-6 mt-2 mb-1 mt-md-3 mb-lg-6 mt-sm-2 mb-sm-1">
+              <p style={{ color: "white"}} className=" mb-xl-7  mb-lg-6 mb-1  mb-lg-6 mb-sm-1">
               Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.    </p>
 
-              {/* <button class={classes.btn +" btn mt-sm-2"}>Get Started </button> */}
+              <button class={classes.btn +" btn mt-sm-2"}><a href="https://www.scholarnest.in/collections">Enquire for Lead Instructor </a> </button>
 
             </div>
       
@@ -136,7 +130,7 @@ const AcademySolution = () => {
       {/* Cards for each solution */}
       <div id="learnMore"  style={{ backgroundColor: "rgb(251 251 249)"}} className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} >
 
-        <h2 class={classes.head+ " text-center my-3"}>Our Course Offerings</h2>
+        <h2 class={classes.head+ " text-center my-3"}>Self Page Course Offerings</h2>
 
          {
           courseList.map((data,index)=>{
@@ -168,7 +162,7 @@ const AcademySolution = () => {
       <br />
      
 
-      <h2  class={classes.head+" text-center my-3"}>Upcoming Courses</h2>
+      <h2  class={classes.head+" text-center my-3"}>Instructor Based Live Courses</h2>
       <br />
       <div className={" mx-auto justify-content-center  row text-start  p-2"} >
  
@@ -176,11 +170,11 @@ const AcademySolution = () => {
   upcomingCourse.map((data)=>{
    return(
 <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
-    <div className={classes.styleDiv}>
+    <div className={classes.styleDiv + " h-100"}>
       <Image width={600}
         height={400} src={data.imgPath} />
       <br />
-      <hr />
+  
       <h3 class={classes.h3style+" mb-1"} >{data.heading}</h3>
 
       <p>{data.desc}</p>
@@ -250,7 +244,7 @@ const AcademySolution = () => {
       <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
-            <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+            <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
               <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
               </h2>

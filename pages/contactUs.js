@@ -5,7 +5,7 @@ function ContactUs() {
   return(
   <>
   <Header/>
-  <div style={{paddingTop:'5%',paddingBottom:'35%'}}>
+  <div style={{paddingBottom:'25%'}}>
   <ContactUs_/>
   </div>
   <Footer/>

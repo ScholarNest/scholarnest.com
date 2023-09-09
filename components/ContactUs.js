@@ -90,8 +90,8 @@ export default function ContactUs() {
   return (
     <>
     <main>
-      <header className="p-8 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
-        <div className="mx-auto mb-5 mt-5 md:mt-10">
+      <header className="p-6 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4  lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
+        <div className="mx-auto mb-5 mt-5">
           <div className="badge bg-green-500 inline-block rounded-xl">
             {/* <p className="font-light text-base px-4 py-1 text-white-500">
             Let's get in touch
@@ -165,8 +165,9 @@ export default function ContactUs() {
             onChange={(e) => {
               setFullname(e.target.value);
             }}
+            placeholder="Test"
             name="fullname"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 "
           />
           {errors?.fullname && (
             <p className="text-red-500">Fullname cannot be empty.</p>
@@ -185,7 +186,8 @@ export default function ContactUs() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            placeholder="test@gmail.com"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.email && (
             <p className="text-red-500">Email cannot be empty.</p>
@@ -201,10 +203,11 @@ export default function ContactUs() {
             type="text"
             name="phone"
             value={phone}
+            placeholder="+91 9372XXXXXX"
             onChange={(e) => {
               setphone(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.phone && (
             <p className="text-red-500">phone cannot be empty.</p>
@@ -221,7 +224,8 @@ export default function ContactUs() {
             onChange={(e) => {
               setMessage(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            placeholder="Type your message"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           ></textarea>
           {errors?.message && (
             <p className="text-red-500">Message body cannot be empty.</p>

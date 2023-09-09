@@ -89,6 +89,8 @@ const responsive = {
     slidesToSlide: 1,
   },
 };
+
+
   return (
     <>
     <div>
@@ -100,24 +102,25 @@ const responsive = {
        <p class={classes.det+" text-center"}>Experience uninterrupted business operations with our Managed Services and elevate your data-driven ventures with our Managed Services. From data science to cloud computing and data engineering, we provide expert solutions to streamline and enhance your operations, ensuring success in today's digital landscape.</p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
-        <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>
-         
+        <div className="col-lg-6 col-xl-6 col-12  d-flex justify-content-center align-items-center" style={{backgroundColor:"purple",padding:"auto 15px"}}>
+          <div class="my-auto">
             <h2 class={classes.caseheading}>How do we help you with our managed services </h2>
            <p class={classes.subheading}>Our managed services empower your data-centric endeavors across data science, cloud computing, and data engineering. We deliver expert support, ensuring seamless operations, scalability, and optimization. Trust us to navigate the complexities, so you can focus on innovation and growth.</p>
-            
-           <button  onClick={() =>router.push("/manageservices#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
-          
+           {/* onClick={() =>router.push("/managed-service#learnMore")}  */}
+           <button  class="btn my-4" style={{marginLeft: "10px",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
+           </div>
         </div>
-        <div style={{padding:"0",margin:"auto 0"}} className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
-        <img  src="/assets/solutions/business-mirror.jpg" alt="Solution" />
+    
+        <div style={{padding:"0",margin:"auto 0"}} className={classes.imgInPurplediv+" col-lg-6 col-xl-6"}>
+        <img   src="/assets/solutions/business-mirror.jpg" alt="Solution" />
 
         </div>
+      
      </div>
     </div>
     <br />
     <br />
-    <br />
-    <br />
+
   
     
    {/* Cards for each solution */}
@@ -325,7 +328,7 @@ const responsive = {
           <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
-            <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+            <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
               <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
               </h2>

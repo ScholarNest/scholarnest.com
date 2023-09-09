@@ -130,7 +130,7 @@ const Faqs=[
         <div className="row text-start justify-content-center " style={{ borderBottom:"1px solid white",margin:"0"}}> 
          {
           SolutionData.map((info)=>(
-            <div onClick={() => window.open(info.link, "_self").focus()}   className={ classes.solDivstyle +" col-lg-3 col-sm-5 col-md-3 col-5 p-lg-3 p-sm-2 p-md-2 p-1"}>
+            <div onClick={() => window.open(info.link, "_self").focus()}   className={ classes.solDivstyle +" col-lg-5 col-sm-10 col-md-5  p-lg-3 p-sm-2 p-md-2 p-1"}>
            {/* <CiCompass1 color="black" size={40} /> */}
          <div style={{display:"flex",flexDirection:"row"}}>
            <img src={info.imgsrc} />
@@ -315,7 +315,7 @@ Since our inception, we have been consistently helping people and organizations 
           <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
-            <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+            <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
               <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!
               </h2>

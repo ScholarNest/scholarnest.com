@@ -1,10 +1,8 @@
 .heading{
    color:rgb(35,110,172);
-    
-
     padding:5px 10px;
     margin:auto;
-    font-size:2.7rem;
+    font-size:2.7rem ;
     font-weight:bold;
     text-align:center;
     
@@ -45,13 +43,13 @@
   display:none;
 }
 .caseheading{
-    max-width:460px;
+
     background-color:white;
-    margin-top:10%;
+    margin-top:30px;
 border-radius:4px;
 }
 .caseheading,.subheading{
-margin-left: 10%;
+/* margin: 50px 10px; */
 padding:6px;
 font-size:20px;
 }
@@ -120,7 +118,6 @@ font-size:16px;
   background-color:white;
   padding:10px;
   margin:12px auto;
-  font-size:1.4rem;
   width:100%;
   text-align:center;
 
@@ -161,12 +158,14 @@ height:350px;
   }
 
 .icons{
-  height:50px;
+  margin-right:10px;
+  height:40px;
 }
 .topbannerDetailsInAcademy{
 position:absolute;
-top:25vh;
-left:15px;
+top:180px;
+left:25px;
+width:65vw;
 }
 .topbannerDetailsInAcademy .btn{
   background-color:#F53855;
@@ -177,20 +176,21 @@ left:15px;
 .topbannerDetailsInAcademy p{
   font-size:16px;
   /* font-weight:500; */
-  width:75vw;
+  margin-top:40px;
+  width:50vw;
 }
 .topbannerDetailsInAcademy h1{
   font-size:30px;
 }
 
-@media only screen and (max-width: 1139px) {
-  .topbannerDetailsInAcademy{
-  position: absolute;
-  top:18vh;
- }
+@media only screen and (max-width: 992px) {
+  .imgInPurplediv{
+    visibility:hidden;
+    height:0;
+   }
 }
 @media only screen and (max-width: 950px) {
-  
+
   .careerTableTop{
    width:85vw;
  }
@@ -201,37 +201,51 @@ left:15px;
  
  }
  @media only screen and (max-width: 918px) {
-  .caseheading{
-    margin-top:10%;
-  }
 
-  
+  .topbannerDetailsInAcademy {
+    top :110px;
+  }
+  .topbannerDetailsInAcademy p{
+    margin-top :20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .caseheading{
-    margin-top:5%;
+  .icons{
+    height:30px;
   }
   .solnsDivstyle,.eachServicesDivstyle{
     border-bottom:1px solid black;
   }
   .topbannerDetailsInAcademy h1{
-    font-size:24px;
+    font-size:20px;
   }
   .topbannerDetailsInAcademy p{
-  width:90vw;
+   display:none;
   }
    
  .topbannerDetailsInAcademy{
-  top:13vh !important;
+  top:180px;
+  width:53vw;
  }
+ .topbannerDetailsInAcademy p,.topbannerDetailsInAcademy .btn{
+  font-size:12px;
+  margin-top:10px;
+}
+}
+@media only screen and (max-width: 640px) {
+  .letsConnect{
+    text-align:center;
+  }  
 }
 @media only screen and (max-width: 600px) {
-
+  .topbannerDetailsInAcademy{
+    top:150px;
+  }
  .caseheading, .bannerDetails h2{
   font-size:16px;
   }
- .subheading, .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
+  .Faqs p,.subheading, .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
     font-size:12px;
   }
  .heading{
@@ -244,10 +258,7 @@ left:15px;
 .topbannerDetailsInAcademy h1{
   font-size:20px !important;
 }
-.topbannerDetailsInAcademy p,.topbannerDetailsInAcademy .btn{
-  font-size:12px;
-  
-}
+
 .solDivstyle img{
   height:24px;
   width:5px;
@@ -263,9 +274,7 @@ left:15px;
 .caseStudyBox p, .careerTable{
   font-size:12px;
 }
-.icons{
-  height:40px;
-}
+
 .caseSub h2, .caseSub h3, .caseSub button{
   margin-left: 8%;
 }
@@ -280,13 +289,13 @@ left:15px;
 }
 
 @media only screen and (max-width: 500px) {
- 
+
     .topbannerDetailsInAcademy h1{
       font-size:16px !important;
     }
-    .topbannerDetailsInAcademy{
-      top:13vh !important;
-     }
+    .topbannerDetailsInAcademy p{
+      font-size:10px;
+    }
      .topbannerDetailsInAcademy .btn{
          
      padding :3px 35px;
@@ -318,7 +327,7 @@ left:15px;
   .caseheading,.bannerDetails h2{
   font-size:12px;
   }
-  .subheading, .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
+  .Faqs p, .subheading, .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
     font-size:10px !important;
   } 
   .detailBox h2, .careerTableTop h1{
@@ -336,7 +345,8 @@ left:15px;
   }
 
     .icons{
-      height:30px;
+      height:16px;
+      
     }
     .solDivstyle img{
       height:20px;
@@ -347,23 +357,26 @@ left:15px;
     }
     .topbannerDetailsInAcademy .btn {
       font-size:10px !important;
+      padding :1px 10px;
+      margin-top:1px;
     }
     .topbannerDetailsInAcademy p{
       font-size:10px;
-      
+      margin-top:3px;
     }
-    .topbannerDetailsInAcademy .btn{
-         padding :1px 25px;
-     
-     }
+
+ 
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 390px) {
   .heading{
     font-size:24px;
    } 
    
     .caseSub h2, .caseSub h3, .caseSub button{
       margin-left: 1%;
+    }
+    .topbannerDetailsInAcademy{
+      top:130px;
     }
     .topbannerDetailsInAcademy h1
     {
@@ -380,4 +393,15 @@ left:15px;
          padding :1px 15px;
      
      }
+}
+@media only screen and (max-width: 315px) {
+  .topbannerDetailsInAcademy h1
+  {
+    font-size:10px !important;
+  }
+
+  .topbannerDetailsInAcademy{
+    left:15px;
+    top:120px;
+  }
 }

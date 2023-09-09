@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo,useState, useEffect } from "react";
 import Image from "next/image";
 
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -11,7 +11,24 @@ import { useRouter } from "next/router";
 const Hero = () => {
   // const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const router = useRouter();
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    // Check the window width when the component is mounted on the client side
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    handleResize(); // Initial check
+
+    // Listen for window resize events
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -22,12 +39,13 @@ const Hero = () => {
 
     <>
       <div>
-        <Carousel dynamicHeight={true} autoPlay
+        <Carousel class={classes.carousel} dynamicHeight={true} autoPlay
           infiniteLoop
           interval={7000} // Adjust the interval time as desired
           transitionTime={500} // Adjust the transition time as desired
           showIndicators={false}
           showThumbs={false}
+          showArrows={!isMobile}
           showStatus={false}
           stopOnHover={false}>
           <div >

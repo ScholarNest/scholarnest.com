@@ -16,23 +16,22 @@ const Header = () => {
   const [scrollActive, setScrollActive] = useState(false);
   const router = useRouter();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Function to toggle the menu state
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
+      setIsMenuOpen(false);
+
     });
 
   }, []);
 
-  function openRightMenu(e){
-    e.preventDefault();
-    const elem=document.getElementById("rightMenu");
-    if(elem.style.display==="none"){
-      elem.style.display="block";
-    }else{
-      elem.style.display="none";
-    }
-  }
+
 //   function hoverCompany(e){ 
 //     e.preventDefault();
 //     document.getElementById("menu1").style.display="block";
@@ -48,7 +47,7 @@ const Header = () => {
 
       <header
         className={classes.headerr +
-          "fixed top-0 w-full  z-200 bg-black-700 transition-all " +
+          "fixed top-0 w-full  bg-black-700 transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-1")
         }
       >
@@ -93,29 +92,31 @@ const Header = () => {
                     <div className="row justify-content-center p-4">
 
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/company#about">
+                        <LinkScroll   to="about">
+                          <>
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>About</h4>
                           <p>All information about company.</p>
-                        </a>
+                          </>
+                        </LinkScroll>
                       </div>
 
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/company#approach">
+                        <LinkScroll to="approach">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Approach</h4>
                           <p>A way of dealing with problems.</p>
-                        </a>
+                        </LinkScroll>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/company#portfolio">
+                        <LinkScroll   to="portfolio">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Portfolio</h4>
                           <p> Collection of a wide range of assets.</p>
-                        </a>
+                        </LinkScroll>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/company#techexpertise">
+                        <LinkScroll   to="techexpertise">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Capabilities</h4>
                           <p>Domain of expertise in technologies. </p>
-                        </a>
+                        </LinkScroll>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
                         <a href="/career-guidance-and-enhancement">
@@ -250,17 +251,10 @@ const Header = () => {
               Career
             </a>
 
-            <LinkScroll
+            <a
               activeClass="active"
-              to="https://blog.scholarnest.com"
-              onClick={() =>
-                window
-                  .open(
-                    "https://www.scholarnest.com/blog/",
-                    "_blank"
-                  )
-                  .focus()
-              }
+              href="https://blog.scholarnest.com/"
+              target="_blank"
               spy={true}
               smooth={true}
               duration={1000}
@@ -275,12 +269,12 @@ const Header = () => {
               }
             >
               Blog
-            </LinkScroll>
+            </a>
 
       
           </ul>
           <div class="row justify-content-end pt-1 lg:hidden md:hidden">
-            <svg onClick={openRightMenu} xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list col-10 col-sm-6  mt-3" viewBox="0 0 16 16">
+            <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" style={{zIndex:"6"}} width="25" height="25" fill="white" class="bi bi-list col-10  col-sm-6  mt-3" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </div>
@@ -398,6 +392,7 @@ const Header = () => {
           </ul>
         </div>
        </nav>
+       {isMenuOpen && (
       <div id="rightMenu" className={classes.rightMenu}>
       <ul>
       <li> <h3 onClick={()=>{router.push("/scholarnest-academy")}}>Academy </h3></li>
@@ -409,6 +404,8 @@ const Header = () => {
        <li><h3 onClick={()=>{router.push("/career-guidance-and-enhancement")}}> Career Enhancement</h3></li>
       </ul>
       </div>
+      )
+}
       {/* End Mobile Navigation */}
 
 

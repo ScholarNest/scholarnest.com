@@ -170,6 +170,8 @@ const Faqs=[
 
   //   const [form, setForm] = useState(false);
 
+  //Hiding image in mobile view
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -234,25 +236,24 @@ const Faqs=[
        <p   class={classes.det+" text-center"}>Empower your projects with our Staff Augmentation Services. We provide skilled professionals who seamlessly integrate into your team, ensuring immediate productivity and expertise. Whether you need temporary support or specialized talent, our staff augmentation solutions enhance your workforce and drive project success.</p>
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
-        <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12" style={{backgroundColor:"purple"}}>
-         
+        <div className="col-lg-6 col-xl-6 col-12  d-flex justify-content-center align-items-center" style={{backgroundColor:"purple"}}>
+         <div> 
             <h2 class={classes.caseheading}>How do we help you with our Staff Augmentation Services</h2>
            <p class={classes.subheading}>We assist you with our Staff Augmentation Services by seamlessly integrating skilled professionals into your projects, aligning with your specific needs. Our tailored solutions provide on-demand expertise, optimizing your workforce for efficiency and success. Whether you require short-term support or long-term talent, we bridge the resource gap to achieve your goals.</p>
-            
-           <button  onClick={() =>router.push("/staffaugmentation#learnMore")} class="btn my-4" style={{marginLeft: "10%",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
+           {/* onClick={() =>router.push("/staffaugmentation#learnMore")}  */}
+           <button  class="btn my-4" style={{marginLeft: "10px",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
           
         </div>
-        <div style={{padding:"0",margin:"auto 0", height:"100%"}} className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
-        <img class="h-100" src="/assets/solutions/business-mirror.jpg" alt="Solution" />
+        </div>
+        <div style={{padding:"0",margin:"auto 0"}} className={classes.imgInPurplediv+" col-lg-6 col-xl-6 "}>
+        <img  src="/assets/solutions/business-mirror.jpg" alt="Solution" />
 
         </div>
      </div>
     </div>
     <br />
     <br />
-    <br />
-    <br />
-   
+
     
    {/* Cards for each solution */}
    <div id="learnMore"    className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"}  > 
@@ -383,7 +384,7 @@ const Faqs=[
               setCompanyname(e.target.value);
             }}
             name="companyname"
-            className="w-75 bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="w-75 bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 "
           />
           {errors?.fullname && (
             <p className="text-red-500">Company name cannot be empty.</p>
@@ -403,7 +404,7 @@ const Faqs=[
               setFullname(e.target.value);
             }}
             name="fullname"
-            className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.fullname && (
             <p className="text-red-500">Fullname cannot be empty.</p>
@@ -425,7 +426,7 @@ const Faqs=[
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.email && (
             <p className="text-red-500">Email cannot be empty.</p>
@@ -445,7 +446,7 @@ const Faqs=[
             onChange={(e) => {
               setphone(e.target.value);
             }}
-            className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.phone && (
             <p className="text-red-500">phone cannot be empty.</p>
@@ -466,7 +467,7 @@ const Faqs=[
             onChange={(e) => {
               setMessage(e.target.value);
             }}
-            className="w-75 bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 font-light text-gray-500"
+            className="w-75 bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           ></textarea>
           {errors?.message && (
             <p className="text-red-500">Message body cannot be empty.</p>

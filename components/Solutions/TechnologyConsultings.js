@@ -7,6 +7,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import bannerImg from "../staticImages/TechnologyConsulting.png"
 
 import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
@@ -85,7 +86,7 @@ const Faqs=[
   return (
     <>
       <div>
-        <Image height="500px" width="1100px" layout="responsive" src="/assets/solutions/Technologyconsulting.png" alt="Technology Consulting Solutions" />
+        <Image placeholder='blur' loading="lazy" height="500px" width="1100px" layout="responsive" src={bannerImg} alt="Technology Consulting Solutions" />
         <div className={classes.bannerDetails}>
           <h1 class={classes.heading} >Technology Consulting Solutions</h1>
 

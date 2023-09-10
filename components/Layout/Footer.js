@@ -85,7 +85,7 @@ const Footer = () => {
             {/* <li>Subscription</li> */}
             <li><a href="https://blog.scholarnest.com/" target="_blank"> Blog </a></li>
             <li>Teach</li> 
-           <li>Course FAQ</li>
+           <li><a href="/courseFaqs"> Course FAQ </a></li>
           </ul> 
         </div>
         <div className="col-12 col-sm-4 col-md-6 p-3 col-lg-3 col-xl-3 col-xxl-3">

@@ -10,6 +10,9 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
+import bannerImg from "../staticImages/ManagedServices.jpg"
+
+
 const ManagedServices = () => {
   const router = useRouter();
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -94,7 +97,7 @@ const responsive = {
   return (
     <>
     <div>
-       <Image height="500px" width="1100px" layout="responsive"   src="/assets/solutions/ManagedServices.jpg" alt="Managed Services" />
+       <Image placeholder='blur' loading="lazy" height="500px" width="1100px" layout="responsive"   src={bannerImg} alt="Managed Services" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Streamline Your Business with Expert Managed Services</h1>
       

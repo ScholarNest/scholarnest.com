@@ -68,13 +68,13 @@
     font-size:16px;
   }
   .solDivstyle p, .letsConnect p{
-    font-size:12px;
+    font-size:14px;
   }
   .icons{
     height:30px;
   }
   .solutionPara{
-    font-size:12px;
+    font-size:14px;
  
   }
   .solutionHead{
@@ -87,7 +87,7 @@
     font-size:24px;
   }
   .feedbackBox p{
-    font-size:12px;
+    font-size:14px;
     text-align:center;
   }
   .feedbackBox h3{
@@ -100,10 +100,10 @@
 }
 @media only screen and (max-width: 430px) {
   .h3style{
-    font-size:12px;
+    font-size:14px;
   }
   .solDivstyle p,.letsConnect p{
-    font-size:10px;
+    font-size:12px;
   }
   .solDivstyle{
     border-bottom:0.25px solid black;
@@ -112,7 +112,7 @@
     height:20px;
   }
   .solutionPara{
-    font-size:10px;
+    font-size:12px;
     }
     .solutionHead{
       font-size:20px;
@@ -124,11 +124,11 @@
       font-size:20px;
     }
     .feedbackBox p{
-      font-size:10px;
+      font-size:12px;
       text-align:center;
     }
     .feedbackBox h3{
-      font-size:12px;
+      font-size:14px;
       text-align:center;
     }
     .letsConnect h2{

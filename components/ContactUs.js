@@ -170,7 +170,7 @@ export default function ContactUs() {
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 "
           />
           {errors?.fullname && (
-            <p className="text-red-500">Fullname cannot be empty.</p>
+            <p className="text-danger fw-bold">Fullname cannot be empty.</p>
           )}
 
           <label
@@ -190,7 +190,7 @@ export default function ContactUs() {
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.email && (
-            <p className="text-red-500">Email cannot be empty.</p>
+            <p className="text-danger fw-bold">Email cannot be empty.</p>
           )}
 
           <label
@@ -210,7 +210,7 @@ export default function ContactUs() {
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.phone && (
-            <p className="text-red-500">phone cannot be empty.</p>
+            <p className="text-danger fw-bold">phone cannot be empty.</p>
           )}
           <label
             htmlFor="message"
@@ -228,7 +228,7 @@ export default function ContactUs() {
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           ></textarea>
           {errors?.message && (
-            <p className="text-red-500">Message body cannot be empty.</p>
+            <p className="text-danger fw-bold">Message body cannot be empty.</p>
           )}
           <div className="flex flex-row items-center justify-start">
             <button

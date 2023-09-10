@@ -182,7 +182,7 @@ font-size:16px;
 
     }
    .subheading, .letsConnect p, .Faqs p,  .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
-    font-size:12px;
+    font-size:14px;
     }
    
     .careerPage h2{
@@ -192,7 +192,7 @@ font-size:16px;
         font-size:16px;
     }
     .careerTable {
-        font-size:12px;
+        font-size:14px;
     }
     .careerTableTop, .intern{
         width:95vw;
@@ -222,34 +222,34 @@ font-size:16px;
           left:15px;
       }
    .caseheading,.h3style{
-    font-size:12px;
+    font-size:14px;
     
   }
    .heading{
     font-size:24px;
    }
    .bannerButton{
-   font-size:10px;
+   font-size:12px;
    padding:4px 20px;
    }
  
  .subheading,  .letsConnect p,  .Faqs p,.bannerDetails p,.careerPageVideo li{
-    font-size:10px;
+    font-size:12px;
     }
     .careerPage h2{
         font-size:24px;
     }
     .careerPage h3{
-        font-size:12px;
+        font-size:14px;
     }
     .careerPageVideo h2, .headJob{
         font-size:20px;
         }
         .careerTable, .intern p,.aboveIntern p {
-            font-size:10px;
+            font-size:12px;
             }
             .testimoni p{
-                font-size:10px !important;
+                font-size:12px !important;
             }    
             .letsConnect h2{
                 font-size:16px;
@@ -274,7 +274,7 @@ font-size:16px;
     font-size:12px;
    }
    .bannerDetails p{
-    font-size:8px;
+    font-size:10px;
    }
    .careerTable {
     font-size:6px;

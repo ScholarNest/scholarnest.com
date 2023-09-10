@@ -229,7 +229,7 @@ width:65vw;
   width:53vw;
  }
  .topbannerDetailsInAcademy p,.topbannerDetailsInAcademy .btn{
-  font-size:12px;
+  font-size:14px;
   margin-top:10px;
 }
 }
@@ -246,7 +246,7 @@ width:65vw;
   font-size:16px;
   }
   .Faqs p,.subheading, .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
-    font-size:12px;
+    font-size:14px;
   }
  .heading{
   font-size:30px;
@@ -272,7 +272,7 @@ width:65vw;
   font-size:24px;
 }
 .caseStudyBox p, .careerTable{
-  font-size:12px;
+  font-size:14px;
 }
 
 .caseSub h2, .caseSub h3, .caseSub button{
@@ -294,7 +294,7 @@ width:65vw;
       font-size:16px !important;
     }
     .topbannerDetailsInAcademy p{
-      font-size:10px;
+      font-size:12px;
     }
      .topbannerDetailsInAcademy .btn{
          
@@ -325,16 +325,16 @@ width:65vw;
     height:70vh;
   }
   .caseheading,.bannerDetails h2{
-  font-size:12px;
+  font-size:14px;
   }
   .Faqs p, .subheading, .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
-    font-size:10px !important;
+    font-size:12px !important;
   } 
   .detailBox h2, .careerTableTop h1{
     font-size: 20px;
   }
   .h3style{
-    font-size:12px;
+    font-size:14px;
     
   }
   .caseStudyBox h2 , .partnersBox h2,.head, .content{
@@ -361,7 +361,7 @@ width:65vw;
       margin-top:1px;
     }
     .topbannerDetailsInAcademy p{
-      font-size:10px;
+      font-size:12px;
       margin-top:3px;
     }
 
@@ -383,7 +383,7 @@ width:65vw;
       font-size:12px !important;
     }
     .topbannerDetailsInAcademy .btn {
-      font-size:8px !important;
+      font-size:10px !important;
     }
     .topbannerDetailsInAcademy p{
       font-size:8px;

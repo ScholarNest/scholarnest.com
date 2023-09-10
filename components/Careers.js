@@ -7,6 +7,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
+import bannerImg from "./staticImages/careerEnhancement.jpg"
 
 export default function Careers() {
   const router = useRouter();
@@ -282,7 +283,7 @@ export default function Careers() {
   }
   return (
     <main>
-      <Image height="500px" width="1100px" layout="responsive" src="/assets/solutions/CareerEnhancement.jpg" alt="Career Guidance and Enhancement" />
+      <Image placeholder="blur" loading="lazy" height="500px" width="1100px" layout="responsive" src={bannerImg} alt="Career Guidance and Enhancement" />
       <div className={classes.bannerDetailsCareer}>
         <h1 class={classes.heading} >Career Guidance and Enhancement</h1>
 

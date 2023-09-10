@@ -4,11 +4,11 @@ import classes from "../style/solutions.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import TestiMoni from './Testimoni.js'
 import Image from 'next/image';
-
+import ImageLoader from '../Layout/ImageLoader'
 import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-
+import bannerImg from "../staticImages/AcademyBanner.png"
 const AcademySolution = () => {
   const router = useRouter();
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -91,7 +91,7 @@ const AcademySolution = () => {
   return (
     <>
       <div>
-        <Image height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/banner2.png" alt="Data Engineering with Spark and DataBricks" />
+        <Image placeholder="blur"  loading="lazy" height="500px" width="1100px" layout="responsive"  src={bannerImg} alt="Data Engineering with Spark and DataBricks" />
         <div className={classes.bannerDetails}>
           <h2 class={classes.heading} >Welcome to Our Academy: Your Gateway to Learning Excellence</h2>
 

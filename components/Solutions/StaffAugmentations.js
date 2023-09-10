@@ -10,6 +10,8 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
+import bannerImg from "../staticImages/StaffAugmentation.jpg"
+
 const StaffAugmentations = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const ServicesData=[
@@ -228,7 +230,7 @@ const Faqs=[
   return (
     <>
     <div>
-       <Image height="500px" width="1100px" layout="responsive" src="/assets/solutions/StaffAugmentation.jpg" alt="Staff Augmentation Services" />
+       <Image placeholder='blur' loading="lazy" height="500px" width="1100px" layout="responsive" src={bannerImg} alt="Staff Augmentation Services" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Staff Augmentation Services</h1>
       
@@ -387,7 +389,7 @@ const Faqs=[
             className="w-75 bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500 "
           />
           {errors?.fullname && (
-            <p className="text-red-500">Company name cannot be empty.</p>
+            <p className="text-danger fw-bold">Company name cannot be empty.</p>
           )}
           </div>
           <div className="col">
@@ -407,7 +409,7 @@ const Faqs=[
             className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.fullname && (
-            <p className="text-red-500">Fullname cannot be empty.</p>
+            <p className="text-danger fw-bold">Fullname cannot be empty.</p>
           )}
 </div>
           </div>
@@ -429,7 +431,7 @@ const Faqs=[
             className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.email && (
-            <p className="text-red-500">Email cannot be empty.</p>
+            <p className="text-danger fw-bold">Email cannot be empty.</p>
           )}
           </div>
         <div className="col">
@@ -449,7 +451,7 @@ const Faqs=[
             className="bg-transparent w-75 border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           />
           {errors?.phone && (
-            <p className="text-red-500">phone cannot be empty.</p>
+            <p className="text-danger fw-bold">phone cannot be empty.</p>
           )}
           </div>
           </div>
@@ -470,7 +472,7 @@ const Faqs=[
             className="w-75 bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-yellow-500  "
           ></textarea>
           {errors?.message && (
-            <p className="text-red-500">Message body cannot be empty.</p>
+            <p className="text-danger fw-bold">Message body cannot be empty.</p>
           )}
           </div>
           <div className="col">

@@ -7,6 +7,7 @@ import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
 import classes from "./style/solutions.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import bannerImg from "./staticImages/SolutionBanner.jpg"
 
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
 
@@ -105,7 +106,7 @@ const Faqs=[
   return (
   <>
     <div class="py-0">
-       <Image height="600px" width="1000px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt=" Business Solution" />
+       <Image placeholder="blur" height="600px" width="1000px" layout="responsive"   src={bannerImg} alt=" Business Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} > Business Solution</h1>
        <h2 >Combining strategy, technology, automation and people</h2>

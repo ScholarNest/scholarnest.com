@@ -1,0 +1,58 @@
+.tagdiv p{
+    font-size:12px;
+}
+.headingTag{
+    font-size:24px;
+    text-align:center;
+    margin:10px auto;
+    font-weight:500;
+}
+
+.mainHead{
+    font-size:30px;
+}
+.mainHeadDiv p{
+    font-size:16px;
+}
+.h3style{
+    font-size:16px;
+    font-weight:500;
+
+  }
+.Faqs p{
+    font-size:16px;
+}
+.letsConnect h2{
+    font-size:24px;
+  }
+  .letsConnect p{
+    font-size:16px;
+  }
+  @media only screen and (max-width: 600px) {
+  
+    .headingTag, .letsConnect h2{
+        font-size:20px;
+    }
+    
+    .mainHead{
+        font-size:24px;
+    }
+    .mainHeadDiv p, .Faqs p , .h3style,  .letsConnect p{
+        font-size:14px;
+    }
+
+  }
+  @media only screen and (max-width: 430) {
+  
+    .headingTag, .letsConnect h2{
+        font-size:16px;
+    }
+    
+    .mainHead{
+        font-size:20px;
+    }
+    .mainHeadDiv p, .Faqs p , .h3style,  .letsConnect p{
+        font-size:12px;
+    }
+
+  }

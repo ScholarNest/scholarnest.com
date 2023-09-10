@@ -76,10 +76,14 @@ flex-direction:row;
         font-size:16px;
     }
     .careerButton,.featuresDet p{
-        font-size:12px;
+        font-size:14px;
     }
     .careerImg{
         height:350px;
+    }
+    .styleDiv p{
+        font-size:14px;
+
     }
 }
 @media only screen and (max-width: 430px) {
@@ -94,7 +98,7 @@ flex-direction:row;
     .featuresDet h3{
         font-size:20px;
     }
-    .careerDet{
+    .careerDet , .styleDiv p{
         font-size:12px;
     }
     .h3style{
@@ -102,7 +106,7 @@ flex-direction:row;
 
     }
     .careerButton, .featuresDet p{
-        font-size:10px;
+        font-size:12px;
     }
     .careerImg{
         height:250px;

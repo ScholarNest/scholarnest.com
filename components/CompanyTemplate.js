@@ -11,6 +11,9 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { AiOutlineArrowRight } from "react-icons/ai"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+import bannerImg from "./staticImages/company.jpg"
+
 const CompanyTemplate = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const router = useRouter();
@@ -51,7 +54,7 @@ const CompanyTemplate = () => {
 
     <>
       <div class="py-0">
-        <Image height="500px" width="1100px" layout="responsive"  src="/assets/company/company.jpg" alt="Company" />
+        <Image placeholder='blur' loading="lazy" height="500px" width="1100px" layout="responsive"  src={bannerImg} alt="Company" />
         <div className={classes.bannerDetails} >
           <h1 class={classes.heading} >Company</h1>
           <h3 >Combining strategy, technology, skills and people</h3>

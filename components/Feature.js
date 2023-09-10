@@ -57,7 +57,7 @@ const Feature = () => {
         <div className={" mx-auto justify-content-center  row text-start  p-2"} >
 
 
-          <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
+          <div className=" h-100 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
             <a href="https://blog.scholarnest.com/different-ways-to-create-spark-dataframe/" target="_blank">
               <div className={classes.styleDiv}>
                 <Image width={600}
@@ -72,7 +72,7 @@ const Feature = () => {
             </a>
 
           </div>
-          <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
+          <div className=" h-100 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
             <a href="https://blog.scholarnest.com/deep-dive-into-spark-memory-allocation/" target="_blank">
               <div className={classes.styleDiv}>
                 <Image width={600}
@@ -90,7 +90,7 @@ const Feature = () => {
 
           </div>
 
-          <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-3 p-xl-4 p-md-2 p-sm-2 p-1">
+          <div className=" h-100 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-3 p-xl-4 p-md-2 p-sm-2 p-1">
             <a href="https://blog.scholarnest.com/what-is-apache-kafka/" target="_blank">
               <div className={classes.styleDiv}>
                 <Image width={600}

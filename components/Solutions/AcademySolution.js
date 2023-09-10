@@ -57,13 +57,13 @@ const AcademySolution = () => {
       desc:"Instructor Led Course",
       imgPath:"/assets/solutions/AcademySolutions/1.png",
       date:"13/10/2023"
-    },
-    {
-      heading:"Mastering PySpark",
-      desc:"Instructor Led Course",
-      imgPath:"/assets/solutions/AcademySolutions/2.jpg",
-      date:"Soon...."
     }
+    // {
+    //   heading:"Mastering PySpark",
+    //   desc:"Instructor Led Course",
+    //   imgPath:"/assets/solutions/AcademySolutions/2.jpg",
+    //   date:"Soon...."
+    // }
   ]
   const Faqs = [
     {
@@ -170,6 +170,7 @@ const AcademySolution = () => {
   upcomingCourse.map((data)=>{
    return(
 <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
+  <a href="http://localhost:3000/mastering-spark-and-databricks-cloud">
     <div className={classes.styleDiv + " h-100"}>
       <Image width={600}
         height={400} src={data.imgPath} />
@@ -184,7 +185,7 @@ const AcademySolution = () => {
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
 </svg> {data.date}</p>
      </div>
-
+     </a>
 
 </div>
    )

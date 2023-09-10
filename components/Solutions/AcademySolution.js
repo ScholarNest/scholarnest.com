@@ -164,13 +164,13 @@ const AcademySolution = () => {
 
       <h2  class={classes.head+" text-center my-3"}>Instructor Based Live Courses</h2>
       <br />
-      <div className={" mx-auto justify-content-center  row text-start  p-2"} >
+      <div className={" mx-auto   row text-start  p-2"} >
  
  {
   upcomingCourse.map((data)=>{
    return(
 <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
-  <a href="http://localhost:3000/mastering-spark-and-databricks-cloud">
+  <a href="/mastering-spark-and-databricks-cloud">
     <div className={classes.styleDiv + " h-100"}>
       <Image width={600}
         height={400} src={data.imgPath} />

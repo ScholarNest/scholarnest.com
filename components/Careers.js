@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-import bannerImg from "./staticImages/careerEnhancement.jpg"
+import bannerImg from "./staticImages/CareerEnhancement.jpg"
 
 export default function Careers() {
   const router = useRouter();

@@ -35,7 +35,7 @@ const Teach = () => {
    </div>
    <br />
    <div className="row mx-0 justify-content-center">
-    <div className="col-3">
+    <div className="col-12 col-sm-6 col-md-3">
   <div className={classes.imgAndDet}>
     <img src="/assets/1.jpg" alt="" />
 
@@ -46,7 +46,7 @@ const Teach = () => {
   </div>
 
     </div>
-    <div className="col-3">
+    <div className="col-12 col-sm-6 col-md-3">
     <div className={classes.imgAndDet}>
     <img src="/assets/2.jpg" alt="" />
     <p class="fw-bold my-3">
@@ -56,7 +56,7 @@ const Teach = () => {
   </div>
 
     </div>
-    <div className="col-3">
+    <div className="col-12 col-sm-6 col-md-3">
     <div className={classes.imgAndDet}>
     <img src="/assets/3.jpg" alt="" />
     <p class="fw-bold my-3">

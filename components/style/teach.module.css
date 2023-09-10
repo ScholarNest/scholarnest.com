@@ -16,6 +16,7 @@
 .imgAndDet  p{
     font-size:16px;
     color:black;
+    
     text-align:center;
 }
 .headingTag{
@@ -41,4 +42,26 @@
 .div1 li,.div2 li{
     margin:5px auto;
     font-size:16px;
+}
+@media only screen and (max-width: 600px) {
+   
+    .mainHead, .headingTag{
+        font-size:24px;
+    }
+    .div1 li,.div2 li,.div1 p,.div2 p, .mainHeadDiv p,.imgAndDet p{
+        font-size:14px;
+    }
+
+
+}
+@media only screen and (max-width: 430px) {
+   
+    .mainHead, .headingTag{
+        font-size:20px;
+    }
+    .div1 li,.div2 li,.div1 p,.div2 p, .mainHeadDiv p,.imgAndDet p{
+        font-size:12px;
+    }
+
+
 }

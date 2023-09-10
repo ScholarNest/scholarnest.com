@@ -120,7 +120,7 @@ const AcademySolution = () => {
               <p style={{ color: "white"}} className=" mb-xl-7  mb-lg-6 mb-1  mb-lg-6 mb-sm-1">
               Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.    </p>
 
-              <button class={classes.btn +" btn mt-sm-2"}><a href="https://www.scholarnest.in/collections">Enquire for Lead Instructor </a> </button>
+              <button class={classes.btn +" btn mt-sm-2"}><a href="/mastering-spark-and-databricks-cloud">Enquire for Lead Instructor </a> </button>
 
             </div>
       

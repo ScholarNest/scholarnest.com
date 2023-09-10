@@ -1,0 +1,103 @@
+.banner{
+    height:250px;
+    width:100%;
+    background: linear-gradient(to right, #283c5c, #283c3a);
+    color:white;
+
+}
+.banner h1{
+font-size:30px;
+margin:20px 10px;
+text-align:center;
+}
+.banner p{
+font-size:16px;
+margin:15px 10px;
+text-align:center;
+}
+.courseBox p, .featureBox p,.secondDiv p{
+    font-size:16px;
+    color:black;
+}
+.courseBox h2,.div3 h2{
+    font-size:30px;
+    font-weight:500;
+
+}
+.courseBox h3{
+    font-size:20px;
+}
+.secondDiv h2,.div4 h2{
+    font-size:30px;
+    font-weight:500;
+}
+.secondDiv h3 {
+    font-weight:400;
+    font-size:20px;
+    margin:20px auto;
+}
+.styleDiv{
+    padding:10px;
+  
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+ 
+
+}
+.styleDiv:hover{
+
+transform:scale(1.01);
+}
+.div4{
+background-color:skyblue;
+}
+.featureBox {
+text-align:center;
+padding:10px;
+}
+.faqDiv{
+width:500px;
+}
+.h3style{
+font-size:16px;
+font-weight:bold;
+}
+@media only screen and (max-width: 600px) {
+  
+.banner h1,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
+font-size:24px;
+}
+
+.banner p, .courseBox p, .featureBox p,.secondDiv p,.h3style{
+    font-size:14px;
+  
+}
+
+.courseBox h3,.secondDiv h3 {
+    font-size:16px;
+}
+
+
+.faqDiv{
+max-width:500px;
+}
+
+
+}
+@media only screen and (max-width: 430px) {
+  
+  .banner h1,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
+  font-size:20px;
+  }
+  
+  .banner p, .courseBox p, .featureBox p,.secondDiv p,.h3style{
+      font-size:12px;
+    
+  }
+  
+  .courseBox h3,.secondDiv h3 {
+      font-size:14px;
+  }
+  
+  
+  
+  }

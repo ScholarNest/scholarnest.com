@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
 import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";import classes from "./style/courseFaq.module.css";
+import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import classes from "./style/courseFaq.module.css";
  const CourseFaq = () => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
     const router = useRouter();

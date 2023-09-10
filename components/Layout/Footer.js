@@ -84,7 +84,7 @@ const Footer = () => {
           <ul class={classes.footerLink}>
             {/* <li>Subscription</li> */}
             <li><a href="https://blog.scholarnest.com/" target="_blank"> Blog </a></li>
-            <li>Teach</li> 
+            <li><a href="/teach"> Teach</a> </li> 
            <li><a href="/courseFaqs"> Course FAQ </a></li>
           </ul> 
         </div>

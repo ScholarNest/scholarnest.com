@@ -81,24 +81,24 @@ const Faqs=[
     details:"Navigate the ever-evolving tech landscape with our Technology Consulting services. Our seasoned experts offer strategic insights, guiding your business through digital transformations. From optimizing operations to embracing innovative solutions, we tailor strategies to meet your unique goals. Experience the power of informed decisions and unlock new dimensions of success.",
     imgsrc:"/assets/Icon/technologyconsulting.svg"
     },
-    // {
-    //   title:"Academy",
-    //   link:"/academy",
-    //   details:"We help individuals and organizations with an integrated set of interactive online learning system that provide trainers, learners, and others involved in education with information, tools, and resources to streamline professional skills and knowledge development across all functions and roles.",
-    //   imgsrc:"/assets/Icon/academy.svg"
-    // },
+    {
+      title:"Academy",
+      link:"/academy",
+      details:"Empower your journey in data engineering at our Academy, mastering Spark and Databricks technologies. Gain hands-on expertise in crafting data-driven solutions and enhancing efficiency. Unleash your potential in the world of data with our comprehensive training.",
+      imgsrc:"/assets/Icon/academy.svg"
+    },
     {
       title:"Staff Augmentation",
       link:"/staff-augmentation",
       details:"Elevate your team's capabilities with Staff Augmentation. Access a pool of skilled professionals to seamlessly integrate with your projects, bolstering expertise and productivity. Our flexible solutions ensure you have the right talent, precisely when you need it. Supercharge your projects and meet your goals with our Staff Augmentation services.",
       imgsrc:"/assets/Icon/staffaugmentation.svg"
     },
-    // {
-    //   title:"Career Enhancement",
-    //   link:"/career",
-    //   details:"Explore various open jobs matching your skills and apply for your dream job to elevate your career.",
-    //   imgsrc:"/assets/Icon/externaljobs.svg"
-    // },
+    {
+      title:"Career Enhancement",
+      link:"/career",
+      details: "Invest in your future with career growth and enhancement opportunities. Develop new skills, explore fresh horizons, and unlock your full potential. Forge a path toward professional excellence and personal satisfaction.",
+      imgsrc:"/assets/Icon/externaljobs.svg"
+    },
 
 ]
 
@@ -106,7 +106,7 @@ const Faqs=[
   return (
   <>
     <div class="py-0">
-       <Image placeholder="blur" height="600px" width="1000px" layout="responsive"   src={bannerImg} alt=" Business Solution" />
+       <Image placeholder="blur" height="500px" width="1100px" layout="responsive"   src={bannerImg} alt=" Business Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} > Business Solution</h1>
        <h2 >Combining strategy, technology, automation and people</h2>

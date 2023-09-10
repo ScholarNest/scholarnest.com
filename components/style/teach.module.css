@@ -1,0 +1,44 @@
+.tagdiv p{
+    font-size:12px;
+}
+
+.mainHead{
+    font-size:30px;
+}
+.mainHeadDiv p{
+    font-size:16px;
+}
+.imgAndDet img{
+    height:100px;
+    width:150px;
+    margin:auto auto;
+}
+.imgAndDet  p{
+    font-size:16px;
+    color:black;
+    text-align:center;
+}
+.headingTag{
+    font-size:30px;
+    text-align:center;
+    margin:10px auto;
+    font-weight:500;
+}
+
+.div2{
+    display:none;
+    color:black;
+}
+.btn1{
+    border-top:4px solid #F4C430;
+}
+.div1 p,.div2 p{
+    color:black;
+    margin:5px auto;
+
+    font-size:16px;
+}
+.div1 li,.div2 li{
+    margin:5px auto;
+    font-size:16px;
+}

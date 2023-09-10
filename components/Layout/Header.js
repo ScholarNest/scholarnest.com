@@ -92,31 +92,31 @@ const Header = () => {
                     <div className="row justify-content-center p-4">
 
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll   to="about">
+                        <a  href="/company#about">
                           <>
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>About</h4>
                           <p>All information about company.</p>
                           </>
-                        </LinkScroll>
+                        </a>
                       </div>
 
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll to="approach">
+                        <a href="/company#approach">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Approach</h4>
                           <p>A way of dealing with problems.</p>
-                        </LinkScroll>
+                        </a>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll   to="portfolio">
+                        <a  href="/company#portfolio">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Portfolio</h4>
                           <p> Collection of a wide range of assets.</p>
-                        </LinkScroll>
+                        </a>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <LinkScroll   to="techexpertise">
+                        <a   href="/company#techexpertise">
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Capabilities</h4>
                           <p>Domain of expertise in technologies. </p>
-                        </LinkScroll>
+                        </a>
                       </div>
                       <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
                         <a href="/career-guidance-and-enhancement">

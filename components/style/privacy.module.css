@@ -1,0 +1,30 @@
+.tagdiv p{
+    font-size:12px;
+}
+.privacy h1{
+    font-size:30px;
+    font-weight:bold;
+}
+.privacy h2{
+    font-size:24px;
+    font-weight:500;
+}
+
+.privacy h3{
+    font-size:20px;
+    font-weight:500;
+}
+
+.privacy h4{
+    font-size:16px;
+    opacity:0.9;
+    font-weight:500;
+}
+.privacy li{
+    display: list-item;
+    margin:5px;
+}
+.privacy ul {
+    list-style: disc; /* Make sure list-style is not set to 'none' or 'hidden' */
+    margin-left:10px !important;
+}

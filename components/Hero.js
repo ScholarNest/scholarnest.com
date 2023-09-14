@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
           <div >
             <Image height="575px" width="1100px" layout="responsive" src="/assets/homepage/newbanner2.jpg" alt='Technology Consulting Solutions & Services' />
-            <div className={classes.bannerDetails + " " + "text-white flex flex-col  items-start row-start-2 sm:row-start-1"}>
+            <div className={classes.bannerDetails + " " +classes.bannerDet2+  " text-white flex flex-col  items-start row-start-2 sm:row-start-1"}>
               <h2 className="font-medium  leading-normal">
                 Elevate Your Business with Expert Technology Consulting Solutions & Services
 

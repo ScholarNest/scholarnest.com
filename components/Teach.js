@@ -21,7 +21,7 @@ const Teach = () => {
   return (
    <>
    <div className={classes.tagdiv+" mx-5 my-1 "}>
-    <p class="mb-1">Home  &gt;&gt; FAQs</p>
+    <p class="mb-1"><a href="/"> Home </a>  &gt;&gt; Teach</p>
 
     <hr />
    </div>

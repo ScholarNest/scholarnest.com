@@ -28,6 +28,11 @@
   .letsConnect p{
     font-size:16px;
   }
+  @media only screen and (max-width: 640px) {
+    .letsConnect{
+      text-align:center;
+    }  
+  }
   @media only screen and (max-width: 600px) {
   
     .headingTag, .letsConnect h2{

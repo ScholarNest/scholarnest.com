@@ -27,7 +27,7 @@ const Feature = () => {
             <motion.div variants={scrollAnimation} style={{ width: "50%" }}>
               <motion.div variants={scrollAnimation} style={{ margin: "25% 5%" }}>
                 <motion.h2 class={classes.careerHead} >Career at ScholarNest</motion.h2>
-                <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.h3>
+                <motion.p class={classes.careerDet}>We invite you to supercharge your potential.Find what inspires and drives you, Find your spark.</motion.p>
                 <motion.button className={classes.careerButton +
                   " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
                 } onClick={() => router.push("/career-guidance-and-enhancement")} style={{ display: "flex", flexDirection: "row" }}>Visit Our Career Page </motion.button>

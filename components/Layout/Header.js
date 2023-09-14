@@ -81,12 +81,14 @@ const Header = () => {
               <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"} id="menu1" >
                 <div className="row">
                   <div className="col-3 py-3">
-                    <img style={{ height: "150px" }} src="/assets/homepage/companyHeader.jpg" />
+                    <img style={{ height: "120px",width:"100%" }} src="/assets/homepage/companyHeader.jpg" />
                     {/* <GrPersonalComputer  size={120} /> */}
                     <h4 style={{ fontWeight: "bold", fontSize: "1.3rem", color: "black", marginTop: "8px", marginBottom: "6px" }}>Company</h4>
 
                     <p>
                       We have experience with many analytics platforms and can help you navigate the market.                </p>
+                      <button onClick={() => router.push("/company")} class={classes.bnt + " btn  text-orange-500 border-orange-500 my-2"} style={{ border: "1px solid", display: "flex", flexDirection: "row" }}>Explore  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "5px" }} /></button>
+
                   </div>
                   <div className="col-9">
                     <div className="row justify-content-center p-4">
@@ -162,7 +164,7 @@ const Header = () => {
                     <h4 style={{ fontWeight: "bold", fontSize: "1.3rem", color: "black", marginTop: "8px", marginBottom: "6px" }}>Solutions</h4>
 
                     <p> Digital solutions combining strategy, technology, automation and people.</p>
-                    <button onClick={() => router.push("/solutions")} class={classes.bnt + " btn  text-orange-500 border-orange-500 my-4"} style={{ border: "1px solid", display: "flex", flexDirection: "row" }}>Explore  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "2px" }} /></button>
+                    <button onClick={() => router.push("/solutions")} class={classes.bnt + " btn  text-orange-500 border-orange-500 my-4"} style={{ border: "1px solid", display: "flex", flexDirection: "row" }}>Explore  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "5px" }} /></button>
                   </div>
                   <div className="col-9">
                     <div className="row  p-4">

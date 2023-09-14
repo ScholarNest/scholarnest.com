@@ -1,9 +1,12 @@
 .bannerDetails{
-    position: absolute;
+    /* position: absolute;
     top:50px;
     left:25px;
-    width:70vw;
-
+    width:70vw; */
+    position:absolute;
+    top:175px;
+    left:25px;
+    width:50vw;
     color:white;
     margin-right:20px !important;
     text-align:start;
@@ -123,12 +126,26 @@ font-size:16px;
     top:10vh;
    }
 } */
-
-@media only screen and (max-width: 950px) {
-    .bannerDetails{
-    position: absolute;
-    top:20px;
-   }
+@media only screen and (max-width: 1125px) {
+  .bannerDet2{
+    top:150px;
+  }
+}
+@media only screen and (max-width: 1074px) {
+  .bannerDetails{
+    top:140px;
+  }
+  .bannerDet2{
+    top:130px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .bannerDetails{
+    top:125px;
+  }
+  .bannerDet2{
+    top:115px;
+  }
 
    .careerTableTop{
     width:85vw;
@@ -142,9 +159,28 @@ font-size:16px;
     .caseheading{
       margin-top:10%;
     }
-    
-    
+    .bannerDetails {
+      top :100px;
+    }
+    .bannerDet2{
+      top:90px;
+    }
+    .bannerDetails h2{
+     font-size:24px;
+    }
+    .bannerDetails p{
+      margin-top :20px;
+    }
   }
+  @media only screen and (max-width: 875px) {
+    .bannerDetails {
+      top :80px;
+    }
+    .bannerDet2 {
+      top :70px;
+    }
+  }
+
 @media only screen and (max-width: 768px) {
     .caseheading{
       margin-top:5%;
@@ -156,14 +192,36 @@ font-size:16px;
         display:none !important;
        }
     .bannerDetails{
-      top:25%;
-        width:50vw;
+      /* top:25%;
+        width:50vw; */
+        top:120px;
+        width:53vw;
+    }
+    .bannerDet2{
+      top:110px;
     }
   }
- 
+  @media only screen and (max-width: 672px) {
+    .bannerDetails{
+      /* top:25%;
+        width:50vw; */
+        top:100px;
+      
+    }
+    .bannerDet2{
+      top:90px;
+      width:50vw;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
- 
+  .bannerDetails{
+    top:80px;
+  }
+  .bannerDet2{
+    top:70px;
+
+  }
    .h3style{
     font-size:16px;
     margin:5px 0;
@@ -206,6 +264,15 @@ font-size:16px;
         font-size:20px;
       }
 }
+@media only screen and (max-width: 560px) {
+  .bannerDetails{
+    top:70px;
+  }
+  .bannerDet2{
+    top:60px;
+
+  }
+}
 @media only screen and (max-width: 500px) {
     .bannerDetails{
         top:25%;
@@ -216,10 +283,14 @@ font-size:16px;
         }
 }
 @media only screen and (max-width: 430px) {
-   
+
     .bannerDetails{
+      top:23%;
+      left:15px;
+      }
+      .bannerDet2{
         top:20%;
-          left:15px;
+
       }
    .caseheading,.h3style{
     font-size:14px;

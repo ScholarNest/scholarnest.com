@@ -56,7 +56,7 @@ const AcademySolution = () => {
       heading:"Course Bundle - Master Data Engineering",
       desc:"Instructor Led Course",
       imgPath:"/assets/solutions/AcademySolutions/1.png",
-      date:"13/10/2023"
+      date:"17/09/2023"
     }
     // {
     //   heading:"Mastering PySpark",

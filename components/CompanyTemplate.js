@@ -65,11 +65,13 @@ const CompanyTemplate = () => {
 
       <div id="about" style={{ margin: "0", backgroundColor: "rgb(251 251 249)" }} className={classes.aboutBox + " row"}>
 
-        <h2 >About ScholarNest
-        </h2>
-
+    
 
         <div className="col-12 col-lg-6 col-sm-12 col-md-6 p-3">
+              <h2 >About ScholarNest
+        </h2>
+        <br />
+
           <p>
 
           ScholarNest is a data and cloud technology company that aims to transform its customers' businesses by helping them create the best solutions powered by our data and cloud technology expertise. 
@@ -276,7 +278,7 @@ Upskilling, mentoring, supporting, and building high-potential teams            
           <motion.div  variants={scrollAnimation} style={{width:"50%"}}>
             <motion.div  variants={scrollAnimation} style={{margin:"25% 5%"}}>
             <motion.h2 class={classes.careerHead} >Career at ScholarNest</motion.h2>
-            <motion.h3 class={classes.careerDet}>We invite you to supercharge your potential. Find what inspires and drives you.</motion.h3>
+            <motion.p class={classes.careerDet}>We invite you to supercharge your potential. Find what inspires and drives you.</motion.p>
             <motion.button className={classes.careerButton +
        " my-4 py-2 lg:py-4 px-6 sm:px-3 lg:px-12 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-zinc-50-md transition-all outline-none "
       } onClick={() =>  router.push("/career-guidance-and-enhancement")} style={{display:"flex",flexDirection:"row"}}>Visit our career page </motion.button>

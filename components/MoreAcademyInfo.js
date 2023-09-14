@@ -97,10 +97,11 @@ const MoreAcademyInfo = () => {
 
           <p class="text-white">   Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self Paced or Instructor-led
           </p>
-          <div class="d-flex justify-content-center">
-            <button class="btn btn-rounded btn-warning p-2 mx-2">Buy Self Pace Version for $329 </button>
-            <button class="btn btn-rounded btn-warning p-2 mx-2">Enquire for Instructor-led Program</button>
+          <div class="row gap-2 justify-content-center">
+            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2">Buy Self Pace Version for $329 </button>
+            <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2">Enquire for Instructor-led Program</button>
           </div>
+          <br />
         </div>
       </div>
       <br />
@@ -147,7 +148,7 @@ const MoreAcademyInfo = () => {
       <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
         <h2 class={"  my-2"}>Included Course</h2>
-        <h3>Lifetime access for 8 courses worth $470.79</h3>
+        <h3 class="mb-1">Lifetime access for 8 courses worth $470.79</h3>
 
         {
           courseList.map((data, index) => {

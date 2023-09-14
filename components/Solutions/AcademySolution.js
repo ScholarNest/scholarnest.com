@@ -17,7 +17,7 @@ const AcademySolution = () => {
   {
     heading:"Course Bundle - Master Data Engineering",
     desc:"8 self-placed courses",
-    link:"https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
+    link:"/master-data-engineering",
     imgPath:"/assets/solutions/AcademySolutions/1.png"
   },
   {
@@ -93,7 +93,7 @@ const AcademySolution = () => {
       <div>
         <Image placeholder="blur"  loading="lazy" height="500px" width="1100px" layout="responsive"  src={bannerImg} alt="Data Engineering with Spark and DataBricks" />
         <div className={classes.bannerDetails}>
-          <h2 class={classes.heading} >Welcome to Our Academy: Your Gateway to Learning Excellence</h2>
+          <h2 class={classes.heading} >ScholarNest Academy: Your Gateway to Learning Excellence</h2>
 
         </div>
         <p class={classes.det+" text-center"} >We provide individuals and organizations with a cohesive and interactive online learning ecosystem. This platform equips trainers, learners, and education stakeholders with information, tools, and resources for seamless skill and knowledge enhancement across various functions and roles.</p>
@@ -130,9 +130,7 @@ const AcademySolution = () => {
       {/* Cards for each solution */}
       <div id="learnMore"  style={{ backgroundColor: "rgb(251 251 249)"}} className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} >
 
-        <h2 class={classes.head+ " text-center my-3"}>Self Page Course Offerings</h2>
-
-         {
+        <h2 class={classes.head+ " text-center my-3"}>Self-paced Courses</h2>         {
           courseList.map((data,index)=>{
             return(
             <div  className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1">
@@ -162,7 +160,7 @@ const AcademySolution = () => {
       <br />
      
 
-      <h2  class={classes.head+" text-center my-3"}>Instructor Based Live Courses</h2>
+      <h2  class={classes.head+" text-center my-3"}>Instructor-led Live Courses</h2>
       <br />
       <div className={" mx-auto   row text-start  p-2"} >
  

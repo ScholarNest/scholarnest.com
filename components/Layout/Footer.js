@@ -149,8 +149,7 @@ const Footer = () => {
         <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-md-6">
             <div className="row d-flex justify-content-between">
               <div className="col"><a href="/privacy"> Privacy </a></div>
-              <div className="col">Terms</div>
-              <div className="col">Sitemap</div>
+              <div className="col"><a href="/terms"> Terms </a> </div>
             </div>
           </div>
           <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-md-6">

@@ -48,11 +48,11 @@ function PrivacyTemplate() {
 
     return (
         <>
-            <div className={classes.tagdiv + " container my-1 "}>
+            {/* <div className={classes.tagdiv + " container my-1 "}>
                 <p class="mb-1">Home  &gt;&gt; Privacy</p>
 
                 <hr />
-            </div>
+            </div> */}
             <br />
             <br />
             <div className={classes.privacy + " container "}>

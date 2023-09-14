@@ -17,7 +17,10 @@ const Header = () => {
   const router = useRouter();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [companyHeader, setCompanyHeader] = useState(true);
+ 
 
+  
   // Function to toggle the menu state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,21 +29,22 @@ const Header = () => {
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
       setIsMenuOpen(false);
-
+     
     });
+   
 
   }, []);
 
 
-//   function hoverCompany(e){ 
-//     e.preventDefault();
-//     document.getElementById("menu1").style.display="block";
-//   }
-// function MouseOutCompany(e){
-// e.preventDefault();
-// document.getElementById("menu1").style.display="none";
+  //   function hoverCompany(e){ 
+  //     e.preventDefault();
+  //     document.getElementById("menu1").style.display="block";
+  //   }
+  // function MouseOutCompany(e){
+  // e.preventDefault();
+  // document.getElementById("menu1").style.display="none";
 
-// }
+  // }
 
   return (
     <>
@@ -59,13 +63,13 @@ const Header = () => {
           </div>
           <ul className="hidden md:flex lg:flex col-start-4 col-end-8 text-black-100  items-center">
             <li
-             
+
               // href="/company"
-           
+
               smooth={true}
               duration={1000}
-             
-         
+
+
               // onMouseOver={hoverCareer}
               // onMouseLeave={MouseOutCareer}
               // onClick={() => window("/company", "_blank").focus()}
@@ -78,64 +82,66 @@ const Header = () => {
               }
             >
               <div style={{ display: "flex", flexDirection: "row" }}><a href="/company"> Company</a> <FaAngleDown style={{ marginTop: "6px" }} /> </div>
-              <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"} id="menu1" >
-                <div className="row">
-                  <div className="col-3 py-3">
-                    <img style={{ height: "120px",width:"100%" }} src="/assets/homepage/companyHeader.jpg" />
-                    {/* <GrPersonalComputer  size={120} /> */}
-                    <h4 style={{ fontWeight: "bold", fontSize: "1.3rem", color: "black", marginTop: "8px", marginBottom: "6px" }}>Company</h4>
+            
+                  <div className={classes.submenu + " bg-light py-1 px-6 sm:px-1 md:px-10"} id="menu1" >
+                    <div className="row">
+                      <div className="col-3 py-3">
+                        <img style={{ height: "120px", width: "100%" }} src="/assets/homepage/companyHeader.jpg" />
+                        {/* <GrPersonalComputer  size={120} /> */}
+                        <h4 style={{ fontWeight: "bold", fontSize: "1.3rem", color: "black", marginTop: "8px", marginBottom: "6px" }}>Company</h4>
 
-                    <p>
-                      We have experience with many analytics platforms and can help you navigate the market.                </p>
-                      <button onClick={() => router.push("/company")} class={classes.bnt + " btn  text-orange-500 border-orange-500 my-2"} style={{ border: "1px solid", display: "flex", flexDirection: "row" }}>Explore  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "5px" }} /></button>
+                        <p>
+                          We have experience with many analytics platforms and can help you navigate the market.                </p>
+                        <button onClick={() => router.push("/company")} class={classes.bnt + " btn  text-orange-500 border-orange-500 my-2"} style={{ border: "1px solid", display: "flex", flexDirection: "row" }}>Explore  <AiOutlineArrowRight style={{ marginLeft: "4px", marginTop: "5px" }} /></button>
 
-                  </div>
-                  <div className="col-9">
-                    <div className="row justify-content-center p-4">
+                      </div>
+                      <div className="col-9">
+                        <div className="row justify-content-center p-4">
 
-                      <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a  href="/company#about">
-                          <>
-                          <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>About</h4>
-                          <p>All information about company.</p>
-                          </>
-                        </a>
-                      </div>
+                          <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                            <a href="/company#about">
+                              <>
+                                <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>About</h4>
+                                <p>All information about company.</p>
+                              </>
+                            </a>
+                          </div>
 
-                      <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/company#approach">
-                          <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Approach</h4>
-                          <p>A way of dealing with problems.</p>
-                        </a>
-                      </div>
-                      <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a  href="/company#portfolio">
-                          <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Portfolio</h4>
-                          <p> Collection of a wide range of assets.</p>
-                        </a>
-                      </div>
-                      <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a   href="/company#techexpertise">
-                          <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Capabilities</h4>
-                          <p>Domain of expertise in technologies. </p>
-                        </a>
-                      </div>
-                      <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/career-guidance-and-enhancement">
-                          <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Career</h4>
-                          <p>Route to career page.</p>
-                        </a>
-                      </div>
-                      <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <a href="/contactUs">
-                          <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Contact</h4>
-                          <p>Contact us for more details.</p>
-                        </a>
+                          <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                            <a href="/company#approach">
+                              <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Approach</h4>
+                              <p>A way of dealing with problems.</p>
+                            </a>
+                          </div>
+                          <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                            <a href="/company#portfolio">
+                              <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Portfolio</h4>
+                              <p> Collection of a wide range of assets.</p>
+                            </a>
+                          </div>
+                          <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                            <a href="/company#techexpertise">
+                              <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Capabilities</h4>
+                              <p>Domain of expertise in technologies. </p>
+                            </a>
+                          </div>
+                          <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                            <a href="/career-guidance-and-enhancement">
+                              <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Career</h4>
+                              <p>Route to career page.</p>
+                            </a>
+                          </div>
+                          <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
+                            <a href="/contactUs">
+                              <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Contact</h4>
+                              <p>Contact us for more details.</p>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+             
             </li>
 
             <li
@@ -143,10 +149,10 @@ const Header = () => {
               activeClass="active"
               // href="/solutions"
 
-          
+
               smooth={true}
               duration={1000}
-           
+
               className={
                 classes.menuSol + " " +
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -231,7 +237,7 @@ const Header = () => {
             >
               Academy
             </a>
-            
+
             <a
               legacyBehavior={true}
               activeClass="active"
@@ -273,16 +279,16 @@ const Header = () => {
               Blog
             </a>
 
-      
+
           </ul>
           <div class="row justify-content-end pt-1 lg:hidden md:hidden">
-            <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" style={{zIndex:"6"}} width="25" height="25" fill="white" class="bi bi-list col-10  col-sm-6  mt-3" viewBox="0 0 16 16">
+            <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" style={{ zIndex: "6" }} width="25" height="25" fill="white" class="bi bi-list col-10  col-sm-6  mt-3" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </div>
-          
+
         </nav>
-  
+
         {/* style={{zIndex:"10",display:"none",position:"relative",bottom:"10px"}} */}
 
       </header>
@@ -393,21 +399,21 @@ const Header = () => {
             </a>
           </ul>
         </div>
-       </nav>
-       {isMenuOpen && (
-      <div id="rightMenu" className={classes.rightMenu}>
-      <ul>
-      <li> <h3 onClick={()=>{router.push("/scholarnest-academy")}}>Academy </h3></li>
+      </nav>
+      {isMenuOpen && (
+        <div id="rightMenu" className={classes.rightMenu}>
+          <ul>
+            <li> <h3 onClick={() => { router.push("/scholarnest-academy") }}>Academy </h3></li>
 
-        <li>
-       <h3 onClick={()=>{router.push("/managed-services-and-solutions")}}> Managed Services</h3></li>
-       <li> <h3 onClick={()=>{router.push("/technology-consulting")}}>Technology Consulting </h3></li>
-       <li><h3 onClick={()=>{router.push("/staff-augmentation")}}>Staff Augmentation </h3></li>
-       <li><h3 onClick={()=>{router.push("/career-guidance-and-enhancement")}}> Career Enhancement</h3></li>
-      </ul>
-      </div>
+            <li>
+              <h3 onClick={() => { router.push("/managed-services-and-solutions") }}> Managed Services</h3></li>
+            <li> <h3 onClick={() => { router.push("/technology-consulting") }}>Technology Consulting </h3></li>
+            <li><h3 onClick={() => { router.push("/staff-augmentation") }}>Staff Augmentation </h3></li>
+            <li><h3 onClick={() => { router.push("/career-guidance-and-enhancement") }}> Career Enhancement</h3></li>
+          </ul>
+        </div>
       )
-}
+      }
       {/* End Mobile Navigation */}
 
 

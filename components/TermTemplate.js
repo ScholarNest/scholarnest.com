@@ -117,6 +117,170 @@ When you post content, comments, questions, reviews, and when you submit to us i
 In legal language, by submitting or posting content on or through the platforms, you grant us a worldwide, non-exclusive, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, display, and distribute your content (including your name and image) in any and all media or distribution methods (existing now or later developed). It includes making your content available to other companies, organizations, or individuals who partner with ScholarNest for the syndication, broadcast, distribution, or publication of content on other media, as well as using your content for marketing purposes. You also waive any rights of privacy, publicity, or other rights of a similar nature applicable to all these uses, to the extent permissible under applicable law. You represent and warrant that you have all the rights, power, and authority to authorize us to use any content you submit. You also agree to all such uses of your content with no compensation paid to you
 </p>
 <br />
+<h2>
+6. Using ScholarNest at Your Own Risk
+</h2>
+<br />
+<p>
+Anyone can use ScholarNest to create and publish content, and we enable instructors and students to interact for teaching and learning. Like other platforms where people can post content and interact, some things can go wrong, and you use ScholarNest at your own risk.
+</p>
+<br />
+<p>
+Our platform model means we do not review or edit the content for legal issues, and we are not in a position to determine the legality of content. We do not exercise any editorial control over the content that is available on the platform and, as such, do not guarantee in any manner the reliability, validity, accuracy, or truthfulness of the content. If you access content, you rely on any information provided by an instructor at your own risk.
+</p> <br />
+<p>
+You may be exposed to content that you consider offensive, indecent, or objectionable by using the Services. ScholarNest has no responsibility to keep such content from you and no liability for your access or enrollment in any course or other content to the extent permissible under applicable law. IT also applies to any content relating to health, wellness, and physical exercise. You acknowledge the inherent risks and dangers in the brutal nature of these types of content. By accessing such content, you voluntarily assume those risks, including the risk of illness, bodily injury, disability, or death. You assume full responsibility for the choices you make before, during, and after your access to the content.
+</p> <br /> <p>
+When you interact directly with a student or an instructor, you must be careful about your personal information types. While we restrict the types of information instructors may request from students, we do not control what students and instructors do with their information from other users on the platform. You should not share your email or other personal information about you for your safety.
+</p> <br /> <p>
+We do not hire or employ instructors, nor are we responsible for any interactions between instructors and students. We are not liable for disputes, claims, losses, injuries, or damage of any kind that might arise out of or relate to the conduct of instructors or students.
+</p> <br /><p>
+When you use our Services, you will find links to other websites that we don’t own or control. We are not responsible for the content or any other aspect of these third-party sites, including their collection of information about you. You should also read their terms and conditions and privacy policies.
+ </p>
+ <br />
+<h2> 7. ScholarNest’s Rights</h2>
+<br /><p>
+We own the ScholarNest platform and Services, including the website, present or future apps and services, and things like our logos, API, code, and content created by our employees. You can’t tamper with those or use them without authorization.
+</p><br /><p>
+All right, title and interest in and to the ScholarNest platform and Services, including our website, our existing or future applications, our APIs, databases, and the content our employees or partners submit or provide through our Services (but excluding content provided by instructors and students) are and will remain the exclusive property of ScholarNest and its licensors. Our platforms and services are protected by copyright, trademark, and other laws of India and foreign countries. Nothing gives you a right to use the ScholarNest name or any ScholarNest trademarks, logos, domain names, and other distinctive brand features. Any feedback, comments, or suggestions you may provide regarding ScholarNest or the Services is entirely voluntary. We will be free to use such feedback, comments, or suggestions as we see fit without any obligation.
+</p> <br /><p>
+You may not do any of the following while accessing or using the ScholarNest platform and Services:
+</p> <br />
+<ul style={{marginLeft:"10px"}}>
+  <li>
+Access, tamper with or use non-public areas of the platform (including content storage), ScholarNest’s computer systems, or the technical delivery systems of ScholarNest’s service providers.
+</li> <li>
+Disable, interfere with, or try to circumvent any of the features of the platforms related to security or probe, scan, or test the vulnerability of any of our systems.
+</li> <li>
+Copy, modify, create a derivative work of, reverse engineer, reverse assemble, or otherwise attempt to discover any source code of or content on the ScholarNest platform or Services.
+</li> <li>
+Access or search or attempt to access or search our platform by any means (automated or otherwise) other than through our currently available search functionalities provided via our website, mobile apps, or API. You may not scrape, spider, use a robot, or use other automated means of any kind to access the Services.
+</li> <li>
+In any way use the Services to send altered, deceptive, or false source-identifying information (such as sending email communications appearing as ScholarNest); or interfere with, or disrupt, (or attempt to do so), the access of any user, host, or network, including, without limitation, sending a virus, overloading, flooding, spamming, or mail-bombing the platforms or services, or in any other manner interfering with or creating an undue burden on the Services.
+</li>
+</ul>
+<br />
+<h2>
+8. Subscription Terms
+</h2> <br /><p>
+This section covers additional terms that apply to your use of our subscription-based collections as a student (“Subscription Plans”). By using a Subscription Plan, you agree to the additional terms in this section.
+</p> <br /> <h3>
+8.1 Subscription Plans
+</h3> <br /> <p>
+During your subscription to a Subscription Plan, you get a limited, non-exclusive, non-transferable license from us to access and view the content included in that Subscription Plan via the Services. Except for the yearly access license grant, the terms included in the “Content Enrollment and Access” section above apply to enrollments via Subscription Plans.
+</p> <br /><p>
+The subscription you purchase or renew determines the scope, features, and price of your access to a Subscription Plan. You may not transfer, assign, or share your subscription with anyone else.
+</p> <br /> <p>
+We reserve the right to revoke any license to use the content in our Subscription Plans for legal or policy reasons at any time and at our sole discretion, such as if we no longer have the right to offer the content through a Subscription Plan. The “Content Enrollment and Access” section includes additional information on our right to revoke.
+</p> <br />
+<h3>
+8.2 Account Management
+</h3> <br /><p>
+You may cancel your subscription at any time. If you cancel your subscription to a Subscription Plan, your access to that Subscription Plan will automatically end on the last day of your billing period. On cancellation, you will not be entitled to receive a refund or credit of any fees already paid for your subscription unless otherwise required by applicable law. For clarity, cancellation of a subscription does not terminate your ScholarNest account.
+</p> <br /> <h3>
+8.3 Free Trials & Renewals
+</h3> <br /> <p>
+Your subscription may start with a free trial. We specify the duration of the free trial period during your purchase of the subscription plan. ScholarNest determines free trial eligibility at our sole discretion and may limit eligibility or duration. We reserve the right to terminate the free trial and suspend your subscription if we determine that you aren’t eligible.
+</p> <br /><p>
+We will charge the subscription fee for your next billing cycle at the end of the free trial period. Your subscription will automatically renew according to your subscription settings (e.g., monthly or annually) unless you cancel your subscription before the end of the free trial period.
+</p> <br /><h3>
+8.4 Payments and Billing
+</h3><br /><p>
+The subscription fee will be listed at the time of your purchase. You can visit our Support Page to learn more about finding the fees and dates applicable to your subscription. We may also be required to add taxes to your subscription fee as described in the “Payments, Credits, and Refunds” section above. Payments are non-refundable, and there are no refunds or credits for partially used periods unless otherwise required by applicable law.
+</p> <br /> <p>
+To subscribe to a Subscription Plan, you must provide a payment method. By subscribing to a Subscription Plan and providing your billing information during checkout, you grant our payment service providers and us the right to process payment for the then-applicable fees via the payment method we have on record for you. At the end of each subscription term, we will automatically renew your subscription for the same length of term and process your payment method to pay the then-applicable fees.
+</p> <br /><p>
+Suppose we update your payment method using the information provided by our payment service providers (as described in the “Payments, Credits, and Refunds” section above). In that case, you authorize us to continue to charge the then-applicable fees to your updated payment method.
+</p> <br /> <p>
+If we cannot process payment through the payment method, we have on file for you, or if you file a disputing chargeback charge made to your payment method and the chargeback is granted, we may suspend or terminate your subscription.
+</p> <br /><p>
+We reserve the right to change our Subscription Plans or adjust pricing for our Services at our sole discretion. Any price changes or changes to your subscription will take effect following notice to you, except as otherwise required by applicable law.
+</p>
+<br /><h3>
+8.5 Subscription Disclaimers
+</h3><br /><p>
+We make no guarantees about the availability of any specific content in any Subscription Plan or any minimum amount of content in any Subscription Plan. At any point in the future, we reserve the right to offer or cease to offer additional features to any Subscription Plan or otherwise modify or terminate a Subscription Plan at our sole discretion. These disclaimers are in addition to those listed in the “Disclaimers” section below.
+</p> <br /> 
+<h2>
+9. Miscellaneous Legal Terms</h2> <br />
+<p>
+These Terms are like any other contract, and they have boring but important legal terms that protect us from the countless things that could happen and clarify the legal relationship between you and us.
+</p> <br /> <h3>
+9.1 Binding Agreement
+</h3> <br /><p>
+You agree that by registering, accessing, or using our Services, you agree to enter into a legally binding contract with ScholarNest. If you do not agree to these Terms, do not register, access, or otherwise use any of our Services.
+</p><br /><p>
+If you are an instructor accepting these Terms and using our Services on behalf of a company, organization, government, or other legal entity, you represent and warrant that you are authorized to do so.
+</p> <br /><p>
+We may provide any version of these Terms in a language other than English for convenience. You understand and agree that the English language will control any conflict.
+</p><br /><p>
+These Terms (including any agreements and policies linked from these Terms) constitute the entire agreement between you and us (including, if you are an instructor, the Instructor Terms).
+</p><br /><p>
+If any part of these Terms is found to be invalid or unenforceable by applicable law, then that provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision, and the remainder of these Terms will continue in effect.
+</p><br /><p>
+Even if we are delayed in exercising our rights or fail to exercise a right in one case, it doesn’t mean we waive our rights under these Terms, and we may decide to enforce them in the future. If we decide to waive any of our rights in a particular instance, it doesn’t mean we waive our rights generally or in the future.
+</p><br /><p>
+The following sections shall survive the expiration or termination of these Terms: Sections (Content Enrollment and Access), (ScholarNest’s Rights to Content You Post), (Using ScholarNest at Your Own Risk), (ScholarNest’s Rights), (Subscription Disclaimers), and (Miscellaneous Legal Terms).
+</p><br /><h3>
+9.2 Disclaimers
+</h3><br /><p>
+It may happen that our platform is down, either for planned maintenance or because something goes down with the site. It may happen that one of our instructors is making misleading statements in their content. It may also happen that we encounter security issues. These are just examples. You accept that you will not have any recourse against us in any of these types of cases where things don’t work outright. In legal, more complete language, the Services, and their content are provided on an “as is” and “as available” basis. We (and our affiliates, suppliers, partners, and agents) make no representations or warranties about the suitability, reliability, availability, timeliness, security, lack of errors, or accuracy of the Services or their content, and expressly disclaim any warranties or conditions (express or implied), including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. We (and our affiliates, suppliers, partners, and agents) make no warranty that you will obtain specific results from the use of the Services. Your use of the Services (including any content) is entirely at your own risk. Some jurisdictions don’t exclude implied warranties, so some of the above exclusions may not apply to you.
+</p><br /><p>
+We may decide to cease making certain available features of the Services at any time and for any reason. Under no circumstances will ScholarNest or its affiliates, suppliers, partners, or agents be held liable for any damages due to such interruptions or lack of availability of such features.
+</p><br /><p>
+We are not responsible for delay or failure of our performance of any of the Services caused by events beyond our reasonable control, like an act of war, hostility, or sabotage; natural disaster; electrical, internet, or telecommunication outage; or government restrictions.
+</p><br /><h3>
+9.3 Limitation of Liability
+</h3> <br /><p>
+There are risks inherent to using our Services; for example, if you access health and wellness content like yoga, you injure yourself. You fully accept these risks, and you agree that you will have no recourse to seek damages against even if you suffer loss or damage from using our platform and Services. In legal, more complete language, to the extent permitted by law, we (and our suppliers, partners, and agents) will not be liable for any indirect, incidental, punitive, or consequential damages (including loss of data, revenue, profits, or business opportunities, or personal injury or death), whether arising in contract, warranty, tort, product liability, or otherwise, and even if we’ve been advised of the possibility of damages in advance. Our liability (and the liability of each of our suppliers, partners, and agents) to you or any third parties under any circumstance is limited to the greater of one hundred dollars ($100) or the amount you have paid us in the twelve (12) months before the event giving rise to your claims. Some jurisdictions don’t allow the exclusion or limitation of liability for consequential or incidental damages, so some of the above may not apply to you.
+</p><br />
+<h3>
+9.4 Indemnification
+</h3><br /><p>
+If you behave in a way that gets us in legal trouble, we may exercise legal recourse against you. You agree to indemnify, defend (if we so request), and hold harmless ScholarNest, our group companies, and their officers, directors, suppliers, partners, and agents from against any third-party claims, demands, losses, damages, or expenses (including reasonable attorney fees) arising from (a) the content you post or submit, (b) your use of the Services (c) your violation of these Terms, or (d) your violation of any rights of a third party. Your indemnification obligation will survive the termination of these Terms and your use of the Services.
+</p><br /><h3>
+9.5 Governing Law and Jurisdiction
+</h3><br /><p>
+When these Terms mention “ScholarNest,” they refer to the ScholarNest Technologies Pvt Ltd located in Bangalore, India. You’re contracting with ScholarNest Technologies Pvt Ltd, located in Bangalore, India. These Terms are governed by the laws of India, without reference to its choice or conflicts of law principles, and you consent to the exclusive jurisdiction and venue of the courts in Bangalore, India.
+</p><br /><h3>
+9.6 Legal Actions and Notices
+</h3><br /><p>
+No action, regardless of form, arising out of or relating to this agreement may be brought by either party more than one (1) year after the cause of action has accrued, except where this limitation cannot be imposed by law.
+</p><br /><p>
+Any notice or other communication to be given hereunder will be in writing and given by registered or certified mail return receipt requested or email (by us to the email associated with your account or by you to contact@scholarnest.com).
+</p><br /><h3>
+9.7 Relationship Between Us
+</h3><br /><p>
+You and we agree that no joint venture, partnership, employment, contractor, or agency relationship exists between us.
+</p><br /><h3>
+9.8 No Assignment
+</h3><br /><p>
+You may not assign or transfer these Terms (or the rights and licenses granted under them). For example, if you registered an account as an employee of a company, your account cannot be transferred to another employee. We may assign these Terms (or the rights and licenses granted under them) to another company or person without restriction. Nothing in these Terms confers any right, benefit, or remedy on any third-party person or entity. You agree that your account is non-transferable and that all rights to your account and other rights under these Terms terminate upon your death.
+</p>
+<br /><h3>
+9.9 Sanctions and Export Laws
+</h3><br /><p>
+You warrant that you (as an individual or as a representative of any entity on whose behalf you use the Services) aren’t located in, or a resident of, any country that is subject to applicable India trade sanctions or embargoes (such as Cuba, Iran, North Korea, Sudan, Syria, or the Crimea region of Ukraine). You also warrant that you aren’t a person or entity named on any Indian government specially designated national or denied-party list.
+</p><br /><p>
+If you become subject to such a restriction during the term of any agreement with ScholarNest, you will notify us within 24 hours, and we will have the right to terminate any further obligations to you, effective immediately and with no further liability to you (but without prejudice to your outstanding obligations to ScholarNest).
+</p><br /><p>
+You may not access, use, export, re-export, divert, transfer or disclose any portion of the Services or any related technical information or materials, directly or indirectly, in violation of any Indian and other applicable country export control and trade sanctions laws, rules and regulations. You agree not to upload any content or technology (including information on encryption) whose export is controlled explicitly under such laws.
+</p><br />
+<h2>
+  
+10. Updating These Terms
+</h2><br /><p>
+From time to time, we may update these Terms to clarify our practices or reflect new or different practices (such as when we add new features), and ScholarNest reserves the right in its sole discretion to modify and/or make changes to these Terms at any time. If we make any material change, we will notify you using prominent means, such as by email notice sent to the email address specified in your account or by posting a notice through our Services. Modifications will become effective on the day they are posted unless stated otherwise.
+</p><br /><p>
+Your continued use of our Services after changes become effective shall mean that you accept those changes. Any revised Terms shall supersede all previous Terms.
+</p><br /><h2>
+11. How to Contact Us
+</h2><br /><p>
+The best way to get in touch with us is to contact our Support Team. We’d love to hear your questions, concerns, and feedback about our Services.
+</p><br /><p> <i> 
+Thanks for teaching and learning with us!
+</i>
+</p><br />
             </div>
     </>
   )

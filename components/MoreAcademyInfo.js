@@ -109,8 +109,9 @@ const MoreAcademyInfo = () => {
       <div className="row mx-4">
         <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 h-100"}>
           <h2>What you'll learn</h2>
-          <h3> Mastering Data Engineering with Spark and Databricks is a comprehensive course bundle that will help you become proficient in Apache Spark programming and Databricks Cloud Platform, Structured Streaming, Apache Kafka, Spark Developer and Databricks Data Engineer Certification.
-          </h3>
+          <br />
+          <p class="my-1"> Mastering Data Engineering with Spark and Databricks is a comprehensive course bundle that will help you become proficient in Apache Spark programming and Databricks Cloud Platform, Structured Streaming, Apache Kafka, Spark Developer and Databricks Data Engineer Certification.
+          </p>
 
         </div>
         <div className=" col-12 col-sm-12 col-md-6">
@@ -148,7 +149,7 @@ const MoreAcademyInfo = () => {
       <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
         <h2 class={"  my-2"}>Included Course</h2>
-        <h3 class="mb-1">Lifetime access for 8 courses worth $470.79</h3>
+        <p class="mb-1">Lifetime access for 8 courses worth $470.79</p>
 
         {
           courseList.map((data, index) => {
@@ -157,7 +158,7 @@ const MoreAcademyInfo = () => {
                 <a href={data.link}>
                   <div className={classes.styleDiv + " h-100"}>
                     <Image width={600}
-                      height={400} src={data.imgPath} />
+                      height={300} src={data.imgPath} />
                     <br />
                     <h3 class={classes.h3style} >{data.heading}</h3>
 
@@ -263,8 +264,9 @@ const MoreAcademyInfo = () => {
       <div style={{ backgroundColor: "rgb(251 251 249)" }} className="row mx-4">
         <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 p-2 h-100"}>
           <h2>Schedule a free call</h2>
-          <h3>Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
-          </h3>
+          <br />
+          <p class="my-1">Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
+          </p>
 
         </div>
         <div className={classes.secondDiv + " col-12 col-md-6 col-6"}>
@@ -304,7 +306,7 @@ const MoreAcademyInfo = () => {
       <div  className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
         <h2 class={"  my-2"}>Individual Courses:</h2>
-        <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
+        <p>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
 
         {
           IndcourseList.map((data, index) => {
@@ -313,7 +315,7 @@ const MoreAcademyInfo = () => {
                 <a href={data.link}>
                   <div className={classes.styleDiv + " h-100"}>
                     <Image width={600}
-                      height={400} src={data.imgPath} />
+                      height={300} src={data.imgPath} />
                     <br />
                     <h3 class={classes.h3style} >{data.heading}</h3>
 

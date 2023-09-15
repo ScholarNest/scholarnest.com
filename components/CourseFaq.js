@@ -115,14 +115,14 @@ import classes from "./style/courseFaq.module.css";
     ]
   return (
    <>
-  
+{/*   
    <div className={classes.tagdiv+" mx-5 my-1 "}>
     <p class="mb-1">
      <a href="/"> Home </a>  &gt;&gt; FAQs</p>
 
     <hr />
    </div>
-   <br />
+   <br /> */}
    <br />
    <div class={classes.mainHeadDiv+" fw-bold text-center"}>
    <h1 class={classes.mainHead+" my-2"}>FREQUENTLY ASKED QUESTIONS</h1>

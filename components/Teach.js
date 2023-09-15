@@ -20,12 +20,12 @@ const Teach = () => {
     }
   return (
    <>
-   <div className={classes.tagdiv+" mx-5 my-1 "}>
+   {/* <div className={classes.tagdiv+" mx-5 my-1 "}>
     <p class="mb-1"><a href="/"> Home </a>  &gt;&gt; Teach</p>
 
     <hr />
    </div>
-   <br />
+   <br /> */}
    <br />
    <div class={classes.mainHeadDiv+" fw-bold text-center"}>
    <h1 class={classes.mainHead+" my-2"}> APPLY AS INSTRUCTOR</h1>

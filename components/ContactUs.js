@@ -89,9 +89,9 @@ export default function ContactUs() {
   };
   return (
     <>
-    <main>
-      <header className="p-6 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4  lg:px-40 bg-blue-50 dark:bg-blue-900 md:h-96">
-        <div className="mx-auto mb-5 mt-5">
+
+      <header className="p-6 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4  lg:px-40 bg-blue-50 dark:bg-blue-900 ">
+        <div className="mx-auto my-2">
           <div className="badge bg-green-500 inline-block rounded-xl">
             {/* <p className="font-light text-base px-4 py-1 text-white-500">
             Let's get in touch
@@ -147,7 +147,7 @@ export default function ContactUs() {
 
         <form
           onSubmit={handleSubmit}
-          className="rounded-lg shadow-xl flex flex-col px-8 py-20 bg-white dark:bg-green-500"
+          className="rounded-lg mt-4 shadow-xl flex flex-col px-5 py-5 bg-white  border dark:bg-green-500"
         >
           <h1 className="text-2xl font-bold dark:text-gray-50">
             Send a message
@@ -267,10 +267,7 @@ export default function ContactUs() {
     
       </header>
       
-    </main>
-    <br />
-    <br />
-    <br />
+    
     <br />
     </>
   );

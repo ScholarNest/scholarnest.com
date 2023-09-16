@@ -51,7 +51,7 @@ const MoreAcademyInfo = () => {
   
     {
       heading: "Mastering PySpark",
-      desc: "Self-Paced/Instructor-led",
+      desc: "Self-paced/Instructor-led",
       imgPath: "/assets/solutions/AcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
@@ -98,8 +98,8 @@ const MoreAcademyInfo = () => {
           <p class="text-white">   Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self Paced or Instructor-led
           </p>
           <div class="row gap-2 justify-content-center">
-            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2">Buy Self Pace Version for $329 </button>
-            <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2">Enquire for Instructor-led Program</button>
+            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href="https://www.scholarnest.in/order?ct=d63c7586-29c1-4cd4-bbc6-f47afb6577f4"> Buy Self Pace Version for $329  </a></button>
+            <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a></button>
           </div>
           <br />
         </div>
@@ -123,17 +123,21 @@ const MoreAcademyInfo = () => {
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
           </svg> Master Databricks Cloud, Lakehouse Architecture and other Databricks Tools.</p>
           <hr />
-          <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-          </svg>
-            Learn Apache Kafka and Spark Structured Streaming</p>
-          <hr />
-          <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
+          
+          
+          <p class="d-flex my-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
           </svg>
             Prepare and Practice for Spark Developer Associate and Data Engineer Associate Certifications</p>
           <hr />
           <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg> Learn Apache Kafka and Spark Structured Streaming 
+           </p>
+          <hr />
+          <p class="d-flex my-3"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
           </svg>
             Bonus learning with Python Programming and AWS Cloud Fundamentals.</p>

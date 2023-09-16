@@ -104,7 +104,7 @@ const htmlContentclient =`<div><p>Hii</p>
     //  console.log(image)
      const mailData = {
        from:'duadarsh13@gmail.com',
-       to: 'adarsh.pvt13@gmail.com',
+       to: 'scholarnestmarketing@gmail.com',
        subject: 'Inquiry from Scholarnest.com',
    
    

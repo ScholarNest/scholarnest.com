@@ -133,7 +133,7 @@ const Services = () => {
         <br />
         <Carousel
           dynamicHeight={false}
-          // autoPlay
+          autoPlay
           infiniteLoop
           interval={7000} // Adjust the interval time as desired
           transitionTime={1000} // Adjust the transition time as desired

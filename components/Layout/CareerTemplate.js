@@ -6,6 +6,7 @@ import {  AiOutlineCopy} from 'react-icons/ai';
 import {  CiTimer} from 'react-icons/ci';
 import {  AiOutlineMail} from 'react-icons/ai';
 const isBrowser = typeof window !== 'undefined';
+import classes from './careerTemplate&InternTemplate.module.css';
 
 const CareerTemplate = ({props}) => {
 
@@ -30,7 +31,7 @@ const CareerTemplate = ({props}) => {
 
   const h1Style={
     fontSize:"20px",
-    fontWeight:"700",
+    fontWeight:"500",
     marginTop:"5px",
     marginLeft:"15px"
   }
@@ -107,14 +108,14 @@ const CareerTemplate = ({props}) => {
   return (
     <>
     <div>
-      <div className="w-75 row">
-        <h1 style={{fontSize:"36px",fontWeight:"bold",margin:"15px"}}>{props.title}</h1>
+      <div className={classes.careerTemplate+" w-75 row"}>
+        <h1 >{props.title}</h1>
      </div>
     
      <hr size="20" style={{border:"3px solid red",height:"3px !important",width:"70px",marginLeft:"15px"}} />
       <div  style={{margin:"0"}} className="row  justify-content-end">
         {/* <div  class="col-2">  */}
-        <button onClick={applyNow} style={{width:"150px",zIndex:"99"}}  class="btn py-3 lg:py-3 px-8 lg:px-8 text-white-500 font-semibold rounded-lg bg-orange-500">Apply Now</button>
+        <button onClick={applyNow} style={{width:"150px",zIndex:"9"}}  class="btn py-3 lg:py-3 px-8 lg:px-8 text-white-500 font-semibold rounded-lg bg-orange-500">Apply Now</button>
         {/* </div> */}
       </div>
       {/* Form */}
@@ -122,7 +123,7 @@ const CareerTemplate = ({props}) => {
       <form enctype="multipart/form-data" onSubmit={sendMail}>
         <br />
         <div className="row ">
-    <div class="form-group col-2 ">
+    <div class="form-group col-sm-3 col-md-2 col-6 ">
     {/* <label for="exampleFormControlSelect1">Title</label> */}
     <select  onChange={(e)=>{setTitle(e.target.value)}} placeholder='Title' class="form-control" id="exampleFormControlSelect1">
       <option value="-">Title *</option>
@@ -214,58 +215,58 @@ const CareerTemplate = ({props}) => {
        <div  style={{margin:"0",}} class="row justify-content-start">
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <AiFillBulb size="17"  /> Job Title</h3>
-          <h1 style={h1Style}>{props.title}</h1>
+          <h3 style={h1Style}>{props.title}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <AiOutlineCopy size={17}/> Exprience</h3>
-          <h1 style={h1Style}>{props.exp}</h1>
+          <h3 style={h1Style}>{props.exp}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}>  <AiOutlineCopy size={17}/>Relevant Experience</h3>
-          <h1 style={h1Style}>{props.rexp}</h1>
+          <h3 style={h1Style}>{props.rexp}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}><AiOutlineCopy size={17} />Work Location</h3>
-          <h1 style={h1Style}>{props.location}</h1>
+          <h3 style={h1Style}>{props.location}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <AiFillBulb size="17"  /> Budget</h3>
-          <h1 style={h1Style}>As per market standard</h1>
+          <h3 style={h1Style}>As per market standard</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <AiOutlineCopy size={17}/> Primary skills</h3>
-          <h1 style={h1Style}>{props.skill}</h1>
+          <h3 style={h1Style}>{props.skill}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <AiOutlineCopy size={17}/> No. of position</h3>
-          <h1 style={h1Style}>{props.noOfpos}</h1>
+          <h3 style={h1Style}>{props.noOfpos}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <CiTimer size="17"  /> Notice period</h3>
-          <h1 style={h1Style}>0-4 week</h1>
+          <h3 style={h1Style}>0-4 week</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}> <AiOutlineMail size={17}/> Mail to</h3>
-          <h1 style={h1Style}>scholarnest@gmail.com</h1>
+          <h3 style={h1Style}>scholarnest@gmail.com</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
           <h3 style={h3Style}>  <AiOutlineCopy size={17}/>Posted on</h3>
-          <h1 style={h1Style}>{props.Date}</h1>
+          <h3 style={h1Style}>{props.Date}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4 mb-4">
           <h3 style={h3Style}><AiOutlineCopy size={17} />Job Status</h3>
-          <h1 style={h1Style}>{props.status}</h1>
+          <h3 style={h1Style}>{props.status}</h3>
         </div>
         <div className="col-lg-3 col-md-3 col-sm-6 mt-4 mb-4">
           <h3 style={h3Style}><AiFillBulb size="17"  />Job Code</h3>
-          <h1 style={h1Style}>{props.code}</h1>
+          <h3 style={h1Style}>{props.code}</h3>
         </div>
        </div>
       </div>
     {/* Skills and Roles, Responsibilities */}
     <div style={{margin:"2%",padding:"10px"}}>
  <div style={{margin:"0"}} className="row">
-  <div className="col-lg-6 col-md-6 col-sm-12"><h1 style={h1Style}> Role & Responsibilities </h1  >
+  <div className="col-lg-6 col-md-6 col-sm-12"><h3 style={h1Style}> Role & Responsibilities </h3 >
    <div class="px-4 py-3">
    <ul style={{  listStyleType:"disc"}}>
   <li>Working with our development manager to develop client custom applications, or core product offerings, based on written specifications both functional and technical.</li>
@@ -281,8 +282,8 @@ const CareerTemplate = ({props}) => {
    </div>
   </div>
   <div style={{backgroundColor:"rgb(251 251 249)",minHeight:"500px"}}className="col-lg-6 col-md-6 col-sm-12">
-    <h1 style={h1Style}> Skills/Experience </h1>
-    <h1 class="px-4 py-3" style={{fontSize:"16px",fontWeight:"bold"}}>Technologies</h1>
+    <h3 style={h1Style}> Skills/Experience </h3>
+    <h3 class="px-4 py-3" style={{fontSize:"16px",fontWeight:"bold"}}>Technologies</h3>
     <div class="px-5">
    
    <ul style={{  listStyleType:"disc"}}>
@@ -303,17 +304,17 @@ const CareerTemplate = ({props}) => {
 
    </div>
    <div class="px-4 py-3">
-   <h1  style={{fontSize:"16px",fontWeight:"bold",marginBottom:"2px"}}>Functional Area</h1>
+   <h3  style={{fontSize:"16px",fontWeight:"bold",marginBottom:"2px"}}>Functional Area</h3>
 
     <p>Product Development</p>
    </div>
    <div class="px-4 py-3">
-   <h1  style={{fontSize:"16px",fontWeight:"bold",marginBottom:"2px"}}>Education</h1>
+   <h3  style={{fontSize:"16px",fontWeight:"bold",marginBottom:"2px"}}>Education</h3>
     <p>Bachelor’s degree in a Computer Science, or equivalent practical experience
 </p>
    </div>
    <div class="px-4 py-3">
-   <h1  style={{fontSize:"16px",fontWeight:"bold",marginBottom:"2px"}}>Soft Skills</h1>
+   <h3  style={{fontSize:"16px",fontWeight:"bold",marginBottom:"2px"}}>Soft Skills</h3>
     <ul class="px-4" style={{  listStyleType:"disc"}}>
       <li>Proficiency to handle complex and quality demanding jobs.</li>
       <li>Should have good Communication skills.
@@ -344,10 +345,10 @@ const CareerTemplate = ({props}) => {
                 <button className={
         "py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={applyNow}>Apply Now</button>
               </div>
-              <div
+              {/* <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
                 style={{ filter: "blur(114px)" }}
-              ></div>
+              ></div> */}
             </div>
           
     <div> 

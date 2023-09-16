@@ -16,31 +16,31 @@ const AcademySolution = () => {
  const courseList=[
   {
     heading:"Course Bundle - Master Data Engineering",
-    desc:"8 self-placed courses",
-    link:"/master-data-engineering",
+    desc:"8 self-paced courses",
+    link:"/mastering-spark-and-databricks-cloud-self-paced-course",
     imgPath:"/assets/solutions/AcademySolutions/1.png"
   },
   {
     heading:"Mastering PySpark",
-    desc:"Self-Placed",
+    desc:"Self-paced",
     imgPath:"/assets/solutions/AcademySolutions/2.jpg",
     link:"https://www.scholarnest.in/courses/mastering-pyspark"
   },
   {
     heading:"Mastering Databricks Cloud",
-    desc:"Self-placed Learning",
+    desc:"Self-paced Learning",
     imgPath:"/assets/solutions/AcademySolutions/3.jpg",
     link:"https://www.scholarnest.in/courses/mastering-databricks-cloud"
   },
   {
     heading:"Databricks Certified Associate Developer for Apache Spark 3.0",
-    desc:"Self-placed Exam Practice Test",
+    desc:"Self-paced Exam Practice Test",
     imgPath:"/assets/solutions/AcademySolutions/4.jpg",
     link:"https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
   },
   {
     heading:"Databricks Data Engineer Assoicate Certification Practice Test",
-    desc:"Self-placed Exam Practice Test",
+    desc:"Self-paced Exam Practice Test",
     imgPath:"/assets/solutions/AcademySolutions/5.jpg",
     link:"https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
   },
@@ -54,7 +54,7 @@ const AcademySolution = () => {
   const upcomingCourse=[
     {
       heading:"Course Bundle - Master Data Engineering",
-      desc:"Instructor Led Course",
+      desc:"Instructor-led Course",
       imgPath:"/assets/solutions/AcademySolutions/1.png",
       date:"17/09/2023"
     }
@@ -117,10 +117,10 @@ const AcademySolution = () => {
               <h1 className="  font-medium leading-normal">
               Become a Data Engineering Expert with Spark | <strong style={{color:"#F53855"}}>  Databricks </strong>
                             </h1>
-              <p style={{ color: "white"}} className=" mb-xl-7  mb-lg-6 mb-1  mb-lg-6 mb-sm-1">
+              <p style={{ color: "white"}} className=" my-5">
               Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.    </p>
-
-              <button class={classes.btn +" btn mt-sm-2"}><a href="/mastering-spark-and-databricks-cloud">Enquire for Lead Instructor </a> </button>
+   
+              <button class={classes.btn +" btn mt-sm-3"}><a href="/mastering-spark-and-databricks-cloud-instructer-led-course">Enquire for Lead Instructor </a> </button>
 
             </div>
       
@@ -168,10 +168,10 @@ const AcademySolution = () => {
   upcomingCourse.map((data)=>{
    return(
 <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
-  <a href="/mastering-spark-and-databricks-cloud">
+  <a href="/mastering-spark-and-databricks-cloud-instructer-led-course">
     <div className={classes.styleDiv + " h-100"}>
       <Image width={600}
-        height={400} src={data.imgPath} />
+        height={300} src={data.imgPath} />
       <br />
   
       <h3 class={classes.h3style+" mb-1"} >{data.heading}</h3>
@@ -250,7 +250,7 @@ const AcademySolution = () => {
               <p>Lets discover the digital world with us.</p>
             </div>
             <button className={
-              "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contactUs")}> <p class="text-white-500"> Get Started </p> </button>
+              "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contact-us")}> <p class="text-white-500"> Get Started </p> </button>
           </div>
      
         </motion.div>

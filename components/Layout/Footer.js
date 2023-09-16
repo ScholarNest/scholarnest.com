@@ -11,9 +11,9 @@ const Footer = () => {
           <img alt="logo" src="/assets/scholarnest-logo.jpg" />
           </div>
           <div className="d-flex p-2">
-            
+             <a href="/">
               <img style={{height:"20px",marginRight:"5px"}} alt="Email" src="/assets/mail.png" />
-  
+              </a>
               <p>contact@scholarnest.com</p>
         
           </div>
@@ -73,7 +73,7 @@ const Footer = () => {
           <li><Link href="/company"> About Us</Link></li>
             <li><Link href="/scholarnest-academy">Academy</Link></li>
 
-            <li><Link href="/contactUs">Contact</Link></li>
+            <li><Link href="/contact-us">Contact</Link></li>
           </ul>
         </div>
         <div className="col-6 col-sm-4 p-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -85,7 +85,7 @@ const Footer = () => {
             {/* <li>Subscription</li> */}
             <li><a href="https://blog.scholarnest.com/" target="_blank"> Blog </a></li>
             <li><a href="/teach"> Teach</a> </li> 
-           <li><a href="/courseFaqs"> Course FAQ </a></li>
+           <li><a href="/course-faqs"> Course FAQ </a></li>
           </ul> 
         </div>
         <div className="col-12 col-sm-4 col-md-6 p-3 col-lg-3 col-xl-3 col-xxl-3">

@@ -57,10 +57,10 @@ const Hero = () => {
               <h2 className="font-medium  leading-normal">
                 Kick Start Your Data Engineering with Spark & Databricks.
               </h2>
-              <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2">
+              <p style={{ color: "antiquewhite" }} className=" my-sm-4">
                 Master Data Engineering with Spark & Databricks at Scholarnest. Unlock advanced skills for seamless data processing and transformation.
               </p>
-              <button onClick={()=>{  router.push("/scholarnest-academy")}} class={classes.bannerButton}>Get Started</button>
+              <button onClick={()=>{  router.push("/scholarnest-academy")}} class={classes.bannerButton +" mt-sm-3"}>Get Started</button>
             </div>
           </div>
           <div >
@@ -70,9 +70,9 @@ const Hero = () => {
                 Elevate Your Business with Expert Technology Consulting Solutions & Services
 
               </h2>
-              <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2  leading-normal">
+              <p style={{ color: "antiquewhite" }} className=" my-sm-4  leading-normal">
               Experience seamless operations through our managed services, while our technology consulting drives innovation.            </p>
-              <button onClick={()=>{  router.push("/technology-consulting")}} class={classes.bannerButton}>Get Started</button>
+              <button onClick={()=>{  router.push("/technology-consulting")}} class={classes.bannerButton + " mt-sm-3"}>Get Started</button>
             </div>
           </div>
           <div>
@@ -81,11 +81,11 @@ const Hero = () => {
               <h2 className=" font-medium leading-normal">
               From Aspiration to Achievement: Career Guidance and Progression           
                  </h2>
-              <p style={{ color: "antiquewhite" }} className="mt-xl-4 mb-xl-6 mt-lg-4 mb-lg-6 mt-2 mb-2 mt-md-4 mb-lg-6 mt-sm-2 mb-sm-2">
+              <p style={{ color: "antiquewhite" }} className=" my-sm-4">
               Navigate your path to success with our career guidance expertise. Unlock opportunities for growth and skill enhancement, propelling you towards a brighter future.
               </p>
 
-              <button onClick={()=>{router.push("/career-guidance-and-enhancement")}} class={classes.bannerButton}>Get Started</button>
+              <button onClick={()=>{router.push("/career-guidance-and-enhancement")}} class={classes.bannerButton+" mt-sm-3"}>Get Started</button>
 
             </div>
           </div>

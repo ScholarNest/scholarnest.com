@@ -132,7 +132,7 @@ const Header = () => {
                             </a>
                           </div>
                           <div class={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                            <a href="/contactUs">
+                            <a href="/contact-us">
                               <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Contact</h4>
                               <p>Contact us for more details.</p>
                             </a>
@@ -191,7 +191,7 @@ const Header = () => {
                         <LinkScroll onClick={() => router.push("/scholarnest-academy")} >
 
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Academy</h4>
-                          <p>  Self Paced, instructor Led and many more. </p>
+                          <p>  Self Paced, instructor-led and many more. </p>
                         </LinkScroll>
 
                       </div>

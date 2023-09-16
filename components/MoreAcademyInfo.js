@@ -6,35 +6,35 @@ const MoreAcademyInfo = () => {
   const courseList = [
     {
       heading: "Course Bundle - Master Data Engineering",
-      desc: "8 self-placed courses",
+      desc: "8 self-paced courses",
       link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
       price: "$149",
       imgPath: "/assets/solutions/AcademySolutions/1.png"
     },
     {
       heading: "Mastering PySpark",
-      desc: "Self-Placed",
+      desc: "Self-Paced",
       imgPath: "/assets/solutions/AcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
     },
     {
       heading: "Mastering Databricks Cloud",
-      desc: "Self-placed Learning",
+      desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/3.jpg",
       price: "$36.79",
       link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"
     },
     {
       heading: "Databricks Certified Associate Developer for Apache Spark 3.0",
-      desc: "Self-placed Exam Practice Test",
+      desc: "Self-paced Exam Practice Test",
       imgPath: "/assets/solutions/AcademySolutions/4.jpg",
       price: "$36.79",
       link: "https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
     },
     {
       heading: "Databricks Data Engineer Assoicate Certification Practice Test",
-      desc: "Self-placed Exam Practice Test",
+      desc: "Self-paced Exam Practice Test",
       imgPath: "/assets/solutions/AcademySolutions/5.jpg",
       price: "$24.79",
       link: "https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
@@ -51,14 +51,14 @@ const MoreAcademyInfo = () => {
   
     {
       heading: "Mastering PySpark",
-      desc: "Self-Placed/Instructor Lead",
+      desc: "Self-Paced/Instructor-led",
       imgPath: "/assets/solutions/AcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
     },
     {
       heading: "Mastering Databricks Cloud",
-      desc: "Self-placed Learning",
+      desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/3.jpg",
       price: "$36.79",
       link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"

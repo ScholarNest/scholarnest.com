@@ -6,14 +6,14 @@ const MoreAcademyInfo = () => {
   const courseList = [
     {
       heading: "Course Bundle - Master Data Engineering",
-      desc: "8 self-paced courses",
+      desc: "8 Self-paced courses",
       link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
       price: "$149",
       imgPath: "/assets/solutions/AcademySolutions/1.png"
     },
     {
       heading: "Mastering PySpark",
-      desc: "Self-Paced",
+      desc: "Self-paced",
       imgPath: "/assets/solutions/AcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
@@ -86,7 +86,7 @@ const MoreAcademyInfo = () => {
     {
       id: "faq3",
       ques: "How do you provide support?",
-      ans: "We offer both options. Our self-paced courses allow you to learn at your convenience, while our instructor-led courses provide guided learning with real-time interaction and support."
+      ans: "We offer both options. Our Self-paced courses allow you to learn at your convenience, while our instructor-led courses provide guided learning with real-time interaction and support."
     }
   ]
   return (
@@ -95,10 +95,10 @@ const MoreAcademyInfo = () => {
         <div class="mx-auto w-75">
           <h1> Master Data Engineering with Spark | Databricks</h1>
 
-          <p class="text-white">   Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self Paced or Instructor-led
+          <p class="text-white">   Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self-paced or Instructor-led
           </p>
           <div class="row gap-2 justify-content-center">
-            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href="https://www.scholarnest.in/order?ct=d63c7586-29c1-4cd4-bbc6-f47afb6577f4"> Buy Self Pace Version for $329  </a></button>
+            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href="https://www.scholarnest.in/order?ct=d63c7586-29c1-4cd4-bbc6-f47afb6577f4"> Buy Self-paced Version for $329  </a></button>
             <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a></button>
           </div>
           <br />

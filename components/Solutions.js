@@ -323,7 +323,7 @@ Since our inception, we have been consistently helping people and organizations 
               <p>Lets discover the digital world with us.</p>
             </div>
             <button className={
-              "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} onClick={() => router.push("/contact-us")}> <p class="text-white-500"> Get Started </p> </button>
+              "py-2 lg:py-4 px-8 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none"} > <a href="/contact-us" > <p class="text-white-500">  Get Started </p> </a> </button>
           </div>
          
         </motion.div>

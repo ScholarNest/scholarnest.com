@@ -20,7 +20,7 @@ const Testimoni = ({
     //     "I am really happy with the services they provided and quality of service.I recommend sholarnest for everyone here",
     // },
     {
-      image:"/assets/people-3.png",
+      image:"/assets/testimonials/test1.jpg",
       name:"Prajnaya Prakash Nayak",
       designation:"Specialist software engineer",
       company:"Societe Generale",
@@ -29,7 +29,7 @@ const Testimoni = ({
       country:"India"
     },
     {
-      image:"/assets/people-3.png",
+      image:"/assets/testimonials/test2.jpg",
       name:"Abhishek Pal",
       designation:"Azure Data Engineer",
       company:"Deloitte",
@@ -38,7 +38,7 @@ const Testimoni = ({
       country:"India"
     },
     {
-      image:"/assets/people-3.png",
+      image:"/assets/testimonials/test3.jpg",
       name:"Mithran Mohan ",
       designation:"Data Engineer",
       company:"Deloitte",
@@ -101,7 +101,7 @@ const Testimoni = ({
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch " key={index}>
             <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-              <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
+              <div className="flex flex-col  w-full items-stretch ">
                 <div className={classes.testimoni+" flex order-2 xl:order-1 "}>
                   <Image
                     src={listTestimonis.image}
@@ -129,7 +129,7 @@ const Testimoni = ({
               </div>
             <br />
             <hr />
-              <p className="mt-3 text-left">“{listTestimonis.testimoni}”.</p>
+              <p className="mt-3 text-left"> <strong> “ </strong>{listTestimonis.testimoni} <strong> ”</strong>.</p>
             </div>
           </div>
         ))}

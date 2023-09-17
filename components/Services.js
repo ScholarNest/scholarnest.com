@@ -56,7 +56,7 @@ const Services = () => {
   ]
  const testimonials=[
   {
-    img:"",
+    img:"/assets/testimonials/test1.jpg",
     name:"Prajnaya Prakash Nayak",
     designation:"Specialist software engineer ",
     company:"Societe Generale",
@@ -64,7 +64,7 @@ const Services = () => {
     linkedin:"https://www.linkedin.com/in/prajnaya-prakash-nayak-745856153/"
   },
   {
-    img:"",
+    img:"/assets/testimonials/test2.jpg",
     name:"Abhishek Pal",
     designation:"Azure Data Engineer",
     company:"Deloitte",
@@ -72,7 +72,7 @@ const Services = () => {
     linkedin:"https://www.linkedin.com/in/abhishek-pal-b09b04b4/"
   },
   {
-    img:"",
+    img:"/assets/testimonials/test3.jpg",
     name:"Mithran Mohan ",
     designation:"Data Engineer",
     company:"Deloitte",
@@ -145,7 +145,7 @@ const Services = () => {
 
               return (<div style={{ border: "1px groove" }} >
                 <div style={{ margin: "0 auto", padding: "10px" }} className="mx-auto">
-                  <img style={{ height: "100px", width: "100px", borderRadius: "50%" }} src="/assets/user.jpg" />
+                  <img style={{ height: "100px", width: "100px", borderRadius: "50%" }} src={testimonial.img} />
                   <div style={{ margin: "2px auto" }}>
                     <p style={{ margin: "5px" }} > <strong style={{ color: "black" }}>❝ </strong>
                         {testimonial.feedback}

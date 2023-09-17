@@ -258,7 +258,7 @@ const MoreAcademyInfo = () => {
           <h2 class="text-center">Enroll now and get started today</h2>
           <br />
           <div class="d-flex justify-content-center">
-            <button class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center">Buy for $320</button>
+            <button class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"> <a href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> Buy for $320 </a></button>
           </div>
           <br />
         </div>

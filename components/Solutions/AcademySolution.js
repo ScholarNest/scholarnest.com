@@ -16,7 +16,7 @@ const AcademySolution = () => {
  const courseList=[
   {
     heading:"Course Bundle - Master Data Engineering",
-    desc:"8 self-paced courses",
+    desc:"8 Self-paced courses",
     link:"/mastering-spark-and-databricks-cloud-self-paced-course",
     imgPath:"/assets/solutions/AcademySolutions/1.png"
   },

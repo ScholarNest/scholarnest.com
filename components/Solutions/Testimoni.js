@@ -96,17 +96,22 @@ const Testimoni = ({
         arrows={false}
         dots={false}
         ref={setSliderRef}
-        className="flex items-stretch justify-items-stretch"
+        className="row mx-0"
       >
         {listTestimoni.map((listTestimonis, index) => (
-          <div className="px-3 flex items-stretch " key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-              <div className="flex flex-col  w-full items-stretch ">
+          <div  className="px-3 col-12 col-sm-12 col-md-6 col-lg-4" key={index}>
+            <div className="border-2  border-gray-500 hover:border-orange-500 transition-all rounded p-4 ">
+             
+            <div className="flex justify-content-end">
+                  {/* <p className="text-sm">{listTestimonis.rating}</p> */}
+                  <span className="flex ml-4">
+                  <a style={{ marginTop: "12px" }} target="_blank" href={listTestimonis.linkedin}> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi  ml-2 bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a>                  </span>
+                </div>
                 <div className={classes.testimoni+" flex order-2 xl:order-1 "}>
-                  <Image
+                  <img
                     src={listTestimonis.image}
-                    height={50}
-                    width={50}
                     alt="Icon People"
                   />
                   <div className="flex flex-col ml-5 text-left">
@@ -119,14 +124,7 @@ const Testimoni = ({
                   </div>
                 </div>
            
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  {/* <p className="text-sm">{listTestimonis.rating}</p> */}
-                  <span className="flex ml-4">
-                  <a style={{ marginTop: "12px" }} target="_blank" href={listTestimonis.linkedin}> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi  ml-2 bi-linkedin" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                    </svg></a>                  </span>
-                </div>
-              </div>
+            
             <br />
             <hr />
               <p className="mt-3 text-left"> <strong> “ </strong>{listTestimonis.testimoni} <strong> ”</strong>.</p>

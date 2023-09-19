@@ -65,5 +65,5 @@ color:white;
 .rightMenu  li{
     list-style-type: square;
     color:#F53855;
-   
+    cursor:pointer;
 }

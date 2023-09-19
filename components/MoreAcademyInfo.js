@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 
 import classes from "./style/moreAcademy.module.css";
-const MoreAcademyInfo = () => {
+const MoreAcademyInfo = (props) => {
   const courseList = [
     {
       heading: "Course Bundle - Master Data Engineering",
@@ -98,9 +98,11 @@ const MoreAcademyInfo = () => {
           <p class="text-white">   Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self-paced or Instructor-led
           </p>
           <div class="row gap-2 justify-content-center">
-            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href="https://www.scholarnest.in/order?ct=d63c7586-29c1-4cd4-bbc6-f47afb6577f4"> Buy Self-paced Version for $329  </a></button>
-            <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a></button>
-          </div>
+            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href={props.link}> Buy Self-paced Version for $329  </a></button>
+            {
+             props.isSelf && <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a></button>
+            }
+              </div>
           <br />
         </div>
       </div>

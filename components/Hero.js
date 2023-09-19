@@ -49,7 +49,7 @@ const Hero = () => {
           showStatus={false}
           stopOnHover={false}>
           <div >
-            <Image height="575px" width="1100px" layout="responsive" style={{ height: "700px" }} src="/assets/homepage/newbanner1.jpg" alt=" Data Engineering with Spark & Databricks" />
+            <Image  height="575px" width="1100px" layout="responsive" style={{ height: "700px" }} src="/assets/homepage/newbanner1.jpg" alt=" Data Engineering with Spark & Databricks" />
 
             {/* <Image src="/assets/aii.jpg" alt="Example" layout="responsive" width={1200} height={700} /> */}
 

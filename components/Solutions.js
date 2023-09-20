@@ -82,7 +82,7 @@ const Faqs=[
     },
     {
       title:"Academy",
-      link:"/academy",
+      link:"/scholarnest-academy",
       details:"Empower your journey in data engineering at our Academy, mastering Spark and Databricks technologies. Gain hands-on expertise in crafting data-driven solutions and enhancing efficiency. Unleash your potential in the world of data with our comprehensive training.",
       imgsrc:"/assets/Icon/academy.svg"
     },
@@ -94,7 +94,7 @@ const Faqs=[
     },
     {
       title:"Career Enhancement",
-      link:"/career",
+      link:"/career-guidance-and-enhancement",
       details: "Invest in your future with career growth and enhancement opportunities. Develop new skills, explore fresh horizons, and unlock your full potential. Forge a path toward professional excellence and personal satisfaction.",
       imgsrc:"/assets/Icon/externaljobs.svg"
     },

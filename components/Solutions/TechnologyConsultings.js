@@ -20,19 +20,19 @@ const TechnologyConsultings = () => {
       title: "Cloud Computing",
       about: "Revolutionize your business with cutting-edge cloud services and solutions. Explore the dynamic landscape of cloud technology, from scalable infrastructure to seamless migration strategies. Discover the power of hybrid and multi-cloud environments, enhancing security and flexibility. Uncover the advantages of public and private clouds, optimizing storage, networking, and performance. Elevate your enterprise with cloud computing's transformative benefits, as we delve into trends, best practices, and cost-effective strategies tailored to businesses of all sizes. Embrace innovation, scalability, and efficiency – explore the limitless potential of cloud computing today.",
       link: "#",
-      imgsrc: "/assets/Icon/managed services-70 px.svg"
+      imgsrc: "/assets/newicons/scholornest-cloud-computing-icon-70X70PX.png"
     },
     {
       title: "Data Engineering",
       about: "Navigate the intricate realm of data pipelines, integration, and ETL processes with our comprehensive data engineering expertise. From constructing robust data architectures to optimizing data processing and transformation, we delve into the intricacies of data quality, modeling, and governance. Explore the dynamic landscapes of real-time data engineering and batch processing, harnessing the potential of data streaming and lakes. Discover the transformative impact of cloud-based data engineering solutions, ensuring scalability and efficiency in today's data-driven world. Dive into the realm of data engineering best practices, technologies, and analytics, as we guide you through a journey of harnessing the full potential of your data.",
       link: "#",
-      imgsrc: "/assets/Icon/technology consulting-70 px.svg"
+      imgsrc: "/assets/newicons/scholornest-data-engineering-icon-70X70PX.png"
     },
     {
       title: " Data Science & Analytics",
       about: "Embark on a journey of discovery through the realms of data science and analytics, where data-driven decisions shape the future. Dive into the world of big data analytics, utilizing predictive modeling, machine learning, and artificial intelligence to unlock hidden patterns and trends. Visualize data with clarity, leveraging advanced tools and techniques for statistical analysis, data mining, and interpretation. From business intelligence to customer analytics, explore the transformative power of descriptive, prescriptive, and exploratory analytics, guiding your strategies and innovations. Join us in harnessing the potential of data, as we explore cutting-edge platforms, strategies, and trends that drive success across industries.",
       link: "#",
-      imgsrc: "/assets/Icon/staff augmentation-70 px.svg"
+      imgsrc: "/assets/newicons/scholornest-data-science-icon-70X70PX.png"
     },
 
   ]

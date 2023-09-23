@@ -68,9 +68,10 @@ const Testimoni = ({
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
+    initialSlide: 2,
     responsive: [
       {
-        breakpoint: 770,
+        breakpoint: 970,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -78,7 +79,7 @@ const Testimoni = ({
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 580,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -99,7 +100,7 @@ const Testimoni = ({
         className="row mx-0"
       >
         {listTestimoni.map((listTestimonis, index) => (
-          <div  className="px-3 col-12 col-sm-12 col-md-6 col-lg-4" key={index}>
+          <div style={{height:"100%"}} className="px-3 col-12 col-sm-12 col-md-6 col-lg-4" key={index}>
             <div className="border-2  border-gray-500 hover:border-orange-500 transition-all rounded p-4 ">
              
             <div className="flex justify-content-end">

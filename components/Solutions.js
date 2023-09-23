@@ -106,7 +106,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   return (
   <>
     <div class="py-0">
-       <Image placeholder="blur" blurDataURL={blurDataURL} height="500px" width="1100px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt=" Business Solution" />
+       <Image placeholder="blur" blurDataURL={blurDataURL} height="500px" width="1100px" layout="responsive"   src="/assets/solutions/scholarnest-business-solution-page-1100X600.jpeg" alt=" Business Solution" />
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} > Business Solution</h1>
        <h2 >Combining strategy, technology, automation and people</h2>

@@ -20,19 +20,19 @@ const ManagedServices = () => {
       title: "Data Engineering",
       about:"Our Data Engineering service is the backbone of your data-driven success. We design, build, and maintain robust data pipelines, ensuring data quality, accessibility, and scalability. Trust us to transform your raw data into actionable insights, empowering smarter decisions and driving your business forward.",
       link: "#",
-      imgsrc:"/assets/Icon/managed services-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-data-engineering-icon-70X70PX.png"
     },
     {
       title:"Data Science & Analytics",
       about:"Our Data Science & Analytics service harnesses the power of data to uncover valuable insights. Our experts leverage advanced analytics and machine learning to extract actionable intelligence from your data, enabling data-driven decisions and fostering innovation. Let us empower your organization with data-driven precision.",
       link: "#",
-      imgsrc:"/assets/Icon/technology consulting-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-data-science-icon-70X70PX.png"
     },
     {
       title: "Cloud Management",
       about:"Our Cloud Computing service revolutionizes your IT infrastructure. We harness the agility, scalability, and cost-efficiency of cloud platforms to drive your digital transformation. Whether it's migration, optimization, or ongoing management, trust us to maximize your cloud potential and empower your business for the future.",
       link: "#",
-      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-cloud-management-icon-70X70PX.png"
     },
 
 ]
@@ -127,7 +127,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   
     
    {/* Cards for each solution */}
-   <div id="learnMore"   className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} > 
+   <div id="learnMore" style={{ backgroundColor: "rgb(251 251 249)"}}  className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} > 
 
       <h2  class={classes.head+" text-center my-3"}>Managed Services Offerings</h2>   
       <br />
@@ -330,7 +330,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
           <br />
           <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-          <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
+          <div className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
               <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!

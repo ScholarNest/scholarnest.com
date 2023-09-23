@@ -91,7 +91,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   return (
     <>
       <div>
-        <Image  placeholder="blur" blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/banner2.png" alt="Data Engineering with Spark and DataBricks" />
+        <Image  placeholder="blur" blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/scholarnest-website-academy-page-1100X600.jpg" alt="Data Engineering with Spark and DataBricks" />
         <div className={classes.bannerDetails}>
           <h2 class={classes.heading} >ScholarNest Academy: Your Gateway to Learning Excellence</h2>
 
@@ -120,7 +120,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
               <p style={{ color: "white"}} className=" my-5">
               Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.    </p>
    
-              <button class={classes.btn +" btn mt-sm-3"}><a href="/mastering-spark-and-databricks-cloud-instructer-led-course">Enquire about the Courses </a> </button>
+              <button class={classes.btn +" btn mt-sm-3"}><a href="/mastering-spark-and-databricks-cloud-instructor-led-course">Enquire about the Courses </a> </button>
 
             </div>
       
@@ -168,7 +168,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   upcomingCourse.map((data)=>{
    return(
 <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
-  <a href="/mastering-spark-and-databricks-cloud-instructer-led-course">
+  <a href="/mastering-spark-and-databricks-cloud-instructor-led-course">
     <div className={classes.styleDiv + " h-100"}>
       <Image width={600}
         height={300} src={data.imgPath} />

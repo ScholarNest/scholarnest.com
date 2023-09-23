@@ -18,37 +18,37 @@ const StaffAugmentations = () => {
       title: "Technology Expertise",
       about: "Access highly skilled professionals in various technology domains, from software development to data science, ensuring your projects are executed with precision and innovation.",
       link: "#",
-      imgsrc:"/assets/Icon/managed services-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-technology-expertise-icon-70X70PX.png"
     },
     {
       title: "Flexible Workforce",
       about: "Scale your team up or down based on project demands without the commitment of permanent hires. Our staff augmentation provides the flexibility you need to adapt quickly.",
       link: "#",
-      imgsrc:"/assets/Icon/technology consulting-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-flexible-work-space-icon-70X70PX.png"
     },
     {
       title: "Project-Based Support",
       about: "Augment your team for specific projects, gaining specialized talent exactly when and where you need it, enhancing project efficiency and delivery.",
       link: "#",
-      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-project-based-support-icon-70X70PX.png"
     },
     {
       title: "Domain-Specific Knowledge",
       about: "Tap into professionals with industry-specific knowledge who understand your sector's unique challenges and contribute insights to drive optimal outcomes.",
       link: "#",
-      imgsrc:"/assets/Icon/managed services-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-domain-specific-knowledge-icon-70X70PX.png"
     },
     {
       title:"Immediate Productivity",
       about:"Our experts seamlessly integrate into your team, bringing their skills and experience to the table, resulting in rapid onboarding and immediate contributions.",
       link: "#",
-      imgsrc:"/assets/Icon/technology consulting-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-immediate-productivity-icon-70X70PX.png"
     },
     {
       title: "Cost-Effective Solution",
       about:"Avoid the expenses associated with full-time hires. With staff augmentation, you get the skills you need without the overhead costs.",
       link: "#",
-      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-cost-effective-solution-icon-70X70PX.png"
     },
     {
       title: "Reduced Recruitment Burden",
@@ -66,7 +66,7 @@ const StaffAugmentations = () => {
       title: "Global Talent Pool",
       about:"Access a diverse talent pool with professionals from around the world, bringing a range of perspectives and expertise to your projects.",
       link: "#",
-      imgsrc:"/assets/Icon/staff augmentation-70 px.svg"
+      imgsrc:"/assets/newicons/scholornest-domain-specific-knowledge-icon-70X70PX.png"
     },
 
 ]

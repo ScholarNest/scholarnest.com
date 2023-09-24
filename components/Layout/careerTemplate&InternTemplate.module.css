@@ -1,6 +1,70 @@
 
+.applyTemp li, .applyTemp p{
+    font-size:16px;
+}
 .careerTemplate h1{
     font-size:36px;
     font-weight:bold;
         margin:15px;
 }
+.h1Style{
+    font-size:20px;
+    font-weight:500;
+    margin-top:5px;
+    margin-left:15px;
+  }
+.h3Style{
+    font-size:20px;
+    display:flex;
+    flex-direction:row;
+  }
+  .contentInPara{
+     font-size:16px;
+     font-weight:500;
+  }
+  .applyNowBtn{
+  width:150px;
+  z-index:4;
+  font-size:16px;
+  }
+  @media only screen and (max-width: 640px) {
+    .letsConnect{
+      text-align:center;
+    }  
+  }
+  @media only screen and (max-width: 600px) {
+    
+.applyTemp li, .applyTemp p{
+    font-size:14px;
+}
+.careerTemplate h1{
+    font-size:30px;
+}
+.h1Style{
+    font-size:16px;
+  }
+.h3Style{
+    font-size:16px;
+  }
+  .contentInPara{
+     font-size:14px;
+  }
+   }
+   @media only screen and (max-width: 480px) {
+    
+    .applyTemp li, .applyTemp p{
+        font-size:12px;
+    }
+    .careerTemplate h1{
+        font-size:20px;
+    }
+    .h1Style{
+        font-size:14px;
+      }
+    .h3Style{
+        font-size:14px;
+      }
+      .contentInPara{
+         font-size:12px;
+      }
+       }

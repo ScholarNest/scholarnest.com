@@ -24,7 +24,7 @@ const Testimoni = ({
       name:"Prajnaya Prakash Nayak",
       designation:"Specialist software engineer",
       company:"Societe Generale",
-      testimoni:"I had a wonderful learning experience with Prashanth Sir. The course provided valuable insights and I got to learn new things in PySpark & Azure Databricks. The explanations, particularly the real-life scenarios, were clear and relevant to daily work.",
+      testimoni:"I had a wonderful learning experience with Prashant Sir. The course provided valuable insights and I got to learn new things in PySpark & Azure Databricks. The explanations, particularly the real-life scenarios, were clear and relevant to daily work.",
       linkedin:"https://www.linkedin.com/in/prajnaya-prakash-nayak-745856153/",
       country:"India"
     },
@@ -33,7 +33,7 @@ const Testimoni = ({
       name:"Abhishek Pal",
       designation:"Azure Data Engineer",
       company:"Deloitte",
-      testimoni:"Prashanth Sir's course at Scholarnest Technologies significantly closed my knowledge gap in Data Engineering. His live sessions were interactive, insightful, addressing doubts effectively. I highly recommend the Master Pyspark & DataBricks course for career upskilling in data engineering.",
+      testimoni:"Prashant Sir's course at Scholarnest Technologies significantly closed my knowledge gap in Data Engineering. His live sessions were interactive, insightful, addressing doubts effectively. I highly recommend the Master Pyspark & DataBricks course for career upskilling in data engineering.",
       linkedin:"https://www.linkedin.com/in/abhishek-pal-b09b04b4/",
       country:"India"
     },
@@ -42,7 +42,7 @@ const Testimoni = ({
       name:"Mithran Mohan ",
       designation:"Data Engineer",
       company:"Deloitte",
-      testimoni:"The PySpark & Databricks Master Course at Scholarnest Technologies is exceptional. Prashanth Sir's pedagogy, real-world examples, and practical insights are highly valuable. The added placement support is a significant benefit. I'm genuinely thankful to Prashanth Sir and the Scholarnest Team for this transformative experience.",
+      testimoni:"The PySpark & Databricks Master Course at Scholarnest Technologies is exceptional. Prashant Sir's pedagogy, real-world examples, and practical insights are highly valuable. The added placement support is a significant benefit. I'm genuinely thankful to Prashant Sir and the Scholarnest Team for this transformative experience.",
       linkedin:"https://www.linkedin.com/in/mithran-mohan/",
       country:"India"
     }

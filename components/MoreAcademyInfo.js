@@ -8,7 +8,7 @@ const MoreAcademyInfo = (props) => {
       heading: "Course Bundle - Master Data Engineering",
       desc: "8 Self-paced courses",
       link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
-      price: "$149",
+      price: "$329",
       imgPath: "/assets/solutions/AcademySolutions/1.png"
     },
     {
@@ -22,7 +22,7 @@ const MoreAcademyInfo = (props) => {
       heading: "Mastering Databricks Cloud",
       desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/3.jpg",
-      price: "$36.79",
+      price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"
     },
     {
@@ -36,7 +36,7 @@ const MoreAcademyInfo = (props) => {
       heading: "Databricks Data Engineer Assoicate Certification Practice Test",
       desc: "Self-paced Exam Practice Test",
       imgPath: "/assets/solutions/AcademySolutions/5.jpg",
-      price: "$24.79",
+      price: "$36.79",
       link: "https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
     },
     {

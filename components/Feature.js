@@ -67,7 +67,7 @@ const Feature = () => {
 
                 <p>Apache Spark is a powerful open-source distributed computing framework that provides efficient and scalable processing of large datasets...</p>
 
-                <a class={classes.anchorTag + " my-1"} href="https://blog.scholarnest.com/different-ways-to-create-spark-dataframe/" target="_blank">Read More</a>
+                <li class={classes.anchorTag + " my-1"}  target="_blank">Read More</li>
               </div>
             </a>
 
@@ -81,7 +81,7 @@ const Feature = () => {
 
                 <h3 class={classes.h3style + " my-1"} >Deep dive into spark memory allocation</h3>
                 <p>In this blog post, I will explain the memory allocation for the Spark driver and executor. If you are here, I assume you are already familiar with Apache Spark...</p>
-                <a class={classes.anchorTag + " my-1"} href="https://blog.scholarnest.com/deep-dive-into-spark-memory-allocation/" target="_blank">Read More</a>
+                <li class={classes.anchorTag + " my-1"}  target="_blank">Read More</li>
 
               </div>
             </a>
@@ -98,7 +98,7 @@ const Feature = () => {
                 <br />
                 <h3 class={classes.h3style + " my-1"} >What is Apache kafka?</h3>
                 <p>Apache Kafka is a distributed streaming platform that is built on the principles of a messaging system.Apache Kafka’s implementation started as a messaging system to create a robust data pipeline....</p>
-                <a class={classes.anchorTag + " my-1"} href="https://blog.scholarnest.com/what-is-apache-kafka/" target="_blank">Read More</a>
+                <li class={classes.anchorTag + " my-1"}  target="_blank">Read More</li>
 
               </div>
 

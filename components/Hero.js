@@ -39,7 +39,7 @@ const Hero = () => {
 
     <>
       <div>
-        <Carousel class={classes.carousel} dynamicHeight={true} autoPlay
+        <Carousel className={classes.carousel} dynamicHeight={true} autoPlay
           infiniteLoop
           interval={7000} // Adjust the interval time as desired
           transitionTime={500} // Adjust the transition time as desired
@@ -60,7 +60,7 @@ const Hero = () => {
               <p style={{ color: "antiquewhite" }} className=" my-sm-4">
                 Master Data Engineering with Spark & Databricks at Scholarnest. Unlock advanced skills for seamless data processing and transformation.
               </p>
-              <button onClick={()=>{  router.push("/scholarnest-academy")}} class={classes.bannerButton +" mt-sm-3"}>Get Started</button>
+              <button onClick={()=>{  router.push("/scholarnest-academy")}} className={classes.bannerButton +" mt-sm-3"}>Get Started</button>
             </div>
           </div>
           <div >
@@ -72,7 +72,7 @@ const Hero = () => {
               </h2>
               <p style={{ color: "antiquewhite" }} className=" my-sm-4  leading-normal">
               Experience seamless operations through our managed services, while our technology consulting drives innovation.            </p>
-              <button onClick={()=>{  router.push("/technology-consulting")}} class={classes.bannerButton + " mt-sm-3"}>Get Started</button>
+              <button onClick={()=>{  router.push("/technology-consulting")}} className={classes.bannerButton + " mt-sm-3"}>Get Started</button>
             </div>
           </div>
           <div>
@@ -85,7 +85,7 @@ const Hero = () => {
               Navigate your path to success with our career guidance expertise. Unlock opportunities for growth and skill enhancement, propelling you towards a brighter future.
               </p>
 
-              <button onClick={()=>{router.push("/career-guidance-and-enhancement")}} class={classes.bannerButton+" mt-sm-3"}>Get Started</button>
+              <button onClick={()=>{router.push("/career-guidance-and-enhancement")}} className={classes.bannerButton+" mt-sm-3"}>Get Started</button>
 
             </div>
           </div>

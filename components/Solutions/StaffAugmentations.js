@@ -71,7 +71,7 @@ const StaffAugmentations = () => {
 
 ]
 const logos=[ 
-  { id: 1, image: "/assets/partners/apache .svg" },
+  { id: 1, image: "/assets/partners/apache.svg" },
   { id: 2, image: "/assets/partners/aws.svg" },
   { id: 3, image: "/assets/partners/databricks.svg" },
   { id: 4, image: "/assets/partners/docker.svg" },

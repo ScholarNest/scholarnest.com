@@ -174,7 +174,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                     icon
                     color="primary"
                     target="_blank"
-                    href="https://github.com/nextui-org/nextui"
+                    href="/contact-us"
                   >
                     
                     Dealing with big data - lakehouses, clouds, pipelines, and platforms.
@@ -198,7 +198,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                     icon
                     color="primary"
                     target="_blank"
-                    href="https://github.com/nextui-org/nextui"
+                    href="/contact-us"
                   >
   A systematic approach to designing, modeling, and insights discovery                  </Link>
 
@@ -218,7 +218,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                     icon
                     color="primary"
                     target="_blank"
-                    href="https://github.com/nextui-org/nextui"
+                    href="/contact-us"
                   >
 Upskilling, mentoring, supporting, and building high-potential teams                   </Link>
                 </Card.Footer>

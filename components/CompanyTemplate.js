@@ -173,8 +173,8 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                style={{display:"flex",flexDirection:"column"}}
                     icon
                     color="primary"
-                    target="_blank"
-                    href="/contact-us"
+                  
+                    href="#contact-us"
                   >
                     
                     Dealing with big data - lakehouses, clouds, pipelines, and platforms.
@@ -197,8 +197,8 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                   <Link
                     icon
                     color="primary"
-                    target="_blank"
-                    href="/contact-us"
+                    
+                    href="#contact-us"
                   >
   A systematic approach to designing, modeling, and insights discovery                  </Link>
 
@@ -217,8 +217,7 @@ We have the focus, care, flexibility, friendliness, and openness of small outsou
                   <Link
                     icon
                     color="primary"
-                    target="_blank"
-                    href="/contact-us"
+                    href="#contact-us"
                   >
 Upskilling, mentoring, supporting, and building high-potential teams                   </Link>
                 </Card.Footer>
@@ -295,7 +294,7 @@ Upskilling, mentoring, supporting, and building high-potential teams            
       <br />
       <br />
 
-      <ScrollAnimationWrapper className="w-full">
+      <ScrollAnimationWrapper id="contact-us" className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">

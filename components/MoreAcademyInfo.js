@@ -4,16 +4,10 @@ import Image from 'next/image';
 import classes from "./style/moreAcademy.module.css";
 const MoreAcademyInfo = (props) => {
   const courseList = [
-    {
-      heading: "Course Bundle - Master Data Engineering",
-      desc: "8 Self-paced courses",
-      link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
-      price: "$329",
-      imgPath: "/assets/solutions/AcademySolutions/1.png"
-    },
+   
     {
       heading: "Mastering PySpark",
-      desc: "Self-paced",
+      desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
@@ -41,17 +35,24 @@ const MoreAcademyInfo = (props) => {
     },
     {
       heading: "Apache Kafka for Begginers",
-      desc: "Latest course on Apache Kafka",
+      desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/6.jpg",
       price: "$24.79",
       link: "https://www.scholarnest.in/courses/apache-kafka-for-beginners"
     },
+    {
+      heading: "Apache Spark 3 - Real-time Stream Processing using Python",
+      desc: "Self-paced Learning",
+      link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
+      price: "$24.79",
+      imgPath: "/assets/solutions/AcademySolutions/7.jpg"
+    }
   ]
   const IndcourseList = [
   
     {
       heading: "Mastering PySpark",
-      desc: "Self-paced/Instructor-led",
+      desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
@@ -60,13 +61,13 @@ const MoreAcademyInfo = (props) => {
       heading: "Mastering Databricks Cloud",
       desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/3.jpg",
-      price: "$36.79",
+      price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"
     },
     
     {
       heading: "Apache Kafka for Begginers",
-    
+      desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/6.jpg",
       price: "$24.79",
       link: "https://www.scholarnest.in/courses/apache-kafka-for-beginners"
@@ -208,7 +209,7 @@ const MoreAcademyInfo = (props) => {
             <p>The course covers the Apache Spark Developer Associate and Databricks Certified Data Engineer Associate certification exam curriculum. By the end of the course, you will be ready to take the certification exam. </p></div>
           <div className={classes.featureBox + " col-10 col-sm-6 col-lg-3 bg-white border col-md-4"}>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi mx-auto my-3 bi-cup-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z" />
+              <path fillRule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z" />
             </svg>
             <h3 class="my-3 fw-bold"> Capstone Project</h3>
             <p> The course includes many hands-on assignments/solutions and a major real-life capstone project with the complete solution, source code, and explanation. </p></div>

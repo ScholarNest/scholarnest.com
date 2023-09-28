@@ -13,7 +13,9 @@ export default function Home() {
         <LazyHero />
         <Services/>
         <Feature />
+        {/* <CookieConsentBanner /> */}
       </Layout>
+
     </>
   );
 }

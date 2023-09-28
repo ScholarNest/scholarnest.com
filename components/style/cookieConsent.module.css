@@ -1,0 +1,31 @@
+/* styles/styles.css */
+
+.cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size:16px;
+    right: 0;
+    background-color: black;
+  z-index:1;
+    padding: 10px;
+    
+    text-align: center;
+  }
+  .cookieBanner p{
+    color:#FFFFFF !important;
+   margin-bottom:10px;
+  }
+  .cookieBanner  button {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 768px) {
+  .cookieBanner {
+    bottom:58px;
+  }
+  }

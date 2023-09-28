@@ -1,10 +1,13 @@
 import "../styles/tailwind.css";
 import "../styles/slick.css";
 import Head from "next/head";
+import CookieConsentBanner from "../components/CookieConsentBanner";
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+ <CookieConsentBanner />
       <Head>
         <link
           key="carousel-styles"
@@ -14,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
+    
     </>
   );
 }

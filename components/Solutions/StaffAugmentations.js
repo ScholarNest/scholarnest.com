@@ -10,7 +10,8 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
-
+import SendtheMail from "./SendtheMail";
+import { Link as LinkScroll } from 'react-scroll';
 const StaffAugmentations = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const ServicesData=[
@@ -127,101 +128,6 @@ const Faqs=[
   } 
 ]
 
-  const [fullname, setFullname] = useState("");
-  const [companyname, setCompanyname] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setphone] = useState("");
-  const [message, setMessage] = useState("");
-
-  //   Form validation
-  const [errors, setErrors] = useState({});
-
-  //   Setting button text
-  const [buttonText, setButtonText] = useState("Send");
-
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [showFailureMessage, setShowFailureMessage] = useState(false);
-
-  const handleValidation = () => {
-    let tempErrors = {};
-    let isValid = true;
-
-    if (fullname.length <= 0) {
-      tempErrors["fullname"] = true;
-      isValid = false;
-    }
-    if (companyname.length <= 0) {
-      tempErrors["fullname"] = true;
-      isValid = false;
-    }
-    if (email.length <= 0) {
-      tempErrors["email"] = true;
-      isValid = false;
-    }
-    
-    if (message.length <= 0) {
-      tempErrors["message"] = true;
-      isValid = false;
-    }
-
-    setErrors({ ...tempErrors });
-    console.log("errors", errors);
-    return isValid;
-  };
-
-  //   const [form, setForm] = useState(false);
-
-  //Hiding image in mobile view
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    let isValidForm = handleValidation();
-
-    if (isValidForm) {
-      setButtonText("Sending");
-      const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          companyname:companyname,
-          phone: phone,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
-
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText("Send");
-
-        // Reset form fields
-        setFullname("");
-        setCompanyname("");
-        setEmail("");
-        setMessage("");
-        setphone("");
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText("Send");
-      // Reset form fields
-      setFullname("");
-      setCompanyname("");
-      setEmail("");
-      setMessage("");
-      setphone("");
-    }
-    console.log(fullname, email, phone, message);
-  };
-
 
   const router = useRouter();
 const blurDataURL="data:image/jpeg;base64,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NFU1NTUF1NNTRTUNTUUtS0tTUC1LS1m0UtZtW1m1FLWbS1LUVLWbVtZtZC1m0tZtRS1m0tZtRS1m0tZtQLWbS1m1NFtZtLWbTUW1m1LU1ZWKuqzprcZxrTU01UaEGhpWVVFEFRoQBRARBnV1WsaWM6sEajUYjUVmtRqMRqKzWo3K5xuUR0jcc43KNtxqMStSitytRiVqUG4srErUFalaYi6Dems6ug0us6aitaus6aDWms6aDWms6aKumpqairqaamgupqamoq2s6WpailqWlrNqBalprNqKWs2lqWoqWpaWs2opazaWs2opazaWs2siWs2lrNrNqlrNpazagWpalrNqyJVtTWbTWsYa01nTVTG9XWNXWomN6azq60mNCaaqNCCjQgqKIAzprOro1jWtSsSrKJjcajEqyqzW41GI1FZrUblc41KrLrK1K5ytyo1HSVqOcrUorpFjErUorcqysyrKDcq6xKug3q6xq6DWrrOmitaus6aDWms6aK1prOmoLpqamirqaamoLqampqKus6WpopalqWpqKWpaWs2opazaWpayqWs2razaglrNpazazVLWbS1i1m1otZtLWbWQtZtS1m1uQLWbSstSM1dQFRTUAXVlZBMdJV1z1ZWomOmrrEq60mNaus6arONjOmqY0JpomOWrKwazrpjrKsrnK1KqWOkrUrnK1KMWOkqxiVqVpitxqMRqKzXSVuVylblFjpK1K5ytSiukrUrnK1KK3K1K5ytSg3q6xq6K3q6xq6DWrrOmg1q6zpoNaazpqK1prOmgums6airqammimmpqagammpailqWpalqKWs2lqWopazaWs2opazaWs2s1S1i1bWLWLWktZtLWbWVLWLS1mtyKlqKjSVKgK5gAAAAAAALq6yrcqNausLrSY3q656uqmN6axq6GOYDi2qysiyjrK3K4ytyt6xY6ytSucrUqudjpKsYlalaZsblblc5W5RI6StSucrUo06SrKxK1KDcrUrnGpRW9XWNXQb1dY1dBrV1nTQa1dZ00VrTWdNBrU1NNRV1NTTQXU1NNRTU01NRTUtNZtFW1m01LWVLWbS1LUVLWbVtZtZqpazaWs2s2qlrNpazaw0lrFq2sNyKIClRKrKsUAVkAAAAAAAAABRFalABrUFQXRAHJQABqVkWUdpWpXLmtytSudjrK1K5ytStMWNytyucrUqsukrcrnK1KK6SrKxK1FVuVdYlalBrWtYlXQb01nV0GtXWNXRWtNZ1dBdNTTUVdNTTQXU1NNRV1NTU0F1NNTUUtTS1nUVbWbS1LUUtZtLWbWVLWbS1m1m1pLWbS1m1z60lrFq2sWtSLEoI0oiorFSoqKwAAAAAAAAAAAAAAAAogugAgAAAAN81hZcVLHaVqVy5rcrUrnY6StSsStStMWOkrUrnK1Ko6StSsSrKK6SrKxK1KK1q6zq6DWqzq6DWms6ug1prOroq6ammgumpqaitamppoLqampqKuppqaimpaazailqWlrNrKlqWlrNrNqpazaWs2udutQtYtW1i1ZGolrINqIAlRKqKxUAVkAAAAAAAAAAAAAAAAAAAAAAAAABZcdJXJqVZUsdpWpXKVuVqVzsdJWpXOVqVpl1lalc5WpRW5WpWJVlBuLrOrqjWrrOrorRrOroNaazog1ommirpqamg1qammoq6iaaimppqaimpaazailqWlrNrNUtZtLWbXO1YWs2lrNqRpLWKtrLcaARUEVFSoiorFABAAAAAAAAAAAAAAAAAAAAAAAAAAAAGua6SuLfNWVmx1lalc5W5W2LHSVqVzlalEdJWpWJVlVW9VmLoNaus6ug1prKitaazqguiaIqmpoC6moIqpoiAgiKWpaWpWapazaWs2sWtFrNKlZVKxa1axa1GolQGlEAQQRWaICsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyoA6StyuMrpK1KxY6StyuUrcrTLpK1K5ytSityrrMWA0rK6DWrrIDQgK0agCiCKCCAIIogiKVmrWazapazSpXOtJUpUqxWbWatZajQAogCsoioM1AFZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG5WFgldZWpXOVuVpl0lajEaijcViNRRpWVBpWVBRAGhBFUQQBAUBGVEESqVmrWa52qM1UqKlZq1mtRqM1AaURUEEVFQRUGagCsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANSukco6RYzXSNRiNRpGo1GY1AVUUFVAVVQBQAAEUBEBFRFRFRmqlQqOdaRKtSis1mtVmtRYyA0oioIIqKgioMVAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABY3GI3FiVuNxiNxWWosSLFVVRQVUUFAAAFVFRAARUBGQRUrNVmotRhpKlWs1VSsVusVqNRAFBFQQRUVBFRWKgAgAAAAAAAAAAAAAAAAAAAD//Z";
@@ -243,8 +149,9 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
             <h2 class={classes.caseheading}>How do we help you with our Staff Augmentation Services</h2>
            <p class={classes.subheading}>We assist you with our Staff Augmentation Services by seamlessly integrating skilled professionals into your projects, aligning with your specific needs. Our tailored solutions provide on-demand expertise, optimizing your workforce for efficiency and success. Whether you require short-term support or long-term talent, we bridge the resource gap to achieve your goals.</p>
            {/* onClick={() =>router.push("/staffaugmentation#learnMore")}  */}
+           <LinkScroll to="sendthemail">
            <button  class="btn my-4" style={{marginLeft: "10px",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
-          
+           </LinkScroll>
         </div>
         </div>
         <div style={{padding:"0",margin:"auto 0"}} className={classes.imgInPurplediv+" col-lg-6 col-xl-6 "}>
@@ -270,7 +177,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
      <br />
       <div className="row  text-start  " style={{margin:"0", height: "auto", borderBottom: "1px solid white" }}>
               {ServicesData.map((sol) => (
-                <div onClick={() => router.push(sol.link)} className={classes.eachServicesDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
+                <LinkScroll to="sendthemail" className={classes.eachServicesDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
                   {/* <CiCompass1 color="black" size={70} /> */}
                   <div style={{display:"flex",flexDirection:"row"}}>
                   <img className={classes.icons} src={sol.imgsrc} />
@@ -281,7 +188,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <p>{sol.about}</p>
                   <br />
                   <button  ><BsFillArrowRightCircleFill color="black" size={25} /></button>
-                </div>
+                </LinkScroll>
               ))}
 
             </div>
@@ -301,16 +208,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <img  src="/assets/solutions/CaseStudy/1.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                      How freewill drives new innovation through partnership.
                      </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -323,16 +233,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <img  src="/assets/solutions/CaseStudy/2.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       Delivering transformative consumer experiences to the clients.
                       </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -344,16 +257,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <img  src="/assets/solutions/CaseStudy/3.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       How a global cruise company realised digital transformation.
                       </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -512,145 +428,10 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
           </div>
           </div>
         </form> */}
-<form
-  onSubmit={handleSubmit}
-  className="rounded-lg shadow-xl p-6 bg-white dark:bg-green-500"
->
-  <h2 className="text-2xl mb-4">
-    Send your staffing requirements
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="md:col-span-1">
-      <label htmlFor="companyname" className="text-gray-600 dark:text-gray-50">
-        Company name
-        <span className="text-red-500">*</span>
-      </label>
-      <input
-        type="text"
-        value={companyname}
-        onChange={(e) => {
-          setCompanyname(e.target.value);
-        }}
-        name="companyname"
-        className="w-full bg-transparent border-b py-2 p-1 focus:outline-none focus:ring-2 ring-yellow-500"
-        required
-      />
-      {errors?.fullname && (
-        <p className="text-red-500 font-bold mt-2">Company name cannot be empty.</p>
-      )}
-    </div>
-    <div className="md:col-span-1">
-      <label htmlFor="fullname" className="text-gray-600 dark:text-gray-50">
-        Full name
-        <span className="text-red-500">*</span>
-      </label>
-      <input
-        type="text"
-        value={fullname}
-        onChange={(e) => {
-          setFullname(e.target.value);
-        }}
-        name="fullname"
-        className="w-full bg-transparent border-b py-2 p-1 focus:outline-none focus:ring-2 ring-yellow-500"
-        required
-      />
-      {errors?.fullname && (
-        <p className="text-red-500 font-bold mt-2">Full name cannot be empty.</p>
-      )}
-    </div>
-    <div className="md:col-span-1">
-      <label htmlFor="email" className="text-gray-600 dark:text-gray-50">
-        E-mail
-        <span className="text-red-500">*</span>
-      </label>
-      <input
-        type="email"
-        name="email"
-        value={email}
-        onChange={(e) => {
-          setEmail(e.target.value);
-        }}
-        className="w-full bg-transparent border-b py-2 p-1 focus:outline-none focus:ring-2 ring-yellow-500"
-        required
-      />
-      {errors?.email && (
-        <p className="text-red-500 font-bold mt-2">Email cannot be empty.</p>
-      )}
-    </div>
-    <div className="md:col-span-1">
-      <label htmlFor="phone" className="text-gray-600 dark:text-gray-50">
-        Phone
-      </label>
-      <input
-        type="text"
-        name="phone"
-        value={phone}
-        onChange={(e) => {
-          setphone(e.target.value);
-        }}
-        className="w-full bg-transparent border-b py-2 p-1 focus:outline-none focus:ring-2 ring-yellow-500"
-      />
-      {errors?.phone && (
-        <p className="text-red-500 font-bold mt-2">Phone cannot be empty.</p>
-      )}
-    </div>
-    <div className="md:col-span-2">
-      <label htmlFor="message" className="text-gray-600 dark:text-gray-50">
-        Message
-        <span className="text-red-500">*</span>
-      </label>
-      <textarea
-        name="message"
-        value={message}
-        onChange={(e) => {
-          setMessage(e.target.value);
-        }}
-        className="w-full bg-transparent border-b py-2 p-1 focus:outline-none focus:ring-2 ring-yellow-500"
-        required
-      ></textarea>
-      {errors?.message && (
-        <p className="text-red-500 font-bold mt-2">Message body cannot be empty.</p>
-      )}
-    </div>
-  </div>
-  <div className="mt-4">
-    <button
-      type="submit"
-      className="px-4 py-2 bg-yellow-500 text-white font-light rounded-md text-lg flex items-center"
-    >
-      {buttonText}
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        className="text-cyan-500 ml-2"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z"
-          fill="currentColor"
-        />
-      </svg>
-    </button>
-  </div>
-  <div className="mt-4">
-    {showSuccessMessage && (
-      <p className="text-green-500 font-semibold text-sm">
-        Thank you! Your message has been delivered.
-      </p>
-    )}
-    {showFailureMessage && (
-      <p className="text-red-500">
-        Oops! Something went wrong, please try again.
-      </p>
-    )}
-  </div>
-</form>
+        <div id="sendthemail">
+<SendtheMail />
 
-
-
-
+</div>
           <br />
           <br />
           <div class={classes.partnersBox+" mx-3"}>

@@ -10,8 +10,8 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
-
-
+import SendtheMail from "./SendtheMail";
+import { Link as LinkScroll} from 'react-scroll';
 const ManagedServices = () => {
   const router = useRouter();
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -110,7 +110,9 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
             <h2 class={classes.caseheading}>How do we help you with our managed services </h2>
            <p class={classes.subheading}>Our managed services empower your data-centric endeavors across data science, cloud computing, and data engineering. We deliver expert support, ensuring seamless operations, scalability, and optimization. Trust us to navigate the complexities, so you can focus on innovation and growth.</p>
            {/* onClick={() =>router.push("/managed-service#learnMore")}  */}
+           <LinkScroll to="sendthemail">
            <button  class="btn my-4" style={{marginLeft: "10px",border:"1px solid white",display:"flex",flexDirection:"row",color:"white"}}>Learn more  <AiOutlineArrowRight style={{marginLeft:"4px",marginTop:"5px"}} /></button>
+           </LinkScroll>
            </div>
         </div>
     
@@ -136,7 +138,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       <br />
       <div className="row  text-start  " style={{margin:"0", height: "auto", borderBottom: "1px solid white" }}>
               {ManagedServicesData.map((sol) => (
-                <div onClick={() => router.push(sol.link)} className={classes.eachServicesDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
+                <LinkScroll to="sendthemail" className={classes.eachServicesDivstyle + " col-xl-4 col-lg-4 col-12 col-sm-12 col-md-6 my-1 p-3"}>
                   {/* <CiCompass1 color="black" size={70} /> */}
                   <div style={{display:"flex",flexDirection:"row"}}>
                   <img className={classes.icons} src={sol.imgsrc} />
@@ -147,7 +149,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <p>{sol.about}</p>
                   <br />
                   <button  ><BsFillArrowRightCircleFill color="black" size={25} /></button>
-                </div>
+                </LinkScroll>
               ))}
 
             </div>
@@ -198,16 +200,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <img  src="/assets/solutions/CaseStudy/1.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                      How freewill drives new innovation through partnership.
                      </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -220,16 +225,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <img  src="/assets/solutions/CaseStudy/2.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       Delivering transformative consumer experiences to the clients.
                       </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -241,16 +249,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
                   <img  src="/assets/solutions/CaseStudy/3.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       How a global cruise company realised digital transformation.
                       </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -326,11 +337,14 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
           </div>
           <br />
           <br />
+          <div id="sendthemail">
+          <SendtheMail />
+          </div>
           <br />
           <br />
           <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-          <div className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
+          <div style={{ backgroundColor: "rgb(251 251 249)" }}  className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
               <h2 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                 Connect with us to <br />  Collaborate!

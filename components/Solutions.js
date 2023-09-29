@@ -7,9 +7,9 @@ import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
 import classes from "./style/solutions.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import SendtheMail from "../components/Solutions/SendtheMail";
 import {  BsFillArrowRightCircleFill } from 'react-icons/bs';
-
+import { Link as LinkScroll} from 'react-scroll';
 const Solutions = () => {
 
 
@@ -185,15 +185,18 @@ Since our inception, we have been consistently helping people and organizations 
                   <img  src="/assets/solutions/CaseStudy/1.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       Through our cloud computing service delivery, we are helping organizations with the “the cloud” to offer faster innovation, flexible resources, and economies of scale.                     </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -206,15 +209,18 @@ Since our inception, we have been consistently helping people and organizations 
                   <img  src="/assets/solutions/CaseStudy/2.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       With our Data Engineering services, organizations made informed decisions in real-time. This led to faster response times, better customer service, and improved efficiency across the organization.                      </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -226,15 +232,18 @@ Since our inception, we have been consistently helping people and organizations 
                   <img  src="/assets/solutions/CaseStudy/3.jpg" alt="1" />
                   </Card.Body>
                   <Card.Footer>
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href="#"
-                    >
+                  <LinkScroll
+                   smooth={true}
+                   duration={100}
+                color="primary"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
+              >
                       <p>
                       We have been transforming lives through our innovative skill learning services in various ways. Along with technologies, mentorship and career guidance help people and organization achieve their upskilling goals efficiently.                       </p>
-                    </Link>
+                    </LinkScroll>
                   </Card.Footer>
                
               </motion.div>
@@ -311,6 +320,9 @@ Since our inception, we have been consistently helping people and organizations 
           </div>
           <br />
           <br />
+          <div id="sendthemail">
+          <SendtheMail />
+          </div>
           <br />
           <br />
           <ScrollAnimationWrapper className="w-full">

@@ -7,10 +7,11 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import SendtheMail from "./SendtheMail";
 import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
 import { Card, Grid, Text, Link, Row } from "@nextui-org/react";
+import { Link as LinkScroll} from 'react-scroll';
 const TechnologyConsultings = () => {
   const router = useRouter();
 
@@ -148,8 +149,9 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
         <br />
         <div className="row  text-start  " style={{ margin: "0", height: "auto", borderBottom: "1px solid white" }}>
           {ServicesData.map((sol) => (
-            <div onClick={() => router.push(sol.link)} className={classes.eachServicesDivstyle + " col-xl-6 col-lg-6 col-12 col-sm-12 col-md-12 my-1 p-3"}>
+            <LinkScroll to="sendthemail" className={classes.eachServicesDivstyle + " col-xl-6 col-lg-6 col-12 col-sm-12 col-md-12 my-1 p-3"}>
               {/* <CiCompass1 color="black" size={70} /> */}
+              
               <div style={{ display: "flex", flexDirection: "row" }}>
                 <img className={classes.icons} src={sol.imgsrc} />
                 <br />
@@ -159,7 +161,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
               <p>{sol.about}</p>
               <br />
               <button  ><BsFillArrowRightCircleFill color="black" size={25} /></button>
-            </div>
+            </LinkScroll>
           ))}
 
         </div>
@@ -266,16 +268,19 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
               <img src="/assets/solutions/CaseStudy/1.jpg" alt="1" />
             </Card.Body>
             <Card.Footer>
-              <Link
-                icon
+              <LinkScroll
+                   smooth={true}
+                   duration={100}
                 color="primary"
-                target="_blank"
-                href="#"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
+
               >
                 <p>
                   How freewill drives new innovation through partnership.
                 </p>
-              </Link>
+              </LinkScroll>
             </Card.Footer>
 
           </motion.div>
@@ -288,16 +293,18 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
               <img src="/assets/solutions/CaseStudy/2.jpg" alt="1" />
             </Card.Body>
             <Card.Footer>
-              <Link
-                icon
+              <LinkScroll
+                smooth={true} 
+                duration={100}
                 color="primary"
-                target="_blank"
-                href="#"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
+
               >
                 <p>
                   Delivering transformative consumer experiences to the clients.
                 </p>
-              </Link>
+              </LinkScroll>
             </Card.Footer>
 
           </motion.div>
@@ -309,16 +316,17 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
               <img src="/assets/solutions/CaseStudy/3.jpg" alt="1" />
             </Card.Body>
             <Card.Footer>
-              <Link
-                icon
+              <LinkScroll
+                smooth={true}
+                duration={100}
                 color="primary"
-                target="_blank"
-                href="#"
+                to="sendthemail"
+                style={{cursor:"pointer"}}
               >
                 <p>
                   How a global cruise company realised digital transformation.
                 </p>
-              </Link>
+              </LinkScroll>
             </Card.Footer>
 
           </motion.div>
@@ -329,7 +337,11 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       <br />
       <br />
       <br />
-
+      <div id="sendthemail">
+      <SendtheMail />
+      </div>
+      <br />
+      <br />
     </>
   )
 }

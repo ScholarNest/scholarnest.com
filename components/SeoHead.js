@@ -150,13 +150,9 @@ const favicons = [
     href: '/favicon/safari-pinned-tab.svg',
     color: '#F59A9A',
   },
-  // {
-  //   rel: 'icon',
-  //   href: '/favicon/favicon.ico',
-  // },
   {
     rel: 'icon',
-    href: '/favicon/favicon-16x16.png',
+    href: '/favicon/favicon.ico',
   },
   {
     rel: 'icon',

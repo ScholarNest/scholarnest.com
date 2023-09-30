@@ -4,6 +4,7 @@ import CareerTemplate from "../components/Layout/CareerTemplate";
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from "react";
 
+import SeoHead from "../components/SeoHead";
 
 function ApplyNow(props) {
   const router = useRouter();
@@ -16,6 +17,7 @@ function ApplyNow(props) {
   // console.log("Data is",props.router.query.message)/
   return (
     <>
+     <SeoHead />
        <Header />
       <div >
       <CareerTemplate props={router.query} />

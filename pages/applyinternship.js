@@ -3,6 +3,7 @@ import Footer from "../components/Layout/Footer";
 import InternTemplate from "../components/Layout/InternTemplate";
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from "react";
+import SeoHead from "../components/SeoHead";
 
 
 function ApplyInternship(props) {
@@ -16,6 +17,8 @@ function ApplyInternship(props) {
   // console.log("Data is",props.router.query.message)/
   return (
     <>
+
+<SeoHead />
        <Header />
       <div >
       < InternTemplate props={router.query} />

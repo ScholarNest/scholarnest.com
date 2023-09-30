@@ -1,12 +1,14 @@
 // components/CookieConsentBanner.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
 import classes from "./style/cookieConsent.module.css";
 
 const CookieConsentBanner = () => {
-  const [consentGiven, setConsentGiven] = useState(Cookies.get('cookie_consent_scholarnest'));
-
+  const [consentGiven, setConsentGiven] = useState(true);
+  useEffect(() => {
+    setConsentGiven(Cookies.get('cookie_consent_scholarnest'));
+  }, []); 
   const handleAccept = () => {
     Cookies.set('cookie_consent_scholarnest', 'true', { expires: 365 }); // Store consent for 1 year
     setConsentGiven(true);

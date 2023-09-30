@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-
 // Default value for some meta data
 const defaultMeta = {
   title: 'ScholarNest',
@@ -94,6 +93,7 @@ const SeoHead = (props) => {
       />
       {/* Accent color on supported browser */}
       <meta name='theme-color' content='#F53838' />
+
     </Head>
   );
 };

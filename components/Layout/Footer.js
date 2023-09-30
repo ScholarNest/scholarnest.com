@@ -1,9 +1,10 @@
 import React from "react";
 import classes from "./Footer.module.css";
 import Link from "next/link";
-
+// import LinkedInAds  from "../AdScripts/LinkedInAds";
 const Footer = () => {
   return (
+    <>
     <div className={classes.footer}>
       <div className=" row p-lg-4 p-2 mx-1 justify-content-between text-white">
         <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
@@ -165,7 +166,10 @@ const Footer = () => {
       
       </div>
     </div>
+    {/* <LinkedInAds /> */}
+    </>
   );
+
 };
 
 export default Footer;

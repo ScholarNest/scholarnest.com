@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo,createContext } from "react";
 import { FaSearch } from 'react-icons/fa';
 import { useRouter } from "next/router";
 import classes from "./style/responsive.module.css";
@@ -35,10 +35,10 @@ export default function Careers() {
   const [ExternalJoblist, setExternalJobList] = useState([]);
   const list = [
     {
-      title: "Web developer",
-      location: "Mumbai",
-      Domain: "Web-Network",
-      Date: "22/07/2022",
+      title: "Fullstack Web Developer",
+      location: "Bangalore",
+      Domain: "Technology",
+      // Date: "22/07/2022",
       status: "Open",
       exp: "2-3 Years",
       rexp: "1 Year",
@@ -50,28 +50,28 @@ export default function Careers() {
 
     },
     {
-      title: "Talent Acquisiton",
+      title: "Fullstack Java Developer",
       location: "Bangalore",
-      Domain: "HR",
-      Date: "15/01/2023",
+      Domain: "Technology",
+      // Date: "15/01/2023",
       status: "Open",
-      exp: "7-9 Years",
-      rexp: "5 Year",
-      skill: "Soft skills",
+      // exp: "7-9 Years",
+      // rexp: "5 Year",
+      skill: "Java, Core java, Oops ",
       noOfpos: "1",
       code: "53304",
       organization: "ScholarNest",
       subject: "Application for job"
     },
     {
-      title: "Manager",
-      location: "Mumbai/Bangalore",
-      Domain: "Director",
-      Date: "21/03/2023",
+      title: "Sales Executive",
+      location: "Bangalore",
+      Domain: "Sales",
+      // Date: "21/03/2023",
       status: "Open",
-      exp: "12-13 Years",
-      rexp: "10 Year",
-      skill: "SDLC",
+      // exp: "12-13 Years",
+      // rexp: "10 Year",
+      skill: "Soft skills",
       noOfpos: "1",
       code: "450098",
       organization: "ScholarNest",
@@ -82,23 +82,34 @@ export default function Careers() {
 
   const internlist = [
     {
-      title: "Software developer",
-      location: "Online",
-      Domain: "Web-Network",
-      Date: "20/03/2023",
+      title: "Bigdata Developer ",
+      location: "Bangalore",
+      Domain: "Technology",
+      // Date: "20/03/2023",
       status: "Open",
-      skill: "Reactjs,Nodejs, Mongodb",
+      skill: "Big Data",
       noOfpos: "2",
       code: "12034",
       subject: "Application for job"
     },
     {
-      title: "Data Analyst",
+      title: "Fullstack Web Developer",
       location: "Bangalore",
-      Domain: "Data Science",
-      Date: "25/02/2023",
+      Domain: "Technology",
+      // Date: "25/02/2023",
       status: "Open",
-      skill: "Python, Statistics, Data Science",
+      skill: "Web Technology",
+      noOfpos: "1",
+      code: "53304",
+      subject: "Application for job"
+    },
+    {
+      title: "Database Developer",
+      location: "Bangalore",
+      Domain: "Technology",
+      // Date: "25/02/2023",
+      status: "Open",
+      skill: "Sql,Mysql",
       noOfpos: "1",
       code: "53304",
       subject: "Application for job"
@@ -107,71 +118,71 @@ export default function Careers() {
   ]
   const externalJoblist = [
     {
-      title: "Web developer",
-      organization: "Google",
-      location: "Mumbai",
-      Domain: "Web-Network",
-      Date: "22/07/2022",
-      status: "ON",
-      exp: "12-13 Years",
-      rexp: "10 Year",
-      skill: "SDLC",
+      title: "Bigdata Solution Architect",
+      // organization: "Google",
+      location: "Bangalore",
+      Domain: "Technology",
+      // Date: "22/07/2022",
+      status: "Open",
+      // exp: "12-13 Years",
+      // rexp: "10 Year",
+      skill: "Big Data",
       noOfpos: "1",
       code: "450098",
       subject: "Application for external job"
     },
     {
-      title: "Talent Acquisiton",
-      organization: "Amazon",
+      title: "Sr DevOps Engineer",
+      // organization: "Amazon",
       location: "Bangalore",
-      Domain: "HR",
-      Date: "15/01/2023",
-      status: "ON",
-      exp: "3-4 Years",
-      rexp: "1 Year",
-      skill: "Soft skills, Time management",
+      Domain: "Technology",
+      // Date: "15/01/2023",
+      status: " Open",
+      // exp: "3-4 Years",
+      // rexp: "1 Year",
+      skill: "Devops",
       noOfpos: "1",
       code: "36985",
       subject: "Application for external job"
     },
     {
-      title: "Manager",
-      organization: "HCL",
-      location: "Mumbai/Bangalore",
-      Domain: "Director",
-      Date: "21/03/2023",
-      status: "ON",
-      exp: "6-7 Years",
-      rexp: "3 Year",
-      skill: "Web 3.0",
+      title: "Principal Data Engineer",
+      // organization: "HCL",
+      location: "Bangalore",
+      Domain: "Technology",
+      // Date: "21/03/2023",
+      status: "Open",
+      // exp: "6-7 Years",
+      // rexp: "3 Year",
+      skill: "Data ENgineering",
       noOfpos: "2",
       code: "35025",
       subject: "Application for external job"
     }
 
   ]
-  const Faqs = [
-    {
-      id: "faq1",
-      ques: "How can career guidance benefit me?",
-      ans: "Career guidance offers insights into your strengths and interests, helping you choose a path that aligns with your skills. It also provides strategies for skill enhancement, resume building, and job search techniques to ensure a successful career trajectory."
-    },
-    {
-      id: "faq2",
-      ques: "How do I know if I need career guidance or enhancement?",
-      ans: "If you're uncertain about your career path, seeking a new direction, or aiming to advance within your current field, career guidance can help. If you're looking to excel in your current role or explore higher-level opportunities, career enhancement is beneficial."
-    },
-    {
-      id: "faq3",
-      ques: "Can career guidance and enhancement services help me in the long term?",
-      ans: "Absolutely. Career guidance helps you make informed decisions throughout your career, while enhancement services equip you with skills that contribute to long-term success, ensuring your continued growth and adaptability in a dynamic job market."
-    },
-    {
-      id: "faq4",
-      ques: "How do I get started with career guidance or enhancement?",
-      ans: "Simply reach out to us through our contact page or application forms. We'll connect you with our experts to understand your needs and develop a personalized plan to guide or enhance your career journey."
-    }
-  ]
+  // const Faqs = [
+  //   {
+  //     id: "faq1",
+  //     ques: "How can career guidance benefit me?",
+  //     ans: "Career guidance offers insights into your strengths and interests, helping you choose a path that aligns with your skills. It also provides strategies for skill enhancement, resume building, and job search techniques to ensure a successful career trajectory."
+  //   },
+  //   {
+  //     id: "faq2",
+  //     ques: "How do I know if I need career guidance or enhancement?",
+  //     ans: "If you're uncertain about your career path, seeking a new direction, or aiming to advance within your current field, career guidance can help. If you're looking to excel in your current role or explore higher-level opportunities, career enhancement is beneficial."
+  //   },
+  //   {
+  //     id: "faq3",
+  //     ques: "Can career guidance and enhancement services help me in the long term?",
+  //     ans: "Absolutely. Career guidance helps you make informed decisions throughout your career, while enhancement services equip you with skills that contribute to long-term success, ensuring your continued growth and adaptability in a dynamic job market."
+  //   },
+  //   {
+  //     id: "faq4",
+  //     ques: "How do I get started with career guidance or enhancement?",
+  //     ans: "Simply reach out to us through our contact page or application forms. We'll connect you with our experts to understand your needs and develop a personalized plan to guide or enhance your career journey."
+  //   }
+  // ]
   useEffect(() => {
     setTableList(list)
     setInternList(internlist)
@@ -267,7 +278,6 @@ export default function Careers() {
     console.log(fullname, email, subject, message);
   };
   function applyNow(data) {
-    console.log("data is", data)
     router.push({
       pathname: '/applynow',
       query: data
@@ -353,7 +363,6 @@ export default function Careers() {
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Job title</th>
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Location</th>
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Domain</th>
-                <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Date</th>
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border   text-center bg-gray-100">Status</th>
               </tr>
             </thead>
@@ -363,7 +372,7 @@ export default function Careers() {
                   <td onClick={() => applyNow(data)} class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center"> <a style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}>{data.title} </a>   </td>
                   <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.location}</td>
                   <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center" >{data.Domain}</td>
-                  <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td>
+                  {/* <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td> */}
                   <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.status}</td>
                 </tr>
               )}
@@ -423,7 +432,7 @@ export default function Careers() {
                   <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Job title</th>
                   <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Location</th>
                   <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Domain</th>
-                  <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Date</th>
+                  {/* <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Date</th> */}
                   <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border   text-center bg-gray-100">Status</th>
                 </tr>
               </thead>
@@ -433,7 +442,7 @@ export default function Careers() {
                     <td onClick={() => applyInternship(data)} class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center"> <a style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}>{data.title} </a>   </td>
                     <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.location}</td>
                     <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center" >{data.Domain}</td>
-                    <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td>
+                    {/* <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td> */}
                     <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.status}</td>
                   </tr>
                 )}
@@ -445,7 +454,7 @@ export default function Careers() {
 
         </div>
       </div>
-      <h2 class={classes.headJob + "  p-4 gap-2 pt-1 lg:px-40 font-medium leading-tight ml-4  mt-0 mb-2 text-blue-600"}>External Job opportunities</h2>
+      <h2 class={classes.headJob + "  p-4 gap-2 pt-1 lg:px-40 font-medium leading-tight ml-4  mt-0 mb-2 text-blue-600"}>Job openings with our clients</h2>
 
       <div id="table" class={classes.careerTableTop + " bg-blue-50 dark:bg-blue-900 mx-auto"}>
         <form onSubmit={searchinExternalList} className="flex justify-end my-2 px-2" >
@@ -466,7 +475,7 @@ export default function Careers() {
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Job title</th>
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Location</th>
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Domain</th>
-                <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Date</th>
+                {/* <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center bg-gray-100">Date</th> */}
                 <th class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border   text-center bg-gray-100">Status</th>
               </tr>
             </thead>
@@ -476,7 +485,7 @@ export default function Careers() {
                   <td onClick={() => applyNow(data)} class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center"> <a style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}>{data.title} </a>   </td>
                   <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.location}</td>
                   <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center" >{data.Domain}</td>
-                  <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td>
+                  {/* <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.Date}</td> */}
                   <td class="px-lg-4  px-md-2 px-sm-1 px-0 py-2 border  text-center">{data.status}</td>
                 </tr>
               )}
@@ -505,9 +514,9 @@ export default function Careers() {
       </ScrollAnimationWrapper>
 
       <br />
-      <br />
-      <br />
-      <div className="row gap-2 m-0 justify-content-center">
+      {/* <br />
+      <br /> */}
+      {/* <div className="row gap-2 m-0 justify-content-center">
         <div className={classes.mentorr + " col-8 col-sm-5"}>
 
           <div class="row h-75 align-items-center justify-content-end me-1  " >
@@ -532,12 +541,12 @@ export default function Careers() {
 
       </div>
       <br />
-      <br />
-      <div style={{ backgroundColor: "rgb(251 251 249)" }} className="container-fluid  ">
+      <br /> */}
+      {/* <div style={{ backgroundColor: "rgb(251 251 249)" }} className="container-fluid  ">
         <br />
         <h2 class={classes.headJob + " text-center my-3"} >Frequently Asked Questions</h2>
         <br />
-        {
+         {
           Faqs.map((quest) => {
             function openSolution(ques_id) {
               const elem = document.getElementById(ques_id)
@@ -565,12 +574,12 @@ export default function Careers() {
               </div>
             )
           })
-        }
+        } 
 
 <br />
 
 
-      </div>
+      </div> */}
 
 
       <br />

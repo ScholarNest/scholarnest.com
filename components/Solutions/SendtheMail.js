@@ -105,7 +105,7 @@ const SendtheMail = () => {
     className="rounded-lg shadow-xl p-6 bg-white dark:bg-green-500"
   >
     <h2 className="text-2xl mb-4">
-      Send your staffing requirements
+    Contact us for more details/requirements
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="md:col-span-1">

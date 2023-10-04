@@ -25,7 +25,7 @@ const CookieConsentBanner = () => {
   if (!consentGiven) {
     return (
       <div className={classes.cookieBanner }>
-        <p>This website uses cookies to improve user experience.</p>
+        <p>ScholarNest uses cookies and similar technologies to enhance site navigation, analyze site usage, and personalize content and ads, as further described in our Privacy Policy and Terms of Use. You agree to our Privacy Policy and Terms of Use by using our website. <a style={{textDecoration:"underline",color:"blue"}} href="/privacy"> Learn more.</a></p>
        
         <button onClick={handleAccept}>Accept</button>
         <button onClick={handleDecline}>Decline</button>

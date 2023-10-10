@@ -168,7 +168,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
 
 
       </div>
-      <ScrollAnimationWrapper className="w-full">
+      {/* <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col  w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
@@ -183,7 +183,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
      
         </motion.div>
       </ScrollAnimationWrapper>
-  
+   */}
       <div class={classes.partnersBox+" mx-3"}>
          
           <br />

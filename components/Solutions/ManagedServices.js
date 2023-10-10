@@ -340,7 +340,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
           <div id="sendthemail">
           <SendtheMail />
           </div>
-          <br />
+          {/* <br />
           <br />
           <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
@@ -357,7 +357,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
        
         </motion.div>
       </ScrollAnimationWrapper>
-  
+   */}
           <br />
          
     </>

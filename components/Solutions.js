@@ -323,7 +323,7 @@ Since our inception, we have been consistently helping people and organizations 
           <div id="sendthemail">
           <SendtheMail />
           </div>
-          <br />
+          {/* <br />
           <br />
           <ScrollAnimationWrapper className="w-full">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
@@ -340,7 +340,7 @@ Since our inception, we have been consistently helping people and organizations 
          
         </motion.div>
       </ScrollAnimationWrapper>
-  
+   */}
           <br />
         <br />
         <br />

@@ -187,7 +187,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       <div class={classes.partnersBox+" mx-3"}>
          
           <br />
-          <h2 class="text-center mt-5 mb-4"  >Partners & Customers</h2>
+          <h2 class="text-center mt-5 mb-4"  >Technology Stacks</h2>
           <hr />
           <Carousel
       swipeable={false}

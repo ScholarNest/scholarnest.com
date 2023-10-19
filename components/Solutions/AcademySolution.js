@@ -22,31 +22,31 @@ const AcademySolution = () => {
   {
     heading:"Mastering PySpark",
     desc:"Self-paced",
-    imgPath:"/assets/solutions/AcademySolutions/2.jpg",
+    imgPath:"/assets/solutions/AcademySolutions/2.png",
     link:"https://www.scholarnest.in/courses/mastering-pyspark"
   },
   {
     heading:"Mastering Databricks Cloud",
     desc:"Self-paced Learning",
-    imgPath:"/assets/solutions/AcademySolutions/3.jpg",
+    imgPath:"/assets/solutions/AcademySolutions/3.png",
     link:"https://www.scholarnest.in/courses/mastering-databricks-cloud"
   },
   {
     heading:"Databricks Certified Associate Developer for Apache Spark 3.0",
     desc:"Self-paced Exam Practice Test",
-    imgPath:"/assets/solutions/AcademySolutions/4.jpg",
+    imgPath:"/assets/solutions/AcademySolutions/4.png",
     link:"https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
   },
   {
     heading:"Databricks Data Engineer Assoicate Certification Practice Test",
     desc:"Self-paced Exam Practice Test",
-    imgPath:"/assets/solutions/AcademySolutions/5.jpg",
+    imgPath:"/assets/solutions/AcademySolutions/5.png",
     link:"https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
   },
   {
     heading:"Apache Kafka for Begginers",
     desc:"Latest course on Apache Kafka",
-    imgPath:"/assets/solutions/AcademySolutions/6.jpg",
+    imgPath:"/assets/solutions/AcademySolutions/6.png",
     link:"https://www.scholarnest.in/courses/apache-kafka-for-beginners"
   },
  ]
@@ -54,7 +54,7 @@ const AcademySolution = () => {
     {
       heading:"Course Bundle - Master Data Engineering",
       desc:"Instructor-led Course",
-      imgPath:"/assets/solutions/AcademySolutions/1.png",
+      imgPath:"/assets/solutions/AcademySolutions/upcomingcourse1.png",
       date:"17/09/2023"
     }
     // {

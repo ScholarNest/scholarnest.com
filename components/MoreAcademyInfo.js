@@ -8,35 +8,35 @@ const MoreAcademyInfo = (props) => {
     {
       heading: "Mastering PySpark",
       desc: "Self-paced Learning",
-      imgPath: "/assets/solutions/AcademySolutions/2.jpg",
+      imgPath: "/assets/solutions/MoreAcademySolutions/2.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
     },
     {
       heading: "Mastering Databricks Cloud",
       desc: "Self-paced Learning",
-      imgPath: "/assets/solutions/AcademySolutions/3.jpg",
+      imgPath: "/assets/solutions/MoreAcademySolutions/3.jpg",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"
     },
     {
       heading: "Databricks Certified Associate Developer for Apache Spark 3.0",
       desc: "Self-paced Exam Practice Test",
-      imgPath: "/assets/solutions/AcademySolutions/4.jpg",
+      imgPath: "/assets/solutions/MoreAcademySolutions/4.jpg",
       price: "$36.79",
       link: "https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
     },
     {
       heading: "Databricks Data Engineer Assoicate Certification Practice Test",
       desc: "Self-paced Exam Practice Test",
-      imgPath: "/assets/solutions/AcademySolutions/5.jpg",
+      imgPath: "/assets/solutions/MoreAcademySolutions/5.jpg",
       price: "$36.79",
       link: "https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
     },
     {
       heading: "Apache Kafka for Begginers",
       desc: "Self-paced Learning",
-      imgPath: "/assets/solutions/AcademySolutions/6.jpg",
+      imgPath: "/assets/solutions/MoreAcademySolutions/6.jpg",
       price: "$24.79",
       link: "https://www.scholarnest.in/courses/apache-kafka-for-beginners"
     },
@@ -45,7 +45,7 @@ const MoreAcademyInfo = (props) => {
       desc: "Self-paced Learning",
       link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
       price: "$24.79",
-      imgPath: "/assets/solutions/AcademySolutions/7.jpg"
+      imgPath: "/assets/solutions/MoreAcademySolutions/7.jpg"
     }
   ]
   const IndcourseList = [

@@ -3,14 +3,19 @@ import Header from "../components/Layout/Header";
 import CompanyTemplate from "../components/CompanyTemplate";
 import SeoHead from "../components/SeoHead";
 import CookieConsentBanner from "../components/CookieConsentBanner";
-import GoogleTagManagerAll from "../components/AdScripts/GoogleTagManagerAll";
-
+import TagManager from 'react-gtm-module'
+import {useEffect} from 'react'
 function company() {
+  const tagManagerArgs = {
+    gtmId: 'GTM-PVPKPSDT'
+  }
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
+  }, []); 
   return (
     <>
      <SeoHead />
      <CookieConsentBanner />
-     <GoogleTagManagerAll />
 
       <Header />
       <div >

@@ -28,9 +28,9 @@ render() {
           <script src="https://smtpjs.com/v3/smtp.js" ></script>
 
        
+          <meta name="google-site-verification" content="a-JW-oouLMhdFpVUN-qlNKARCJ_RCG6hB-Cd8VJcrg4" />
 
         </Head>
-        <meta name="google-site-verification" content="a-JW-oouLMhdFpVUN-qlNKARCJ_RCG6hB-Cd8VJcrg4" />
         <body>
           <Main />
           <NextScript />

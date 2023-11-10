@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo,createContext } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { FaSearch } from 'react-icons/fa';
 import { useRouter } from "next/router";
 import classes from "./style/responsive.module.css";
@@ -7,7 +7,6 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-
 export default function Careers() {
   const router = useRouter();
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -278,6 +277,7 @@ export default function Careers() {
     console.log(fullname, email, subject, message);
   };
   function applyNow(data) {
+   
     router.push({
       pathname: '/applynow',
       query: data

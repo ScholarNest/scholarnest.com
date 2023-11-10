@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 
 
 
-
 function MyApp({ Component, pageProps }) {
 
   return (

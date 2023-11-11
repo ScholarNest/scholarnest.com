@@ -29,7 +29,7 @@ const InternTemplate = ({props}) => {
   function applyNow(){
    const div=document.getElementById("applyForm");
    div.style.backgroundColor="rgb(251 251 249)";
-   div.style.height="auto";
+
    router.push("#applyForm");
   }
   function sendMail(e){
@@ -49,6 +49,23 @@ const InternTemplate = ({props}) => {
         location,
         Reloc,
      }
+     if (
+      !props.title ||
+      !props.code || 
+      !title || 
+      !name ||
+      !mail ||
+      !mobile ||
+      !skills ||
+      !Reloc||
+  !resume
+    ) {
+
+      console.error('One or more variables are empty. Cannot proceed.');
+      alert('One or more variables are empty. Cannot proceed.');
+      return; // or show an error message, navigate to a different page, etc.
+    }
+     try{
      const dataa = new FormData();
      dataa.append('data',JSON.stringify(data))
      dataa.append('file',resume)
@@ -75,21 +92,13 @@ const InternTemplate = ({props}) => {
         setLocation("")
         setReloc("")
         setResume(null)
-        document.getElementById("applyForm").style.height="0";
+      }else{
+        alert("Error: Try again !")
       }
     })
-//   //   Email.send({
-//   //     Host : "smtp.elasticemail.com",
-//   //     Username : "duadarsh13@gmail.com",
-//   //     Password : "EA9EE3A3C7327A7F3B6AF1DB6E1D4E40D6FC",
-//   //     To : 'adarsh2dubey@gmail.com',
-//   //     From : "duadarsh13@gmail.com",
-//   //     Subject : "New job application",
-//   //     Body :"<html><h2>{body}</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-      
-//   // }).then(
-//   //   message => alert("You have succesfully submitted the form..Thank you !")
-//   // );
+  }catch(exception){
+    alert("Error: Try again !")
+  }
   }
   return (
     <>
@@ -101,11 +110,119 @@ const InternTemplate = ({props}) => {
      <hr size="20" style={{border:"3px solid red",height:"3px !important",width:"70px",marginLeft:"15px"}} />
       <div  style={{margin:"0"}} className="row  justify-content-end">
         {/* <div  class="col-2">  */}
-        <button onClick={applyNow}  class={classes.applyNowBtn+" btn py-2 lg:py-3 px-8 lg:px-5 me-2 text-white-500 font-semibold rounded-lg bg-orange-500"}>Apply Now</button>
+        {/* <button onClick={applyNow}  class={classes.applyNowBtn+" btn py-2 lg:py-3 px-8 lg:px-5 me-2 text-white-500 font-semibold rounded-lg bg-orange-500"}>Apply Now</button> */}
         {/* </div> */}
       </div>
-      {/* Form */}
-      <div id="applyForm" style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",marginTop:"15px",height:"0",overflow:"hidden", backgroundColor:"whitesmoke"}}class="mx-4 px-5 py-2">
+      
+      <div style={{margin:"3%", backgroundColor:"whitesmoke",padding:"16px"}}>
+       <div  style={{margin:"0",}} class="row justify-content-start">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}> <AiFillBulb class="mt-1" size="17"  /> Job Title</h3>
+          <h3 class={classes.h1Style}>{props.title}</h3>
+        </div>
+      
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}><AiOutlineCopy class="mt-1" size={17} />Work Location</h3>
+          <h3 class={classes.h1Style}>{props.location}</h3>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}> <AiFillBulb class="mt-1" size="17"  /> Stipend</h3>
+          <h3 class={classes.h1Style}>As per market standard</h3>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17}/> Primary skills</h3>
+          <h3 class={classes.h1Style}>{props.skill}</h3>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17}/> No. of position</h3>
+          <h3 class={classes.h1Style}>{props.noOfpos}</h3>
+        </div>
+     
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}> <AiOutlineMail class="mt-1" size={17}/> Mail to</h3>
+          <h3 class={classes.h1Style}>scholarnest@gmail.com</h3>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
+          <h3 class={classes.h3Style}>  <AiOutlineCopy class="mt-1" size={17}/>Posted on</h3>
+          <h3 class={classes.h1Style}>{props.Date}</h3>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 mb-4">
+          <h3 class={classes.h3Style}><AiOutlineCopy class="mt-1" size={17} />Internship Status</h3>
+          <h3 class={classes.h1Style}>{props.status}</h3>
+        </div>
+      
+       </div>
+      </div>
+    {/* Skills and Roles, Responsibilities
+    <div style={{margin:"2%",padding:"10px"}}>
+ <div style={{margin:"0"}} className="row">
+  <div className="col-lg-6 col-md-6 col-sm-12"><h3 class={classes.h1Style}> Role & Responsibilities </h3 >
+   <div class="px-4 py-3">
+   <ul style={{  listStyleType:"disc"}}>
+  <li>Working with our development manager to develop client custom applications, or core product offerings, based on written specifications both functional and technical.</li>
+  <li>Unit testing of those applications</li>
+  <li>Design and develop systems to support both business and technical requirements which includes mapping user requirements for effective Dynamics 365 technology solutions</li>
+  <li>Responsible for development efforts for software enhancements, extensions, defect corrections and integration of features in Dynamics 365
+  <li>Supporting core and custom applications for bugs.</li>
+  <li>Maintain multiple projects and deadlines. These are normally prioritized thru 2-week SCRUM Sprints for all developers using agile development practices.</li>
+  <li>Recording time and work progress on a daily basis</li>
+</li>
+</ul>
+
+   </div>
+  </div>
+  <div style={{backgroundColor:"rgb(251 251 249)",minHeight:"500px"}}className="col-lg-6 col-md-6 col-sm-12">
+    <h3 class={classes.h1Style}> Skills/Experience </h3>
+    <h3 class={classes.contentInPara+" px-4 py-3"} style={{fontSize:"16px",fontWeight:"500"}}>Technologies</h3>
+    <div class="px-5">
+   
+   <ul style={{  listStyleType:"disc"}}>
+  <li>Experience in MS Dynamics CRM 2016, D365 CRM.</li>
+  <li>Basic Knowledge in Power Platform (PowerApps, Power Automate)</li>
+  <li>Extensive experience with plug-in and workflows activity development.
+</li>
+<li>Good experience on MS CRM customization and configuration of Entities, forms and field level, Ribbon development, and Web resource.
+</li>
+<li>Extensive experience with plug-in and workflow activity development
+</li>
+<li>Experience of implementation and development of Dashboards and Charts.</li>
+<li>Experience in integrating Canvas App with Forms.</li>
+<li>Implementing security roles, with access and privileges levels, with different security models.
+</li>
+<li>Experience on OOB functionalities feature, Business Rules, Business Process Flows, and Actions.</li>
+</ul>
+
+   </div>
+   <div class="px-4 py-3">
+   <h3 class={ classes.contentInPara+" mb-2" } >Functional Area</h3>
+
+    <p>Product Development</p>
+   </div>
+   <div class="px-4 py-3">
+   <h3 class={ classes.contentInPara+" mb-2" }>Education</h3>
+    <p>Bachelor’s degree in a Computer Science, or equivalent practical experience
+</p>
+   </div>
+   <div class="px-4 py-3">
+   <h3 class={ classes.contentInPara+" mb-2" }>Soft Skills</h3>
+    <ul class="px-4" style={{  listStyleType:"disc"}}>
+      <li>Proficiency to handle complex and quality demanding jobs.</li>
+      <li>Should have good Communication skills.
+</li>
+<li>Should have technical bent of mind.
+
+</li>
+<li>Should have problem solving, prioritizing tasks, multi-tasking abilities.
+</li>
+<li>Should be able to understand and handle tasks independently.
+</li>
+    </ul>
+   </div>
+</div>
+ </div>
+ </div> */}
+    {/* Form */}
+    <div id="applyForm" style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",marginTop:"15px", backgroundColor:"whitesmoke"}}class="mx-4 px-5 py-2">
       <form enctype="multipart/form-data" onSubmit={sendMail}>
         <br />
         <div className="row ">
@@ -174,114 +291,6 @@ const InternTemplate = ({props}) => {
    </div>
 </form>
      </div>
-      <div style={{margin:"3%", backgroundColor:"whitesmoke",padding:"16px"}}>
-       <div  style={{margin:"0",}} class="row justify-content-start">
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}> <AiFillBulb class="mt-1" size="17"  /> Job Title</h3>
-          <h3 class={classes.h1Style}>{props.title}</h3>
-        </div>
-      
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}><AiOutlineCopy class="mt-1" size={17} />Work Location</h3>
-          <h3 class={classes.h1Style}>{props.location}</h3>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}> <AiFillBulb class="mt-1" size="17"  /> Stipend</h3>
-          <h3 class={classes.h1Style}>As per market standard</h3>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17}/> Primary skills</h3>
-          <h3 class={classes.h1Style}>{props.skill}</h3>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17}/> No. of position</h3>
-          <h3 class={classes.h1Style}>{props.noOfpos}</h3>
-        </div>
-     
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}> <AiOutlineMail class="mt-1" size={17}/> Mail to</h3>
-          <h3 class={classes.h1Style}>scholarnest@gmail.com</h3>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-          <h3 class={classes.h3Style}>  <AiOutlineCopy class="mt-1" size={17}/>Posted on</h3>
-          <h3 class={classes.h1Style}>{props.Date}</h3>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 mb-4">
-          <h3 class={classes.h3Style}><AiOutlineCopy class="mt-1" size={17} />Internship Status</h3>
-          <h3 class={classes.h1Style}>{props.status}</h3>
-        </div>
-      
-       </div>
-      </div>
-    {/* Skills and Roles, Responsibilities */}
-    <div style={{margin:"2%",padding:"10px"}}>
- <div style={{margin:"0"}} className="row">
-  <div className="col-lg-6 col-md-6 col-sm-12"><h3 class={classes.h1Style}> Role & Responsibilities </h3 >
-   <div class="px-4 py-3">
-   <ul style={{  listStyleType:"disc"}}>
-  <li>Working with our development manager to develop client custom applications, or core product offerings, based on written specifications both functional and technical.</li>
-  <li>Unit testing of those applications</li>
-  <li>Design and develop systems to support both business and technical requirements which includes mapping user requirements for effective Dynamics 365 technology solutions</li>
-  <li>Responsible for development efforts for software enhancements, extensions, defect corrections and integration of features in Dynamics 365
-  <li>Supporting core and custom applications for bugs.</li>
-  <li>Maintain multiple projects and deadlines. These are normally prioritized thru 2-week SCRUM Sprints for all developers using agile development practices.</li>
-  <li>Recording time and work progress on a daily basis</li>
-</li>
-</ul>
-
-   </div>
-  </div>
-  <div style={{backgroundColor:"rgb(251 251 249)",minHeight:"500px"}}className="col-lg-6 col-md-6 col-sm-12">
-    <h3 class={classes.h1Style}> Skills/Experience </h3>
-    <h3 class={classes.contentInPara+" px-4 py-3"} style={{fontSize:"16px",fontWeight:"500"}}>Technologies</h3>
-    <div class="px-5">
-   
-   <ul style={{  listStyleType:"disc"}}>
-  <li>Experience in MS Dynamics CRM 2016, D365 CRM.</li>
-  <li>Basic Knowledge in Power Platform (PowerApps, Power Automate)</li>
-  <li>Extensive experience with plug-in and workflows activity development.
-</li>
-<li>Good experience on MS CRM customization and configuration of Entities, forms and field level, Ribbon development, and Web resource.
-</li>
-<li>Extensive experience with plug-in and workflow activity development
-</li>
-<li>Experience of implementation and development of Dashboards and Charts.</li>
-<li>Experience in integrating Canvas App with Forms.</li>
-<li>Implementing security roles, with access and privileges levels, with different security models.
-</li>
-<li>Experience on OOB functionalities feature, Business Rules, Business Process Flows, and Actions.</li>
-</ul>
-
-   </div>
-   <div class="px-4 py-3">
-   <h3 class={ classes.contentInPara+" mb-2" } >Functional Area</h3>
-
-    <p>Product Development</p>
-   </div>
-   <div class="px-4 py-3">
-   <h3 class={ classes.contentInPara+" mb-2" }>Education</h3>
-    <p>Bachelor’s degree in a Computer Science, or equivalent practical experience
-</p>
-   </div>
-   <div class="px-4 py-3">
-   <h3 class={ classes.contentInPara+" mb-2" }>Soft Skills</h3>
-    <ul class="px-4" style={{  listStyleType:"disc"}}>
-      <li>Proficiency to handle complex and quality demanding jobs.</li>
-      <li>Should have good Communication skills.
-</li>
-<li>Should have technical bent of mind.
-
-</li>
-<li>Should have problem solving, prioritizing tasks, multi-tasking abilities.
-</li>
-<li>Should be able to understand and handle tasks independently.
-</li>
-    </ul>
-   </div>
-</div>
- </div>
- </div>
-    
     </div>
     <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.letsConnect + " rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500"}>
             <div className="flex flex-col w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">

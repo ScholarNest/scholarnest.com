@@ -64,7 +64,7 @@ const CareerTemplate = ({ props }) => {
       !props.title ||
       !props.code ||
       !props.subject ||
-      props.organization ||
+      !props.organization ||
       !name ||
       !mail ||
       !mobile ||
@@ -74,7 +74,8 @@ const CareerTemplate = ({ props }) => {
       !currctc ||
       !expctc ||
       !location ||
-      !Reloc
+      !Reloc ||
+  !resume
     ) {
       // At least one variable is empty
       // You can handle this case, for example, by preventing further execution

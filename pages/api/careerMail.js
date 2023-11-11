@@ -65,7 +65,7 @@ export default function (req, res) {
    Scholarnest Information Technology & Services , Bangalore, India <br />
    <a href="#"> scholarnest@gmail.com </a> | <a href="#"> www.scholarnest.com </a>
    </p>
-   <img   src="http://localhost:3000/assets/scholarnest-logo.jpg"  alt="Logo" /> 
+   <img   src="/assets/scholarnest-logo.jpg"  alt="Logo" /> 
     `
        
 const htmlContentclient =`<div><p>Hii</p>
@@ -76,7 +76,7 @@ const htmlContentclient =`<div><p>Hii</p>
 Scholarnest Information Technology & Services , Bangalore, India <br />
 <a href="#"> scholarnest@gmail.com </a> | <a href="#"> www.scholarnest.com </a>
 </p>
-<img   src="http://localhost:3000/assets/scholarnest-logo.jpg"  alt="Logo" /> 
+<img   src="/assets/scholarnest-logo.jpg"  alt="Logo" /> 
 </div>
 
 `
@@ -116,7 +116,6 @@ Scholarnest Information Technology & Services , Bangalore, India <br />
           }
             
         })
-        console.log("data are",data)
       res.send("submitted");
       });
     

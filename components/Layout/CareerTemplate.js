@@ -96,9 +96,7 @@ const CareerTemplate = ({ props }) => {
       // },
       body: dataa
     }).then((res) => {
-      console.log('Response received')
       if (res.status === 200) {
-        console.log('Response succeeded!')
         alert("Details has been submitted Succesfully !")
 
         setTitle("")

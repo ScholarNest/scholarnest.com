@@ -79,7 +79,6 @@ const CareerTemplate = ({ props }) => {
     ) {
       // At least one variable is empty
       // You can handle this case, for example, by preventing further execution
-      console.error('One or more variables are empty. Cannot proceed.');
       alert('One or more variables are empty. Cannot proceed.');
       return; // or show an error message, navigate to a different page, etc.
     }

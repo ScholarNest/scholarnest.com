@@ -319,6 +319,11 @@ width:65vw;
  
 }
 }
+@media only screen and (max-width: 550px) {
+  .overlayContent p{
+    display:none;
+  }
+}
 
 @media only screen and (max-width: 500px) {
 

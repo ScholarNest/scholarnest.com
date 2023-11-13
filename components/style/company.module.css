@@ -96,14 +96,49 @@ height:350px;
   margin: 0 auto;
   objectFit:contain; 
 }
+.detailOnTopOfBanner{
+  position: relative;
+  width: 100%;
+}
+.overlayContent {
+  position: absolute;
+  top: 50%; /* Adjust the vertical position as needed */
+  left: 26%; /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff; /* Adjust text color as needed */
+  max-width: 50%; /* Adjust the maximum width as needed */
+}
+.overlayContent h3{
+  font-size:30px;
+
+}
+.overlayContent p{
+  font-size:16px;
+  margin-top:5px;
+  color:white !important
+}
+@media only screen and (max-width: 768px) {
+  .overlayContent h3{
+    font-size:24px;
+  }
+}
 @media only screen and (max-width: 640px) {
   .letsConnect{
     text-align:center;
   }  
+  .overlayContent h3{
+    font-size:20px;
+  }
+  .overlayContent p{
+    font-size:16px;
+  }
 }
 @media only screen and (max-width: 600px) {
  
-
+  .overlayContent{
+    top:45%;
+  }
   .bannerDetails h3, .caseStudyHead{
   font-size:16px;
   }
@@ -135,7 +170,16 @@ height:350px;
   height:350px;
 }
 }
+@media only screen and (max-width: 550px) {
+  .overlayContent p{
+    display:none;
+  }
+}
+
 @media only screen and (max-width: 430px) {
+   .overlayContent h3{
+    font-size:16px;
+  }
   
   .bannerDetails{
    
@@ -178,4 +222,12 @@ height:350px;
     font-size:16px;
 
 }
+.overlayContent h3{
+  font-size:14px;
+}
+}
+@media only screen and (max-width: 230px) {
+  .overlayContent h3{
+    font-size:12px;
+  }
 }

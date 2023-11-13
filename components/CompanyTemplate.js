@@ -54,7 +54,15 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
 
     <>
       <div class="py-0">
-        <Image placeholder='blur' blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"  src="/assets/company/company.jpg" alt="Company" />
+      <div class={classes.detailOnTopOfBanner}>
+      <Image placeholder='blur' blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"  src="/assets/company/company.jpeg" alt="Company" />
+    
+      <div className={classes.overlayContent}>
+        <h3>Discover the Evolution – Where Ideas Transform into <strong style={{color:"#F53855"}}> Impact </strong> </h3>
+        
+        <p>Explore the pages of our story, and join us in shaping a future defined by innovation, dedication, and unwavering commitment to your success.</p>
+      </div>
+      </div>
         <div className={classes.bannerDetails} >
           <h1 class={classes.heading} >Company</h1>
           <h3 >Combining strategy, technology, skills and people</h3>

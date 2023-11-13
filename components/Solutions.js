@@ -106,7 +106,15 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   return (
   <>
     <div class="py-0">
-       <Image placeholder="blur" blurDataURL={blurDataURL} height="500px" width="1100px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpg" alt=" Business Solution" />
+    <div class={classes.detailOnTopOfBanner}>
+    <Image placeholder="blur" blurDataURL={blurDataURL} height="500px" width="1100px" layout="responsive"   src="/assets/solutions/SolutionBanner.jpeg" alt=" Business Solution" />
+    
+      <div className={classes.overlayContent}>
+        <h3>Partner with Us to Transform Ideas into <strong style={{color:"#F53855"}}>  Sustainable </strong> Success    </h3>
+        
+        <p>From strategy development to implementation, we're here to enhance efficiency, optimize processes, and drive your success in a rapidly changing marketplace.</p>
+      </div>
+      </div>
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} > Business Solution</h1>
        <h2 >Combining strategy, technology, automation and people</h2>

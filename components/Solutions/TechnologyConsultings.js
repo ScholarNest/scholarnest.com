@@ -87,7 +87,17 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   return (
     <>
       <div>
-        <Image placeholder='blur' blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive" src="/assets/solutions/TechnologyConsulting.png" alt="Technology Consulting Solutions" />
+      <div class={classes.detailOnTopOfBanner}>
+      <Image placeholder='blur' blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive" src="/assets/solutions/TechnologyConsulting.jpeg" alt="Technology Consulting Solutions" />
+    
+      <div className={classes.overlayContent}>
+        <h3>Empowering Your Future with  <strong style={{color:"#F53855"}}> Innovative </strong>  Solutions </h3>
+        
+        <p>Explore a world of possibilities as we guide you towards sustainable growth in the digital era. Let's redefine success together.</p>
+      </div>
+      </div>
+      
+      
         <div className={classes.bannerDetails}>
           <h1 class={classes.heading} >Technology Consulting Solutions</h1>
 

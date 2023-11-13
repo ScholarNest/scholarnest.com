@@ -178,6 +178,28 @@ width:65vw;
 .topbannerDetailsInAcademy h1{
   font-size:30px;
 }
+.detailOnTopOfBanner{
+  position: relative;
+  width: 100%;
+}
+.overlayContent {
+  position: absolute;
+  top: 50%; /* Adjust the vertical position as needed */
+  left: 26%; /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff; /* Adjust text color as needed */
+  max-width: 50%; /* Adjust the maximum width as needed */
+}
+.overlayContent h3{
+  font-size:30px;
+
+}
+.overlayContent p{
+  font-size:16px;
+  margin-top:5px;
+  color:white !important;
+}
 @media only screen and (max-width: 1175px) {
   .topbannerDetailsInAcademy{
     top:25%;
@@ -221,7 +243,9 @@ width:65vw;
   }
 }
 @media only screen and (max-width: 768px) {
-
+  .overlayContent h3{
+    font-size:24px;
+  }
   .solnsDivstyle,.eachServicesDivstyle{
     border-bottom:1px solid black;
   }
@@ -250,7 +274,7 @@ width:65vw;
   .topbannerDetailsInAcademy{
     top:150px;
   }
- .caseheading, .bannerDetails h2{
+ .caseheading, .bannerDetails h2,.overlayContent p{
   font-size:16px;
   }
   .Faqs p,.subheading, .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
@@ -263,7 +287,7 @@ width:65vw;
   font-size: 24px;
  
 }
-.topbannerDetailsInAcademy h1{
+.topbannerDetailsInAcademy h1,.overlayContent h3{
   font-size:20px !important;
 }
 
@@ -320,6 +344,12 @@ width:65vw;
     bottom:35px;
    
   }
+  .overlayContent{
+    top:45%;
+  }
+  .overlayContent h3{
+    font-size:16px;
+  }
   .letsConnect h2{
     font-size:16px;
   }
@@ -332,7 +362,7 @@ width:65vw;
   .bannerImg{
     height:70vh;
   }
-  .caseheading,.bannerDetails h2{
+  .caseheading,.bannerDetails h2,.overlayContent p{
   font-size:14px;
   }
   .Faqs p, .subheading, .styleDiv p, .bannerDetails p, .detailBox p, .solnsDivstyle p, .eachServicesDivstyle p, .det, .extraText, .careerTable{
@@ -405,9 +435,16 @@ width:65vw;
   {
     font-size:10px !important;
   }
-
+.overlayContent h3{
+    font-size:14px !important;
+  }
   .topbannerDetailsInAcademy{
     left:15px;
     top:130px;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .overlayContent h3{
+    font-size:12px !important;
   }
 }

@@ -294,7 +294,15 @@ export default function Careers() {
 
   return (
     <main>
-      <Image placeholder="blur" blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive" src="/assets/solutions/CareerEnhancement.jpg" alt="Career Guidance and Enhancement" />
+       <div class={classes.detailOnTopOfBanner}>
+      <Image placeholder="blur" blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive" src="/assets/solutions/CareerEnhancement.jpEg" alt="Career Guidance and Enhancement" />
+    
+      <div className={classes.overlayContent}>
+        <h3>Explore Opportunities that<strong style={{color:"#F53855"}}>  Ignite  </strong> Innovation and Propel Growth. </h3>
+
+        <p>Explore exciting career opportunities that offer challenges, learning, and a chance to make a difference. Your career story starts here.</p>
+      </div>
+      </div>
       <div className={classes.bannerDetailsCareer}>
         <h1 class={classes.heading} >Career Guidance and Enhancement</h1>
 

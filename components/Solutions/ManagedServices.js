@@ -97,7 +97,18 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   return (
     <>
     <div>
-       <Image placeholder='blur'  blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"   src="/assets/solutions/ManagedServices.jpg" alt="Managed Services" />
+    <div class={classes.detailOnTopOfBanner}>
+    <Image placeholder='blur'  blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"   src="/assets/solutions/ManagedServices.jpeg" alt="Managed Services" />
+    
+      <div className={classes.overlayContent}>
+      <h3>Reliable Solutions for  <strong style={{color:"#F53855"}}>  Uninterrupted  </strong>  Business Momentum
+ </h3>
+        
+        <p>Navigate the digital landscape effortlessly with our managed services, ensuring seamless system operation. Focus on your business growth while our expert team handles the intricacies.</p>
+      </div>
+      </div>
+       
+       
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Streamline Your Business with Expert Managed Services</h1>
       

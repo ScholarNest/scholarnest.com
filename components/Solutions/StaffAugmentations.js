@@ -136,7 +136,16 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   return (
     <>
     <div>
-       <Image placeholder='blur' blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive" src="/assets/solutions/StaffAugmentation.jpg" alt="Staff Augmentation Services" />
+       <div class={classes.detailOnTopOfBanner}>
+       <Image placeholder='blur' blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive" src="/assets/solutions/StaffAugmentation.jpeg" alt="Staff Augmentation Services" />
+    
+      <div className={classes.overlayContent}>
+        <h3>Boost Productivity with Our<strong style={{color:"#F53855"}}> Flexible </strong>  Staff Augmentation Solutions </h3>
+        
+        <p>Our staff augmentation services seamlessly integrate skilled professionals into your team, ensuring you have the right talent at the right time.</p>
+      </div>
+      </div>
+       
        <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Staff Augmentation Services</h1>
       

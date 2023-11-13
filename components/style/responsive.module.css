@@ -1,49 +1,49 @@
 .bannerDetails{
-    /* position: absolute;
-    top:50px;
-    left:25px;
-    width:70vw; */
-    position:absolute;
-    top:175px;
-    left:25px;
-    width:50vw;
-    color:white;
-    margin-right:20px !important;
-    text-align:start;
+  /* position: absolute;
+  top:50px;
+  left:25px;
+  width:70vw; */
+  position:absolute;
+  top:175px;
+  left:25px;
+  width:50vw;
+  color:white;
+  margin-right:20px !important;
+  text-align:start;
 }
 
 .bannerDetails p{
-    width:50vw;
-    text-align:start;
+  width:50vw;
+  text-align:start;
 }
 .bannerDetailsCareer{
-    width:80vw;
-    position :relative;
-    bottom:50px;
-    margin:0 auto;
-    background-color:white;
-  }
-  .heading{
-    color:rgb(35,110,172);
-     
- 
-     padding:5px 10px;
-     margin:auto;
-     font-size:2.7rem;
-     font-weight:bold;
-     text-align:center;
-     
-     
- }
- .det{
-   position:relative;
-   bottom:35px;
-   font-size:16px;
-   margin:10px 3vw;
- }
- .caseheading{
-    background-color:white;
-    margin-top:20px;
+  width:80vw;
+  position :relative;
+  bottom:50px;
+  margin:0 auto;
+  background-color:white;
+}
+.heading{
+  color:rgb(35,110,172);
+   
+
+   padding:5px 10px;
+   margin:auto;
+   font-size:2.7rem;
+   font-weight:bold;
+   text-align:center;
+   
+   
+}
+.det{
+ position:relative;
+ bottom:35px;
+ font-size:16px;
+ margin:10px 3vw;
+}
+.caseheading{
+  background-color:white;
+  margin-top:20px;
 border-radius:4px;
 }
 .caseheading,.subheading{
@@ -62,50 +62,50 @@ font-size:30px;
 font-size:16px;
 }
 .careerPage h2{
-    font-size:40px;
-    font-weight:bold;
+  font-size:40px;
+  font-weight:bold;
 }
 .careerPage h3{
-    font-size:20px;
+  font-size:20px;
 }
 .careerTable {
 font-size:16px;
 }
 .careerTableTop, .intern {
-    width:75vw;
+  width:75vw;
 }
 .headJob{
-    font-size:30px;
+  font-size:30px;
 }
 .Faqs{
-    display:none;
-  }
-  .Faqs p{
-    font-size:16px;
-  }
-  .h3style{
-    font-size:20px;
-    font-weight:bold;
-    color:black;
-  }
+  display:none;
+}
+.Faqs p{
+  font-size:16px;
+}
+.h3style{
+  font-size:20px;
+  font-weight:bold;
+  color:black;
+}
 .mentorr , .resumeBuilder{
-    background-image: linear-gradient(to right, #fcbb83 , #fd9a73, #ff9a80, #ff7c7c);
-    height:120px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-image: linear-gradient(to right, #fcbb83 , #fd9a73, #ff9a80, #ff7c7c);
+  height:120px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .mentorr h2, .resumeBuilder h2{
-    font-weight:bold;
-    font-size:24px;
+  font-weight:bold;
+  font-size:24px;
 }
 .resumeBuilder{
-    background-image: linear-gradient(to right, #3fdc88,#31cf8c ,#36d98f,#27ca91);
+  background-image: linear-gradient(to right, #3fdc88,#31cf8c ,#36d98f,#27ca91);
 }
 .mentorr:hover , .resumeBuilder:hover{
-    cursor:pointer;
-    transform:scale(1.01);
+  cursor:pointer;
+  transform:scale(1.01);
 }
 .testimoni p{
-    font-size:16px;
+  font-size:16px;
 }
 .testimoni img{
 height:75px;
@@ -113,247 +113,289 @@ width:75px;
 border-radius:50%;
 }
 .bannerButton{
-    font-size:16px;
-    padding :10px 25px;
-    background-color:#F53855;
-     border-radius:5px;
-     margin-top:10px;
-    }
-    .letsConnect h2{
-        font-size:24px;
-      }
-      .letsConnect p{
-        font-size:16px;
-      }
-/* @media only screen and (max-width: 1139px) {
-    .bannerDetails{
-    position: absolute;
-    top:10vh;
-   }
-} */
-@media only screen and (max-width: 1125px) {
-  .bannerDet2{
-    top:150px;
+  font-size:16px;
+  padding :10px 25px;
+  background-color:#F53855;
+   border-radius:5px;
+   margin-top:10px;
   }
+  .letsConnect h2{
+      font-size:24px;
+    }
+    .letsConnect p{
+      font-size:16px;
+    }
+/* @media only screen and (max-width: 1139px) {
+  .bannerDetails{
+  position: absolute;
+  top:10vh;
+ }
+} */
+.detailOnTopOfBanner{
+  position: relative;
+  width: 100%;
+}
+.overlayContent {
+  position: absolute;
+  top: 50%; /* Adjust the vertical position as needed */
+  left: 26%; /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff; /* Adjust text color as needed */
+  max-width: 50%; /* Adjust the maximum width as needed */
+}
+.overlayContent h3{
+  font-size:30px;
+
+}
+.overlayContent p{
+  font-size:16px;
+  margin-top:5px;
+  color:white !important;
+}
+@media only screen and (max-width: 1125px) {
+.bannerDet2{
+  top:150px;
+}
 }
 @media only screen and (max-width: 1074px) {
-  .bannerDetails{
-    top:140px;
-  }
-  .bannerDet2{
-    top:130px;
-  }
+.bannerDetails{
+  top:140px;
+}
+.bannerDet2{
+  top:130px;
+}
 }
 @media only screen and (max-width: 981px) {
-  .bannerDetails{
-    top:125px;
-  }
-  .bannerDet2{
-    top:115px;
-  }
+.bannerDetails{
+  top:125px;
+}
+.bannerDet2{
+  top:115px;
+}
 
-   .careerTableTop{
-    width:85vw;
+ .careerTableTop{
+  width:85vw;
 }
 .intern{
-    width:85vw;
+  width:85vw;
 }
- 
+
 }
 @media only screen and (max-width: 918px) {
-    .caseheading{
-      margin-top:10%;
-    }
-    .bannerDetails {
-      top :100px;
-    }
-    .bannerDet2{
-      top:90px;
-    }
-    .bannerDetails h2{
-     font-size:24px;
-    }
-    .bannerDetails p{
-      margin-top :20px;
-    }
+  .caseheading{
+    margin-top:10%;
   }
-  @media only screen and (max-width: 875px) {
-    .bannerDetails {
-      top :80px;
-    }
-    .bannerDet2 {
-      top :70px;
-    }
+  .bannerDetails {
+    top :100px;
   }
+  .bannerDet2{
+    top:90px;
+  }
+  .bannerDetails h2{
+   font-size:24px;
+  }
+  .bannerDetails p{
+    margin-top :20px;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .bannerDetails {
+    top :80px;
+  }
+  .bannerDet2 {
+    top :70px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
-    .caseheading{
-      margin-top:5%;
-    }
-    .bannerDetails h2, .mentorr h2, .resumeBuilder h2{
-        font-size:20px;
-    }
-    .bannerDetails p{
-        display:none !important;
-       }
-    .bannerDetails{
-      /* top:25%;
-        width:50vw; */
-        top:120px;
-        width:53vw;
-    }
-    .bannerDet2{
-      top:110px;
-    }
+  .caseheading{
+    margin-top:5%;
   }
-  @media only screen and (max-width: 672px) {
-    .bannerDetails{
-      /* top:25%;
-        width:50vw; */
-        top:100px;
-      
-    }
-    .bannerDet2{
-      top:90px;
-      width:50vw;
-    }
-  }
-
-@media only screen and (max-width: 600px) {
-  .bannerDetails{
-    top:80px;
-  }
-  .bannerDet2{
-    top:70px;
-
-  }
-   .h3style{
-    font-size:16px;
-    margin:5px 0;
-  }
- .caseheading,  .mentorr h2, .resumeBuilder h2{
-    font-size:16px;
-}
-   .heading{
-    font-size:30px;
-   }
-  .careerPageVideo h2 , .headJob{
+  .overlayContent h3{
     font-size:24px;
-    }
-    .bannerDetails h2{
-        font-size:20px;
-
-    }
-   .subheading, .letsConnect p, .Faqs p,  .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
-    font-size:14px;
-    }
-   
-    .careerPage h2{
-        font-size:30px;
-    }
-    .careerPage h3{
-        font-size:16px;
-    }
-    .careerTable {
-        font-size:14px;
-    }
-    .careerTableTop, .intern{
-        width:95vw;
-    }
-    .bannerDetailsCareer{
- 
-        bottom:30px;
-       
-      }
-      .letsConnect h2{
-        font-size:20px;
-      }
-}
-@media only screen and (max-width: 560px) {
+  }
+  .bannerDetails h2, .mentorr h2, .resumeBuilder h2{
+      font-size:20px;
+  }
+  .bannerDetails p{
+      display:none !important;
+     }
   .bannerDetails{
-    top:70px;
+    /* top:25%;
+      width:50vw; */
+      top:120px;
+      width:53vw;
   }
   .bannerDet2{
-    top:60px;
-
+    top:110px;
   }
 }
-@media only screen and (max-width: 500px) {
-    .bannerDetails{
-        top:25%;
-          left:15px;
-      }
-      .bannerDetails h2{
-        font-size:16px;
-        }
-}
-@media only screen and (max-width: 430px) {
-
-    .bannerDetails{
-      top:23%;
-      left:15px;
-      }
-      .bannerDet2{
-        top:20%;
-
-      }
-   .caseheading,.h3style{
-    font-size:14px;
+@media only screen and (max-width: 672px) {
+  .bannerDetails{
+    /* top:25%;
+      width:50vw; */
+      top:100px;
     
   }
-   .heading{
-    font-size:24px;
-   }
-   .bannerButton{
-   font-size:12px;
-   padding:4px 20px;
-   }
+  .bannerDet2{
+    top:90px;
+    width:50vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.bannerDetails{
+  top:80px;
+}
+.bannerDet2{
+  top:70px;
+
+}
+ .h3style{
+  font-size:16px;
+  margin:5px 0;
+}
+.caseheading,  .mentorr h2, .resumeBuilder h2{
+  font-size:16px;
+}
+ .heading{
+  font-size:30px;
+ }
+.careerPageVideo h2 , .headJob{
+  font-size:24px;
+  }
+  .bannerDetails h2,.overlayContent h3{
+      font-size:20px;
+
+  }
+ .subheading, .letsConnect p, .Faqs p,  .bannerButton, .bannerDetails p,.careerPageVideo li,.intern p,.aboveIntern p,.det{
+  font-size:14px;
+  }
  
- .subheading,  .letsConnect p,  .Faqs p,.bannerDetails p,.careerPageVideo li{
-    font-size:12px;
+  .careerPage h2{
+      font-size:30px;
+  }
+  .careerPage h3,.overlayContent p{
+      font-size:16px;
+  }
+  .careerTable {
+      font-size:14px;
+  }
+  .careerTableTop, .intern{
+      width:95vw;
+  }
+  .bannerDetailsCareer{
+
+      bottom:30px;
+     
     }
-    .careerPage h2{
-        font-size:24px;
+    .letsConnect h2{
+      font-size:20px;
     }
-    .careerPage h3{
-        font-size:14px;
+}
+
+@media only screen and (max-width: 560px) {
+.bannerDetails{
+  top:70px;
+}
+.bannerDet2{
+  top:60px;
+}
+.overlayContent p{
+  display:none;
+}
+}
+@media only screen and (max-width: 500px) {
+  .bannerDetails{
+      top:25%;
+        left:15px;
     }
-    .careerPageVideo h2, .headJob{
-        font-size:20px;
-        }
-        .careerTable, .intern p,.aboveIntern p {
-            font-size:12px;
+    .bannerDetails h2{
+      font-size:16px;
+      }
+}
+@media only screen and (max-width: 430px) {
+  .overlayContent{
+    top:45%;
+  }
+  .bannerDetails{
+    top:23%;
+    left:15px;
+    }
+    .bannerDet2{
+      top:20%;
+
+    }
+    .overlayContent h3{
+      font-size:16px;
+    }
+ .caseheading,.h3style,.overlayContent p{
+  font-size:14px;
+  
+}
+ .heading{
+  font-size:24px;
+ }
+ .bannerButton{
+ font-size:12px;
+ padding:4px 20px;
+ }
+
+.subheading,  .letsConnect p,  .Faqs p,.bannerDetails p,.careerPageVideo li{
+  font-size:12px;
+  }
+  .careerPage h2{
+      font-size:24px;
+  }
+  .careerPage h3{
+      font-size:14px;
+  }
+  .careerPageVideo h2, .headJob{
+      font-size:20px;
+      }
+      .careerTable, .intern p,.aboveIntern p {
+          font-size:12px;
+          }
+          .testimoni p{
+              font-size:12px !important;
+          }    
+          .letsConnect h2{
+              font-size:16px;
             }
-            .testimoni p{
-                font-size:12px !important;
-            }    
-            .letsConnect h2{
-                font-size:16px;
-              }
 }
 @media only screen and (max-width: 360px) {
+
+  .bannerButton{
+ /* margin:auto auto; */
+ font-size:8px;
+ margin-top:3px;
+ }
+ .heading{
+  font-size:20px;
+ }
+ .bannerDetails{
+  position: absolute;
+  left:15px;
+  top:27%;
+ }
+ .bannerDetails h2{
+  font-size:12px;
+ }
+ .bannerDetails p{
+  font-size:10px;
+ }
+ .careerTable {
+  font-size:6px;
+  }
  
-    .bannerButton{
-   /* margin:auto auto; */
-   font-size:8px;
-   margin-top:3px;
-   }
-   .heading{
-    font-size:20px;
-   }
-   .bannerDetails{
-    position: absolute;
-    left:15px;
-    top:27%;
-   }
-   .bannerDetails h2{
-    font-size:12px;
-   }
-   .bannerDetails p{
-    font-size:10px;
-   }
-   .careerTable {
-    font-size:6px;
-    }
-   
+}
+@media only screen and (max-width: 335px) {
+  .overlayContent h3{
+    font-size:14px !important;
+  }
+}@media only screen and (max-width: 270px) {
+  .overlayContent h3{
+    font-size:12px !important;
+  }
 }

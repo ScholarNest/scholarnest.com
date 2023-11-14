@@ -138,7 +138,7 @@ border-radius:50%;
 .overlayContent {
   position: absolute;
   top: 50%; /* Adjust the vertical position as needed */
-  left: 26%; /* Adjust the horizontal position as needed */
+  left: 28%; /* Adjust the horizontal position as needed */
   transform: translate(-50%, -50%);
   text-align: left;
   color: #fff; /* Adjust text color as needed */

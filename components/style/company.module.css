@@ -23,7 +23,7 @@
    color:rgb(35,110,172);
     padding:10px;
     margin:auto;
-    font-size:2.7rem;
+    font-size:30px;
     font-weight:bold;
     text-align:center;
     
@@ -110,7 +110,7 @@ height:350px;
   max-width: 50%; /* Adjust the maximum width as needed */
 }
 .overlayContent h3{
-  font-size:30px;
+  font-size:24px;
 
 }
 .overlayContent p{
@@ -119,23 +119,22 @@ height:350px;
   color:white !important
 }
 @media only screen and (max-width: 768px) {
-  .overlayContent h3{
-    font-size:24px;
+
+  .overlayContent p{
+    display:none;
   }
 }
 @media only screen and (max-width: 640px) {
   .letsConnect{
     text-align:center;
   }  
+  
+
+}
+@media only screen and (max-width: 600px) {
   .overlayContent h3{
     font-size:20px;
   }
-  .overlayContent p{
-    font-size:16px;
-  }
-}
-@media only screen and (max-width: 600px) {
- 
   .overlayContent{
     top:45%;
   }
@@ -146,7 +145,7 @@ height:350px;
     font-size:14px;
   }
  .heading{
-  font-size:30px;
+  font-size:24px;
  }
  .aboutBox h2{
   font-size: 24px;
@@ -170,17 +169,15 @@ height:350px;
   height:350px;
 }
 }
-@media only screen and (max-width: 550px) {
-  .overlayContent p{
-    display:none;
-  }
-}
+
 
 @media only screen and (max-width: 430px) {
    .overlayContent h3{
     font-size:16px;
   }
-  
+  .heading{
+    font-size:20px !important;
+   }
   .bannerDetails{
    
     bottom:30px;
@@ -216,18 +213,18 @@ height:350px;
 }
 @media only screen and (max-width: 320px) {
   .heading{
-    font-size:24px;
+    font-size:20px;
    } 
    .careerHead{
     font-size:16px;
 
 }
 .overlayContent h3{
-  font-size:14px;
+  font-size:14px !important ;
 }
 }
 @media only screen and (max-width: 230px) {
   .overlayContent h3{
-    font-size:12px;
+    font-size:12px !important;
   }
 }

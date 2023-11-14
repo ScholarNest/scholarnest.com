@@ -2,7 +2,7 @@
    color:rgb(35,110,172);
     padding:5px 10px;
     margin:auto;
-    font-size:2.7rem ;
+    font-size:30px;
     font-weight:bold;
     text-align:center;
     
@@ -157,27 +157,14 @@ height:350px;
       font-size:30px;
   }
 
-.topbannerDetailsInAcademy{
-position:absolute;
-top:30%;
-left:25px;
-width:65vw;
-}
-.topbannerDetailsInAcademy .btn{
+
+.btn{
   background-color:#F53855;
  color:white;
  padding :5px 35px;
 
 }
-.topbannerDetailsInAcademy p{
-  font-size:16px;
-  /* font-weight:500; */
-  margin-top:40px;
-  width:50vw;
-}
-.topbannerDetailsInAcademy h1{
-  font-size:30px;
-}
+
 .detailOnTopOfBanner{
   position: relative;
   width: 100%;
@@ -185,14 +172,14 @@ width:65vw;
 .overlayContent {
   position: absolute;
   top: 50%; /* Adjust the vertical position as needed */
-  left: 26%; /* Adjust the horizontal position as needed */
+  left: 28%; /* Adjust the horizontal position as needed */
   transform: translate(-50%, -50%);
   text-align: left;
   color: #fff; /* Adjust text color as needed */
   max-width: 50%; /* Adjust the maximum width as needed */
 }
 .overlayContent h3{
-  font-size:30px;
+  font-size:24px;
 
 }
 .overlayContent p{
@@ -200,19 +187,13 @@ width:65vw;
   margin-top:5px;
   color:white !important;
 }
-@media only screen and (max-width: 1175px) {
-  .topbannerDetailsInAcademy{
-    top:25%;
-  }
-}
+
 @media only screen and (max-width: 992px) {
   .imgInPurplediv{
     visibility:hidden;
     height:0;
    }
-   .topbannerDetailsInAcademy{
-    top:22%;
-  }
+
 }
 @media only screen and (max-width: 950px) {
 
@@ -223,46 +204,23 @@ width:65vw;
    position: absolute;
    top:7vh;
   } */
-  .topbannerDetailsInAcademy{
-    top:20%;
-  }
- }
- @media only screen and (max-width: 918px) {
-
   
-  .topbannerDetailsInAcademy p{
-    margin-top :20px;
-  }
-  .topbannerDetailsInAcademy h1{
-    font-size:24px;
-   }
-}
-@media only screen and (max-width: 918px) {
-  .topbannerDetailsInAcademy {
-    top:16%;
-  }
-}
+ }
+ 
+
 @media only screen and (max-width: 768px) {
-  .overlayContent h3{
-    font-size:24px;
-  }
+ 
   .solnsDivstyle,.eachServicesDivstyle{
     border-bottom:1px solid black;
   }
-  .topbannerDetailsInAcademy h1{
-    font-size:20px;
-  }
-  .topbannerDetailsInAcademy p{
-   display:none;
-  }
+
    
- .topbannerDetailsInAcademy{
-  top:180px;
-  width:53vw;
- }
- .topbannerDetailsInAcademy p,.topbannerDetailsInAcademy .btn{
+.btn{
   font-size:14px;
   margin-top:10px;
+}
+.overlayContent p{
+  display:none;
 }
 }
 @media only screen and (max-width: 640px) {
@@ -271,23 +229,21 @@ width:65vw;
   }  
 }
 @media only screen and (max-width: 600px) {
-  .topbannerDetailsInAcademy{
-    top:150px;
-  }
- .caseheading, .bannerDetails h2,.overlayContent p{
+  
+ .caseheading, .bannerDetails h2{
   font-size:16px;
   }
   .Faqs p,.subheading, .letsConnect p,.styleDiv p,.bannerDetails p, .detailBox p, .eachServicesDivstyle p, .solnsDivstyle p, .det , .extraText{
     font-size:14px;
   }
  .heading{
-  font-size:30px;
+  font-size:24px !important;
  }
  .detailBox h2, .head,.content, .careerTableTop h1, .letsConnect h2{
   font-size: 24px;
  
 }
-.topbannerDetailsInAcademy h1,.overlayContent h3{
+.overlayContent h3{
   font-size:20px !important;
 }
 
@@ -318,22 +274,12 @@ width:65vw;
   bottom:35px;
  
 }
-}
-@media only screen and (max-width: 550px) {
-  .overlayContent p{
-    display:none;
-  }
+
 }
 
 @media only screen and (max-width: 500px) {
 
-    .topbannerDetailsInAcademy h1{
-      font-size:16px !important;
-    }
-    .topbannerDetailsInAcademy p{
-      font-size:12px;
-    }
-     .topbannerDetailsInAcademy .btn{
+  .btn{
          
      padding :3px 15px;
     
@@ -342,7 +288,7 @@ width:65vw;
 }
 @media only screen and (max-width: 430px) {
   .heading{
-    font-size:24px;
+    font-size:20px !important;
    } 
   .bannerDetails{
  
@@ -392,61 +338,41 @@ width:65vw;
       height:20px;
       width:20px;
     }
-    .topbannerDetailsInAcademy h1{
-      font-size:14px !important;
-    }
-    .topbannerDetailsInAcademy .btn {
-      font-size:10px !important;
+  
+     .btn {
+      font-size:12px !important;
       padding :1px 10px;
       margin-top:1px;
     }
-    .topbannerDetailsInAcademy p{
-      font-size:12px;
-      margin-top:3px;
-    }
+  
 
  
 }
 @media only screen and (max-width: 390px) {
   .heading{
-    font-size:24px;
+    font-size:20px;
    } 
    
     .caseSub h2, .caseSub h3, .caseSub button{
       margin-left: 1%;
     }
-    .topbannerDetailsInAcademy{
-      top:140px;
-    }
-    .topbannerDetailsInAcademy h1
-    {
-      font-size:12px !important;
-    }
-    .topbannerDetailsInAcademy .btn {
+    
+   .btn {
       font-size:10px !important;
     }
-    .topbannerDetailsInAcademy p{
-      font-size:8px;
-      
-    }
    
-    .topbannerDetailsInAcademy .btn{
+   
+     .btn{
          padding :1px 15px;
      
      }
 }
 @media only screen and (max-width: 335px) {
-  .topbannerDetailsInAcademy h1
-  {
-    font-size:10px !important;
-  }
+
 .overlayContent h3{
     font-size:14px !important;
   }
-  .topbannerDetailsInAcademy{
-    left:15px;
-    top:130px;
-  }
+
 }
 @media only screen and (max-width: 270px) {
   .overlayContent h3{

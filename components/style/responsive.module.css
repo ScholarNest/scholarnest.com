@@ -19,7 +19,7 @@
 .bannerDetailsCareer{
   width:80vw;
   position :relative;
-  bottom:50px;
+  bottom:45px;
   margin:0 auto;
   background-color:white;
 }
@@ -29,7 +29,7 @@
 
    padding:5px 10px;
    margin:auto;
-   font-size:2.7rem;
+   font-size:30px;
    font-weight:bold;
    text-align:center;
    
@@ -145,7 +145,7 @@ border-radius:50%;
   max-width: 50%; /* Adjust the maximum width as needed */
 }
 .overlayContent h3{
-  font-size:30px;
+  font-size:24px;
 
 }
 .overlayContent p{
@@ -212,8 +212,9 @@ border-radius:50%;
   .caseheading{
     margin-top:5%;
   }
-  .overlayContent h3{
-    font-size:24px;
+ 
+  .overlayContent p{
+    display: none;
   }
   .bannerDetails h2, .mentorr h2, .resumeBuilder h2{
       font-size:20px;
@@ -260,7 +261,7 @@ border-radius:50%;
   font-size:16px;
 }
  .heading{
-  font-size:30px;
+  font-size:24px !important;
  }
 .careerPageVideo h2 , .headJob{
   font-size:24px;
@@ -276,7 +277,7 @@ border-radius:50%;
   .careerPage h2{
       font-size:30px;
   }
-  .careerPage h3,.overlayContent p{
+  .careerPage h3{
       font-size:16px;
   }
   .careerTable {
@@ -302,9 +303,7 @@ border-radius:50%;
 .bannerDet2{
   top:60px;
 }
-.overlayContent p{
-  display:none;
-}
+
 }
 @media only screen and (max-width: 500px) {
   .bannerDetails{
@@ -328,14 +327,14 @@ border-radius:50%;
 
     }
     .overlayContent h3{
-      font-size:16px;
+      font-size:16px !important;
     }
  .caseheading,.h3style,.overlayContent p{
   font-size:14px;
   
 }
  .heading{
-  font-size:24px;
+  font-size:20px;
  }
  .bannerButton{
  font-size:12px;

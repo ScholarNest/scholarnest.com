@@ -1,11 +1,5 @@
 import multer from 'multer';
 
-// const upload = multer({ dest: 'uploads/' });
-export const config = {
-  api: {
-    bodyParser: false
-  }
-}
 const storage = multer.diskStorage({
   destination: 'uploads/',
   filename: (req, file, cb) => {

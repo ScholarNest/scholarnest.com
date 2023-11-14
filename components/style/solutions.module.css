@@ -353,7 +353,7 @@ width:65vw;
     top:45%;
   }
   .overlayContent h3{
-    font-size:16px;
+    font-size:16px !important;
   }
   .letsConnect h2{
     font-size:16px;

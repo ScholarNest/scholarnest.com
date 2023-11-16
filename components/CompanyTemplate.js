@@ -63,12 +63,12 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
         <p>Explore the pages of our story, and join us in shaping a future defined by innovation, dedication, and unwavering commitment to your success.</p>
       </div>
       </div>
-        <div className={classes.bannerDetails} >
+        {/* <div className={classes.bannerDetails} >
           <h1 class={classes.heading} >Company</h1>
           <h3 >Combining strategy, technology, skills and people</h3>
           <p class="text-center">Thriving in a complex data-driven world isn't easy. The ability to continually innovate and leverage data must be at your organization's core. We work with you and your teams to define, structure, and build the organizational and technical capabilities needed to transform into a modern data-driven business.</p>
-        </div>
-        <br />
+        </div> */}
+        {/* <br /> */}
       </div>
 
       <div id="about" style={{ margin: "0", backgroundColor: "rgb(251 251 249)" }} className={classes.aboutBox + " row"}>

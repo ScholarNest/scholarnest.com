@@ -146,11 +146,11 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       </div>
       </div>
        
-       <div className={classes.bannerDetails}>
+       {/* <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Staff Augmentation Services</h1>
       
        </div>
-       <p   class={classes.det+" text-center"}>Empower your projects with our Staff Augmentation Services. We provide skilled professionals who seamlessly integrate into your team, ensuring immediate productivity and expertise. Whether you need temporary support or specialized talent, our staff augmentation solutions enhance your workforce and drive project success.</p>
+       <p   class={classes.det+" text-center"}>Empower your projects with our Staff Augmentation Services. We provide skilled professionals who seamlessly integrate into your team, ensuring immediate productivity and expertise. Whether you need temporary support or specialized talent, our staff augmentation solutions enhance your workforce and drive project success.</p> */}
      <br />
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-12  d-flex justify-content-center align-items-center" style={{backgroundColor:"purple"}}>

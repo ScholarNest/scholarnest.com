@@ -103,12 +103,12 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
 
       </div>
       </div>
-        <div className={classes.bannerDetails}>
+        {/* <div className={classes.bannerDetails}>
           <h2 class={classes.heading} >ScholarNest Academy: Your Gateway to Learning Excellence</h2>
 
         </div>
         <p class={classes.det+" text-center"} >We provide individuals and organizations with a cohesive and interactive online learning ecosystem. This platform equips trainers, learners, and education stakeholders with information, tools, and resources for seamless skill and knowledge enhancement across various functions and roles.</p>
-    
+     */}
         {/* <div style={{ padding: "0", margin: "auto 0" }} className="row">
           <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12"  style={{ backgroundColor: "purple" }}>
 

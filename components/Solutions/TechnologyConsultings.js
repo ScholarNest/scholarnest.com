@@ -97,12 +97,12 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       </div>
       </div>
       
-      
+{/*       
         <div className={classes.bannerDetails}>
           <h1 class={classes.heading} >Technology Consulting Solutions</h1>
 
         </div>
-        <p class={classes.det + " text-center"} >As business integrators, Our Technology Strategy and advisory practice function on transformational engagements, supporting our clients in solving complicated business concerns using technology as an enabler.</p>
+        <p class={classes.det + " text-center"} >As business integrators, Our Technology Strategy and advisory practice function on transformational engagements, supporting our clients in solving complicated business concerns using technology as an enabler.</p> */}
 
   
 

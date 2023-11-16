@@ -115,12 +115,12 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
         <p>From strategy development to implementation, we're here to enhance efficiency, optimize processes, and drive your success in a rapidly changing marketplace.</p>
       </div>
       </div>
-       <div className={classes.bannerDetails}>
+       {/* <div className={classes.bannerDetails}>
        <h1 class={classes.heading} > Business Solution</h1>
        <h2 >Combining strategy, technology, automation and people</h2>
        <p class="text-center">Thriving in a complex digital world isn’t easy. The ability to continually innovate must be at the core of your organisation. We work with you and your teams to define, structure and build the organisational and technical capabilities needed to transform into a modern digital business. </p>
-       </div>
-     <br />
+       </div> */}
+     {/* <br /> */}
     </div>
     
   

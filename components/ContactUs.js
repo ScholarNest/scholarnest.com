@@ -103,9 +103,9 @@ export default function ContactUs() {
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             ScholarNest Contact information
           </p>
-          <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          <h2 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
             Partnership & Sales:
-          </h1>
+          </h2>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             Want to find out how we can help your team to get skilled or
             interested in partnering with ScholarNest?
@@ -116,9 +116,9 @@ export default function ContactUs() {
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             sales@scholarnest.com
           </p>
-          <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          <h2 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
             Become an Instructor:
-          </h1>
+          </h2>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             Do you want to work with us as an instructor, create and sell
             courses at ScholarNest?{" "}
@@ -129,9 +129,9 @@ export default function ContactUs() {
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             teach@scholarnest.com
           </p>
-          <h1 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
+          <h2 className="text-2xl font-bold mt-4 dark:text-gray-50 text-gray-700">
             Support:
-          </h1>
+          </h2>
           <p className="text-sm text-gray-700 mt-4 font-light dark:text-gray-200">
             Do you want to submit a correction or have any other concerns? Write
             to us in the following emails
@@ -149,9 +149,9 @@ export default function ContactUs() {
           onSubmit={handleSubmit}
           className="rounded-lg mt-4 shadow-xl flex flex-col px-5 py-5 bg-white  border dark:bg-green-500"
         >
-          <h1 className="text-2xl font-bold dark:text-gray-50">
+          <h2 className="text-2xl font-bold dark:text-gray-50">
             Send a message
-          </h1>
+          </h2>
 
           <label
             htmlFor="fullname"

@@ -109,12 +109,12 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       </div>
        
        
-       <div className={classes.bannerDetails}>
+       {/* <div className={classes.bannerDetails}>
        <h1 class={classes.heading} >Streamline Your Business with Expert Managed Services</h1>
       
        </div>
        <p class={classes.det+" text-center"}>Experience uninterrupted business operations with our Managed Services and elevate your data-driven ventures with our Managed Services. From data science to cloud computing and data engineering, we provide expert solutions to streamline and enhance your operations, ensuring success in today's digital landscape.</p>
-     <br />
+   */}  <br /> 
      <div style={{padding:"0",margin:"auto 0"}} className="row">
         <div className="col-lg-6 col-xl-6 col-12  d-flex justify-content-center align-items-center" style={{backgroundColor:"purple",padding:"auto 15px"}}>
           <div class="my-auto">

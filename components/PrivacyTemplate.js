@@ -502,7 +502,7 @@ Any capitalized terms not defined in this policy are defined as specified in Ude
 <h3>
 8.3 Questions</h3> <br />
 <p>
-If you have any questions, concerns, or disputes regarding our Privacy Policy, please feel free to contact our privacy team at  <a href="privacy@scholarnest.com" class="text-info"> privacy@scholarnest.com.</a>
+If you have any questions, concerns, or disputes regarding our Privacy Policy, please feel free to contact our privacy team at  <a href="mailto:privacy@scholarnest.com" class="text-info"> privacy@scholarnest.com.</a>
 </p> <br />
  </div>
 

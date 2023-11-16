@@ -303,13 +303,13 @@ export default function Careers() {
         <p>Explore exciting career opportunities that offer challenges, learning, and a chance to make a difference. Your career story starts here.</p>
       </div>
       </div>
-      <div className={classes.bannerDetailsCareer}>
+      {/* <div className={classes.bannerDetailsCareer}>
         <h1 class={classes.heading} >Career Guidance and Enhancement</h1>
 
       </div>
       <p class={classes.det + " text-center"} >At ScholarNest, We empower your career with expert guidance and enhancement strategies. We also assist you to succeed with confidence and reach your full potential. ScholarNest continuously seeks exceptional talent to join our team and be part of our growth narrative. Below, you'll discover a selection of current openings. If any of these opportunities align with your aspirations, we invite you to submit your application. Join us in shaping our journey forward.
 
-      </p>
+      </p> */}
       {/* section 1 */}
 
 

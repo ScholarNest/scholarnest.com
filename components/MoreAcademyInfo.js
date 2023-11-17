@@ -53,14 +53,14 @@ const MoreAcademyInfo = (props) => {
     {
       heading: "Mastering PySpark",
       desc: "Self-paced Learning",
-      imgPath: "/assets/solutions/AcademySolutions/2.jpg",
+      imgPath: "/assets/solutions/AcademySolutions/2.png",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-pyspark"
     },
     {
       heading: "Mastering Databricks Cloud",
       desc: "Self-paced Learning",
-      imgPath: "/assets/solutions/AcademySolutions/3.jpg",
+      imgPath: "/assets/solutions/AcademySolutions/3.png",
       price: "$149",
       link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"
     },
@@ -68,7 +68,7 @@ const MoreAcademyInfo = (props) => {
     {
       heading: "Apache Kafka for Begginers",
       desc: "Self-paced Learning",
-      imgPath: "/assets/solutions/AcademySolutions/6.jpg",
+      imgPath: "/assets/solutions/AcademySolutions/6.png",
       price: "$24.79",
       link: "https://www.scholarnest.in/courses/apache-kafka-for-beginners"
     },

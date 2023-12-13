@@ -1,0 +1,189 @@
+.banner{
+    min-height:250px;
+    width:100%;
+    background: linear-gradient(to right, #283c5c, #283c3a);
+    color:white;
+
+}
+.banner h1{
+font-size:44px;
+margin:20px 10px;
+text-align:center;
+}
+.banner h3{
+font-size:24px;
+margin:15px 10px;
+text-align:center;
+}
+.courseBox p, .featureBox p,.secondDiv p{
+    font-size:16px;
+    color:black;
+}
+.courseBox h2,.div3 h2{
+    font-size:32px;
+    font-weight:500;
+
+}
+.courseBox h3{
+    font-size:20px;
+}
+.secondDiv h2,.div4 h2, .fifthDiv h2{
+    font-size:32px;
+    font-weight:500;
+}
+.secondDiv h3, .fifthDiv h3 {
+    font-weight:400;
+    font-size:20px;
+    margin:20px auto;
+   
+}
+.thirdDiv{
+    background-color: #F8F2E9;
+    padding: 40px 20px;
+}
+.styleDiv{
+    padding:10px;
+  
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+ 
+
+}
+.styleDiv:hover{
+
+transform:scale(1.01);
+}
+.div4{
+    background-color: #c3d4e8;
+}
+.newBg{
+background-color:#F8F2E9;
+}
+.featureBox {
+text-align:center;
+padding:10px;
+}
+.faqDiv{
+width:100%;
+}
+.h3style{
+font-size:20px;
+font-weight:bold;
+}
+.fourthDiv {
+    background-color:#c3d4e8;
+
+}
+.fourthDiv h2{
+    font-size: 44px;font-weight: bold;
+}
+.videoDet{
+    padding: 30px 30px;
+}
+.clickable{
+    text-decoration: underline;
+    font-size: 16px;
+    color: #6F7282;
+    margin: 0 10px;
+}
+.unclickable{
+    margin: 0 10px;
+    font-size: 16px;
+}
+.ansDiv{
+    display: flex;
+    flex-direction: row;
+}
+.ansDiv .freePreview{
+    width:130px;
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
+    border-radius:8px;
+}
+.courseContent h3{
+    font-size:20px;
+    font-weight:bold;
+    text-align: start !important;
+    margin-left:10px;
+}
+.cardDet{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+}
+.sideBox{
+font-size: 20px !important;
+}
+.enroll h2{
+    font-size: 32px;
+}
+.enroll h3{
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+.banner h1,.fourthDiv h2,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2,.fifthDiv h2{
+font-size:24px;
+}
+.banner h3, .fifthDiv h3,.h3style,.sideBox{
+font-size:18px;
+}
+/* .div3 p, .courseBox p, .featureBox p,.secondDiv p, .ansDiv p,.freePreview{
+    font-size:14px;
+  
+} */
+.enroll h2{
+    font-size: 24px;
+}
+.enroll h3{
+    font-size: 18px;
+}
+
+.courseBox h3,.secondDiv h3 {
+    font-size:16px;
+}
+
+
+.faqDiv{
+max-width:500px;
+}
+
+
+}
+.butns button{
+    border-radius: 50px  !important;
+}
+@media only screen and (max-width: 600px) {
+    .faqDiv{
+        max-width:100%;
+        }
+}
+@media only screen and (max-width: 430px) {
+  
+    .fifthDiv h2, .banner h1, .fourthDiv h2,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
+  font-size:20px;
+  }
+  
+  .div3 p, .courseBox p, .featureBox p,.secondDiv p , .ansDiv p,.freePreview,.unclickable{
+      font-size:14px;
+    
+  }
+  .ansDiv{
+    
+    flex-direction: column;
+}
+.ansDiv button{
+    margin-left:30px;
+}
+  .sideBox, .courseBox h3,.secondDiv h3,.banner h3, .fifthDiv h3,.h3style {
+      font-size:16px;
+  }
+  .enroll h2{
+    font-size: 20px;
+}
+.enroll h3{
+    font-size: 16px;
+}
+
+  
+  
+  }

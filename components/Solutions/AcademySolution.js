@@ -23,7 +23,7 @@ const AcademySolution = () => {
     heading:"Mastering PySpark",
     desc:"Self-paced",
     imgPath:"/assets/solutions/AcademySolutions/2.png",
-    link:"https://www.scholarnest.in/courses/mastering-pyspark"
+    link:"/courses/mastering-pyspark"
   },
   {
     heading:"Mastering Databricks Cloud",

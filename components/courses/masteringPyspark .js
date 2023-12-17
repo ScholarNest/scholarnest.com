@@ -4,7 +4,7 @@ import { Card } from "@nextui-org/react";
 import classes from "./style/extraCourses.module.css";
 import { useRouter } from "next/router";
 
-const MasteringPyspark = (props) => {
+const MasteringPyspark = () => {
     const router = useRouter();
     const [courseSections , setcourseSections] =useState([]);
      const [showMoreLessText, setShowMoreLessText] = useState('Show more');

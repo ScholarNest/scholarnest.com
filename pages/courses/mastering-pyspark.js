@@ -2,7 +2,7 @@ import Header from "../../components/Layout/Header";
 import Footer from "../../components/Layout/Footer";
 import MasteringPyspark from "../../components/courses/MasteringPyspark"
 
-function masteringPyspark() {
+function MasteringPysparkk() {
   return (
     <>
       <Header />
@@ -12,4 +12,4 @@ function masteringPyspark() {
     </>
   );
 }
-export default masteringPyspark;
+export default MasteringPysparkk;

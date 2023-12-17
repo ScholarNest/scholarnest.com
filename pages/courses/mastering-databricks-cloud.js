@@ -4,7 +4,7 @@ import Header from "../../components/Layout/Header";
 import Footer from "../../components/Layout/Footer";
 import MasteringDatabricksCloud from "../../components/courses/MasteringDatabricksCloud"
 
-function masteringDatabricks() {
+function MasteringDatabricks() {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ function masteringDatabricks() {
     </>
   );
 }
-export default masteringDatabricks;
+export default MasteringDatabricks;

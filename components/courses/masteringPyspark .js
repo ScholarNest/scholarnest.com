@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import { Card } from "@nextui-org/react";
 import classes from "./style/extraCourses.module.css";
+import { useRouter } from "next/router";
 
 const MasteringPyspark = (props) => {
+    const router = useRouter();
     const [courseSections , setcourseSections] =useState([]);
      const [showMoreLessText, setShowMoreLessText] = useState('Show more');
     useEffect((()=>{
@@ -29,7 +31,7 @@ const MasteringPyspark = (props) => {
                 { ansId: 8, det: "What is Data Lake and How it works", icon: "1", free: "false", link: "" },
                 { ansId: 9, det: "What is Data Lake and How it works - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 10, det: "Introducing Apache Spark and Databricks Cloud", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 11, det: "Introduction to Databricks Workspace - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 11, det: "Introducing Apache Spark and Databricks Cloud - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 12, det: "Spark Development Environment - Overview and Objectives", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
                 { ansId: 13, det: "Spark Development Environments - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 14, det: "Setup your Databricks Community Cloud Environment", icon: "1", free: "false", link: "" },
@@ -369,51 +371,7 @@ const MasteringPyspark = (props) => {
                 { ansId: 13, det: "An end is the new beginning", icon: "1", free: "false", link: "" }]
         }
     ]
-    const courseList = [
-
-        {
-            heading: "Mastering PySpark",
-            desc: "Self-paced Learning",
-            imgPath: "/assets/solutions/MoreAcademySolutions/2.jpg",
-            price: "$149",
-            link: "https://www.scholarnest.in/courses/mastering-pyspark"
-        },
-        {
-            heading: "Mastering Databricks Cloud",
-            desc: "Self-paced Learning",
-            imgPath: "/assets/solutions/MoreAcademySolutions/3.jpg",
-            price: "$149",
-            link: "https://www.scholarnest.in/courses/mastering-databricks-cloud"
-        },
-        {
-            heading: "Databricks Certified Associate Developer for Apache Spark 3.0",
-            desc: "Self-paced Exam Practice Test",
-            imgPath: "/assets/solutions/MoreAcademySolutions/4.jpg",
-            price: "$36.79",
-            link: "https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
-        },
-        {
-            heading: "Databricks Data Engineer Assoicate Certification Practice Test",
-            desc: "Self-paced Exam Practice Test",
-            imgPath: "/assets/solutions/MoreAcademySolutions/5.jpg",
-            price: "$36.79",
-            link: "https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
-        },
-        {
-            heading: "Apache Kafka for Begginers",
-            desc: "Self-paced Learning",
-            imgPath: "/assets/solutions/MoreAcademySolutions/6.jpg",
-            price: "$24.79",
-            link: "https://www.scholarnest.in/courses/apache-kafka-for-beginners"
-        },
-        {
-            heading: "Apache Spark 3 - Real-time Stream Processing using Python",
-            desc: "Self-paced Learning",
-            link: "https://www.scholarnest.in/bundles/mastering-spark-and-databricks-cloud",
-            price: "$24.79",
-            imgPath: "/assets/solutions/MoreAcademySolutions/7.jpg"
-        }
-    ]
+   
     const IndcourseList = [
 
         {
@@ -421,14 +379,14 @@ const MasteringPyspark = (props) => {
             desc: "Self-paced Learning",
             imgPath: "/assets/solutions/MoreAcademySolutions/courses/justpython.jpg",
             price: "$24.79",
-            link: "https://www.scholarnest.in/courses/just-enough-python-for-pyspark-developers"
+            link: "just-enough-python-for-pyspark-developers"
         },
         {
             heading: "Databricks Certified Associate Developer for Apache Spark 3.0",
             desc: " Self-Paced - Exam Practice Test",
             imgPath:"/assets/solutions/MoreAcademySolutions/courses/databricks.png",
             price: "$36.79",
-            link: "https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
+            link: "databricks-certified-associate-developer-for-apache-spark"
         },
 
         {
@@ -436,7 +394,7 @@ const MasteringPyspark = (props) => {
             desc: "",
             imgPath: "/assets/solutions/MoreAcademySolutions/courses/lakehouse.jpg",
             price: "",
-            link: "https://www.scholarnest.in/courses/getting-started-to-spark-azure-databricks-and-lakehouse-fundamentals-certification-preparation"
+            link: "getting-started-to-spark-azure-databricks-and-lakehouse-fundamentals-certification-preparation"
         },
     ]
     const Faqs = [
@@ -495,59 +453,62 @@ const MasteringPyspark = (props) => {
     }
     return (
         <>
-            <div className={classes.banner + " d-flex justify-content-center align-items-center"}>
+           <div class={classes.mainBody}>
+            <div className={classes.banner + " d-flex justify-content-center align-items-center "}>
                 <div class="mx-auto w-75">
                     <h1> Mastering PySpark</h1>
 
                     <h3 class="text-white text-center">  Master Data Engineering skills with PySpark | Beginner to Pro
                     </h3>
                     <div class={classes.butns + " row gap-2 justify-content-center"}>
-                        <button class="col-sm-5 col-md-3  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href='https://www.scholarnest.in/cart/add_product/2107620?price_id=2854666'>     Buy self-paced for $149.00 </a></button>
+                        <button onClick={()=>{router.push('https://www.scholarnest.in/cart/add_product/2107620?price_id=2854666')}} class={classes.nfpbutn+" col-sm-5 col-md-3  col-12 "}>   Buy self-paced for $149.00</button>
 
-                        <button class="col-sm-5  col-md-3 col-8 btn btn-rounded btn-warning p-2 mx-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a></button>
-                        <button class="col-sm-5 col-md-2 col-8 btn btn-rounded btn-light p-2 mx-2"><a href='https://www.scholarnest.in/order?ct=1116b82e-b73b-4b51-a08b-d6dfb11a0680'>    Free Preview </a> </button>
+                        <button  onClick={()=>{router.push('https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform')}} class={classes.nfpbutn+" col-sm-5  col-md-3 col-12 "}> Enquire for Instructor-led </button>
+                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=4a985180-1b61-4aee-8dfa-cf06b6fa5ff5')}} class=" col-sm-5 col-md-2 col-12 btn btn-light   "> Free Preview  </button>
                     </div>
                     <br />
                 </div>
             </div>
             <br />
+
             <br />
-            <div className="row mx-4 px-md-5">
-                <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 h-100"}>
-                    <h2>What you'll learn</h2>
-                    <br />
-                    <h3 class="my-1"> Mastering PySpark is a comprehensive course that will help you become proficient in PySpark Programming, Spark SQL, Dataframe APIs, Spark Architecture, Performace Tuning and Join Optimization, Advanced Concepts such as AQE, DPP, Memory Management and Unit Testing
+            <div className={classes.secondDiv +" row mx-4 px-md-2"}>
+            <h2 class={classes.headings}>What you'll learn</h2>
+                
+                <div className=" col-12 col-sm-12 col-md-6 h-100">
+                <br />
+                <br />
+                    <h3 class='my-2 px-md-2'> Mastering PySpark is a comprehensive course that will help you become proficient in PySpark Programming, Spark SQL, Dataframe APIs, Spark Architecture, Performace Tuning and Join Optimization, Advanced Concepts such as AQE, DPP, Memory Management and Unit Testing
                     </h3>
 
                 </div>
-                <div className=" col-12 col-sm-12 col-md-6">
-                    <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
+                <div className={classes.afterSecndDiv+" col-12 col-sm-12 col-md-6 px-2 px-md-5"}>
+                <br />
+
+                <br />
+                    <p class="d-flex my-2"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class={classes.sideIcon+" bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg> Learn Apache Spark and PySpark programming from beginner to advanced</p>
+                    </svg>PySpark Programming - Data Engineering and Data Processing using PySpark and Spark SQL</p>
+                    <br />
                     <hr />
-                    <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
+                    <br />
+                    <p class="d-flex my-2"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" fill="currentColor" class={classes.sideIcon+" bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg> Master Databricks Cloud, Lakehouse Architecture and other Databricks Tools.</p>
+                    </svg>Spark Architecture - Understanding Spark internals, Performance optimization, Memory Management</p>
+                    <br />
                     <hr />
+                    <br />
 
 
-                    <p class="d-flex my-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
+                    <p class="d-flex my-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  class={classes.sideIcon+" bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                         </svg>
-                        Prepare and Practice for Spark Developer Associate and Data Engineer Associate Certifications</p>
+                        Advanced Concepts - Data Sources and Sinks, Adaptive Query Optimization, Dynamic Partition Pruning, Unit Testing</p>
+                        <br />
                     <hr />
-                    <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg> Learn Apache Kafka and Spark Structured Streaming
-                    </p>
-                    <hr />
-                    <p class="d-flex my-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                        </svg>
-                        Bonus learning with Python Programming and AWS Cloud Fundamentals.</p>
-                    <hr />
+                    <br />
+                    
                 </div>
 
             </div>
@@ -555,24 +516,28 @@ const MasteringPyspark = (props) => {
             <br />
             <br />
             {/* 3rd Section */}
-            <div className={classes.thirdDiv + " row mx-0 px-md-5"}>
-                <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 h-100"}>
-                    <h2>Course Prerequisite</h2>
-                    <br />
-                    <h3 class="my-1">What do you need to know before you start this course
+            <div className={classes.secondDiv +" "+classes.thirdDiv+ " row mx-0 px-md-5"}>
+            <h2  class={classes.headings}>Course Prerequisite</h2>
+                <div className=" col-12 col-sm-12 col-md-6 my-2">
+                   
+                    <h3 class="">What do you need to know before you start this course
                     </h3>
 
                 </div>
                 <div className=" col-12 col-sm-12 col-md-6">
-                    <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
+                    <p class="d-flex "> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg>Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
+                    <br />
                     <hr />
-                    <p class="d-flex my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mt-1 mr-2 bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
+                    <br />
+                    <p class="d-flex "> <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg>
                         A Recent 64-bit Windows/Mac Machine with 8 GB RAM & Internet Connection</p>
+                        <br />
                     <hr />
+                    <br />
 
 
 
@@ -587,9 +552,9 @@ const MasteringPyspark = (props) => {
                         Hear out instructor
                     </h2>
                 </div>
-                <div className={classes.videoDet + " col-md-6 col-12"}>
+                <div className={classes.videoDet + " col-md-6 col-12 d-flex justify-content-center align-items-center"}>
 
-                    <iframe frameborder="0" width="100%" height="360" allowfullscreen="" class="videoproxy__iframe" src="https://platform.thinkific.com/videoproxy/v1/play/cc8ap9r40u9f3c7bgkg0?autoplay=false"></iframe>
+                    <iframe frameborder="0" allowfullscreen="" class="videoproxy__iframe embed-responsive-item" src="https://platform.thinkific.com/videoproxy/v1/play/cc8ap9r40u9f3c7bgkg0?autoplay=false"></iframe>
                 </div>
             </div>
             <br />
@@ -603,7 +568,7 @@ const MasteringPyspark = (props) => {
                 <br />
 
                 <div className="col-md-8 col-12">
-                    <div className={classes.faqDiv + " "}>
+                    <div className={ " "}>
 
                         {
                             courseSections.map((quest) => {
@@ -667,23 +632,23 @@ const MasteringPyspark = (props) => {
                   <div class='mb-2' style={{width:"50px",height:'1px',backgroundColor:'black',marginLeft:'10px'}}></div>
                   <div className=' ml-2 px-3 py-2'>
                     <div className="d-flex my-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi mr-2 bi-tag-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon+" bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
   <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
 </svg>
                   <p class={classes.sideBox}>$149.00</p>
                   </div>
                   <div className="d-flex my-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class='mr-2' height="30" width="30" viewBox="0 0 448 512"><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7 .1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3 .3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7 .1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon+" mr-2"} viewBox="0 0 448 512"><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7 .1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3 .3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7 .1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z"/></svg>
                   
                   <p class={classes.sideBox}>Practice Quiz & Assignment</p></div>
                   <div className="d-flex my-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi mr-2 bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon+" bi mr-2 bi-file-earmark-arrow-down-fill"} viewBox="0 0 16 16">
   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
 </svg>
 <p class={classes.sideBox}>PDF & Source Code</p>
                   </div>
                   <div className="d-flex my-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className='mr-2' height="30" width="30" viewBox="0 0 640 512"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className={classes.sideBoxIcon+" mr-2"} viewBox="0 0 640 512"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>
                   <p class={classes.sideBox}>Total Support</p>
                   </div>
                   </div>
@@ -700,23 +665,23 @@ const MasteringPyspark = (props) => {
                 <h2 class={" my-2 mx-3"}>Features & Support</h2>
                 <br />
                 <div className="row mx-0 justify-content-center">
-                    <div className={classes.featureBox + " col-10 col-sm-6 col-lg-3 col-md-4 bg-white border"}>
+                    <div className={classes.featureBox + " col-10 col-sm-6 col-md-4 bg-white border "}>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" class="mx-auto my-3" viewBox="0 0 448 512"><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7.1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3.3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7.1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z" /></svg>
-                        <h3 class="my-3 fw-bold"> Total Support</h3>
-                        <p> We provide support throughout your learning and answer every question in our discussion and Q&A forum. You may also avail of one-to-one technical support calls for blocker issues. </p></div>
-                    <div className={classes.featureBox + " col-10 col-sm-6 col-lg-3 bg-white border col-md-4"}>
+                        <h3  class={classes.h3style}> Total Support</h3>
+                        <p class='p-3'> We provide support throughout your learning and answer every question in our discussion and Q&A forum. You may also avail of one-to-one technical support calls for blocker issues. </p></div>
+                    <div className={classes.featureBox + " col-10 col-sm-6 bg-white border col-md-4"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi mx-auto my-3 bi-mortarboard-fill" viewBox="0 0 16 16">
                             <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
                             <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
                         </svg>
-                        <h3 class="my-3 fw-bold">Certification Ready</h3>
-                        <p>The course covers the Apache Spark Developer Associate and Databricks Certified Data Engineer Associate certification exam curriculum. By the end of the course, you will be ready to take the certification exam. </p></div>
-                    <div className={classes.featureBox + " col-10 col-sm-6 col-lg-3 bg-white border col-md-4"}>
+                        <h3  class={classes.h3style}>Certification Ready</h3>
+                        <p class='p-3'>The course covers the Apache Spark Developer Associate and Databricks Certified Data Engineer Associate certification exam curriculum. By the end of the course, you will be ready to take the certification exam. </p></div>
+                    <div className={classes.featureBox + " col-10 col-sm-6  bg-white border col-md-4"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi mx-auto my-3 bi-cup-fill" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z" />
                         </svg>
-                        <h3 class="my-3 fw-bold"> Capstone Project</h3>
-                        <p> The course includes many hands-on assignments/solutions and a major real-life capstone project with the complete solution, source code, and explanation. </p></div>
+                        <h3 class={classes.h3style}> Capstone Project</h3>
+                        <p class='p-3'> The course includes many hands-on assignments/solutions and a major real-life capstone project with the complete solution, source code, and explanation. </p></div>
                 </div>
                 <br />
             </div>
@@ -740,8 +705,8 @@ const MasteringPyspark = (props) => {
                             }
                             return (
                                 <div class="my-2" >
-                                    <div style={{ cursor: "pointer" }} onClick={() => { openSolution(quest.id) }} className="row rounded mx-auto  p-3 w-100 justify-content-between question">
-                                        <h3 class={classes.h3style + " col-10 d-flex"}> {quest.ques}</h3>
+                                    <div style={{ cursor: "pointer" }} onClick={() => { openSolution(quest.id) }} className="row rounded mx-auto  my-2 p-3 w-100 justify-content-between question">
+                                        <p class= " col-10 d-flex fw-bold text-black"> {quest.ques}</p>
                                         <a class="col-1  text-end" >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi align-self-end bi-caret-down-fill" viewBox="0 0 16 16">
                                                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -762,7 +727,7 @@ const MasteringPyspark = (props) => {
             <div style={{minHeight:"300px"}} class={classes.div4 + " row mx-0 px-md-5"}>
                 <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'> 
                 <div class={classes.enroll}>
-                    <h2>Enroll into self-paced course</h2>
+                    <h2 class={classes.headings+" fw-bold"}>Enroll into self-paced course</h2>
                     <br />
                     <h3 style={{maxWidth:"700px"}}>Discover your potential, start today and learn at your own schedule</h3>
                     </div>
@@ -770,25 +735,26 @@ const MasteringPyspark = (props) => {
                 </div>
               
                 <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
-                        <button style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> <a href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> Buy  $149 </a></button>
+                        <button style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> <a href="https://www.scholarnest.in/order?ct=30e49b07-a047-4d76-89b0-53507f093acd"> Buy  $149 </a></button>
                     </div>
                   
              
             </div>
             
             <div  style={{ backgroundColor: "#F8F2E9" }} >
-            <div className="row mx-4  px-md-5">
-                <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 p-2 py-5 h-100"}>
-                    <h2>Schedule a free call</h2>
-                    <br />
+            <div className="row mx-4 py-5 px-md-5">
+            <h2 class={classes.headings}>Schedule a free call</h2>
+                <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 p-2  h-100"}>
+                   
+                <br />
                     <p class="my-1">Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
                     </p>
 
                 </div>
-                <div className={classes.secondDiv + " col-12 col-md-6 col-6 py-5"}>
+                <div className={classes.secondDiv + " col-12 col-md-6 col-6 my-1"}>
+                <br />
                     <div >
-                        <h3>For Instructor-led training</h3>
-
+                        <h3 class={classes.h3style +" my-2"}>For Instructor-led training</h3>
 
                         <p class="fw-bold mb-2"> Course Enquiry: <a style={{ textDecoration: "underline" }} href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform" target="_blank">  Request callback </a></p>
                         <p class="mb-2">
@@ -797,18 +763,21 @@ const MasteringPyspark = (props) => {
 
                         <hr />
                     </div>
+                    <br />
                     <div>
 
-                        <h3>Email</h3>
+                        <h3 class={classes.h3style +" my-2"}>Email</h3>
                         <p class="fw-bold mb-2">
                             Email: sushant@scholarnest.com
                         </p>
                         <p class="mb-2">Contact us for current promotional offers, course bundles, and additional payment methods such as NEFT, Net Banking, UPI, etc.</p>
                     </div>
+                    
                     <hr />
+                    <br />
                     <div>
 
-                        <h3 >WhatsApp</h3>
+                        <h3 class={classes.h3style +" my-2"}>WhatsApp</h3>
                         <p class="fw-bold mb-2">
                             WhatsApp: +91-93534 65988
                         </p>
@@ -822,7 +791,7 @@ const MasteringPyspark = (props) => {
             <br /><br />
             <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
-                <h2 class={"  my-2"}>Related Courses:</h2>
+                <h2 class={classes.heading+"  my-2"}>Related Courses:</h2>
                 <p>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
 
                 {
@@ -850,11 +819,10 @@ const MasteringPyspark = (props) => {
                 }
 
 
-
-
                 <a href="https://www.scholarnest.in/collections">
-                    <button className='px-lg-3 px-xl-3 px-md-3 px-sm-1 px-1 py-lg-3 py-xl-3 py-md-3 py-1 py-sm-2 fw-semibold btn btn-danger rounded-pill mx-4 my-4'>View more courses</button>
+                    <button className='px-lg-3 px-xl-3 px-md-3 px-sm-1 px-1 py-lg-3 py-xl-3 py-md-3 py-1 py-sm-2 fw-semibold btn  rounded-pill mx-4 my-4'>View more courses</button>
                 </a>
+            </div>
             </div>
         </>
     )

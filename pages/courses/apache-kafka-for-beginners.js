@@ -1,15 +1,15 @@
 import Header from "../../components/Layout/Header";
 import Footer from "../../components/Layout/Footer";
-import MasteringPyspark from "../../components/courses/MasteringPyspark "
+import ApacheKafkaForBegginer from "../../components/courses/ApacheKafkaForBegginer"
 
-function masteringPyspark() {
+function ApacheKafka() {
   return (
     <>
       <Header />
-       <MasteringPyspark />
+       <ApacheKafkaForBegginer />
    
       <Footer />
     </>
   );
 }
-export default masteringPyspark;
+export default ApacheKafka;

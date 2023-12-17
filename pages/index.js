@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <SeoHead title='Build your Business and Career with us | Scholarnest India' description='Elevate your tech capabilities with our expert services. From staff augmentation to cloud computing and technology consulting, we specialize in Spark & Databricks training and data engineering. Unlock the power of data-driven innovation.' />
       <CookieConsentBanner />
-
+ 
       <Layout>
         <LazyHero />
         <Services/>

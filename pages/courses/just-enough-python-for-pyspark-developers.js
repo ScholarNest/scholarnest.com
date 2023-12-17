@@ -1,15 +1,15 @@
 import Header from "../../components/Layout/Header";
 import Footer from "../../components/Layout/Footer";
-import MasteringPyspark from "../../components/courses/MasteringPyspark "
+import JustPythonForPyspark from "../../components/courses/JustPythonForPyspark"
 
-function masteringPyspark() {
+function PythonForPyspark() {
   return (
     <>
       <Header />
-       <MasteringPyspark />
+       <JustPythonForPyspark />
    
       <Footer />
     </>
   );
 }
-export default masteringPyspark;
+export default PythonForPyspark;

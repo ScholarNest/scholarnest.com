@@ -1,15 +1,15 @@
 import Header from "../../components/Layout/Header";
 import Footer from "../../components/Layout/Footer";
-import MasteringPyspark from "../../components/courses/MasteringPyspark "
+import DatabricksDataEngineer from "../../components/courses/DatabricksDataEngineer"
 
-function masteringPyspark() {
+function DatabricksData() {
   return (
     <>
       <Header />
-       <MasteringPyspark />
+       <DatabricksDataEngineer />
    
       <Footer />
     </>
   );
 }
-export default masteringPyspark;
+export default DatabricksData;

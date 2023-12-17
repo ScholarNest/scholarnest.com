@@ -29,26 +29,45 @@ const AcademySolution = () => {
     heading:"Mastering Databricks Cloud",
     desc:"Self-paced Learning",
     imgPath:"/assets/solutions/AcademySolutions/3.png",
-    link:"https://www.scholarnest.in/courses/mastering-databricks-cloud"
+    link:"/courses/mastering-databricks-cloud"
   },
   {
     heading:"Databricks Certified Associate Developer for Apache Spark 3.0",
     desc:"Self-paced Exam Practice Test",
     imgPath:"/assets/solutions/AcademySolutions/4.png",
-    link:"https://www.scholarnest.in/courses/databricks-certified-associate-developer-for-apache-spark"
+    link:"courses/databricks-certified-associate-developer-for-apache-spark"
   },
   {
     heading:"Databricks Data Engineer Assoicate Certification Practice Test",
     desc:"Self-paced Exam Practice Test",
     imgPath:"/assets/solutions/AcademySolutions/5.png",
-    link:"https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
+    link:"courses/databricks-data-engineer-associate-certification-practice-test"
   },
   {
     heading:"Apache Kafka for Begginers",
     desc:"Latest course on Apache Kafka",
     imgPath:"/assets/solutions/AcademySolutions/6.png",
-    link:"https://www.scholarnest.in/courses/apache-kafka-for-beginners"
+    link:"courses/apache-kafka-for-beginners"
   },
+  {
+    heading:"AWS Cloud Practitioner",
+    desc:"Self-paced Learning",
+    imgPath:"/assets/solutions/AcademySolutions/8.jpg",
+    link:"courses/learning-aws-cloud-fundamentals"
+  },
+  {
+    heading:"Just Enough Python for PySpark Developers",
+    desc:"Self-paced Learning",
+    imgPath:"/assets/solutions/AcademySolutions/9.jpg",
+    link:"courses/just-enough-python-for-pyspark-developers"
+  },
+  {
+    heading:"Apache Spark 3 - Real-time Stream Processing using Python",
+    desc:"Self-paced Learning",
+    imgPath:"/assets/solutions/AcademySolutions/10.png",
+    link:"courses/apache-spark-3-real-time-stream-processing-using-python"
+  },
+
  ]
   const upcomingCourse=[
     {
@@ -154,11 +173,11 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       </div>
 
 
-      <a href="https://www.scholarnest.in/collections">
+      {/* <a href="https://www.scholarnest.in/collections">
       <button  className='px-lg-3 px-xl-3 px-md-3 px-sm-1 px-1 py-lg-3 py-xl-3 py-md-3 py-1 py-sm-2 fw-semibold btn btn-danger rounded-pill mx-4 my-4'>View more courses</button>
       </a>
       <br />
-     
+      */}
 
       <h2  class={classes.head+" text-center my-3"}>Instructor-led Live Courses</h2>
       <br />

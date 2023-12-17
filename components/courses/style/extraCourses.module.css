@@ -1,21 +1,98 @@
-.banner{
-    min-height:250px;
-    width:100%;
-    background: linear-gradient(to right, #283c5c, #283c3a);
-    color:white;
-
+.mainBody{
+    font-family:"Libre Baskerville",sans-serif;
 }
-.banner h1{
+
+.banner{
+    min-height:300px;
+    width:100%;
+    background: linear-gradient(to right, #113a5c, #586c80);
+    /* background:linear-gradien(rgba(0,0,0,0.27), rgba(0,0,0,0.27)); */
+    color:white;
+    
+    font-family: "Source Sans Pro",sans-serif !important;
+}
+.bannerForDb{
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://import.cdn.thinkific.com/648407%2Fcustom_site_themes%2Fid%2FgdkWvKYTvyA6VR3ec41A_bg.jpg?width=1920");
+    position: relative;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1, .newbanner h1{
 font-size:44px;
+margin:20px 10px;
+font-weight: bold;
+text-align:center;
+font-family:Roboto,sans-serif;
+}
+.banner h3,.newbanner h3{
+font-size:24px;
 margin:20px 10px;
 text-align:center;
 }
-.banner h3{
-font-size:24px;
-margin:15px 10px;
-text-align:center;
+.butns{
+    margin:30px 10px;
+    
 }
-.courseBox p, .featureBox p,.secondDiv p{
+.nfpbutn{
+    background-color: #e79913;
+    color: white;
+  
+}
+.nfpbutn:hover{
+    background-color: #a06a0e;
+}
+.butns button{
+    border-radius: 50px  !important;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px;
+}
+/* banner ends */
+.secondDiv{
+    text-rendering:  optimizeLegibility;;
+    word-break: break-word;
+}
+.secondDiv p{
+    font-size:16px;
+    color:#212326;
+    line-height: 1.5;
+}
+.headings{
+    font-size: 36px;
+    font-weight: 400;
+}
+.secondDiv h3{
+    font-size: 20px;
+    line-height: 1.35;
+}
+.sideIcon{
+    height:50px;
+    width:50px;
+}
+/* Second div ends */
+.thirdDiv{
+    background-color: #F8F2E9;
+    padding: 40px 20px;
+    min-height: 350px;
+}
+
+.videoDet{
+    padding: 30px;
+   
+}
+.videoDet iframe{
+    width:100%;
+    height: 350px;
+}
+/* Hear out ends */
+
+.sideBoxIcon{
+    height:20px;
+     width:20px;
+}
+.courseBox p, .featureBox p{
     font-size:16px;
     color:black;
 }
@@ -27,20 +104,17 @@ text-align:center;
 .courseBox h3{
     font-size:20px;
 }
-.secondDiv h2,.div4 h2, .fifthDiv h2{
+.div4 h2, .fifthDiv h2{
     font-size:32px;
     font-weight:500;
 }
-.secondDiv h3, .fifthDiv h3 {
+ .fifthDiv h3 {
     font-weight:400;
     font-size:20px;
     margin:20px auto;
    
 }
-.thirdDiv{
-    background-color: #F8F2E9;
-    padding: 40px 20px;
-}
+
 .styleDiv{
     padding:10px;
   
@@ -53,7 +127,7 @@ text-align:center;
 transform:scale(1.01);
 }
 .div4{
-    background-color: #c3d4e8;
+    background-color: #F8F2E9;
 }
 .newBg{
 background-color:#F8F2E9;
@@ -63,22 +137,22 @@ text-align:center;
 padding:10px;
 }
 .faqDiv{
-width:100%;
+width:50%;
 }
+
 .h3style{
 font-size:20px;
-font-weight:bold;
+font-weight:400;
 }
 .fourthDiv {
     background-color:#c3d4e8;
 
 }
 .fourthDiv h2{
-    font-size: 44px;font-weight: bold;
+    font-size: 44px;
+    font-weight: bold;
 }
-.videoDet{
-    padding: 30px 30px;
-}
+
 .clickable{
     text-decoration: underline;
     font-size: 16px;
@@ -110,7 +184,7 @@ font-weight:bold;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
 }
 .sideBox{
-font-size: 20px !important;
+font-size: 16px !important;
 }
 .enroll h2{
     font-size: 32px;
@@ -119,18 +193,35 @@ font-size: 20px !important;
     font-size: 24px;
 }
 
+.imgFor2ndTypeSubCourse{
+width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .videoDet iframe{
+        width:70%;
+        height: 250px;
+    }
+    .videoDet{
+        padding: 0 30px;
+    }
+    .faqDiv{
+        width:70%;
+        }
+}
+
 @media only screen and (max-width: 600px) {
   
-.banner h1,.fourthDiv h2,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2,.fifthDiv h2{
-font-size:24px;
+.banner h1, .newbanner h1, .fourthDiv h2,.courseBox h2,.div3 h2,.headings,.div4 h2,.fifthDiv h2{
+font-size:34px;
 }
-.banner h3, .fifthDiv h3,.h3style,.sideBox{
+.banner h3, .fifthDiv h3,.h3style,.secondDiv h3,.newbanner h3 {
 font-size:18px;
 }
 /* .div3 p, .courseBox p, .featureBox p,.secondDiv p, .ansDiv p,.freePreview{
     font-size:14px;
   
 } */
+
 .enroll h2{
     font-size: 24px;
 }
@@ -138,29 +229,59 @@ font-size:18px;
     font-size: 18px;
 }
 
-.courseBox h3,.secondDiv h3 {
+.courseBox h3{
     font-size:16px;
 }
 
 
-.faqDiv{
-max-width:500px;
-}
 
 
 }
-.butns button{
-    border-radius: 50px  !important;
-}
-@media only screen and (max-width: 600px) {
-    .faqDiv{
-        max-width:100%;
-        }
+
+
+@media only screen and (max-width: 500px) {
+    .videoDet iframe{
+        width:90%;
+        height: 200px;
+    }
+   
 }
 @media only screen and (max-width: 430px) {
   
-    .fifthDiv h2, .banner h1, .fourthDiv h2,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
-  font-size:20px;
+    .fifthDiv h2, .banner h1,.newbanner h1, .fourthDiv h2,.courseBox h2,.div3 h2,.headings,.div4 h2{
+  font-size:30px;
+  }
+  
+  .div3 p, .courseBox p, .featureBox p,.secondDiv p , .ansDiv p,.freePreview,.unclickable,.sideBox,.newbanner h3{
+      font-size:14px;
+    
+  }
+  .ansDiv{
+    
+    flex-direction: column;
+}
+.ansDiv button{
+    margin-left:30px;
+}
+  .courseBox h3,.secondDiv h3,.banner h3, .fifthDiv h3,.h3style {
+      font-size:16px;
+  }
+  .enroll h2{
+    font-size: 20px;
+}
+.enroll h3{
+    font-size: 16px;
+}
+
+.faqDiv{
+    width:90%;
+    }
+  
+  }
+  @media only screen and (max-width: 300px) {
+  
+    .fifthDiv h2, .banner h1, .newbanner h1, .fourthDiv h2,.courseBox h2,.div3 h2,.headings,.div4 h2{
+  font-size:24px;
   }
   
   .div3 p, .courseBox p, .featureBox p,.secondDiv p , .ansDiv p,.freePreview,.unclickable{
@@ -172,18 +293,21 @@ max-width:500px;
     flex-direction: column;
 }
 .ansDiv button{
-    margin-left:30px;
+    margin-left:20px;
 }
-  .sideBox, .courseBox h3,.secondDiv h3,.banner h3, .fifthDiv h3,.h3style {
-      font-size:16px;
+  .sideBox, .courseBox h3,.secondDiv h3,.banner h3,.newbanner h3, .fifthDiv h3,.h3style {
+      font-size:14px;
   }
   .enroll h2{
-    font-size: 20px;
+    font-size: 18px;
 }
 .enroll h3{
-    font-size: 16px;
+    font-size: 14px;
 }
 
-  
+.videoDet iframe{
+    width:100%;
+    height: 150px;
+}
   
   }

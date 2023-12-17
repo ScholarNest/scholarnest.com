@@ -1,15 +1,15 @@
 import Header from "../../components/Layout/Header";
 import Footer from "../../components/Layout/Footer";
-import MasteringPyspark from "../../components/courses/MasteringPyspark "
+import LearningAWSContainer from "../../components/courses/LearningAWSContainer"
 
-function masteringPyspark() {
+function LearningAWS() {
   return (
     <>
       <Header />
-       <MasteringPyspark />
+       <LearningAWSContainer />
    
       <Footer />
     </>
   );
 }
-export default masteringPyspark;
+export default LearningAWS;

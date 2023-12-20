@@ -33,20 +33,21 @@ const MasteringPyspark = () => {
                 { ansId: 10, det: "Introducing Apache Spark and Databricks Cloud", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
                 { ansId: 11, det: "Introducing Apache Spark and Databricks Cloud - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 12, det: "Spark Development Environment - Overview and Objectives", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 13, det: "Spark Development Environments - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 14, det: "Setup your Databricks Community Cloud Environment", icon: "1", free: "false", link: "" },
-                { ansId: 15, det: "Setup your Databricks Community Cloud Environment - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Introduction to Databricks Workspace", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 17, det: "Introduction to Databricks Workspace - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 18, det: "Create Your First Spark Application in Databricks Cloud", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 19, det: "Create Your First Spark Application in Databricks Cloud - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 20, det: "Setup Your Local Development IDE", icon: "1", free: "false", link: "" },
-                { ansId: 21, det: "Setup your Local Development IDE - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 22, det: "Mac Users - Setup your Local Development IDE", icon: "1", free: "false", link: "" },
-                { ansId: 23, det: "Create Your First Spark Application using IDE", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 24, det: "Create Your First Spark Application using IDE - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 25, det: "Ch1: Assignment", icon: "3", free: "false", link: "" },
-                { ansId: 26, det: "Ch1: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+                { ansId: 13, det: "Spark Development Environments", icon: "1", free: "true", link: "https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5" },
+                { ansId: 14, det: "Spark Development Environments - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 15, det: "Setup your Databricks Community Cloud Environment", icon: "1", free: "false", link: "" },
+                { ansId: 16, det: "Setup your Databricks Community Cloud Environment - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 17, det: "Introduction to Databricks Workspace", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
+                { ansId: 18, det: "Introduction to Databricks Workspace - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 19, det: "Create Your First Spark Application in Databricks Cloud", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
+                { ansId: 20, det: "Create Your First Spark Application in Databricks Cloud - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 21, det: "Setup Your Local Development IDE", icon: "1", free: "false", link: "" },
+                { ansId: 22, det: "Setup your Local Development IDE - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 23, det: "Mac Users - Setup your Local Development IDE", icon: "1", free: "false", link: "" },
+                { ansId: 24, det: "Create Your First Spark Application using IDE", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
+                { ansId: 25, det: "Create Your First Spark Application using IDE - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 26, det: "Ch1: Assignment", icon: "3", free: "false", link: "" },
+                { ansId: 27, det: "Ch1: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
         },
         {
             id: 3,
@@ -231,6 +232,8 @@ const MasteringPyspark = () => {
                 { ansId: 8, det: "Understanding Spark Dataframe Reader - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 9, det: "Reading CSV, JSON, Parquet, and AVRO File", icon: "1", free: "false", link: "" },
                 { ansId: 10, det: "Reading CSV, JSON, Parquet, and AVRO File - Notes", icon: "3", free: "false", link: "" },
+                { ansId: 10, det: "Reading Data with Schema-on-read", icon: "1", free: "false", link: "" },
+                { ansId: 10, det: "Reading Data with Schema-on-read - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 11, det: "DataFrameReader Options for CSV, JSON and Others", icon: "1", free: "false", link: "" },
                 { ansId: 12, det: "DataFrameReader Options for CSV, JSON and Others - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 13, det: "Understanding Spark DataframeWriter", icon: "1", free: "false", link: "" },
@@ -345,8 +348,8 @@ const MasteringPyspark = () => {
             id: 15,
             ques: "Ch14: Miscellaneous and Interview Topics",
             ans: [
-                { ansId: 1, det: "Ch13: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch13: Downloadable Materials", icon: "2", free: "false", link: "" },
+                { ansId: 1, det: "Ch14: Downloadable Documents", icon: "2", free: "false", link: "" },
+                { ansId: 2, det: "Ch14: Downloadable Materials", icon: "2", free: "false", link: "" },
                 { ansId: 3, det: "Creating and Using UDFs", icon: "1", free: "false", link: "" },
                 { ansId: 4, det: "Creating and Using UDFs - Notes", icon: "3", free: "false", link: "" },
                 { ansId: 5, det: "Unit Testing in Spark", icon: "1", free: "false", link: "" },
@@ -411,7 +414,7 @@ const MasteringPyspark = () => {
         {
             id: "faq3",
             ques: "How do you provide support?",
-            ans: "We offer both options. Our Self-paced courses allow you to learn at your convenience, while our instructor-led courses provide guided learning with real-time interaction and support."
+            ans: "We have a Q&A forum where you can ask questions, and our team will answer your queries. We also provide a course coordinator's email address and WhatsApp number so you can reach out to us if you need one-to-one technical support."
         }
     ]
     const renderIcon = (icon) => {
@@ -461,10 +464,10 @@ const MasteringPyspark = () => {
                     <h3 class="text-white text-center">  Master Data Engineering skills with PySpark | Beginner to Pro
                     </h3>
                     <div class={classes.butns + " row gap-2 justify-content-center"}>
-                        <button onClick={()=>{router.push('https://www.scholarnest.in/cart/add_product/2107620?price_id=2854666')}} class={classes.nfpbutn+" col-sm-5 col-md-3  col-12 "}>   Buy self-paced for $149.00</button>
+                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} class={classes.nfpbutn+" col-sm-5 col-md-3  col-12 "}>   Buy self-paced for $149.00</button>
 
                         <button  onClick={()=>{router.push('https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform')}} class={classes.nfpbutn+" col-sm-5  col-md-3 col-12 "}> Enquire for Instructor-led </button>
-                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=4a985180-1b61-4aee-8dfa-cf06b6fa5ff5')}} class=" col-sm-5 col-md-2 col-12 btn btn-light   "> Free Preview  </button>
+                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} class=" col-sm-5 col-md-2 col-12 btn btn-light   "> Free Preview  </button>
                     </div>
                     <br />
                 </div>
@@ -668,14 +671,14 @@ const MasteringPyspark = () => {
                     <div className={classes.featureBox + " col-10 col-sm-6 col-md-4 bg-white border "}>
                         <svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" class="mx-auto my-3" viewBox="0 0 448 512"><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7.1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3.3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7.1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z" /></svg>
                         <h3  class={classes.h3style}> Total Support</h3>
-                        <p class='p-3'> We provide support throughout your learning and answer every question in our discussion and Q&A forum. You may also avail of one-to-one technical support calls for blocker issues. </p></div>
+                        <p class='p-3'> We provide support throughout your learning and answer every question within 24 business hours. You may also avail one-to-one technical support calls for blocker issues. </p></div>
                     <div className={classes.featureBox + " col-10 col-sm-6 bg-white border col-md-4"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi mx-auto my-3 bi-mortarboard-fill" viewBox="0 0 16 16">
                             <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
                             <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
                         </svg>
                         <h3  class={classes.h3style}>Certification Ready</h3>
-                        <p class='p-3'>The course covers the Apache Spark Developer Associate and Databricks Certified Data Engineer Associate certification exam curriculum. By the end of the course, you will be ready to take the certification exam. </p></div>
+                        <p class='p-3'>The course covers the curriculum for Databricks Certified Associate Developer for Apache Spark 3.0 - Python certification exam. </p></div>
                     <div className={classes.featureBox + " col-10 col-sm-6  bg-white border col-md-4"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi mx-auto my-3 bi-cup-fill" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z" />
@@ -724,7 +727,7 @@ const MasteringPyspark = () => {
             </div>
             <br />
             <br />
-            <div style={{minHeight:"300px"}} class={classes.div4 + " row mx-0 px-md-5"}>
+            <div style={{minHeight:"300px",backgroundColor:'#c3d4e8'}} class={classes.div4 + " row mx-0 px-md-5"}>
                 <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'> 
                 <div class={classes.enroll}>
                     <h2 class={classes.headings+" fw-bold"}>Enroll into self-paced course</h2>
@@ -735,7 +738,7 @@ const MasteringPyspark = () => {
                 </div>
               
                 <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
-                        <button style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> <a href="https://www.scholarnest.in/order?ct=30e49b07-a047-4d76-89b0-53507f093acd"> Buy  $149 </a></button>
+                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> Buy  $149.00 </button>
                     </div>
                   
              

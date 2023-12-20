@@ -12,11 +12,14 @@
     font-family: "Source Sans Pro",sans-serif !important;
 }
 .bannerForDb{
+
+    min-height:380px;
     background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://import.cdn.thinkific.com/648407%2Fcustom_site_themes%2Fid%2FgdkWvKYTvyA6VR3ec41A_bg.jpg?width=1920");
     position: relative;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .banner h1, .newbanner h1{
@@ -103,6 +106,9 @@ text-align:center;
 }
 .courseBox h3{
     font-size:20px;
+}
+.courseBox button:hover{
+    background-color: #9FA6B2;
 }
 .div4 h2, .fifthDiv h2{
     font-size:32px;

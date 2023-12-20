@@ -150,7 +150,7 @@ const DatabricksDataEngineer = () => {
 
                     <h3 class="text-white text-center"> Get prepared for Spark certification Exam | Python | Practice Test</h3>
                     <div class={classes.butns + " row gap-2 justify-content-center"}>
-                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3edcdc86-1bcf-4d7d-a980-7896e1deb069')}} class={classes.nfpbutn+" col-sm-4 col-md-2  col-8 "}>   Buy $36.79</button>
+                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} class={classes.nfpbutn+" col-sm-4 col-md-2  col-8 "}>   Buy $36.79</button>
 
                     </div>
                     <br />
@@ -228,7 +228,7 @@ Incremental Data Processing – 22% (10/45)</p>
                 <h2>
                     Course Content
                 </h2>
-                <h3>130 lectures - 25 hours video - Capstone Project</h3>
+                <h3>5 Practice Sets | 300 Questions | Explanations</h3>
                 <br />
 
                 <div className="col-md-8 col-12">
@@ -406,7 +406,7 @@ A Recent 64-bit Windows/Mac Machine with 8 GB RAM & Internet Connection</p>
             </div>
             <br />
             <br />
-            <div style={{minHeight:"300px"}} class={classes.div4 + " row mx-0 px-md-5"}>
+            <div style={{minHeight:"300px",backgroundColor:'#c3d4e8'}} class={classes.div4 + " row mx-0 px-md-5"}>
                 <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'> 
                 <div class={classes.enroll}>
                     <h2 class={classes.headings+" fw-bold"}>Enroll and start practice</h2>
@@ -417,7 +417,7 @@ A Recent 64-bit Windows/Mac Machine with 8 GB RAM & Internet Connection</p>
                 </div>
               
                 <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
-                        <button onClick={()=>{ router.push("https://www.scholarnest.in/order?ct=30e49b07-a047-4d76-89b0-53507f093acd")}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold">Buy  $36.79 </button>
+                        <button onClick={()=>{ router.push("https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5")}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold">Buy  $36.79 </button>
                     </div>
                   
              

@@ -256,7 +256,7 @@ const LearningAWSContainer = () => {
                         <h3 class="text-dark text-center"> Self-Paced Learning</h3>
                        <div className={classes.butns+" row justify-content-center gap-2"}>
                         <button class={classes.nfpbutn +"  col-sm-5 col-md-4 col-12 btn"} onClick={() => { router.push('https://www.scholarnest.in/order?ct=3edcdc86-1bcf-4d7d-a980-7896e1deb069') }} >   Buy $24.79</button>
-                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=4a985180-1b61-4aee-8dfa-cf06b6fa5ff5')}} class=" col-sm-5 col-md-3 col-12 btn btn-light "> Free Preview  </button>
+                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} class=" col-sm-5 col-md-3 col-12 btn btn-light "> Free Preview  </button>
 
                         </div>
                         </div>

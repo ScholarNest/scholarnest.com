@@ -1,5 +1,5 @@
 .mainBody{
-    font-family:"Libre Baskerville",sans-serif;
+    font-family: "Source Sans Pro",sans-serif !important;
 }
 
 .banner{
@@ -9,7 +9,6 @@
     /* background:linear-gradien(rgba(0,0,0,0.27), rgba(0,0,0,0.27)); */
     color:white;
     
-    font-family: "Source Sans Pro",sans-serif !important;
 }
 .bannerForDb{
 
@@ -65,6 +64,7 @@ text-align:center;
 .headings{
     font-size: 36px;
     font-weight: 400;
+    font-family:"Libre Baskerville",sans-serif;
 }
 .secondDiv h3{
     font-size: 20px;
@@ -92,8 +92,8 @@ text-align:center;
 /* Hear out ends */
 
 .sideBoxIcon{
-    height:20px;
-     width:20px;
+    height:27px;
+     width:27px;
 }
 .courseBox p, .featureBox p{
     font-size:16px;

@@ -182,14 +182,14 @@ const JustPythonForPyspark = () => {
           desc:"Self-paced Exam Practice Test",
           imgPath:"/assets/solutions/AcademySolutions/4.png",
           price: "$36.79",
-          link:"courses/databricks-certified-associate-developer-for-apache-spark"
+          link:"/courses/databricks-certified-associate-developer-for-apache-spark"
         },
         {
           heading:"Apache Spark 3 - Real-time Stream Processing using Python",
           desc:"Self-paced Learning",
           imgPath:"/assets/solutions/AcademySolutions/10.png",
           price: "$24.79",
-          link:"courses/apache-spark-3-real-time-stream-processing-using-python"
+          link:"/courses/apache-spark-3-real-time-stream-processing-using-python"
         },
 
     ]

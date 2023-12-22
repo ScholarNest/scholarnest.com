@@ -114,10 +114,11 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
       <Image  placeholder="blur" blurDataURL={blurDataURL} loading="lazy" height="500px" width="1100px" layout="responsive"  src="/assets/solutions/AcademySolutions/scholarnest-website-academy-page-1100X600.jpg" alt="Data Engineering with Spark and DataBricks" />
     
       <div className={classes.overlayContent}>
-      <h3>Reliable Solutions for  <strong style={{color:"#F53855"}}>  Uninterrupted  </strong>  Business Momentum
+      <h3> Become a Data Engineering Expert with Spark | <strong style={{color:"#F53855"}}>  Databricks </strong>  
  </h3>
-        
-        <p>Navigate the digital landscape effortlessly with our managed services, ensuring seamless system operation. Focus on your business growth while our expert team handles the intricacies.</p>
+
+
+        <p>Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.</p>
         <button class={classes.btn +" btn mt-sm-3"}><a href="/mastering-spark-and-databricks-cloud-instructor-led-course">Enquire about the Courses </a> </button>
 
       </div>

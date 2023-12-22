@@ -323,7 +323,7 @@ const MasteringDatabricksCloud = () => {
             desc:"Self-paced Exam Practice Test",
             imgPath:"/assets/solutions/AcademySolutions/5.png",
             price: "$36.79",
-            link:"courses/databricks-data-engineer-associate-certification-practice-test"
+            link:"/courses/databricks-data-engineer-associate-certification-practice-test"
           },
         {
             heading: "Just Enough Python for PySpark Developers",

@@ -45,7 +45,7 @@ text-align:center;
 .nfpbutn:hover{
     background-color: #a06a0e;
 }
-.butns button{
+.butns a{
     border-radius: 50px  !important;
     font-size: 18px;
     font-weight: 400;

@@ -280,11 +280,16 @@ const LearningAWSContainer = () => {
                         <h1 class="text-center">AWS Cloud Practitioner</h1>
 
                         <h3 class="text-dark text-center"> Self-Paced Learning</h3>
-                       <div className={classes.butns+" row justify-content-center gap-2"}>
-                        <button class={classes.nfpbutn +"  col-sm-5 col-md-4 col-12 btn"} onClick={() => { router.push('https://www.scholarnest.in/order?ct=3edcdc86-1bcf-4d7d-a980-7896e1deb069') }} >   Buy $24.79</button>
-                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=6cdfad3f-98c4-4d0c-ad5c-230196d52bd5')}} class=" col-sm-5 col-md-3 col-12 btn btn-light "> Free Preview  </button>
 
-                        </div>
+                        <div class={classes.butns + " row gap-2 justify-content-center"}>
+                        <a class={classes.nfpbutn+" col-sm-5 col-md-4  col-12 text-center "} 
+                        href="https://www.scholarnest.in/enroll/2222089">
+                         Buy $24.79
+                        </a>
+                        <a  href='https://www.scholarnest.in/enroll/2222089?et=free_trial' class=" col-sm-5 col-md-4 col-12 btn btn-light  text-center  "> Free Preview  </a>
+                   
+            
+                </div>
                         </div>
                   
                     
@@ -420,7 +425,7 @@ const LearningAWSContainer = () => {
           </div>
 
           <div class=" col-md-2 col-8 d-flex justify-content-center  align-items-center">
-            <button onClick={() => { router.push("https://www.scholarnest.in/order?ct=3edcdc86-1bcf-4d7d-a980-7896e1deb069") }} class="btn rounded-pill w-75  p-2 text-center text-dark btn-light fw-bold">Enroll today </button>
+            <button onClick={() => { router.push("https://www.scholarnest.in/enroll/2222089") }} class="btn rounded-pill w-75  p-2 text-center text-dark btn-light fw-bold">Enroll today </button>
           </div>
 
 

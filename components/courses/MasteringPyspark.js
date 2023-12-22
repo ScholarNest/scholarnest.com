@@ -490,10 +490,11 @@ const MasteringPyspark = () => {
                     <h3 class="text-white text-center">  Master Data Engineering skills with PySpark | Beginner to Pro
                     </h3>
                     <div class={classes.butns + " row gap-2 justify-content-center"}>
-                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} class={classes.nfpbutn+" col-sm-5 col-md-3  col-12 "}>   Buy self-paced for $149.00</button>
-
-                        <button  onClick={()=>{router.push('https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform')}} class={classes.nfpbutn+" col-sm-5  col-md-3 col-12 "}> Enquire for Instructor-led </button>
-                        <button  onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} class=" col-sm-5 col-md-2 col-12 btn btn-light   "> Free Preview  </button>
+                        <a class={classes.nfpbutn+" col-sm-5 col-md-3  col-12 text-center "} href="https://www.scholarnest.in/cart/add_product/2107620?price_id=2854666">
+                         Buy self-paced for $149.00
+                        </a>
+                        <a  href='https://forms.gle/Nxk8dQUPq4o4XsA47' class={classes.nfpbutn+" col-sm-5  col-md-3 col-12 text-center "}> Enquire for Instructor-led </a>
+                        <a  href='https://www.scholarnest.in/enroll/2107620?et=free_trial' class=" col-sm-5 col-md-2 col-12 btn btn-light  text-center  "> Free Preview  </a>
                     </div>
                     <br />
                 </div>
@@ -789,7 +790,7 @@ Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
                 </div>
               
                 <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
-                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5')}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> Buy  $149.00 </button>
+                        <button onClick={()=>{router.push('https://www.scholarnest.in/enroll/2107620')}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> Buy  $149.00 </button>
                     </div>
                   
              

@@ -176,9 +176,11 @@ const DatabricksDataEngineer = () => {
 
                     <h3 class="text-white text-center"> Get prepared for Spark certification Exam | Python | Practice Test</h3>
                     <div class={classes.butns + " row gap-2 justify-content-center"}>
-                        <button onClick={()=>{router.push('https://www.scholarnest.in/order?ct=6cdfad3f-98c4-4d0c-ad5c-230196d52bd5')}} class={classes.nfpbutn+" col-sm-4 col-md-2  col-8 "}>   Buy $36.79</button>
-
-                    </div>
+                        <a class={classes.nfpbutn+" col-sm-4 col-md-2  col-8 text-center "} 
+                        href="https://www.scholarnest.in/enroll/2255006">
+                         Buy  $36.79
+                        </a>
+                        </div>
                     <br />
                 </div>
             </div>
@@ -449,7 +451,7 @@ A Recent 64-bit Windows/Mac Machine with 8 GB RAM & Internet Connection</p>
                 </div>
               
                 <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
-                        <button onClick={()=>{ router.push("https://www.scholarnest.in/order?ct=6cdfad3f-98c4-4d0c-ad5c-230196d52bd5")}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold">Buy  $36.79 </button>
+                        <button onClick={()=>{ router.push("https://www.scholarnest.in/enroll/2255006")}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold">Buy  $36.79 </button>
                     </div>
                   
              

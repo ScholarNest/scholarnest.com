@@ -508,7 +508,10 @@ const MasteringPyspark = () => {
                 <div className=" col-12 col-sm-12 col-md-6 h-100">
                 <br />
                 <br />
-                    <h3 class='my-2 px-md-2'> Mastering PySpark is a comprehensive course that will help you become proficient in PySpark Programming, Spark SQL, Dataframe APIs, Spark Architecture, Performace Tuning and Join Optimization, Advanced Concepts such as AQE, DPP, Memory Management and Unit Testing
+                    <h3 class='my-2 px-md-2'> 
+                    Mastering PySpark is a comprehensive course that will help you become proficient in PySpark Programming, 
+                    Spark SQL, Dataframe APIs, Spark Architecture, Performace Tuning and Join Optimization, Advanced Concepts such as AQE, 
+                    DPP, Memory Management and Unit Testing.
                     </h3>
 
                 </div>

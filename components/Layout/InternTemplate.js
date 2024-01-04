@@ -79,19 +79,20 @@ const InternTemplate = ({props}) => {
     }).then((res) => {
       console.log('Response received')
       if (res.status === 200) {
-        console.log('Response succeeded!')
+        const inputFields = document.querySelectorAll('#applyForm input');
+        inputFields.forEach((field) => {
+          field.value = ''; // Reset input field value
+        });
+        const selectFields = document.querySelectorAll('#applyForm select');
+        selectFields.forEach((field) => {
+          field.value = ''; // Reset input field value
+        });
+        const textAreaFields = document.querySelectorAll('#applyForm textarea');
+        textAreaFields.forEach((field) => {
+          field.value = ''; // Reset input field value
+        });
         alert("Details has been submitted Succesfully !")
-        
-        setTitle("")
-        setFname("")
-        setLname("")
-        setMail("")
-        setMobile("")
-        setSkills("")
        
-        setLocation("")
-        setReloc("")
-        setResume(null)
       }else{
         alert("Error: Try again !")
       }
@@ -153,74 +154,7 @@ const InternTemplate = ({props}) => {
       
        </div>
       </div>
-    {/* Skills and Roles, Responsibilities
-    <div style={{margin:"2%",padding:"10px"}}>
- <div style={{margin:"0"}} className="row">
-  <div className="col-lg-6 col-md-6 col-sm-12"><h3 class={classes.h1Style}> Role & Responsibilities </h3 >
-   <div class="px-4 py-3">
-   <ul style={{  listStyleType:"disc"}}>
-  <li>Working with our development manager to develop client custom applications, or core product offerings, based on written specifications both functional and technical.</li>
-  <li>Unit testing of those applications</li>
-  <li>Design and develop systems to support both business and technical requirements which includes mapping user requirements for effective Dynamics 365 technology solutions</li>
-  <li>Responsible for development efforts for software enhancements, extensions, defect corrections and integration of features in Dynamics 365
-  <li>Supporting core and custom applications for bugs.</li>
-  <li>Maintain multiple projects and deadlines. These are normally prioritized thru 2-week SCRUM Sprints for all developers using agile development practices.</li>
-  <li>Recording time and work progress on a daily basis</li>
-</li>
-</ul>
-
-   </div>
-  </div>
-  <div style={{backgroundColor:"rgb(251 251 249)",minHeight:"500px"}}className="col-lg-6 col-md-6 col-sm-12">
-    <h3 class={classes.h1Style}> Skills/Experience </h3>
-    <h3 class={classes.contentInPara+" px-4 py-3"} style={{fontSize:"16px",fontWeight:"500"}}>Technologies</h3>
-    <div class="px-5">
-   
-   <ul style={{  listStyleType:"disc"}}>
-  <li>Experience in MS Dynamics CRM 2016, D365 CRM.</li>
-  <li>Basic Knowledge in Power Platform (PowerApps, Power Automate)</li>
-  <li>Extensive experience with plug-in and workflows activity development.
-</li>
-<li>Good experience on MS CRM customization and configuration of Entities, forms and field level, Ribbon development, and Web resource.
-</li>
-<li>Extensive experience with plug-in and workflow activity development
-</li>
-<li>Experience of implementation and development of Dashboards and Charts.</li>
-<li>Experience in integrating Canvas App with Forms.</li>
-<li>Implementing security roles, with access and privileges levels, with different security models.
-</li>
-<li>Experience on OOB functionalities feature, Business Rules, Business Process Flows, and Actions.</li>
-</ul>
-
-   </div>
-   <div class="px-4 py-3">
-   <h3 class={ classes.contentInPara+" mb-2" } >Functional Area</h3>
-
-    <p>Product Development</p>
-   </div>
-   <div class="px-4 py-3">
-   <h3 class={ classes.contentInPara+" mb-2" }>Education</h3>
-    <p>Bachelor’s degree in a Computer Science, or equivalent practical experience
-</p>
-   </div>
-   <div class="px-4 py-3">
-   <h3 class={ classes.contentInPara+" mb-2" }>Soft Skills</h3>
-    <ul class="px-4" style={{  listStyleType:"disc"}}>
-      <li>Proficiency to handle complex and quality demanding jobs.</li>
-      <li>Should have good Communication skills.
-</li>
-<li>Should have technical bent of mind.
-
-</li>
-<li>Should have problem solving, prioritizing tasks, multi-tasking abilities.
-</li>
-<li>Should be able to understand and handle tasks independently.
-</li>
-    </ul>
-   </div>
-</div>
- </div>
- </div> */}
+  
     {/* Form */}
     <div id="applyForm" style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",marginTop:"15px", backgroundColor:"whitesmoke"}}class="mx-4 px-5 py-2">
       <form enctype="multipart/form-data" onSubmit={sendMail}>

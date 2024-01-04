@@ -96,8 +96,7 @@ const CareerTemplate = ({ props }) => {
       body: dataa
     }).then((res) => {
       if (res.status === 200) {
-        alert("Details has been submitted Succesfully !")
-
+        
         setTitle("")
         setFname("")
         setLname("")
@@ -111,6 +110,8 @@ const CareerTemplate = ({ props }) => {
         setLocation("")
         setReloc("")
         setResume(null)
+        alert("Details has been submitted Succesfully !")
+
         // document.getElementById("applyForm").style.height = "0";
       }else{
         alert("Error: Try again !")

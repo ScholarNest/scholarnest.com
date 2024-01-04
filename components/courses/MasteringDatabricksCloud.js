@@ -693,7 +693,7 @@ PySpark Programming and Spark SQL knowledge</p>
             <div style={{minHeight:"300px",backgroundColor:'#c3d4e8'}} class={classes.div4 + " row mx-0 px-md-5"}>
                 <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'> 
                 <div class={classes.enroll}>
-                    <h2 class={classes.headings+" fw-bold"}>Enroll into self-paced course</h2>
+                    <h2 class={classes.Enrollheadings+" fw-bold"}>Enroll into self-paced course</h2>
                     <br />
                     <h3 style={{maxWidth:"700px"}}>Discover your potential, start today and learn at your own schedule</h3>
                     </div>
@@ -713,8 +713,8 @@ PySpark Programming and Spark SQL knowledge</p>
                 <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 p-2  h-100"}>
                    
                 <br />
-                    <p class="my-1">Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
-                    </p>
+                    <h3 class="my-1">Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
+                    </h3>
 
                 </div>
                 <div className={classes.secondDiv + " col-12 col-md-6 col-6 my-1"}>

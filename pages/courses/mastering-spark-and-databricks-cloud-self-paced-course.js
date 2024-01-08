@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from "../components/Layout/Header";
-import Footer from "../components/Layout/Footer";
-import MoreAcademyInfo from "../components/MoreAcademyInfo";
-import SeoHead from "../components/SeoHead";
-import CookieConsentBanner from "../components/CookieConsentBanner";
+import Header from "../../components/Layout/Header";
+import Footer from "../../components/Layout/Footer";
+import MoreAcademyInfo from "../../components/MoreAcademyInfo";
+import SeoHead from "../../components/SeoHead";
+import CookieConsentBanner from "../../components/CookieConsentBanner";
 
 const MasterData = () => {
   const link="https://www.scholarnest.in/order?ct=d63c7586-29c1-4cd4-bbc6-f47afb6577f4";

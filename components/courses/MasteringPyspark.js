@@ -809,7 +809,7 @@ Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
                     <div >
                         <h3 class={classes.h3style +" my-2"}>For Instructor-led training</h3>
 
-                        <p class="fw-bold mb-2"> Course Enquiry: <a style={{ textDecoration: "underline" }} href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform" target="_blank">  Request callback </a></p>
+                        <p class="fw-bold mb-2"> Course Enquiry: <a style={{ textDecoration: "underline" }} href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform" >  Request callback </a></p>
                         <p class="mb-2">
                             Looking for an Instructor-led course? We have Instructor-led batches starting every month. Fill out the course inquiry form, and we will contact you with more details.
                         </p>
@@ -845,7 +845,7 @@ Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
             <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
                 <h2 class={classes.heading+"  my-2"}>Related Courses:</h2>
-                <p>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
+                <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
 
                 {
                     IndcourseList.map((data, index) => {

@@ -8,9 +8,20 @@ import { AiOutlineMail } from 'react-icons/ai';
 const isBrowser = typeof window !== 'undefined';
 import classes from './careerTemplate&InternTemplate.module.css';
 
-const CareerTemplate = ({ props }) => {
+const CareerTemplate = () => {
+  const [inData, setiNData] = useState("");
 
-  // USer details
+  useEffect(() => {
+    // Retrieve data from local storage
+    const storedData = localStorage.getItem('myData');
+
+    // Handle the stored data as needed
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      setiNData(parsedData);
+      // Use the parsedData as required
+    }
+  }, []);
   const [title, setTitle] = useState("");
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -24,7 +35,7 @@ const CareerTemplate = ({ props }) => {
   const [location, setLocation] = useState("");
   const [Reloc, setReloc] = useState("");
   const [resume, setResume] = useState(null);
-  const [data, setdata] = useState(props);
+  
   const router = useRouter();
 
 
@@ -44,10 +55,10 @@ const CareerTemplate = ({ props }) => {
     console.log("details are", title, fname, lname);
     const name = fname + " " + lname
     let data = {
-      jobtitle: props.title,
-      jobcode: props.code,
-      subject: props.subject,
-      organization: props.organization,
+      jobtitle: inData.title,
+      jobcode: inData.code,
+      subject: inData.subject,
+      organization: inData.organization,
       title,
       name,
       mail,
@@ -61,10 +72,10 @@ const CareerTemplate = ({ props }) => {
       Reloc,
     }
     if (
-      !props.title ||
-      !props.code ||
-      !props.subject ||
-      !props.organization ||
+      !inData.title ||
+      !inData.code ||
+      !inData.subject ||
+      !inData.organization ||
       !name ||
       !mail ||
       !mobile ||
@@ -127,7 +138,7 @@ const CareerTemplate = ({ props }) => {
     <>
       <div class={classes.applyTemp}>
         <div className={classes.careerTemplate + " w-75 row"}>
-          <h1 >{props.title}</h1>
+          <h1 >{inData.title}</h1>
         </div>
 
         <hr size="20" style={{ border: "3px solid red", height: "3px !important", width: "70px", marginLeft: "15px" }} />
@@ -141,52 +152,52 @@ const CareerTemplate = ({ props }) => {
         <div style={{ margin: "3%", backgroundColor: "whitesmoke", padding: "16px" }}>
           <div style={{ margin: "0", }} class="row justify-content-start">
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <AiFillBulb class="mt-1" size="17" /> Job Title</h3>
-              <h3 class={classes.h1Style}>{props.title}</h3>
+              <h3 class={classes.h3Style}> <AiFillBulb class="mt-sm-1 mx-1" size="17" /> Job Title</h3>
+              <h3 class={classes.h1Style}>{inData.title}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17} /> Exprience</h3>
-              <h3 class={classes.h1Style}>{props.exp}</h3>
+              <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-sm-1 mx-1" size={17} /> Exprience</h3>
+              <h3 class={classes.h1Style}>{inData.exp}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}>  <AiOutlineCopy class="mt-1" size={17} />Relevant Experience</h3>
-              <h3 class={classes.h1Style}>{props.rexp}</h3>
+              <h3 class={classes.h3Style}>  <AiOutlineCopy class="mt-sm-1 mx-1" size={17} />Relevant Experience</h3>
+              <h3 class={classes.h1Style}>{inData.rexp}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}><AiOutlineCopy class="mt-1" size={17} />Work Location</h3>
-              <h3 class={classes.h1Style}>{props.location}</h3>
+              <h3 class={classes.h3Style}><AiOutlineCopy class="mt-sm-1 mx-1" size={17} />Work Location</h3>
+              <h3 class={classes.h1Style}>{inData.location}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <AiFillBulb class="mt-1" size="17" /> Budget</h3>
+              <h3 class={classes.h3Style}> <AiFillBulb class="mt-sm-1 mx-1" size="17" /> Budget</h3>
               <h3 class={classes.h1Style}>As per market standard</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17} /> Primary skills</h3>
-              <h3 class={classes.h1Style}>{props.skill}</h3>
+              <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-sm-1 mx-1" size={17} /> Primary skills</h3>
+              <h3 class={classes.h1Style}>{inData.skill}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-1" size={17} /> No. of position</h3>
-              <h3 class={classes.h1Style}>{props.noOfpos}</h3>
+              <h3 class={classes.h3Style}> <AiOutlineCopy class="mt-sm-1 mx-1" size={17} /> No. of position</h3>
+              <h3 class={classes.h1Style}>{inData.noOfpos}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <CiTimer  class="mt-1" size="17" /> Notice period</h3>
+              <h3 class={classes.h3Style}> <CiTimer  class="mt-sm-1 mx-1" size="17" /> Notice period</h3>
               <h3 class={classes.h1Style}>0-4 week</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}> <AiOutlineMail class="mt-1" size={17} /> Mail to</h3>
-              <h3 class={classes.h1Style}>scholarnest@gmail.com</h3>
+              <h3 class={classes.h3Style}> <AiOutlineMail class="mt-sm-1 mx-1" size={17} /> Mail to</h3>
+              <h3 class={classes.h1Style}> scholarnestmarketing@gmail.com</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4">
-              <h3 class={classes.h3Style}>  <AiOutlineCopy class="mt-1" size={17} />Posted on</h3>
-              <h3 class={classes.h1Style}>{props.Date}</h3>
+              <h3 class={classes.h3Style}>  <AiOutlineCopy class="mt-sm-1 mx-1" size={17} />Posted on</h3>
+              <h3 class={classes.h1Style}>{inData.Date}</h3>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-4 mb-4">
-              <h3 class={classes.h3Style}><AiOutlineCopy class="mt-1" size={17} />Job Status</h3>
-              <h3 class={classes.h1Style}>{props.status}</h3>
+              <h3 class={classes.h3Style}><AiOutlineCopy class="mt-sm-1 mx-1" size={17} />Job Status</h3>
+              <h3 class={classes.h1Style}>{inData.status}</h3>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 mt-4 mb-4">
-              <h3 class={classes.h3Style}><AiFillBulb class="mt-1" size="17" />Job Code</h3>
-              <h3 class={classes.h1Style}>{props.code}</h3>
+            <div className="col-lg-3 col-md-3 col-sm-6  ">
+              <h3 class={classes.h3Style}><AiFillBulb class="mt-sm-1 mx-1" size="17" />Job Code</h3>
+              <h3 class={classes.h1Style}>{inData.code}</h3>
             </div>
           </div>
         </div>
@@ -260,11 +271,11 @@ const CareerTemplate = ({ props }) => {
         </div> */}
 
       </div>
-      <div id='applyForm'  style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", marginTop: "15px",backgroundColor: "whitesmoke" }} class="mx-4 px-5 py-2">
+      <div id='applyForm'  style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", marginTop: "15px",backgroundColor: "whitesmoke" }} class="mx-2 mx-sm-4 px-2 px-sm-5 py-2">
           <form enctype="multipart/form-data" onSubmit={sendMail}>
             <br />
             <div className="row ">
-              <div class="form-group col-sm-3 col-md-2 col-6 ">
+              <div class="form-group col-sm-3 col-md-2 col-6 my-2">
                 {/* <label for="exampleFormControlSelect1">Title</label> */}
                 <select onChange={(e) => { setTitle(e.target.value) }} placeholder='Title' class="form-control" id="exampleFormControlSelect1">
                   <option value="-">Title *</option>
@@ -274,77 +285,82 @@ const CareerTemplate = ({ props }) => {
 
                 </select>
               </div>
-              <div class="form-group col-lg-5 col-md-5 col-sm-12 ">
+              <div class="form-group col-lg-5 col-md-5 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">First Name</label> */}
                 <input onChange={(e) => { setFname(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="First name *" />
               </div>
-              <div class="form-group col-lg-5 col-md-5 col-sm-12">
+              <div class="form-group col-lg-5 col-md-5 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Last Name</label> */}
                 <input onChange={(e) => { setLname(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last name *" />
               </div>
             </div>
-            <br />
+           
             <div className="row">
 
-              <div class="form-group col-lg-6 col-md-6 col-sm-12 ">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Email</label> */}
                 <input onChange={(e) => { setMail(e.target.value) }} type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail*" />
               </div>
-              <div class="form-group col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
                 <input onChange={(e) => { setMobile(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
               </div>
             </div>
-            <br />
+        
             <div className="row ">
-              <div class="form-group">
+              <div class="form-group  my-2">
                 {/* <label for="exampleFormControlTextarea1">Example textarea</label> */}
                 <textarea onChange={(e) => { setSkills(e.target.value) }} placeholder="Key technical skills*" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
 
             </div>
-            <br />
+            
             <div className="row">
 
-              <div class="form-group col-lg-6 col-md-6 col-sm-12 ">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Email</label> */}
                 <input onChange={(e) => { setExp(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Work Experience in Months*" />
               </div>
-              <div class="form-group col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
                 <input onChange={(e) => { setNperiod(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Notice Period (in Days) *" />
               </div>
             </div>
-            <br />
+      
             <div className="row">
 
-              <div class="form-group col-lg-6 col-md-6 col-sm-12 ">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Email</label> */}
                 <input onChange={(e) => { setCurrctc(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Current CTC(₹)*" />
               </div>
-              <div class="form-group col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
                 <input onChange={(e) => { setExpctc(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Expected CTC(₹) *" />
               </div>
             </div>
-            <br />
+        
             <div className="row">
 
-              <div class="form-group col-lg-6 col-md-6 col-sm-12 ">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Email</label> */}
                 <input onChange={(e) => { setLocation(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Current Location" />
               </div>
-              <div class="form-group col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
                 <input onChange={(e) => { setReloc(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ready to Relocate *" />
               </div>
-              <br />
-              <br />
-              <br />
+       
               <div className="row justify-content-center">
-                <div class="form-group col-6">
-                  <label for="exampleFormControlFile1">Attach your Profile(*)</label>
-                  <input onChange={(e) => { setResume(e.target.files[0]) }} type="file" class="form-control-file" id="exampleFormControlFile1" />
+                <div class="form-group col-10 col-sm-6  my-2">
+                  <label class="mx-1" for="exampleFormControlFile1">Attach your Profile(*)</label>
+                  <input onChange={(e)=>{ 
+                  const selectedFile = e.target.files[0]
+                  if (selectedFile && selectedFile.type === 'application/pdf') {
+                   setResume(selectedFile);
+                  } else {
+                 alert('Please select a PDF file.');
+                e.target.value = '';
+              }}}  type="file" class="form-control-file " id="exampleFormControlFile1" />
                 </div>
               </div>
               <br />

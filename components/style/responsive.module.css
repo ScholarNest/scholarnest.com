@@ -244,7 +244,11 @@ border-radius:50%;
     width:50vw;
   }
 }
-
+@media only screen and (max-width: 640px) {
+  .letsConnect{
+    text-align:center;
+  }  
+}
 @media only screen and (max-width: 600px) {
 .bannerDetails{
   top:80px;

@@ -16,7 +16,7 @@ const AcademySolution = () => {
   {
     heading:"Course Bundle - Master Data Engineering",
     desc:"8 Self-paced courses",
-    link:"/mastering-spark-and-databricks-cloud-self-paced-course",
+    link:"courses/mastering-spark-and-databricks-cloud-self-paced-course",
     imgPath:"/assets/solutions/AcademySolutions/1.png"
   },
   {
@@ -119,7 +119,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
 
 
         <p>Get Master Certification in Data Engineering for Apache Spark, Azure Databricks, Stream Processing, and Kafka, progressing from basic to advanced levels. Choose between self-paced or instructor-led options.</p>
-        <button class={classes.btn +" btn mt-sm-3"}><a href="/mastering-spark-and-databricks-cloud-instructor-led-course">Enquire about the Courses </a> </button>
+        <button class={classes.btn +" btn mt-sm-3"}><a href="courses/mastering-spark-and-databricks-cloud-self-paced-course">Enquire about the Courses </a> </button>
 
       </div>
       </div>
@@ -188,7 +188,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
   upcomingCourse.map((data)=>{
    return(
 <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-2 p-sm-2 p-1">
-  <a href="/mastering-spark-and-databricks-cloud-instructor-led-course">
+  <a href="courses/mastering-spark-and-databricks-cloud-instructor-led-course">
     <div className={classes.styleDiv + " h-100"}>
       <Image width={600}
         height={300} src={data.imgPath} />

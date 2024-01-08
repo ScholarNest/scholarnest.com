@@ -462,7 +462,7 @@ A Recent 64-bit Windows/Mac Machine with 8 GB RAM & Internet Connection</p>
             <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
                 <h2 class={classes.heading+"  my-2"}>Related Courses:</h2>
-                <p>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
+                <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
 
                 {
                     IndcourseList.map((data, index) => {

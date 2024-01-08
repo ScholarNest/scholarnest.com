@@ -6,21 +6,15 @@ import React, { useEffect } from "react";
 
 import SeoHead from "../components/SeoHead";
 
-function ApplyNow(props) {
-  const router = useRouter();
-  
-  useEffect(() => {
-    console.log("data is",router.query);
-}, [router.query]);
-
-
+function ApplyNow() {
+ 
   // console.log("Data is",props.router.query.message)/
   return (
     <>
      <SeoHead />
        <Header />
       <div >
-      <CareerTemplate props={router.query} />
+      <CareerTemplate />
 
       </div>
       <Footer />

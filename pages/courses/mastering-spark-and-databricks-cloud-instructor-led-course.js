@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from "../components/Layout/Header";
-import Footer from "../components/Layout/Footer";
-import MoreAcademyInfo from "../components/MoreAcademyInfo";
-import SeoHead from "../components/SeoHead";
-import FacebookPixel from "../components/AdScripts/FacebookPixel";
-import GoogleTagManager from "../components/AdScripts/GoogleTagManager";
-import CookieConsentBanner from "../components/CookieConsentBanner";
+import Header from "../../components/Layout/Header";
+import Footer from "../../components/Layout/Footer";
+import MoreAcademyInfo from "../../components/MoreAcademyInfo";
+import SeoHead from "../../components/SeoHead";
+import FacebookPixel from "../../components/AdScripts/FacebookPixel";
+import GoogleTagManager from "../../components/AdScripts/GoogleTagManager";
+import CookieConsentBanner from "../../components/CookieConsentBanner";
 
 const MoreAcademy = () => {
   const isSelf = true;

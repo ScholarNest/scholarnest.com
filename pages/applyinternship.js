@@ -7,12 +7,7 @@ import SeoHead from "../components/SeoHead";
 
 
 function ApplyInternship(props) {
-  const router = useRouter();
-
-  useEffect(() => {
-    console.log("data is",router.query);
-}, [router.query]);
-
+  
 
   // console.log("Data is",props.router.query.message)/
   return (
@@ -21,7 +16,7 @@ function ApplyInternship(props) {
 <SeoHead />
        <Header />
       <div >
-      < InternTemplate props={router.query} />
+      < InternTemplate />
 
       </div>
       <Footer />

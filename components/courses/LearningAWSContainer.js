@@ -415,7 +415,7 @@ const LearningAWSContainer = () => {
         <br />
         <br />
 
-        <div style={{ minHeight: "150px" }} class={classes.div4 + " row mx-0 p-3 "}>
+        <div style={{ minHeight: "150px" }} class={classes.div4 + " row mx-0 p-3 text-center"}>
           <div class='col-12 col-md-8  d-flex justify-content-center align-items-center '>
             <div class={classes.enroll}>
               <h2 class={classes.headings + " fw-bold"}>Discover your potential,  starting <br /> today</h2>

@@ -282,9 +282,11 @@ font-size:18px;
 .ansDiv button{
     margin-left:30px;
 }
-  .courseBox h3,.secondDiv h3,.banner h3, .fifthDiv h3,.h3style {
-      font-size:16px;
+.courseBox h3,.secondDiv h3,.banner h3, .fifthDiv h3,.h3style {
+      font-size:16px !important;
   }
+  
+
   .enroll h2{
     font-size: 20px;
 }

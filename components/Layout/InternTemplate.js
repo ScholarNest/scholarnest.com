@@ -232,7 +232,7 @@ const InternTemplate = () => {
                    setResume(selectedFile);
                   } else {
                  alert('Please select a PDF file.');
-                e.target.value = '';
+                e.target.value = null;
               }}}  type="file" class="form-control-file " id="exampleFormControlFile1" />
                 </div>
               </div>

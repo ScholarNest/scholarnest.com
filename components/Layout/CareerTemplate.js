@@ -76,7 +76,6 @@ const CareerTemplate = () => {
       !inData.title ||
       !inData.code ||
       !inData.subject ||
-      !inData.organization ||
       !name ||
       !mail ||
       !mobile ||

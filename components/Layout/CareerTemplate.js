@@ -71,6 +71,7 @@ const CareerTemplate = () => {
       location,
       Reloc,
     }
+    console.log(data);
     if (
       !inData.title ||
       !inData.code ||

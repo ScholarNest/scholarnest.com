@@ -89,6 +89,7 @@ const InternTemplate = () => {
     }).then((res) => {
       console.log('Response received')
       if (res.status === 200) {
+        alert("Details has been submitted Succesfully !")
         const inputFields = document.querySelectorAll('#applyForm input');
         inputFields.forEach((field) => {
           field.value = ''; // Reset input field value
@@ -101,8 +102,8 @@ const InternTemplate = () => {
         textAreaFields.forEach((field) => {
           field.value = ''; // Reset input field value
         });
-        alert("Details has been submitted Succesfully !")
        
+        window.location.reload();
       }else{
         alert("Error: Try again !")
       }
@@ -198,7 +199,7 @@ const InternTemplate = () => {
   </div>
   <div class="form-group col-lg-6 col-md-6 col-sm-12 my-2">
     {/* <label for="exampleFormControlInput1">Mobile </label> */}
-    <input onChange={(e)=>{setMobile(e.target.value)}} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
+    <input onChange={(e)=>{setMobile(e.target.value)}} type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
   </div>
   </div>
 
@@ -223,18 +224,18 @@ const InternTemplate = () => {
    </div>
 
    <div className="row justify-content-center">
-   <div class="form-group col-sm-6 col-10">
-    <label for="exampleFormControlFile1">Attach your Profile(*)</label>
-    <input onChange={(e)=>{ 
-      const selectedFile = e.target.files[0];
-    if (selectedFile && selectedFile.type === 'application/pdf') {
-      setResume(selectedFile);
-    } else {
-      alert('Please select a PDF file.');
-      e.target.value = '';
-    }}} type="file" class="form-control-file w-100" id="exampleFormControlFile1" />
-  </div>
-   </div>
+                <div class="form-group col-12 col-sm-6  my-2">
+                  <label class="mx-1" for="exampleFormControlFile1">Attach your Profile(*)</label>
+                  <input onChange={(e)=>{ 
+                  const selectedFile = e.target.files[0]
+                  if (selectedFile && selectedFile.type === 'application/pdf') {
+                   setResume(selectedFile);
+                  } else {
+                 alert('Please select a PDF file.');
+                e.target.value = '';
+              }}}  type="file" class="form-control-file " id="exampleFormControlFile1" />
+                </div>
+              </div>
 
    <button class="m-3 w-40 mx-auto btn btn-center text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none ">Submit</button>
    </div>

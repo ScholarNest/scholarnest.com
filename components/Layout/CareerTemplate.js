@@ -107,22 +107,21 @@ const CareerTemplate = () => {
       body: dataa
     }).then((res) => {
       if (res.status === 200) {
-        
-        setTitle("")
-        setFname("")
-        setLname("")
-        setMail("")
-        setMobile("")
-        setSkills("")
-        setExp("")
-        setNperiod("")
-        setCurrctc("")
-        setExpctc("")
-        setLocation("")
-        setReloc("")
-        setResume(null)
         alert("Details has been submitted Succesfully !")
-
+        const inputFields = document.querySelectorAll('#applyForm input');
+        inputFields.forEach((field) => {
+          field.value = ''; // Reset input field value
+        });
+        const selectFields = document.querySelectorAll('#applyForm select');
+        selectFields.forEach((field) => {
+          field.value = ''; // Reset input field value
+        });
+        const textAreaFields = document.querySelectorAll('#applyForm textarea');
+        textAreaFields.forEach((field) => {
+          field.value = ''; // Reset input field value
+        });
+      
+        window.location.reload();
         // document.getElementById("applyForm").style.height = "0";
       }else{
         alert("Error: Try again !")
@@ -195,7 +194,7 @@ const CareerTemplate = () => {
               <h3 class={classes.h3Style}><AiOutlineCopy class="mt-sm-1 mx-1" size={17} />Job Status</h3>
               <h3 class={classes.h1Style}>{inData.status}</h3>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6  ">
+            <div className="col-lg-3 col-md-3 col-sm-6  mt-4">
               <h3 class={classes.h3Style}><AiFillBulb class="mt-sm-1 mx-1" size="17" />Job Code</h3>
               <h3 class={classes.h1Style}>{inData.code}</h3>
             </div>
@@ -303,14 +302,14 @@ const CareerTemplate = () => {
               </div>
               <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
-                <input onChange={(e) => { setMobile(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
+                <input onChange={(e) => { setMobile(e.target.value) }}  type="Number"  class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
               </div>
             </div>
         
             <div className="row ">
               <div class="form-group  my-2">
                 {/* <label for="exampleFormControlTextarea1">Example textarea</label> */}
-                <textarea onChange={(e) => { setSkills(e.target.value) }} placeholder="Key technical skills*" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea onChange={(e) => { setSkills(e.target.value) }} type="text" placeholder="Key technical skills*" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
 
             </div>
@@ -319,11 +318,11 @@ const CareerTemplate = () => {
 
               <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Email</label> */}
-                <input onChange={(e) => { setExp(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Work Experience in Months*" />
+                <input onChange={(e) => { setExp(e.target.value) }} type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Work Experience in Months*" />
               </div>
               <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
-                <input onChange={(e) => { setNperiod(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Notice Period (in Days) *" />
+                <input onChange={(e) => { setNperiod(e.target.value) }} type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Notice Period (in Days) *" />
               </div>
             </div>
       
@@ -331,11 +330,11 @@ const CareerTemplate = () => {
 
               <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Email</label> */}
-                <input onChange={(e) => { setCurrctc(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Current CTC(₹)*" />
+                <input onChange={(e) => { setCurrctc(e.target.value) }} type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Current CTC(₹)*" />
               </div>
               <div class="form-group col-lg-6 col-md-6 col-sm-12  my-2">
                 {/* <label for="exampleFormControlInput1">Mobile </label> */}
-                <input onChange={(e) => { setExpctc(e.target.value) }} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Expected CTC(₹) *" />
+                <input onChange={(e) => { setExpctc(e.target.value) }} type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Expected CTC(₹) *" />
               </div>
             </div>
         
@@ -351,7 +350,7 @@ const CareerTemplate = () => {
               </div>
        
               <div className="row justify-content-center">
-                <div class="form-group col-10 col-sm-6  my-2">
+                <div class="form-group col-12 col-sm-6  my-2">
                   <label class="mx-1" for="exampleFormControlFile1">Attach your Profile(*)</label>
                   <input onChange={(e)=>{ 
                   const selectedFile = e.target.files[0]

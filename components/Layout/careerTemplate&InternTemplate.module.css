@@ -12,11 +12,13 @@
     font-weight:500;
     margin-top:5px;
     margin-left:15px;
+    word-wrap: break-word;
   }
 .h3Style{
     font-size:20px;
     display:flex;
     flex-direction:row;
+    word-wrap: break-word;
   }
   .contentInPara{
      font-size:16px;
@@ -32,7 +34,7 @@
       text-align:center;
     }  
   }
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     
 .applyTemp li, .applyTemp p{
     font-size:14px;
@@ -49,20 +51,22 @@
   .contentInPara{
      font-size:14px;
   }
-   }
+   } */
    @media only screen and (max-width: 480px) {
     
-    .applyTemp li, .applyTemp p{
-        font-size:12px;
-    }
+    /* .applyTemp li, .applyTemp p{
+        font-size:16px !important;
+    } */
     .careerTemplate h1{
         font-size:20px;
     }
     .h1Style{
-        font-size:14px;
+        font-size:16px;
+        
       }
     .h3Style{
-        font-size:14px;
+        font-size:16px;
+        word-wrap: break-word;
       }
       .contentInPara{
          font-size:12px;

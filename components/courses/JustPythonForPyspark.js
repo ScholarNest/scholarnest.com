@@ -345,14 +345,14 @@ const JustPythonForPyspark = () => {
                 {/* 3rd Section */}
                 <div className={classes.secondDiv + " " + classes.thirdDiv + " row mx-0 px-md-5"}>
                         <h2 class={classes.headings}>Course Prerequisite</h2>
-                        <div className=" col-12 col-sm-12 col-md-6 my-2">
+                        <div className=" col-12 col-sm-12 col-md-6  my-sm-2  my-4">
 
                             <h3 class="">What do you need to know before you start this course
                             </h3>
 
                         </div>
 
-                        <div className=" col-12 col-sm-12 col-md-6">
+                        <div className=" col-12 col-sm-12 col-md-6 my-sm-1 my-3">
                             <div className="d-flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon + " bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
                                     <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
@@ -426,7 +426,7 @@ const JustPythonForPyspark = () => {
                                                                     <p className={classes.clickable + " d-flex gap-2"}> {renderIcon(answer.icon)} {answer.det}</p>
 
 
-                                                                    <button class={classes.freePreview}>
+                                                                    <button class={classes.freePreview + " mt-1  mt-sm-0"}>
                                                                         Free Preview
                                                                     </button>
 

@@ -272,7 +272,7 @@ const ApacheKafkaForBegginer = () => {
                                   <p className={classes.clickable + " d-flex gap-2"}> {renderIcon(answer.icon)} {answer.det}</p>
 
 
-                                  <button class={classes.freePreview}>
+                                  <button class={classes.freePreview + " mt-1  mt-sm-0"}>
                                     Free Preview
                                   </button>
 
@@ -337,22 +337,19 @@ const ApacheKafkaForBegginer = () => {
 
         <br />
         <br />
+        <div style={{ minHeight: "150px" }} className={classes.div4 + " row mx-0 p-3 d-flex justify-content-center align-items-center"}>
+  <div className='col-12 col-md-8 d-flex justify-content-center align-items-center text-center'>
+    <div className={classes.enroll}>
+      <h2 style={{maxWidth:"600px"}}className={classes.headings + " fw-bold"}>Discover your potential, starting today</h2>
+      <br />
+    </div>
+  </div>
 
-        <div style={{ minHeight: "150px" }} class={classes.div4 + " row mx-0 p-3 "}>
-          <div class='col-12 col-md-8  d-flex justify-content-center align-items-center '>
-            <div class={classes.enroll}>
-              <h2 class={classes.headings + " fw-bold"}>Discover your potential,  starting <br /> today</h2>
-              <br />
-            </div>
+  <div className="col-10 col-md-3 d-flex justify-content-center align-items-center text-center ">
+    <button onClick={() => { router.push("https://www.scholarnest.in/enroll/2219479") }} className="btn rounded-pill w-75 p-2 text-center text-dark btn-light fw-bold">Enroll today</button>
+  </div>
+</div>
 
-          </div>
-
-          <div class=" col-md-2 col-8 d-flex justify-content-center  align-items-center">
-            <button onClick={() => { router.push("https://www.scholarnest.in/enroll/2219479") }} class="btn rounded-pill w-75  p-2 text-center text-dark btn-light fw-bold">Enroll today </button>
-          </div>
-
-
-        </div>
 
 
 

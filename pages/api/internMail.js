@@ -63,7 +63,7 @@ Scholarnest Information Technology & Services , Bangalore, India <br />
 `
         const mailData = {
           from:'duadarsh13@gmail.com',
-          to: 'adarsh2dubey@gmail.com',
+          to: 'scholarnestmarketing@gmail.com',
           subject: 'Application for Internship at ScholarNest',
           text: "Hey there " + " | " + data.skills + " | Sent from: " + data.mail,
           attachments: [

@@ -45,10 +45,34 @@ const InternTemplate = () => {
    router.push("#applyForm");
   }
   function sendMail(e){
-    console.log("clicked")
+    
     e.preventDefault();
-    const body="Hey there !, My name is "+ title+" "+fname+" "+ lname+" and I'm here applying for this job role, Kindly look into this"
-    console.log("details are", title, fname, lname);
+    const errors = [];
+
+    if (!/^[A-Za-z ]{1,35}$/.test(fname)) {
+      errors.push('First name should contain only alphabets and spaces (max 35 characters)');
+    }
+    if (!/^[A-Za-z ]{1,35}$/.test(lname)) {
+      errors.push('Last name should contain only alphabets and spaces (max 35 characters)');
+    }
+    if (!/^(\+|-)?[0-9]{6,14}$/.test(mobile)) {
+      errors.push('Enter a valid phone number (7-15 numbers, + or - allowed at the start)');
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)) {
+      errors.push('Enter a valid email address');
+    }
+   
+    if (!/^[A-Za-z ]{1,50}$/.test(location)) {
+      errors.push('Current location should contain only alphabets and spaces (max 50 characters)');
+    }
+    if (!/^[A-Za-z ]{1,50}$/.test(Reloc)) {
+      errors.push('Ready to relocate should contain only alphabets and spaces (max 50 characters)');
+    }
+
+    if (errors.length > 0) {
+      alert(errors.join('\n'));
+      return;
+    }
     const name= fname+" "+lname
     let data = {
         jobtitle:inData.title,
@@ -200,7 +224,7 @@ const InternTemplate = () => {
   </div>
   <div class="form-group col-lg-6 col-md-6 col-sm-12 my-2">
     {/* <label for="exampleFormControlInput1">Mobile </label> */}
-    <input onChange={(e)=>{setMobile(e.target.value)}} type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
+    <input onChange={(e)=>{setMobile(e.target.value)}} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile*" />
   </div>
   </div>
 

@@ -567,7 +567,7 @@ const JustPythonForPyspark = () => {
                 <div style={{ minHeight: "300px",backgroundColor:'#c3d4e8' }} class={classes.div4 + " row mx-0 px-md-5"}>
                     <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'>
                         <div class={classes.enroll}>
-                            <h2 class={classes.Enrollheadings + " fw-bold"}>Enroll into self-paced course</h2>
+                            <h2 class={classes.headings + " fw-bold"}>Enroll into self-paced course</h2>
                             <br />
                             <h3 style={{ maxWidth: "700px" }}>Discover your potential, start today and learn at your own schedule</h3>
                         </div>
@@ -586,7 +586,7 @@ const JustPythonForPyspark = () => {
                 <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
                     <h2 class={classes.heading + "  my-2"}>Related Courses:</h2>
-                    <p>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
+                    <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
 
                     {
                         IndcourseList.map((data, index) => {

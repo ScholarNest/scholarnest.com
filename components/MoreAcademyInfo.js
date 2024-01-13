@@ -187,9 +187,9 @@ const MoreAcademyInfo = (props) => {
           <p class="text-white">   Master Certified Data Engineer for Apache Spark, Azure Databricks, Stream Processing, and Kafka from beginners to advanced - Self-paced or Instructor-led
           </p>
           <div class="row gap-2 justify-content-center">
-            <button class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2"> <a href={props.link}>{props.btnName}  </a></button>
+            <a class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2" href={props.link}>{props.btnName}  </a>
             {
-             props.isSelf && <button class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a></button>
+             props.isSelf && <a class="col-sm-5  col-md-4 col-8 btn btn-rounded btn-warning p-2 mx-2" href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform"> Enquire for Instructor-led Program </a>
             }
               </div>
           <br />
@@ -350,7 +350,7 @@ const MoreAcademyInfo = (props) => {
           <h2 class="text-center">Enroll now and get started today</h2>
           <br />
           <div class="d-flex justify-content-center">
-            <button class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"> <a href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> {props.selfPaced?'Buy Now':'Buy for $320 '}</a></button>
+            <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"  href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> {props.selfPaced?'Buy Now':'Buy for $320 '}</a>
           </div>
           <br />
         </div>

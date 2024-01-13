@@ -433,20 +433,11 @@ const LearningAWSContainer = () => {
                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
   <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
 </svg></div>
-Basic Understanding of Programming - Familiarity with programming concepts and a basic understanding of a programming language, preferably Java.</p>
+Ensure a foundational understanding of computer basics, including file management, navigation, and general computer usage.</p>
                     <br />
                     <hr />
                     <br />
-                    <p class="d-flex ">  <div>
-                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
-  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-</svg></div>
-Fundamental Knowledge of Distributed Systems - A grasp of fundamental concepts in distributed systems to appreciate the distributed nature and capabilities of Apache Kafka.</p>
-                        <br />
-                    <hr />
-                    <br />
-
-
+                 
 
                 </div>
 

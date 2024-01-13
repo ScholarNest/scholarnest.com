@@ -147,6 +147,51 @@ const ApacheSpark3Container = () => {
       setcourseSections(halfcourseSections);
     }
   }
+  const IndcourseList = [
+    {
+        heading: "Just Enough Python for PySpark Developers",
+        desc: "Self-paced Learning",
+        imgPath: "/assets/solutions/MoreAcademySolutions/courses/justpython.jpg",
+        price: "$24.79",
+        link: "just-enough-python-for-pyspark-developers"
+    },
+    {
+        heading: "Mastering PySpark",
+        desc: "Self-paced",
+        imgPath: "/assets/solutions/AcademySolutions/2.png",
+        price: "$149",
+        link: "/courses/mastering-pyspark"
+    },
+  
+  
+    {
+        heading: "Mastering Databricks Cloud",
+        desc: "Self-paced Learning",
+        price: "$149",
+        imgPath: "/assets/solutions/AcademySolutions/3.png",
+        link: "/courses/mastering-databricks-cloud"
+    },
+  
+  
+  ]
+  const Faqs = [
+    // {
+    //     id: "faq1",
+    //     ques: "How long can I access the course material?",
+    //     ans: "We provide lifetime access to the course material."
+    // },
+    // {
+    //     id: "faq2",
+    //     ques: "Do you have refund policy?",
+    //     ans: "Yes. You can ask for a refund within 7 days of your purchase or before completing 15% of any course material, whichever is earlier. We provide a refund after deducting 6% of payment processing charges."
+    // },
+    {
+        id: "faq1",
+        ques: "How do you provide support?",
+        ans: "We are committed to providing support throughout your learning journey and aim to respond to inquiries within 24 to 48 business hours, excluding holidays. However, please note that Q&A support is not available for this module."
+    }
+]
+
   return (
     <>
       <div class={classes.mainBody}>
@@ -161,10 +206,9 @@ const ApacheSpark3Container = () => {
                         <div class={classes.butns + " row gap-2 justify-content-center"}>
                         <a class={classes.nfpbutn+" col-sm-5 col-md-4  col-12 text-center "} 
                         href="https://www.scholarnest.in/enroll/2080264">
-                         Buy $24.79
+                         Buy Now
                         </a>
-                        <a  href='https://www.scholarnest.in/enroll/2080264?et=free_trial' class=" col-sm-5 col-md-3 col-12 btn btn-light  text-center  "> Free Preview  </a>
-                   
+                        <a href='https://www.scholarnest.in/enroll/2080264?et=free_trial'  class={classes.nfpbutn+" col-sm-5 col-md-3 col-12 btn   text-center  "}> Free Preview  </a>                   
             
                 </div>
                         </div>
@@ -180,7 +224,127 @@ const ApacheSpark3Container = () => {
         <br />
 
         {/* 3rd Section */}
+        <div style={{ backgroundColor: "#F8F2E9" }}>
+          <br />
+        <div  className={classes.secondDiv + " row mx-4 px-md-2"}>
+    
+          <h2 class={classes.headings}>What you'll learn</h2>
 
+          <div className=" col-12 col-sm-12 col-md-6 h-100">
+            <br />
+            <br />
+            <h3 class='my-2 px-md-2'>
+            Dive into the dynamic realm of real-time stream processing. This course offers a comprehensive overview of Apache Spark 3, emphasizing its application in real-time data streaming. Explore key concepts, hands-on Python programming, and gain the skills to harness the power of Apache Spark for efficient real-time data analysis and processing.
+             </h3>
+
+          </div>
+          <div className={classes.afterSecndDiv + " col-12 col-sm-12 col-md-6 px-2 px-md-5"}>
+            <br />
+
+            <br />
+            <p class="d-flex my-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon + " bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg> </div>
+                Real-time Stream Processing Concepts - Acquire a solid understanding of real-time stream processing concepts, laying the groundwork for efficient data analysis.
+</p>
+            <br />
+            <hr />
+            <br />
+            <p class="d-flex my-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon + " bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+              </div>
+              
+Spark Structured Streaming APIs and Architecture - Explore the Spark Structured Streaming APIs and delve into the architecture, learning how to structure and manage streaming data efficiently.
+</p>
+            <br />
+            <hr />
+            <br />
+
+
+            <p class="d-flex my-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon + " bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+              </div>
+              Working with File Streams, Kafka Integration, and Stateful Transformations - Gain practical skills in handling file streams, integrating Spark with Kafka sources, and mastering both stateless and stateful streaming transformations.
+              </p>
+            <br />
+            <hr />
+            <br />
+            <p class="d-flex my-2">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon + " bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+              </div>
+              Advanced Stream Processing Techniques - Explore advanced techniques such as windowing aggregates, watermarking, state cleanup, streaming joins, aggregation, and mitigating memory issues with streaming joins.              </p>
+            <br />
+            <hr />
+            <br />
+          </div>
+
+        </div>
+        <br />
+        </div>
+        <br />
+            <br />
+            <br />
+            <div style={{backgroundColor:"white"}} className={classes.secondDiv +" "+classes.thirdDiv+ " row mx-0 px-md-5"}>
+            <h2  class={classes.headings}>Course Prerequisite</h2>
+                <div className=" col-12 col-sm-12 col-md-6 my-sm-2  my-4">
+                   
+                    <h3 class="">What do you need to know before you start this course
+                    </h3>
+
+                </div>
+                
+                <div className=" col-12 col-sm-12 col-md-6 my-sm-1 my-3">
+                    <p class="d-flex ">
+                        <div>
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></div>
+Spark Fundamentals and exposure to Spark Dataframe APIs
+</p>
+                    <br />
+                    <hr />
+                    <br />
+                    <p class="d-flex ">  <div>
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></div>
+Kafka Fundamentals and working knowledge of Apache Kafka.
+</p>
+                        <br />
+                    <hr />
+                    <br />
+                    <p class="d-flex ">  <div>
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></div>
+Programming Knowledge Using Python Programming Language
+</p>
+                        <br />
+                    <hr />
+                    <br />
+                    <p class="d-flex ">  <div>
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideIcon+" bi mr-3 bi-arrow-right-circle-fill"} viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></div>
+A Recent 64-bit Windows/Mac/Linux Machine with 8 GB RAM</p>
+                        <br />
+                    <hr />
+                    <br />
+
+                </div>
+
+            </div>
         {/* 4th section */}
         <div  style={{ backgroundColor: "rgb(251 251 249)" }}>
           <br />
@@ -291,21 +455,141 @@ const ApacheSpark3Container = () => {
 
         <br />
         <br />
+        <div class={classes.div3}>
+                <h2 class="text-center">Course FAQ</h2>
+                <br />
+                <div className={classes.faqDiv + " mx-auto"}>
 
-        <div style={{ minHeight: "150px" }} className={classes.div4 + " row mx-0 p-3 d-flex justify-content-center align-items-center"}>
-  <div className='col-12 col-md-8 d-flex justify-content-center align-items-center text-center'>
-    <div className={classes.enroll}>
-      <h2 style={{maxWidth:"600px"}}className={classes.headings + " fw-bold"}>Discover your potential, starting today</h2>
-      <br />
-    </div>
-  </div>
+                    {
+                        Faqs.map((quest) => {
+                            function openSolution(ques_id) {
+                                const elem = document.getElementById(ques_id)
+                                if (elem.style.display === "none") {
+                                    elem.style.display = "flex";
+                                } else {
+                                    elem.style.display = "none";
+                                }
+                            }
+                            return (
+                                <div class="my-2" >
+                                    <div style={{ cursor: "pointer" }} onClick={() => { openSolution(quest.id) }} className="row rounded mx-auto  my-2 p-3 w-100 justify-content-between question">
+                                        <p class= " col-10 d-flex fw-bold text-black"> {quest.ques}</p>
+                                        <a class="col-1  text-end" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi align-self-end bi-caret-down-fill" viewBox="0 0 16 16">
+                                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div style={{ display: "none" }} class={classes.Faqs + " px-4 mx-auto "} id={quest.id}>
+                                        <p>{quest.ans} </p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+            <br />
+            <br />
+            <div style={{minHeight:"300px",backgroundColor:'#c3d4e8'}} class={classes.div4 + " row mx-0 px-md-5"}>
+                <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'> 
+                <div class={classes.enroll}>
+                    <h2 class={classes.headings+" fw-bold"}>Enroll into self-paced course</h2>
+                    <br />
+                    <h3 style={{maxWidth:"700px"}}>Discover your potential, start today and learn at your own schedule</h3>
+                    </div>
+                    
+                </div>
+              
+                <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
+                        <button onClick={()=>{router.push('https://www.scholarnest.in/enroll/2080264')}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> Buy Now </button>
+                    </div>
+                  
+             
+            </div>
 
-  <div className="col-10 col-md-3 d-flex justify-content-center align-items-center text-center ">
-    <button onClick={() => { router.push("https://www.scholarnest.in/enroll/2219479") }} className="btn rounded-pill w-75 p-2 text-center text-dark btn-light fw-bold">Enroll today</button>
-  </div>
-</div>
+            <div  style={{ backgroundColor: "#F8F2E9" }} >
+            <div className="row mx-4 py-5 px-md-5">
+            <h2 class={classes.headings}>Schedule a free call</h2>
+                <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 p-2  h-100"}>
+                   
+                <br />
+                    <h3 class="my-1">Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
+                    </h3>
+
+                </div>
+                <div className={classes.secondDiv + " col-12 col-md-6 col-6 my-1"}>
+                <br />
+                    <div >
+                        <h3 class={classes.h3style +" my-2"}>For Instructor-led training</h3>
+
+                        <p class="fw-bold mb-2"> Course Enquiry: <a style={{ textDecoration: "underline" }} href="https://docs.google.com/forms/d/e/1FAIpQLSczeKG6-u1esN6_N8dQSFD3C8_BVg9jj3uJEoBU-37jn5IYhw/viewform" >  Request callback </a></p>
+                        <p class="mb-2">
+                            Looking for an Instructor-led course? We have Instructor-led batches starting every month. Fill out the course inquiry form, and we will contact you with more details.
+                        </p>
+
+                        <hr />
+                    </div>
+                    <br />
+                    <div>
+
+                        <h3 class={classes.h3style +" my-2"}>Email</h3>
+                        <p class="fw-bold mb-2">
+                            Email: sushant@scholarnest.com
+                        </p>
+                        <p class="mb-2">Contact us for current promotional offers, course bundles, and additional payment methods such as NEFT, Net Banking, UPI, etc.</p>
+                    </div>
+                    
+                    <hr />
+                    <br />
+                    <div>
+
+                        <h3 class={classes.h3style +" my-2"}>WhatsApp</h3>
+                        <p class="fw-bold mb-2">
+                            WhatsApp: +91-93534 65988
+                        </p>
+                        <p class="mb-2">Want to speak to your course coordinator? We are just a WhatsApp message away.</p>
+                    </div>
+                    <br />
+                </div>
+                <br />
+            </div>
+            </div>
+            <br /><br />
+            <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
+
+                <h2 class={classes.heading+"  my-2"}>Related Courses:</h2>
+                <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
+
+                {
+                    IndcourseList.map((data, index) => {
+                        return (
+                            <div className=" rounded col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1">
+                                <a href={data.link}>
+                                    <div className={classes.styleDiv + " h-100"}>
+                                        <Image width={600}
+                                            height={300} src={data.imgPath} />
+                                        <br />
+                                        <h3 class={classes.h3style} >{data.heading}</h3>
+
+                                        <p class="my-2">{data.desc}</p>
+                                        <p class="my-2 fw-bold">{data.price}</p>
+
+                                        {/* <p>8 self-placed courses worth $xyz</p> */}
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        )
+                    })
+                }
 
 
+                <a href="/scholarnest-academy">
+                    <button className='px-lg-3 px-xl-3 px-md-3 px-sm-1 px-2 py-lg-3 py-xl-3 py-md-3 py-2 py-sm-2 fw-semibold btn  rounded-pill mx-sm-4 mx-1 my-4 btn-danger'>View more courses</button>
+                </a>
+            </div>
 
       </div>
     </>

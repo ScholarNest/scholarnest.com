@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Image from 'next/image';
 
 import classes from "./style/moreAcademy.module.css";
 const MoreAcademyInfo = (props) => {
+  const [courseListMain,setCourseListMain]=useState([]);
+  const [indCourseListMain,setIndCourseListMain]=useState([]);
+  useEffect(() => {
+    setCourseListMain(props.selfPaced?courseListForSelfPaced:courseList);
+    setIndCourseListMain(props.selfPaced?IndcourseListForSelfPaced:IndcourseList);
+  },[courseListMain]);
   const courseList = [
    
     {
@@ -48,6 +54,63 @@ const MoreAcademyInfo = (props) => {
       imgPath: "/assets/solutions/MoreAcademySolutions/7.jpg"
     }
   ]
+  const courseListForSelfPaced = [
+   
+    {
+      heading: "Mastering PySpark",
+      desc: "Self-paced Learning",
+      imgPath:"/assets/solutions/AcademySolutions/2.png",
+      price: "$149",
+      link: "mastering-pyspark"
+    },
+    {
+      heading: "Mastering Databricks Cloud",
+      desc: "Self-paced Learning",
+      imgPath:"/assets/solutions/AcademySolutions/3.png",
+      price: "$149",
+      link: "mastering-databricks-cloud"
+    },
+    {
+      heading: "Databricks Certified Associate Developer for Apache Spark 3.0",
+      desc: "Self-paced Exam Practice Test",
+      imgPath:"/assets/solutions/AcademySolutions/4.png",
+      price: "$36.79",
+      link: "databricks-certified-associate-developer-for-apache-spark"
+    },
+    {
+      heading: "Databricks Data Engineer Assoicate Certification Practice Test",
+      desc: "Self-paced Exam Practice Test",
+      imgPath:"/assets/solutions/AcademySolutions/5.png",
+      price: "$36.79",
+      link: "databricks-data-engineer-associate-certification-practice-test"
+    },
+    {
+      heading: "Apache Kafka for Begginers",
+      desc: "Self-paced Learning",
+      imgPath:"/assets/solutions/AcademySolutions/6.png",
+      price: "$24.79",
+      link: "apache-kafka-for-beginners"
+    },
+    {
+      heading: "Apache Spark 3 - Real-time Stream Processing using Python",
+      desc: "Self-paced Learning",
+      link: "apache-spark-3-real-time-stream-processing-using-python",
+      price: "$24.79",
+      imgPath:"/assets/solutions/AcademySolutions/10.png",
+    },
+    {
+      heading:"AWS Cloud Practitioner",
+      desc:"Self-paced Learning",
+      imgPath:"/assets/solutions/AcademySolutions/8.jpg",
+      link:"learning-aws-cloud-fundamentals"
+    },
+    {
+      heading:"Just Enough Python for PySpark Developers",
+      desc:"Self-paced Learning",
+      imgPath:"/assets/solutions/AcademySolutions/9.jpg",
+      link:"just-enough-python-for-pyspark-developers"
+    },
+  ]
   const IndcourseList = [
   
     {
@@ -71,6 +134,31 @@ const MoreAcademyInfo = (props) => {
       imgPath: "/assets/solutions/AcademySolutions/6.png",
       price: "$24.79",
       link: "https://www.scholarnest.in/courses/apache-kafka-for-beginners"
+    },
+  ]
+  const IndcourseListForSelfPaced = [
+  
+    {
+      heading: "Mastering PySpark",
+      desc: "Self-paced Learning",
+      imgPath: "/assets/solutions/AcademySolutions/2.png",
+      price: "$149",
+      link: "mastering-pyspark"
+    },
+    {
+      heading: "Mastering Databricks Cloud",
+      desc: "Self-paced Learning",
+      imgPath: "/assets/solutions/AcademySolutions/3.png",
+      price: "$149",
+      link: "mastering-databricks-cloud"
+    },
+    
+    {
+      heading: "Apache Kafka for Begginers",
+      desc: "Self-paced Learning",
+      imgPath: "/assets/solutions/AcademySolutions/6.png",
+      price: "$24.79",
+      link: "apache-kafka-for-beginners"
     },
   ]
   const Faqs = [
@@ -153,13 +241,13 @@ const MoreAcademyInfo = (props) => {
       <br />
       {/* 3rd Section */}
 
-      <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
+      <div style={{ backgroundColor: "rgb(251 251 249)" }} className={classes.courseBox + " mx-auto  row text-start  p-3"} >
 
         <h2 class={"  my-2"}>Included Course</h2>
         <p class="mb-1">Lifetime access for 8 courses worth $470.79</p>
 
         {
-          courseList.map((data, index) => {
+          courseListMain.map((data, index) => {
             return (
               <div className=" col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1">
                 <a href={data.link}>
@@ -184,10 +272,11 @@ const MoreAcademyInfo = (props) => {
 
 
 
-
+{!props.selfPaced && 
         <a href="https://www.scholarnest.in/collections">
           <button className='px-lg-3 px-xl-3 px-md-3 px-sm-1 px-1 py-lg-3 py-xl-3 py-md-3 py-1 py-sm-2 fw-semibold btn btn-danger rounded-pill mx-4 my-4'>View more courses</button>
         </a>
+}
       </div>
       <br />
       <br />
@@ -261,7 +350,7 @@ const MoreAcademyInfo = (props) => {
           <h2 class="text-center">Enroll now and get started today</h2>
           <br />
           <div class="d-flex justify-content-center">
-            <button class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"> <a href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> Buy for $320 </a></button>
+            <button class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"> <a href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> {props.selfPaced?'Buy Now':'Buy for $320 '}</a></button>
           </div>
           <br />
         </div>
@@ -316,7 +405,7 @@ const MoreAcademyInfo = (props) => {
         <p>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
 
         {
-          IndcourseList.map((data, index) => {
+          indCourseListMain.map((data, index) => {
             return (
               <div className=" rounded col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-1">
                 <a href={data.link}>
@@ -341,11 +430,13 @@ const MoreAcademyInfo = (props) => {
 
 
 
-
-        <a href="https://www.scholarnest.in/collections">
+  
+        <a href={props.selfPaced?"/scholarnest-academy":"https://www.scholarnest.in/collections"}>
           <button className='px-lg-3 px-xl-3 px-md-3 px-sm-1 px-1 py-lg-3 py-xl-3 py-md-3 py-1 py-sm-2 fw-semibold btn btn-danger rounded-pill mx-4 my-4'>View more courses</button>
         </a>
+
       </div>
+      
     </>
   )
 }

@@ -4,9 +4,11 @@ import DatabricksCertifiedAssociateDev from "../../components/courses/Databricks
 import SeoHead from "../../components/SeoHead";
 import CookieConsentBanner from "../../components/CookieConsentBanner";
 function DatabricksCertifiedAssociate() {
+  const title='Databricks Certified Associate Developer | Apache Spark 3.0';
+  const description='Gain expertise in Apache Spark with our Databricks Certified Associate Developer course. Elevate your skills for success. Enroll now at ScholarNest Technologies';
   return (
     <>
-      <SeoHead />
+      <SeoHead title={title} description={description}/>
      <CookieConsentBanner />
       <Header />
        <DatabricksCertifiedAssociateDev />

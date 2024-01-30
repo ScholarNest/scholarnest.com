@@ -451,7 +451,7 @@ const JustPythonForPyspark = () => {
                         </div>
                         <div className={classes.courseContent + " col-md-4 col-12"}>
                             <Card.Body class={classes.cardDet + " bg-light"} >
-                                <img class="w-100" src="/assets/solutions/AcademySolutions/9.jpg" alt="1" />
+                                <img class="w-100" src="/assets/solutions/AcademySolutions/9.jpg" alt="Just Enough Python for Data Engineers" />
                                 <div className='ml-3 py-2'>
                                     <h3 className={classes.h3style}>Course Feature</h3>
                                     <div class='mb-2' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
@@ -642,7 +642,7 @@ const JustPythonForPyspark = () => {
                                     <a href={data.link}>
                                         <div className={classes.styleDiv + " h-100"}>
                                             <Image width={600}
-                                                height={300} src={data.imgPath} />
+                                                height={300} src={data.imgPath} alt={data.heading}/>
                                             <br />
                                             <h3 class={classes.h3style} >{data.heading}</h3>
 

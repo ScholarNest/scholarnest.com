@@ -382,14 +382,14 @@ const MasteringPyspark = () => {
             desc: "Self-paced Learning",
             imgPath: "/assets/solutions/MoreAcademySolutions/courses/justpython.jpg",
             price: "$24.79",
-            link: "just-enough-python-for-pyspark-developers"
+            link: "just-enough-python-for-pyspark-developers",
         },
         {
             heading: "Databricks Certified Associate Developer for Apache Spark 3.0",
             desc: " Self-Paced - Exam Practice Test",
             imgPath:"/assets/solutions/MoreAcademySolutions/courses/databricks.png",
             price: "$36.79",
-            link: "databricks-certified-associate-developer-for-apache-spark"
+            link: "databricks-certified-associate-developer-for-apache-spark",
         },
 
         {
@@ -397,7 +397,7 @@ const MasteringPyspark = () => {
             desc: "",
             imgPath: "/assets/solutions/MoreAcademySolutions/courses/lakehouse.jpg",
             price: "",
-            link: "https://www.scholarnest.in/courses/getting-started-to-spark-azure-databricks-and-lakehouse-fundamentals-certification-preparation"
+            link: "https://www.scholarnest.in/courses/getting-started-to-spark-azure-databricks-and-lakehouse-fundamentals-certification-preparation",
         },
     ]
     const Faqs = [
@@ -674,7 +674,7 @@ Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
                 </div>
                 <div className={classes.courseContent+ " col-md-4 col-12"}>
                 <Card.Body class={classes.cardDet} >
-                  <img class="w-100" src="/assets/solutions/MoreAcademySolutions/2.jpg" alt="1" />
+                  <img class="w-100" src="/assets/solutions/MoreAcademySolutions/2.jpg" alt="Mastering Pyspark" />
                   <div className='ml-3 py-2'>
                   <h3 className={classes.h3style}>Course Feature</h3>
                   <div class='mb-2' style={{width:"50px",height:'1px',backgroundColor:'black',marginLeft:'10px'}}></div>
@@ -855,7 +855,7 @@ Programming Knowledge Using Python Programming Language and SQL Fundamentals</p>
                                 <a href={data.link}>
                                     <div className={classes.styleDiv + " h-100"}>
                                         <Image width={600}
-                                            height={300} src={data.imgPath} />
+                                            height={300} src={data.imgPath} alt={data.heading} />
                                         <br />
                                         <h3 class={classes.h3style} >{data.heading}</h3>
 

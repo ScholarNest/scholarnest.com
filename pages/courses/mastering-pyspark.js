@@ -6,7 +6,7 @@ import CookieConsentBanner from "../../components/CookieConsentBanner";
 function MasteringPysparkk() {
   return (
     <>
-      <SeoHead />
+        <SeoHead title="Mastering PySpark Course | ScholarNest Technologies" description="Unlock the full potential of PySpark with our comprehensive Mastering PySpark course at ScholarNest Technologies. Enhance your data engineering skills and stay ahead in the world of big data analytics."/>
      <CookieConsentBanner />
       <Header />
        <MasteringPyspark />

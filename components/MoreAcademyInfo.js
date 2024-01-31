@@ -411,7 +411,7 @@ const MoreAcademyInfo = (props) => {
                 <a href={data.link}>
                   <div className={classes.styleDiv + " h-100"}>
                     <Image width={600}
-                      height={300} src={data.imgPath} />
+                      height={300} src={data.imgPath} alt={data.heading} />
                     <br />
                     <h3 class={classes.h3style} >{data.heading}</h3>
 

@@ -9,7 +9,7 @@ import CookieConsentBanner from "../../components/CookieConsentBanner";
 
 const MoreAcademy = () => {
   const isSelf = true;
-  const btnName = "Buy this program $549";
+  const btnName = "Buy Now";
   const link = "https://www.scholarnest.in/pages/checkout-certified-big-data-engineer-ilt";
   return (
     <>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Image from 'next/image';
 import { Card } from "@nextui-org/react";
-
+import MoreAcademyInstructor from './courses/MoreAcademyInstructor';
 import classes from "./style/moreAcademy.module.css";
 const MoreAcademyInfo = (props) => {
   const [courseListMain,setCourseListMain]=useState([]);
@@ -1226,8 +1226,15 @@ const LearnSideInd=[
       </div>
       <br />
       <br />
+      <div class="instructorLed">
+        { props.isSelf &&
+           <MoreAcademyInstructor />
+        }
+      </div>
+      <br />
+      <br />
       {/* Section 4 */}
-      <div class={classes.div3}>
+      <div  class={classes.div3}>
         <h2 class="text-center">Course FAQ</h2>
         <br />
         <div className={classes.faqDiv + " mx-auto"}>
@@ -1269,8 +1276,14 @@ const LearnSideInd=[
           <h2 class="text-center">Enroll now and get started today</h2>
           <br />
           <div class="d-flex justify-content-center">
-            <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"  href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> {props.selfPaced?'Buy Now':'Buy for $320 '}</a>
+            <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"  href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> {props.selfPaced?'Buy Now':'Buy Now: Out of India'}</a>
           </div>
+          {
+            props.isSelf &&
+          <div class="d-flex justify-content-center mt-2">
+            <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center"  href="https://www.scholarnest.in/pages/checkout-certified-big-data-engineer-ilt"> Buy Now: Within India</a>
+          </div>
+          }
           <br />
         </div>
       </div>

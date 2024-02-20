@@ -1,0 +1,67 @@
+.heading{
+    font-size:30px;
+    font-weight:500;
+}
+.keybox{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.keybox :hover{
+    transform: scale(1.05);
+}
+.feedbackBox{
+    width:75vw;
+    margin:auto auto;
+  }
+  .feedbackBox h2{
+    font-size:30px;
+    text-align:center;
+  }
+  .feedbackBox h3{
+    font-size:20px;
+    text-align:center;
+  }
+  .feedbackBox p{
+    font-size:16px;
+    text-align:center;
+  }
+@media only screen and (max-width: 600px) {
+  .heading{
+    font-size:24px;
+    }
+    .feedbackBox{
+        width:85vw;
+      }
+      .feedbackBox h2{
+        font-size:24px;
+      }
+      .feedbackBox p{
+        font-size:14px;
+        text-align:center;
+      }
+      .feedbackBox h3{
+        font-size:16px;
+        text-align:center;
+      }
+
+}
+@media only screen and (max-width: 430px) {
+    .heading{
+      font-size:20px;
+      }
+      .feedbackBox{
+        width:95vw;
+      }
+      .feedbackBox h2{
+        font-size:20px;
+      }
+      .feedbackBox p{
+        font-size:12px;
+        text-align:center;
+      }
+      .feedbackBox h3{
+        font-size:14px;
+        text-align:center;
+      }
+  }

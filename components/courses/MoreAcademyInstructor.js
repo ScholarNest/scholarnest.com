@@ -75,8 +75,9 @@ const MoreAcademyInstructor = () => {
     <>
     <div>
     <h2 class={classes.heading+" my-2 mx-3"}>
-    Key Highlights Section
+    Key highlights of the Master Data Engineering Comprehensive Program
     </h2>
+    <br />
     <div className="row mx-auto">
     {
     keyHighlight.map((data,key)=>{

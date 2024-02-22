@@ -5,35 +5,48 @@
     color:white;
 
 }
+.h1fs{
+    font-size: 44px ;
+}
+.h2fs{
+font-size: 36px;
+}
+.h3fs{
+font-size: 24px;
+}
+.pfs{
+font-size: 18px;
+}
+
 .banner h1{
-font-size:30px;
+/* font-size:44px; */
 margin:20px 10px;
 text-align:center;
 }
-.banner p{
-font-size:16px;
+.banner h3{
+/* font-size:18px; */
 margin:15px 10px;
 text-align:center;
 }
 .courseBox p, .featureBox p,.secondDiv p{
-    font-size:16px;
+    /* font-size:18px; */
     color:black;
 }
 .courseBox h2,.div3 h2{
-    font-size:30px;
+    /* font-size:30px; */
     font-weight:500;
 
 }
-.courseBox h3{
+/* .courseBox h3{
     font-size:20px;
-}
+} */
 .secondDiv h2,.div4 h2{
-    font-size:30px;
+    /* font-size:30px; */
     font-weight:500;
 }
 .secondDiv h3 {
     font-weight:400;
-    font-size:20px;
+    /* font-size:20px; */
     margin:20px auto;
 }
 .styleDiv{
@@ -58,27 +71,27 @@ padding:10px;
 width:500px;
 }
 .h3style{
-font-size:16px;
+/* font-size:16px; */
 font-weight:bold;
 }
 
 .fifthDiv h2{
-    font-size:36px;
+    /* font-size:36px; */
     font-weight:500;
 }
 .h3style1{
-font-size:22px !important;
+/* font-size:22px !important; */
 font-weight:400;
 }
 .clickable{
     text-decoration: underline;
-    font-size: 18px;
+    /* font-size: 18px; */
     color: #6F7282;
     margin: 0 10px;
 }
 .unclickable{
     margin: 0 10px;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 .ansDiv{
     display: flex;
@@ -92,7 +105,7 @@ font-weight:400;
     border-radius:8px;
 }
 .courseContent h3{
-    font-size:20px;
+    /* font-size:20px; */
     font-weight:bold;
     text-align: start !important;
     margin-left:10px;
@@ -100,33 +113,33 @@ font-weight:400;
 .cardDet{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
 }
-.sideBox{
+/* .sideBox{
 font-size: 20px !important;
-}
+} */
 .sideBoxIcon{
     height:27px;
      width:27px;
 }
 .fifthDiv h3 {
     font-weight:400;
-    font-size:22px;
+    /* font-size:22px; */
     margin:20px auto;
    
 }
-.fifthDiv > h3 {
+/* .fifthDiv > h3 {
     font-size:24px;
 
-}
+} */
 .svgIcon{
     height: 20px !important;
     width: 20px !important;
 }
 @media only screen and (max-width: 600px) {
   
-.banner h1,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
+/* .banner h1,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
 font-size:24px;
-}
-.fifthDiv h2{
+} */
+/* .fifthDiv h2{
     font-size:34px;
     }
     .fifthDiv h3{
@@ -139,9 +152,14 @@ font-size:24px;
 
 .courseBox h3,.secondDiv h3 {
     font-size:16px;
+} */
+
+.h1fs,.h2fs{
+    font-size: 34px;
 }
-
-
+.h3fs,.pfs{
+font-size: 18px;
+}
 .faqDiv{
 max-width:500px;
 }
@@ -155,7 +173,7 @@ max-width:500px;
 }
 @media only screen and (max-width: 430px) {
   
-  .banner h1,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
+  /* .banner h1,.courseBox h2,.div3 h2,.secondDiv h2,.div4 h2{
   font-size:20px;
   }
   
@@ -174,17 +192,22 @@ max-width:500px;
 }
 .h3style1,.fifthDiv h3{
     font-size:16px !important;
-}
+} */
 
-  
+.h1fs,.h2fs{
+    font-size: 30px;
+}
+.h3fs,.pfs{
+font-size: 16px;
+}
   }
   @media only screen and (max-width: 300px) {
-    .fifthDiv h2{
+    /* .fifthDiv h2{
         font-size:24px;
         }
         .ansDiv p,.sideBox, .fifthDiv h3,.h3style1,.freePreview,.unclickable {
             font-size:14px;
-        }
+        } */
         .ansDiv{
     
             flex-direction: column;

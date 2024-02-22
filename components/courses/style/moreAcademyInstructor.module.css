@@ -1,5 +1,5 @@
 .heading{
-    font-size:30px;
+    /* font-size:30px; */
     font-weight:500;
 }
 .keybox{
@@ -15,53 +15,51 @@
     margin:auto auto;
   }
   .feedbackBox h2{
-    font-size:30px;
+    /* font-size:30px; */
     text-align:center;
   }
   .feedbackBox h3{
-    font-size:20px;
+    /* font-size:20px; */
     text-align:center;
   }
   .feedbackBox p{
-    font-size:16px;
+    /* font-size:16px; */
     text-align:center;
   }
+  .h1fs{
+    font-size: 44px ;
+}
+.h2fs{
+font-size: 36px;
+}
+.h3fs{
+font-size: 24px;
+}
+.pfs{
+font-size: 18px !;
+}
+
 @media only screen and (max-width: 600px) {
-  .heading{
-    font-size:24px;
-    }
+
     .feedbackBox{
         width:85vw;
       }
-      .feedbackBox h2{
-        font-size:24px;
-      }
-      .feedbackBox p{
-        font-size:14px;
-        text-align:center;
-      }
-      .feedbackBox h3{
-        font-size:16px;
-        text-align:center;
-      }
-
+  
+      .h1fs,.h2fs{
+        font-size: 34px;
+    }
+    .h3fs,.pfs{
+    font-size: 18px;
+    }
 }
 @media only screen and (max-width: 430px) {
-    .heading{
-      font-size:20px;
-      }
       .feedbackBox{
         width:95vw;
       }
-      .feedbackBox h2{
-        font-size:20px;
-      }
-      .feedbackBox p{
-        font-size:12px;
-        text-align:center;
-      }
-      .feedbackBox h3{
-        font-size:14px;
-        text-align:center;
-      }
+      .h1fs,.h2fs{
+        font-size: 30px;
+    }
+    .h3fs,.pfs{
+    font-size: 16px;
+    }
   }

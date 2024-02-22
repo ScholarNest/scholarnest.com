@@ -11,368 +11,134 @@ const PerformanceTunningComponent = () => {
     // useEffect((()=>{
     // setcourseSections(halfcourseSections);
     // }),[])
+ 
     const halfcourseSections = [
         {
-            id: 1,
-            ques: "About the Program",
-            ans: [{ ansId: 1, det: "Before you start - Must watch", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" }]
+            id:1,
+            ques:"About the Course",
+            ans:[
+            {ansId:1,det:"What will you learn in this course",icon:"1",free:"true",link:"https://www.scholarnest.in//enroll/2307939?et=free_trial"},
+            {ansId:2,det:"Course Prerequisites",icon:"1",free:"true",link:"https://www.scholarnest.in//enroll/2307939?et=free_trial"},
+            {ansId:3,det:"Course Material and Resources",icon:"1",free:"true",link:"https://www.scholarnest.in//enroll/2307939?et=free_trial"}]
         },
         {
-            id: 2,
-            ques: "Ch1: Understanding Big Data and Apache Spark",
-            ans: [
-                { ansId: 1, det: "Ch1: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch1: Downloadable Material", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Big Data - Overview and Objectives", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 4, det: "What is Big Data and How it Started", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 5, det: "What is Big Data and How it Started - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 6, det: "Hadoop Architecture, History, and Evolution", icon: "1", free: "false", link: "" },
-                { ansId: 7, det: "Hadoop Architecture, History, and Evolution - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 8, det: "What is Data Lake and How it works", icon: "1", free: "false", link: "" },
-                { ansId: 9, det: "What is Data Lake and How it works - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 10, det: "Introducing Apache Spark and Databricks Cloud", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 11, det: "Introducing Apache Spark and Databricks Cloud - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 12, det: "Spark Development Environment - Overview and Objectives", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 13, det: "Spark Development Environments", icon: "1", free: "true", link: "https://www.scholarnest.in/order?ct=3f4ce35a-bd10-4226-8b24-724cc39785c5" },
-                { ansId: 14, det: "Spark Development Environments - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Setup your Databricks Community Cloud Environment", icon: "1", free: "false", link: "" },
-                { ansId: 16, det: "Setup your Databricks Community Cloud Environment - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Introduction to Databricks Workspace", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 18, det: "Introduction to Databricks Workspace - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 19, det: "Create Your First Spark Application in Databricks Cloud", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 20, det: "Create Your First Spark Application in Databricks Cloud - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 21, det: "Setup Your Local Development IDE", icon: "1", free: "false", link: "" },
-                { ansId: 22, det: "Setup your Local Development IDE - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 23, det: "Mac Users - Setup your Local Development IDE", icon: "1", free: "false", link: "" },
-                { ansId: 24, det: "Create Your First Spark Application using IDE", icon: "1", free: "true", link: "https://www.scholarnest.in/enroll/2107620?et=free_trial" },
-                { ansId: 25, det: "Create Your First Spark Application using IDE - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 26, det: "Ch1: Assignment", icon: "3", free: "false", link: "" },
-                { ansId: 27, det: "Ch1: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+            id:2,
+            ques:"Getting Started with Performance Tuning",
+            ans:[
+            {ansId:1,det:"Introduction to performance tuning",icon:"1",free:"false",link:""},
+            {ansId:2,det:"Instrumentation and pinpointing",icon:"1",free:"false",link:""},
+            {ansId:3,det:"What is Benchmarking?",icon:"1",free:"false",link:""},
+            {ansId:4,det:"How to Benchmark?",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Optimizing schema inference overhead",icon:"1",free:"false",link:""},
+            {ansId:6,det:"What is disk caching?",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Performance tuning goals - Time vs. Cost",icon:"1",free:"false",link:""},
+            {ansId:8,det:"Notes for reference",icon:"3",free:"false",link:""},
+            {ansId:9,det:"Source Code",icon:"2",free:"false",link:""}]
         },
         {
-            id: 3,
-            ques: "Ch2: Apache Spark Tables and Dataframes",
-            ans: [
-                { ansId: 1, det: "Ch2: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch2: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Introduction to Spark Data Frames and Tables", icon: "1", free: "false", link: "" },
-                { ansId: 4, det: "Introduction to Spark Data Frames and Tables - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 5, det: "Creating Spark Dataframe", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Creating Spark Dataframe - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Creating Spark Tables", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Creating Spark Tables - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Common Problem With Databricks Community", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Common Problem With Databricks Community - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "Data Caching Essentials", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Data Caching Essentials - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Working With Spark SQL", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Working With Spark SQL - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Dataframe Transformations and Actions", icon: "1", free: "false", link: "" },
-                { ansId: 16, det: "Dataframe Transformations and Actions - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Applying Transformations", icon: "1", free: "false", link: "" },
-                { ansId: 18, det: "Applying Transformations - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 19, det: "Querying Spark Dataframe", icon: "1", free: "false", link: "" },
-                { ansId: 20, det: "Querying Spark Dataframe - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 21, det: "More Dataframe Transformations", icon: "1", free: "false", link: "" },
-                { ansId: 22, det: "More Dataframe Transformations - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 23, det: "Micro Project - Problem Statement", icon: "1", free: "false", link: "" },
-                { ansId: 24, det: "Micro Project - Problem Statement - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 25, det: "Ch2: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 26, det: "Ch2: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+            id:3,
+            ques:"Tuning data storage, data read, partitions and data files",
+            ans:[
+            {ansId:1,det:"Introduction to data storage and efficient data read",icon:"1",free:"false",link:""},
+            {ansId:2,det:"Data Caching techniques and correct implementation",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Column formats and column pruning",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Row filtering and predicate pushdown",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Disk partitioning and partition pruning",icon:"1",free:"false",link:""},
+            {ansId:6,det:"Crippling of predicate pushdown",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Scan overhead and fix metadata problems",icon:"1",free:"false",link:""},
+            {ansId:8,det:"Small file problem and correction",icon:"1",free:"false",link:""},
+            {ansId:9,det:"Haystack query, Z-Order indexing and disk partitioning",icon:"1",free:"false",link:""},
+            {ansId:10,det:"Bucketing and file pruning",icon:"1",free:"false",link:""},
+            {ansId:11,det:"Dataframe memory partition and tuning",icon:"1",free:"false",link:""},
+            {ansId:12,det:"Tuning data file size for performance",icon:"1",free:"false",link:""},
+            {ansId:13,det:"File open cost and tuning",icon:"1",free:"false",link:""},
+            {ansId:14,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         },
         {
-            id: 4,
-            ques: "Ch3: Dataframe Essentials",
-            ans: [
-                { ansId: 1, det: "Ch3: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch3: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch2: Assignment Solutions", icon: "2", free: "false", link: "" },
-                { ansId: 4, det: "Creating Spark Session", icon: "1", free: "false", link: "" },
-                { ansId: 5, det: "Creating Spark Session - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 6, det: "Programmatically Creating Data Frames", icon: "1", free: "false", link: "" },
-                { ansId: 7, det: "Programmatically Creating Data Frames - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 8, det: "Working with Spark Data Frame Schema", icon: "1", free: "false", link: "" },
-                { ansId: 9, det: "Working with Spark Data Frame Schema - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 10, det: "Writing Spark Data Frames", icon: "1", free: "false", link: "" },
-                { ansId: 11, det: "Writing Spark Data Frames - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 12, det: "Managed Vs External Tables", icon: "1", free: "false", link: "" },
-                { ansId: 13, det: "Managed Vs External Tables - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 14, det: "Introducing Spark Web UI", icon: "1", free: "false", link: "" },
-                { ansId: 15, det: "Introducing Spark Web UI - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Ch3: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Ch3: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+            id:4,
+            ques:"Understanding, detecting and tuning data spills",
+            ans:[
+            {ansId:1,det:"Introduction to spill, cause and implications",icon:"1",free:"false",link:""},
+            {ansId:2,det:"Spark memory allocation, OOM exceptions and management",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Detecting data spill and its severity",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Introduction to shuffle partitions, tuning challenges and approach",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Tuning spill and managing memory",icon:"1",free:"false",link:""},
+            {ansId:6,det:"Data explosion scenarios, spill detection and tuning approaches",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         },
-        {
-            id: 5,
-            ques: "Ch4: Dataframe Transformations",
-            ans: [
-                { ansId: 1, det: "Ch4: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch4: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch3: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Working with Spark Data Frame Rows", icon: "1", free: "false", link: "" },
-                { ansId: 5, det: "Working with Spark Data Frame Rows - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 6, det: "Working with Spark Data Frame Columns", icon: "1", free: "false", link: "" },
-                { ansId: 7, det: "Working with Spark Data Frame Columns - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 8, det: "Working with Select and SelectExpr", icon: "1", free: "false", link: "" },
-                { ansId: 9, det: "Working with Select and SelectExpr - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 10, det: "Working with Literal Values", icon: "1", free: "false", link: "" },
-                { ansId: 11, det: "Working with Literal Values - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 12, det: "Adding, Renaming and Removing Columns", icon: "1", free: "false", link: "" },
-                { ansId: 13, det: "Adding, Renaming and Removing Columns - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 14, det: "Filtering Records and Finding Unique Rows", icon: "1", free: "false", link: "" },
-                { ansId: 15, det: "Filtering Records and Finding Unique Rows - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Ch4: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Ch4: Assignment Resource for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 18, det: "Ch4: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
-        },
-       
 
     ]
     const extraCourseSection=[
- {
-            id: 6,
-            ques: "Ch5: Spark Data Types",
-            ans: [
-                { ansId: 1, det: "Ch5: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch5: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch4: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch4: Assignment Solution Notebooks for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Sampling and Splitting", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Sampling and Splitting - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Sorting and Limiting", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Sorting and Limiting - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Nulls in Apache Spark", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Nulls in Apache Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "Working with Nulls", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Working with Nulls - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Spark Data Types", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Spark Data Types - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Casting and Aliases", icon: "1", free: "false", link: "" },
-                { ansId: 16, det: "Casting and Aliases - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Ch5: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 18, det: "Ch5: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+        {
+            id:5,
+            ques:"Detecting, managing and tuning data skew",
+            ans:[
+            {ansId:1,det:"Introduction to data skew and challenges",icon:"1",free:"false",link:""},
+            {ansId:2,det:"Detecting data skew and its severity",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Types of skews and its impact",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Skew tuning approaches",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Skew tuning with hints",icon:"1",free:"false",link:""},
+            {ansId:6,det:"Introduction to data salting",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Data salting for handling skew",icon:"1",free:"false",link:""},
+            {ansId:8,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         },
         {
-            id: 7,
-            ques: "Ch6: Working with Different Data Types",
-            ans: [
-                { ansId: 1, det: "Ch6: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch6: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch5: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch5: Assignment Solution Notebooks for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Working with Numbers", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Working with Numbers - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Boolean Expressions", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Boolean Expressions - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Manipulating Strings", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Manipulating Strings - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "Working with Dates and Timestamps", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Working with Dates and Timestamps - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Working with Struct", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Working with Struct - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Working with Arrays", icon: "1", free: "false", link: "" },
-                { ansId: 16, det: "Working with Arrays - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Working with Maps", icon: "1", free: "false", link: "" },
-                { ansId: 18, det: "Working with Maps - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 19, det: "Ch6: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 20, det: "Ch6: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+            id:6,
+            ques:"Detecting and tuning data shuffle problems",
+            ans:[
+            {ansId:1,det:"Introduction to data shuffle and performance problems",icon:"1",free:"false",link:""},
+            {ansId:2,det:"Shuffle types, transformations and scenarios",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Shuffle tuning vs. join tuning and approaches",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Challenges, limitations and OOM exceptions in joins",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Implementing and tuning broadcast joins",icon:"1",free:"false",link:""},
+            {ansId:6,det:"Broadcast joins and OOM exceptions",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Bucket joins, performance and limitations",icon:"1",free:"false",link:""},
+            {ansId:8,det:"Bucketing challenges and how to get it right",icon:"1",free:"false",link:""},
+            {ansId:9,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         },
         {
-            id: 8,
-            ques: "Ch7: Spark Aggregations",
-            ans: [
-                { ansId: 1, det: "Ch7: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch7: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch6: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch6: Assignment Solution Notebooks for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Simple Aggregations in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Simple Aggregations in Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Grouping Aggregation in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Grouping Aggregation in Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Windowing Aggregations in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Windowing Aggregations in Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "Top N Aggregation", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Top N Aggregation - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Pivoting and Aggregation", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Pivoting and Aggregation - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Ch7: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Ch7: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+            id:7,
+            ques:"Understand and tune data serialization problems",
+            ans:[
+            {ansId:1,det:"Understand the serialization problem",icon:"1",free:"false",link:""},
+            {ansId:2,det:"UDF in PySpark and associated problems",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Vectorized UDF, benefits and limitations",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Scala UDF and optimizer limitations",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Using Scala UDF in PySpark",icon:"1",free:"false",link:""},
+            {ansId:6,det:"Spark Core APIs Vs. Scala UDF",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         },
         {
-            id: 9,
-            ques: "Ch8: Spark Joins",
-            ans: [
-                { ansId: 1, det: "Ch8: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch8: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch7: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch7: Assignment Solution Notebooks for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Introduction to Data Frame Joins", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Introduction to Data Frame Joins - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Outer Joins in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Outer Joins in Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Data Frame Joins and Column Name Ambiguity", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Data Frame Joins and Column Name Ambiguity - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "More on Data Frame Joins", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "More on Data Frame Joins - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Ch8: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 14, det: "Ch8: Assignments Resource for Download", icon: "2", free: "false", link: "" },
-                { ansId: 15, det: "Ch8: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
+            id:8,
+            ques:"Leveraging new Spark features and Databricks capabilities",
+            ans:[
+            {ansId:1,det:"Introduction to Adaptive Query Execution",icon:"1",free:"false",link:""},
+            {ansId:2,det:"AQE capabilities and limitations",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Tuning shuffle with AQE",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Tuning joins with AQE",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Tuning data skew with AQE",icon:"1",free:"false",link:""},
+            {ansId:6,det:"AQE fine-tuning for performance results",icon:"1",free:"false",link:""},
+            {ansId:7,det:"Introduction to dynamic pruning and data skipping",icon:"1",free:"false",link:""},
+            {ansId:8,det:"Using dynamic pruning and data skipping capability",icon:"1",free:"false",link:""},
+            {ansId:9,det:"Small file performance and cost implications",icon:"1",free:"false",link:""},
+            {ansId:10,det:"Auto optimize and auto compact",icon:"1",free:"false",link:""},
+            {ansId:11,det:"Cleaning stale data",icon:"1",free:"false",link:""},
+            {ansId:12,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         },
         {
-            id: 10,
-            ques: "Ch9: Working with Spark Data Sources and Sinks",
-            ans: [
-                { ansId: 1, det: "Ch9: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch9: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch8: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch8: Assignment Solution Notebooks for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Introduction to Spark Data Sources and Sinks", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Introduction to Spark Data Sources and Sinks - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Understanding Spark Dataframe Reader", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Understanding Spark Dataframe Reader - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Reading CSV, JSON, Parquet, and AVRO File", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Reading CSV, JSON, Parquet, and AVRO File - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 10, det: "Reading Data with Schema-on-read", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Reading Data with Schema-on-read - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "DataFrameReader Options for CSV, JSON and Others", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "DataFrameReader Options for CSV, JSON and Others - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Understanding Spark DataframeWriter", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Understanding Spark DataframeWriter - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Writing CSV, JSON, Parquet, and AVRO Files", icon: "1", free: "false", link: "" },
-                { ansId: 16, det: "Writing CSV, JSON, Parquet, and AVRO Files - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Managing Your Data Layout", icon: "1", free: "false", link: "" },
-                { ansId: 18, det: "Managing Your Data Layout - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 19, det: "Reading Partitioned Dataframes", icon: "1", free: "false", link: "" },
-                { ansId: 20, det: "Reading Partitioned Dataframes - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 21, det: "Ch9: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 22, det: "Ch9: Assignments Resource for Download", icon: "2", free: "false", link: "" },
-                { ansId: 23, det: "Ch9: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
-        },
-        {
-            id: 11,
-            ques: "Ch10: Spark Dataframe Internals",
-            ans: [
-                { ansId: 1, det: "Ch10: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch10: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch9: Assignment Solutions", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch9: Assignment Solution Notebooks for DOWNLOAD", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Evolution of Spark APIs", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Evolution of Spark APIs - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Dataframes, RDDs and Distributed Partitions", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Dataframes, RDDs and Distributed Partitions - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Internals of Transformations", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Internals of Transformations - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "Narrow and Wide Transformations", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Narrow and Wide Transformations - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Spark Jobs - Stages, Shuffle, Task, and Slots", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Spark Jobs - Stages, Shuffle, Task, and Slots - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Spark SQL Engine and Query Planning", icon: "1", free: "false", link: "" },
-                { ansId: 16, det: "Spark SQL Engine and Query Planning - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 17, det: "Ch10: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
-        },
-        {
-            id: 12,
-            ques: "Ch11: Spark Cluster and Runtime Architecture",
-            ans: [
-                { ansId: 1, det: "Ch11: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch11: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Understanding Spark Cluster", icon: "1", free: "false", link: "" },
-                { ansId: 4, det: "Understanding Spark Cluster - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 5, det: "Running Spark Application on Cluster", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Running Spark Application on Cluster - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 7, det: "Spark Submit and Important Options", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Spark Submit and Important Options - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 9, det: "Spark Deployment Modes", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Spark Deployment Modes - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 11, det: "Resource Allocation to Spark Application", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Resource Allocation to Spark Application - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 13, det: "Spark Cluster and Runtime Architecture", icon: "1", free: "false", link: "" },
-                { ansId: 14, det: "Spark Cluster and Runtime Architecture - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 15, det: "Ch11: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Ch11: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
-        },
-        {
-            id: 13,
-            ques: "Ch12: Spark Joins and Optimization",
-            ans: [
-                { ansId: 1, det: "Ch12: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch12: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Ch11: Assignment Solutions - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Ch12: Internals of Spark Joins and Shuffle", icon: "1", free: "false", link: "" },
-                { ansId: 5, det: "Ch12: Internals of Spark Joins and Shuffle - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 6, det: "Ch12: Optimizing Your Joins Using Broadcast", icon: "1", free: "false", link: "" },
-                { ansId: 7, det: "Ch12: Optimizing Your Joins Using Broadcast - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 8, det: "Implementing Bucket Joins", icon: "1", free: "false", link: "" },
-                { ansId: 9, det: "Implementing Bucket Joins - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 10, det: "Spark Adaptive Query Execution", icon: "1", free: "false", link: "" },
-                { ansId: 11, det: "Spark Adaptive Query Execution - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 12, det: "Spark AQE Dynamic Join Optimization", icon: "1", free: "false", link: "" },
-                { ansId: 13, det: "Spark AQE Dynamic Join Optimization - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 14, det: "Handling Data Skew in Spark Joins", icon: "1", free: "false", link: "" },
-                { ansId: 15, det: "Handling Data Skew in Spark Joins - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Spark Dynamic Partition Pruning", icon: "1", free: "false", link: "" },
-                { ansId: 17, det: "Spark Dynamic Partition Pruning - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 18, det: "Handling Data Skew in Spark Joins", icon: "1", free: "false", link: "" },
-                { ansId: 19, det: "Handling Data Skew in Spark Joins - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 20, det: "Ch12: Assignments", icon: "3", free: "false", link: "" },
-                { ansId: 21, det: "Ch12: Assignment Resource for Download", icon: "2", free: "false", link: "" },
-                { ansId: 22, det: "Ch12: Test Your Knowledge [Requires 60% passing grade - Retake allowed]", icon: "4", free: "false", link: "" }]
-        },
-        {
-            id: 14,
-            ques: "Ch13: Advanced Spark",
-            ans: [
-                { ansId: 1, det: "Ch13: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Spark Memory Allocation", icon: "1", free: "false", link: "" },
-                { ansId: 3, det: "Spark Memory Allocation - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 4, det: "Spark Memory Management", icon: "1", free: "false", link: "" },
-                { ansId: 5, det: "Spark Memory Management - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 6, det: "Data Caching in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 7, det: "Data Caching in Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 8, det: "Data Frame Hints", icon: "1", free: "false", link: "" },
-                { ansId: 9, det: "Data Frame Hints - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 10, det: "Repartition Vs Coalesce", icon: "1", free: "false", link: "" },
-                { ansId: 11, det: "Repartition Vs Coalesce - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 12, det: "Broadcast Variables in Apache Spark", icon: "1", free: "false", link: "" },
-                { ansId: 13, det: "Broadcast Variables in Apache Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 14, det: "Spark Accumulators", icon: "1", free: "false", link: "" },
-                { ansId: 15, det: "Spark Accumulators - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 16, det: "Spark Speculative Execution", icon: "1", free: "false", link: "" },
-                { ansId: 17, det: "Spark Speculative Execution - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 18, det: "Dynamic Resource Allocation in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 19, det: "Dynamic Resource Allocation in Spark - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 20, det: "Spark Schedulers", icon: "1", free: "false", link: "" },
-                { ansId: 21, det: "Spark Schedulers - Notes", icon: "3", free: "false", link: "" }]
-        },
-        {
-            id: 15,
-            ques: "Ch14: Miscellaneous and Interview Topics",
-            ans: [
-                { ansId: 1, det: "Ch14: Downloadable Documents", icon: "2", free: "false", link: "" },
-                { ansId: 2, det: "Ch14: Downloadable Materials", icon: "2", free: "false", link: "" },
-                { ansId: 3, det: "Creating and Using UDFs", icon: "1", free: "false", link: "" },
-                { ansId: 4, det: "Creating and Using UDFs - Notes", icon: "3", free: "false", link: "" },
-                { ansId: 5, det: "Unit Testing in Spark", icon: "1", free: "false", link: "" },
-                { ansId: 6, det: "Unit Testing in Spark - Notes", icon: "3", free: "false", link: "" }]
-        },
-        {
-            id: 16,
-            ques: "Capstone Project",
-            ans: [
-                { ansId: 1, det: "Project Scope and Background", icon: "1", free: "false", link: "" },
-                { ansId: 2, det: "Transformation Requirement", icon: "1", free: "false", link: "" },
-                { ansId: 3, det: "Setup your starter project", icon: "1", free: "false", link: "" },
-                { ansId: 4, det: "Download Starter Project", icon: "2", free: "false", link: "" },
-                { ansId: 5, det: "Download Final Project", icon: "2", free: "false", link: "" },
-                { ansId: 6, det: "Test Your Starter Project", icon: "1", free: "false", link: "" },
-                { ansId: 7, det: "Setup your source control and process", icon: "1", free: "false", link: "" },
-                { ansId: 8, det: "Creating Your Project CI/CD Pipeline", icon: "1", free: "false", link: "" },
-                { ansId: 9, det: "Develop Code - Notes", icon: "1", free: "false", link: "" },
-                { ansId: 10, det: "Write Test Cases", icon: "1", free: "false", link: "" },
-                { ansId: 11, det: "Working with Kafka Integration", icon: "1", free: "false", link: "" },
-                { ansId: 12, det: "Estimating resources for your application", icon: "1", free: "false", link: "" },
-                { ansId: 13, det: "An end is the new beginning", icon: "1", free: "false", link: "" }]
+            id:9,
+            ques:"Understand and tune data serialization problems",
+            ans:[
+            {ansId:1,det:"Choosing Databricks cluster types",icon:"1",free:"false",link:""},
+            {ansId:2,det:"Selecting Cluster node VM type",icon:"1",free:"false",link:""},
+            {ansId:3,det:"Need for the Photon engine",icon:"1",free:"false",link:""},
+            {ansId:4,det:"Estimating cores, workers, and autoscaling",icon:"1",free:"false",link:""},
+            {ansId:5,det:"Databricks cluster utilization goals and monitoring",icon:"1",free:"false",link:""},
+            {ansId:6,det:"Chapter Notes For Reference and Revision",icon:"3",free:"false",link:""}]
         }
+            
+            
+            
     ]
    
     const IndcourseList = [
@@ -469,26 +235,26 @@ const PerformanceTunningComponent = () => {
         }
       };
     const ExtendCourseList=()=>{
-    //     if(showMoreLessText==='Show more'){
-    //     const extendedList=[...courseSections,...extraCourseSection];
-    //   setcourseSections(extendedList)
-    //   setShowMoreLessText('Show less');
-    //   }else{
-    //      setShowMoreLessText('Show more');
-    //     setcourseSections(halfcourseSections);
-    //   }
+        if(showMoreLessText==='Show more'){
+        const extendedList=[...courseSections,...extraCourseSection];
+      setcourseSections(extendedList)
+      setShowMoreLessText('Show less');
+      }else{
+         setShowMoreLessText('Show more');
+        setcourseSections(halfcourseSections);
+      }
     }
     return (
         <>
            <div class={classes.mainBody}>
-            <div className={classes.banner + " d-flex justify-content-center align-items-center "}>
+            <div className={classes.banner + " d-flex justify-content-center align-items-center " + classes.bannerTunning}>
                 <div class="me-5 w-100">
                     <h1 class="text-end"> Apache Spark Performance Tuning</h1>
 
                     <h3 class="text-white text-end">  Master Spark Performance Tuning on Databricks Cloud
                     </h3>
                     <div class={classes.butns + " row gap-2 justify-content-end"}>
-                        <a class={classes.nfpbutn+" col-sm-5 col-md-3  col-12 text-center "} href="https://www.scholarnest.in/cart/add_product/2307939?price_id=3085713">
+                        <a class={classes.nfpbutn+" col-sm-5 col-md-3  col-6 text-center "} href="https://www.scholarnest.in/cart/add_product/2307939?price_id=3085713">
                         Buy Now
                         </a>
                        
@@ -505,7 +271,7 @@ const PerformanceTunningComponent = () => {
                 <div className=" col-12 col-sm-12 col-md-6 h-100">
                 <br />
                 <br />
-                    <h3 class='my-2 px-md-2'> 
+                    <h3  class={classes.pfs+' my-2 px-md-2'}> 
                     This is the most comprehensive course ever created for performance tuning Apache Spark on Databricks Cloud. This course will teach you a holistic approach of performance tuning and take you deep into instrumenting, monitoring, diagnosing, pinpointing, and identifying the root cause of the performance problems. Then, it will take you to the approaches for solving, implementing, measuring, and benchmarking the performance tuning solutions.
 <br />
 <br />
@@ -621,7 +387,7 @@ You also need to be familier with Databricks Cloud platform features and capabil
                 </div>
                 <div className={classes.videoDet + " col-md-6 col-12 d-flex justify-content-center align-items-center"}>
 
-                    <iframe frameborder="0" allowfullscreen="" class="videoproxy__iframe embed-responsive-item" src="https://platform.thinkific.com/videoproxy/v1/play/cc8ap9r40u9f3c7bgkg0?autoplay=false"></iframe>
+                    <iframe frameborder="0" allowfullscreen="" class="videoproxy__iframe embed-responsive-item" src='https://platform.thinkific.com/videoproxy/v1/play/cn2681nt2hrc72r7q690?autoplay=false'></iframe>
                 </div>
             </div>
             <br />
@@ -705,8 +471,9 @@ You also need to be familier with Databricks Cloud platform features and capabil
                   <p class={classes.sideBox}>$349.00</p>
                   </div>
                   <div className="d-flex my-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2"} viewBox="0 0 448 512"><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7 .1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3 .3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7 .1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z" /></svg>
-
+                  <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2"}  fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"/>
+</svg>
                   <p class={classes.sideBox}>65 Video Lectures</p></div>
                   <div className="d-flex my-2">
                   <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2"} viewBox="0 0 40 40" fill="none">

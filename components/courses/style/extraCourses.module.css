@@ -20,7 +20,14 @@
     background-size: cover;
     
 }
-
+.bannerTunning{
+    background: linear-gradient(rgba(0,0,0,0.24), rgba(0,0,0,0.24)),url("https://import.cdn.thinkific.com/648407%2Fcustom_site_themes%2Fid%2FGJEys5SZSuCOX9MFzaWq_sad-banner-1140x720.png?width=1920");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height:400px;
+  }
 .banner h1, .newbanner h1{
 font-size:44px;
 margin:20px 10px;
@@ -216,6 +223,9 @@ font-size: 20px !important;
 .imgFor2ndTypeSubCourse{
 width: 100%;
 }
+.pfs{
+    font-size: 18px !important;
+}
 @media only screen and (max-width: 768px) {
     .videoDet iframe{
         width:70%;
@@ -253,7 +263,9 @@ font-size:18px;
     font-size:16px;
 }
 
-
+.pfs{
+    font-size: 18px !important;
+}
 
 
 }
@@ -294,7 +306,9 @@ font-size:18px;
 .enroll h3{
     font-size: 16px;
 }
-
+.pfs{
+    font-size: 16px !important;
+}
 .faqDiv{
     width:90%;
     }

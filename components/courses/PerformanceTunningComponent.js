@@ -8,9 +8,9 @@ const PerformanceTunningComponent = () => {
     const router = useRouter();
     const [courseSections , setcourseSections] =useState([]);
      const [showMoreLessText, setShowMoreLessText] = useState('Show more');
-    // useEffect((()=>{
-    // setcourseSections(halfcourseSections);
-    // }),[])
+    useEffect((()=>{
+    setcourseSections(halfcourseSections);
+    }),[])
  
     const halfcourseSections = [
         {
@@ -248,13 +248,13 @@ const PerformanceTunningComponent = () => {
         <>
            <div class={classes.mainBody}>
             <div className={classes.banner + " d-flex justify-content-center align-items-center " + classes.bannerTunning}>
-                <div class="me-5 w-100">
-                    <h1 class="text-end"> Apache Spark Performance Tuning</h1>
+                <div class="me-md-5 me-2 w-100">
+                    <h1 style={{color:"#92fde8"}} class="text-end"> Apache Spark Performance Tuning</h1>
 
-                    <h3 class="text-white text-end">  Master Spark Performance Tuning on Databricks Cloud
+                    <h3 style={{color:"#92fde8"}} class=" text-end">  Master Spark Performance Tuning on Databricks Cloud
                     </h3>
                     <div class={classes.butns + " row gap-2 justify-content-end"}>
-                        <a class={classes.nfpbutn+" col-sm-5 col-md-3  col-6 text-center "} href="https://www.scholarnest.in/cart/add_product/2307939?price_id=3085713">
+                        <a class={classes.nfpbutn+"  col-md-3  col-12 text-center "} href="https://www.scholarnest.in/cart/add_product/2307939?price_id=3085713">
                         Buy Now
                         </a>
                        
@@ -302,7 +302,7 @@ The course will simulate and generate various performance problems using large v
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                     </svg>
                     </div>              
-Fine tune AQE, Data skipping, Dynamic Pruning, Auto Optimize small file, Cleaning stale data</p>
+                    Tuning data storage, read operation, partition size, small files, caching, indexing, disk partitioning and pruning</p>
                     <br />
                     <hr />
                     <br />
@@ -313,7 +313,8 @@ Fine tune AQE, Data skipping, Dynamic Pruning, Auto Optimize small file, Cleanin
                     </svg>
                     </div>              
 
-                    Cluster Selection, VM Selection, Photon Engine, Estimating CPU, Memory, Worker Nodes and Monitoring Utilization</p>
+                
+Tuning Data Spill, Data Skew, Data Shuffle, Joins, Wide transformations, UDF and Serialization problems</p>
                     <br />
                     <hr />
                     <br />
@@ -324,11 +325,22 @@ Fine tune AQE, Data skipping, Dynamic Pruning, Auto Optimize small file, Cleanin
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                         </svg>
                         </div>
-                        Advanced Concepts - Data Sources and Sinks, Adaptive Query Optimization, Dynamic Partition Pruning, Unit Testing</p>
+                        Fine tune AQE, Data skipping, Dynamic Pruning, Auto Optimize small file, Cleaning stale data</p>
                         <br />
                     <hr />
                     <br />
-                    
+                  
+                    <p class="d-flex my-2">
+                        <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"  class={classes.sideIcon+" bi  mr-3 bi-check-circle-fill"} viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        </div>
+                     
+Cluster Selection, VM Selection, Photon Engine, Estimating CPU, Memory, Worker Nodes and Monitoring Utilization</p>
+                        <br />
+                    <hr />
+                    <br />
                 </div>
 
             </div>
@@ -565,16 +577,16 @@ You also need to be familier with Databricks Cloud platform features and capabil
             <br />
             <br />
             <div style={{minHeight:"300px",backgroundColor:'#c3d4e8'}} class={classes.div4 + " row mx-0 px-md-5"}>
-                <div class='col-12 col-md-8  d-flex justify-content-center align-items-center'> 
+                <div class='col-12 col-md-8  d-flex justify-content-center align-items-center '> 
                 <div class={classes.enroll}>
-                    <h2 class={classes.headings+" fw-bold"}>Enroll into self-paced course</h2>
+                    <h2 class={classes.headings+" fw-bold "}>Enroll into self-paced course</h2>
                     <br />
                     <h3 style={{maxWidth:"700px"}}>Discover your potential, start today and learn at your own schedule</h3>
                     </div>
                     
                 </div>
               
-                <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
+                <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-md-center  ">
                         <button onClick={()=>{router.push('https://www.scholarnest.in/enroll/2307939')}} style={{height:'70px',backgroundColor:'#e79913'}} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold"> Buy Now </button>
                     </div>
                   

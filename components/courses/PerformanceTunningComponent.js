@@ -127,7 +127,7 @@ const PerformanceTunningComponent = () => {
         },
         {
             id:9,
-            ques:"Understand and tune data serialization problems",
+            ques:"Databricks cluster, performance, cost and estimation",
             ans:[
             {ansId:1,det:"Choosing Databricks cluster types",icon:"1",free:"false",link:""},
             {ansId:2,det:"Selecting Cluster node VM type",icon:"1",free:"false",link:""},
@@ -251,8 +251,8 @@ const PerformanceTunningComponent = () => {
                 <div class="me-md-5 me-2 w-100">
                     <h1 style={{color:"#92fde8"}} class="text-end"> Apache Spark Performance Tuning</h1>
 
-                    <h3 style={{color:"#92fde8"}} class=" text-end">  Master Spark Performance Tuning on Databricks Cloud
-                    </h3>
+                    <h2 style={{color:"#92fde8"}} class=" text-end">  Master Spark Performance Tuning on Databricks Cloud
+                    </h2>
                     <div class={classes.butns + " row gap-2 justify-content-end"}>
                         <a class={classes.nfpbutn+"  col-md-3  col-12 text-center "} href="https://www.scholarnest.in/cart/add_product/2307939?price_id=3085713">
                         Buy Now
@@ -469,11 +469,12 @@ You also need to be familier with Databricks Cloud platform features and capabil
                     </div>
                     <button onClick={ExtendCourseList}> <p class='fw-bold my-2'> {showMoreLessText} </p></button>
                 </div>
+                <br />
                 <div className={classes.courseContent+ " col-md-4 col-12"}>
                 <Card.Body class={classes.cardDet} >
-                  <img class="w-100" src="/assets/solutions/MoreAcademySolutions/courses/performancetunning.jpg" alt="Mastering Pyspark" />
+                  <img class="w-100" src="/assets/solutions/MoreAcademySolutions/courses/performancetunning.jpg" alt="Apache Spark Performance Tuning on Databricks Cloud" />
                   <div className='ml-3 py-2'>
-                  <h3 className={classes.h3style}>Course Feature</h3>
+                  <h2 className={classes.h3style}>Course Features</h2>
                   <div class='mb-2' style={{width:"50px",height:'1px',backgroundColor:'black',marginLeft:'10px'}}></div>
                   <div className=' ml-2 px-3 py-2'>
                     <div className="d-flex my-2">

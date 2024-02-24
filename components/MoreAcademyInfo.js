@@ -1220,7 +1220,7 @@ const MoreAcademyInfo = (props) => {
               <path fillRule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z" />
             </svg>
             <h3 class={classes.h3fs+" my-3 fw-bold"}> Capstone Project</h3>
-            {props.isSelf ? <p class={classes.pfs}>The course features two comprehensive end-to-end real-life capstone projects, complete with solutions, source code, and detailed explanations. Additionally, it offers hands-on assignments and quizzes for practical practice.</p> : <p class={classes.pfs}> The course includes many hands-on assignments/solutions and a major real-life capstone project with the complete solution, source code, and explanation. </p>
+            {props.isSelf ? <p class={classes.pfs}>The Course Features two comprehensive end-to-end real-life capstone projects, complete with solutions, source code, and detailed explanations. Additionally, it offers hands-on assignments and quizzes for practical practice.</p> : <p class={classes.pfs}> The course includes many hands-on assignments/solutions and a major real-life capstone project with the complete solution, source code, and explanation. </p>
             }
           </div>
         </div>

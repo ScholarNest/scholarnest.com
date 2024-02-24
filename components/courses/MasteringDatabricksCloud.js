@@ -423,7 +423,7 @@ const MasteringDatabricksCloud = () => {
                     <div class="mx-auto w-75">
                         <h1>Mastering Databricks Cloud</h1>
 
-                        <h3 class="text-white text-center"> Master Lakehouse Implementation | Azure Databricks | Data Engineer</h3>
+                        <h2 class="text-white text-center"> Master Lakehouse Implementation | Azure Databricks | Data Engineer</h2>
                         <div class={classes.butns + " row gap-2 justify-content-center"}>
                             <a class={classes.nfpbutn + " col-sm-5 col-md-3  col-12 text-center "}
                                 href="https://www.scholarnest.in/cart/add_product/2120430?price_id=2869856">
@@ -444,7 +444,7 @@ const MasteringDatabricksCloud = () => {
                     <div className=" col-12 col-sm-12 col-md-6 h-100">
                         <br />
                         <br />
-                        <h3 class='my-2 px-md-2'>Mastering Databricks Cloud is a comprehensive course that will help you become proficient in Databricks Cloud Platform, Lakehouse Architecture, Incremental Data Processing, Unity Catalog, Delta Lake, Autoloader, Delta Live Table, Databricks CLI and Rest API for Automation. </h3>
+                        <p class={classes.whatYll +' my-2 px-md-2'}>Mastering Databricks Cloud is a comprehensive course that will help you become proficient in Databricks Cloud Platform, Lakehouse Architecture, Incremental Data Processing, Unity Catalog, Delta Lake, Autoloader, Delta Live Table, Databricks CLI and Rest API for Automation. </p>
 
                     </div>
                     <div className={classes.afterSecndDiv + " col-12 col-sm-12 col-md-6 px-2 px-md-5"}>
@@ -492,8 +492,8 @@ const MasteringDatabricksCloud = () => {
                     <h2 class={classes.headings}>Course Prerequisite</h2>
                     <div className=" col-12 col-sm-12 col-md-6 my-sm-2  my-4">
 
-                        <h3 class="">What do you need to know before you start this course
-                        </h3>
+                        <p class={classes.whatYll}>What do you need to know before you start this course
+                        </p>
 
                     </div>
                     <div className=" col-12 col-sm-12 col-md-6 my-sm-1 my-3">
@@ -592,8 +592,8 @@ const MasteringDatabricksCloud = () => {
                         <Card.Body class={classes.cardDet} >
                             <img class="w-100" src="/assets/solutions/AcademySolutions/3.png" alt="Mastering Databricks Cloud" />
                             <div className='ml-3 py-2'>
-                                <h3 className={classes.h3style}>Course Feature</h3>
-                                <div class='mb-2' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
+                                <h2 className={classes.h3style}>Course Features</h2>
+                                <div class='mb-2 mt-3' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
                                 <div className=' ml-2 px-3 py-2'>
                                     <div className="d-flex my-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon + " bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
@@ -696,12 +696,12 @@ const MasteringDatabricksCloud = () => {
                         <div class={classes.enroll}>
                             <h2 class={classes.headings + " fw-bold"}>Enroll into self-paced course</h2>
                             <br />
-                            <h3 style={{ maxWidth: "700px" }}>Discover your potential, start today and learn at your own schedule</h3>
+                            <p style={{ maxWidth: "700px" }}>Discover your potential, start today and learn at your own schedule</p>
                         </div>
 
                     </div>
 
-                    <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
+                    <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-md-center">
                         <button onClick={() => { router.push("https://www.scholarnest.in/enroll/2120430") }} style={{ height: '70px', backgroundColor: '#e79913' }} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold">Buy Now </button>
                     </div>
 
@@ -714,8 +714,8 @@ const MasteringDatabricksCloud = () => {
                         <div className={classes.secondDiv + " col-12 col-sm-12 col-md-6 p-2  h-100"}>
 
                             <br />
-                            <h3 class="my-1">Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
-                            </h3>
+                            <p class={classes.whatYll +" my-1"}>Get in touch with your course coordinator to learn more about the course, instructor-led course options, discount offers, course bundles, and additional payment methods.
+                            </p>
 
                         </div>
                         <div className={classes.secondDiv + " col-12 col-md-6 col-6 my-1"}>
@@ -759,7 +759,7 @@ const MasteringDatabricksCloud = () => {
                 <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
                     <h2 class={classes.heading + "  my-2"}>Related Courses:</h2>
-                    <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
+                    <p class={classes.whatYll}>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
 
                     {
                         IndcourseList.map((data, index) => {

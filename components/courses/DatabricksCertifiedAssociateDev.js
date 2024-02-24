@@ -180,7 +180,7 @@ const DatabricksCertifiedAssociateDev = () => {
                     <div class="mx-auto w-75">
                         <h1>Databricks Certified Associate Developer for Apache Spark 3.0 - Python</h1>
 
-                        <h3 class="text-white text-center"> Get prepared for Spark certification Exam | Python | Practice Test</h3>
+                        <h2 class="text-white text-center"> Get prepared for Spark certification Exam | Python | Practice Test</h2>
                         <div class={classes.butns + " row gap-2 justify-content-center"}>
                             <a class={classes.nfpbutn + " col-sm-4 col-md-2  col-8 text-center "}
                                 href="https://www.scholarnest.in/enroll/2080626">
@@ -199,7 +199,7 @@ const DatabricksCertifiedAssociateDev = () => {
                     <div className=" col-12 col-sm-12 col-md-6 h-100">
                         <br />
                         <br />
-                        <h3 class='my-2 px-md-2'>This mock test is designed to help you practice and check your readiness for the exam. We have five mock test sets. Just like the actual exam, each mock test contains 60 multiple-choice questions.</h3>
+                        <p class={classes.whatYll +' my-2 px-md-2'}>This mock test is designed to help you practice and check your readiness for the exam. We have five mock test sets. Just like the actual exam, each mock test contains 60 multiple-choice questions.</p>
 
                     </div>
                     <div className={classes.afterSecndDiv + " col-12 col-sm-12 col-md-6 px-2 px-md-5"}>
@@ -312,8 +312,8 @@ const DatabricksCertifiedAssociateDev = () => {
                             <Card.Body class={classes.cardDet + " bg-light"} >
                                 <img class="w-100" src="/assets/solutions/AcademySolutions/4.png" alt="Databricks Certified Associate Developer for Apache Spark 3.0 - Python " />
                                 <div className='ml-3 py-2'>
-                                    <h3 className={classes.h3style}>Course Feature</h3>
-                                    <div class='mb-2' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
+                                    <h2 className={classes.h3style}>Course Features</h2>
+                                    <div class='mb-2 mt-3' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
                                     <div className=' ml-2 px-3 py-2'>
                                         <div className="d-flex my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon + " bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
@@ -353,8 +353,8 @@ const DatabricksCertifiedAssociateDev = () => {
                         <h2 class={classes.headings}>Course Prerequisite</h2>
                         <div className=" col-12 col-sm-12 col-md-6  my-sm-2  my-4">
 
-                            <h3 class="">What do you need to know before you start this course
-                            </h3>
+                            <p class={classes.whatYll }>What do you need to know before you start this course
+                            </p>
 
                         </div>
 
@@ -437,12 +437,12 @@ const DatabricksCertifiedAssociateDev = () => {
                         <div class={classes.enroll}>
                             <h2 class={classes.headings + " fw-bold"}>Enroll and start practice</h2>
                             <br />
-                            <h3 style={{ maxWidth: "700px" }}>Discover your potential, start today and learn at your own schedule</h3>
+                            <p style={{ maxWidth: "700px" }}>Discover your potential, start today and learn at your own schedule</p>
                         </div>
 
                     </div>
 
-                    <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-center">
+                    <div class=" col-md-4 col-12 d-flex justify-content-center  align-items-md-center">
                         <button onClick={() => { router.push("https://www.scholarnest.in/enroll/2080626") }} style={{ height: '70px', backgroundColor: '#e79913' }} class="btn rounded-pill w-75  px-5 text-center text-light fw-bold">Buy Now </button>
                     </div>
 
@@ -454,7 +454,7 @@ const DatabricksCertifiedAssociateDev = () => {
                 <div className={classes.courseBox + " mx-auto justify-content-center  row text-start  p-3"} >
 
                     <h2 class={classes.heading + "  my-2"}>Related Courses:</h2>
-                    <h3>Schedule a call with course coordinator for bundles, discounts and live sessions</h3>
+                    <p class={classes.whatYll}>Schedule a call with course coordinator for bundles, discounts and live sessions</p>
 
                     {
                         IndcourseList.map((data, index) => {

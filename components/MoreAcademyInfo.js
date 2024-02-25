@@ -983,7 +983,7 @@ const MoreAcademyInfo = (props) => {
         <div class="mx-auto w-75">
           <h1 class={classes.h1fs}> {bannerDetails != null && bannerDetails.title}</h1>
 
-          <h3 class={classes.h3fs+" "+"text-white"}>  {bannerDetails != null && bannerDetails.desc}   </h3>
+          <h2 class={classes.h3fs+" "+"text-white"}>  {bannerDetails != null && bannerDetails.desc}   </h2>
           <div class="row gap-2 justify-content-center">
             <a class="col-sm-5 col-md-4  col-8 btn btn-rounded btn-warning p-2 mx-2" href={props.link}>{props.btnName}  </a>
             {
@@ -1037,7 +1037,7 @@ const MoreAcademyInfo = (props) => {
 
           <div className="col-md-6 col-12 border ">
             <div className={" "}>
-              <h3 class={classes.h3fs+" fw-bold text-center"}>Mastering Pyspark</h3>
+              <h2 class={classes.h3fs+" mt-3 fw-bold text-center"}>Mastering Pyspark</h2>
               {
                 courseSections.map((quest) => {
                   function openSolution(ques_id) {
@@ -1094,7 +1094,7 @@ const MoreAcademyInfo = (props) => {
           </div>
           <div className="col-md-6 col-12 border">
             <div className={" "}>
-              <h3 class={classes.h3fs+" fw-bold text-center"}>Mastering Azure Databricks </h3>
+              <h2 class={classes.h3fs+" mt-3 fw-bold text-center"}>Mastering Azure Databricks </h2>
               {
                 courseSections2.map((quest) => {
                   function openSolution2(ques_id) {

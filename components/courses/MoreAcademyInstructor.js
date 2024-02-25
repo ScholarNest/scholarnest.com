@@ -117,9 +117,9 @@ const MoreAcademyInstructor = () => {
                 <div style={{ margin: "0 auto", padding: "10px" }} className="mx-auto">
                   <img style={{ height: "100px", width: "100px", borderRadius: "50%" }} src={testimonial.img} />
                   <div style={{ margin: "2px auto" }}>
-                    <p class= {classes.pfs} style={{ margin: "5px" }} > <strong style={{ color: "black" }}>❝ </strong>
+                    <h2 class= {classes.pfs} style={{ margin: "5px" }} > <strong style={{ color: "black" }}>❝ </strong>
                         {testimonial.feedback}
-                       <strong style={{ color: "black" }}> ❞</strong></p>
+                       <strong style={{ color: "black" }}> ❞</strong></h2>
                   </div>
                   <div className="d-flex justify-content-center">
                     <h3 className={ classes.h3fs+" text-center my-2 text-dark fw-bold"}> {testimonial.name}</h3>

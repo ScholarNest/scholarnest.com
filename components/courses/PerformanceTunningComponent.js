@@ -409,7 +409,7 @@ You also need to be familier with Databricks Cloud platform features and capabil
                 <h2>
                     Course Content
                 </h2>
-                <h3>130 lectures - 25 hours video - Capstone Project</h3>
+                <h3>65 lectures - 25 hours video - revision document</h3>
                 <br />
 
                 <div className="col-md-8 col-12">
@@ -468,8 +468,11 @@ You also need to be familier with Databricks Cloud platform features and capabil
                         }
                     </div>
                     <button onClick={ExtendCourseList}> <p class='fw-bold my-2'> {showMoreLessText} </p></button>
-                </div>
+                    <br />
                 <br />
+            
+                </div>
+             
                 <div className={classes.courseContent+ " col-md-4 col-12"}>
                 <Card.Body class={classes.cardDet} >
                   <img class="w-100" src="/assets/solutions/MoreAcademySolutions/courses/performancetunning.jpg" alt="Apache Spark Performance Tuning on Databricks Cloud" />

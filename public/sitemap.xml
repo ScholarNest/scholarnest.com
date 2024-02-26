@@ -1,209 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    <url>
-        <loc>https://scholarnest.com</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/company</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/career-guidance-and-enhancement</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/contact-us</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
- <url>
-        <loc>https://www.scholarnest.com/managed-services-and-solutions</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
- <url>
-        <loc>https://www.scholarnest.com/technology-consulting</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
- <url>
-        <loc>https://www.scholarnest.com/staff-augmentation</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/solutions</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/scholarnest-academy</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/course-faqs</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/teach</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/terms</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/privacy</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/mastering-spark-and-databricks-cloud-instructor-led-course</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scholarnest.com/mastering-spark-and-databricks-cloud-self-paced-course</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>1.00</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/company</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/career-guidance-and-enhancement</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/managed-services-and-solutions</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/technology-consulting</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/staff-augmentation</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/contact-us</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/solutions</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/scholarnest-academy</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/teach</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/course-faqs</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/privacy</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/terms</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/mastering-spark-and-databricks-cloud-self-paced-course</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/mastering-pyspark</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/mastering-databricks-cloud</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/databricks-certified-associate-developer-for-apache-spark</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/databricks-data-engineer-associate-certification-practice-test</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/apache-kafka-for-beginners</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/learning-aws-cloud-fundamentals</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/just-enough-python-for-pyspark-developers</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/apache-spark-3-real-time-stream-processing-using-python</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
-    <url>
-    <loc>https://www.scholarnest.com/courses/mastering-spark-and-databricks-cloud-instructor-led-course</loc>
-    <lastmod>2024-01-25T06:56:29+00:00</lastmod>
-    <priority>0.64</priority>
-    </url>
+
+<url>
+  <loc>https://www.scholarnest.com/</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/company</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/staff-augmentation</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/managed-services-and-solutions</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/apache-spark-performance-tuning</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/technology-consulting</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.scholarnest.com/career-guidance-and-enhancement</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/contact-us</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/solutions</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/scholarnest-academy</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/teach</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/course-faqs</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/privacy</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/terms</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/mastering-spark-and-databricks-cloud-self-paced-course</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/mastering-pyspark</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/mastering-databricks-cloud</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/databricks-certified-associate-developer-for-apache-spark</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/databricks-data-engineer-associate-certification-practice-test</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/apache-kafka-for-beginners</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/learning-aws-cloud-fundamentals</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/just-enough-python-for-pyspark-developers</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/apache-spark-3-real-time-stream-processing-using-python</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.scholarnest.com/courses/mastering-spark-and-databricks-cloud-instructor-led-course</loc>
+  <lastmod>2024-02-26T06:27:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

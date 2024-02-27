@@ -484,7 +484,7 @@ You also need to be familier with Databricks Cloud platform features and capabil
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon+" bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
   <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
 </svg>
-                  <p class={classes.sideBox}>$349.00</p>
+                  <p class={classes.sideBox}>₹28,999.00</p>
                   </div>
                   <div className="d-flex my-2">
                   <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2"}  fill="currentColor" viewBox="0 0 16 16">

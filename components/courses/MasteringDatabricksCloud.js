@@ -315,21 +315,21 @@ const MasteringDatabricksCloud = () => {
             heading: "Mastering PySpark",
             desc: "Self-paced",
             imgPath: "/assets/solutions/AcademySolutions/2.png",
-            price: "$149",
+            // price: "$149",
             link: "/courses/mastering-pyspark",
         },
         {
             heading: "Databricks Data Engineer Assoicate Certification Practice Test",
             desc: "Self-paced Exam Practice Test",
             imgPath: "/assets/solutions/AcademySolutions/5.png",
-            price: "$36.79",
+            // price: "$36.79",
             link: "/courses/databricks-data-engineer-associate-certification-practice-test",
         },
         {
             heading: "Just Enough Python for PySpark Developers",
             desc: "Self-paced Learning",
             imgPath: "/assets/solutions/MoreAcademySolutions/courses/justpython.jpg",
-            price: "$24.79",
+            // price: "$24.79",
             link: "just-enough-python-for-pyspark-developers",
         },
 
@@ -595,16 +595,13 @@ const MasteringDatabricksCloud = () => {
                                 <h2 className={classes.h3style}>Course Features</h2>
                                 <div class='mb-2 mt-3' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
                                 <div className=' ml-2 px-3 py-2'>
-                                    <div className="d-flex my-2">
+                                    {/* <div className="d-flex my-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon + " bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
                                             <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
                                         </svg>
                                         <p class={classes.sideBox}>$149.00</p>
-                                    </div>
-                                    {/* <div className="d-flex my-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon+" mr-2"} viewBox="0 0 448 512"><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7 .1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3 .3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7 .1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z"/></svg>
-                  
-                  <p class={classes.sideBox}>Practice Quiz & Assignment</p></div> */}
+                                    </div> */}
+                                  
                                     <div className="d-flex my-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2"} viewBox="0 0 40 40" fill="none">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.625 8C23.699 7.99972 24.7618 8.2192 25.7479 8.64493C26.7339 9.07066 27.6225 9.69365 28.3588 10.4756C29.0951 11.2575 29.6637 12.1818 30.0295 13.1916C30.3954 14.2014 30.5507 15.2754 30.486 16.3475H30.5L30.4982 18.4948C32.2942 18.4943 34.0216 19.1841 35.3232 20.4215C36.6248 21.659 37.401 23.3493 37.4913 25.143L37.5 25.493C37.4987 27.288 36.8078 29.0139 35.5702 30.3141C34.3326 31.6142 32.6428 32.3893 30.85 32.479L30.5 32.4878H30.4982L30.5 32.5H9.5C7.64339 32.4954 5.86428 31.7552 4.55227 30.4415C3.24027 29.1279 2.50231 27.3479 2.5 25.4913C2.50031 23.8786 3.05741 22.3156 4.07712 21.0663C5.09684 19.817 6.51662 18.9581 8.0965 18.6348C7.70801 17.6198 7.64405 16.5094 7.91345 15.4565C8.18284 14.4037 8.77231 13.4604 9.60053 12.7569C10.4288 12.0533 11.4549 11.624 12.5374 11.5284C13.6199 11.4327 14.7055 11.6753 15.6443 12.2228C16.311 10.9483 17.3142 9.88085 18.5448 9.13639C19.7755 8.39193 21.1867 7.99891 22.625 8ZM22.5445 15H19.0445V23.6135L14.75 23.61L20.7945 30.743L26.8565 23.6153H22.5445V15Z" fill="black" />

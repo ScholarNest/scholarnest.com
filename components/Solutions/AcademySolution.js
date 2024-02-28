@@ -44,7 +44,7 @@ const AcademySolution = () => {
     link:"courses/databricks-data-engineer-associate-certification-practice-test"
   },
   {
-    heading:"Apache Kafka for Begginers",
+    heading:"Apache Kafka for Beginners",
     desc:"Latest course on Apache Kafka",
     imgPath:"/assets/solutions/AcademySolutions/6.png",
     link:"courses/apache-kafka-for-beginners"
@@ -67,7 +67,12 @@ const AcademySolution = () => {
     imgPath:"/assets/solutions/AcademySolutions/10.png",
     link:"courses/apache-spark-3-real-time-stream-processing-using-python"
   },
-
+  {
+    heading:"Apache Spark Performance Tuning",
+    desc:"Self-paced Learning",
+    imgPath:"/assets/solutions/MoreAcademySolutions/courses/performancetunning.jpg",
+    link:"courses/apache-spark-performance-tuning"
+  },
  ]
   const upcomingCourse=[
     {
@@ -148,7 +153,7 @@ const blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1
 
 
       {/* Cards for each solution */}
-      <div id="learnMore"  style={{ backgroundColor: "rgb(251 251 249)"}} className={classes.solutionsBox+" mx-auto justify-content-center  row text-start  p-3"} >
+      <div id="learnMore"  style={{ backgroundColor: "rgb(251 251 249)"}} className={classes.solutionsBox+" mx-auto  row text-start  p-3"} >
 
         <h2 class={classes.head+ " text-center my-3"}>Self-paced Courses</h2>         {
           courseList.map((data,index)=>{

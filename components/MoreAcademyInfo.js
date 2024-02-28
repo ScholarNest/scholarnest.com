@@ -726,7 +726,7 @@ const MoreAcademyInfo = (props) => {
     //   link: "https://www.scholarnest.in/courses/databricks-data-engineer-associate-certification-practice-test"
     // },
     // {
-    //   heading: "Apache Kafka for Begginers",
+    //   heading: "Apache Kafka for Beginners",
     //   desc: "Self-paced Learning",
     //   imgPath: "/assets/solutions/MoreAcademySolutions/6.jpg",
     //   price: "$24.79",
@@ -771,7 +771,7 @@ const MoreAcademyInfo = (props) => {
       link: "databricks-data-engineer-associate-certification-practice-test"
     },
     {
-      heading: "Apache Kafka for Begginers",
+      heading: "Apache Kafka for Beginners",
       desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/6.png",
       price: "$24.79",
@@ -815,7 +815,7 @@ const MoreAcademyInfo = (props) => {
     // },
 
     // {
-    //   heading: "Apache Kafka for Begginers",
+    //   heading: "Apache Kafka for Beginners",
     //   desc: "Self-paced Learning",
     //   imgPath: "/assets/solutions/AcademySolutions/6.png",
     //   price: "$24.79",
@@ -840,7 +840,7 @@ const MoreAcademyInfo = (props) => {
     },
 
     {
-      heading: "Apache Kafka for Begginers",
+      heading: "Apache Kafka for Beginners",
       desc: "Self-paced Learning",
       imgPath: "/assets/solutions/AcademySolutions/6.png",
       price: "$24.79",
@@ -1278,7 +1278,7 @@ const MoreAcademyInfo = (props) => {
           <h2 class={classes.h2fs+" text-center"}>Enroll now and get started today</h2>
           <br />
           <div class="d-flex justify-content-center gap-2  flex-column flex-md-row">
-            <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center" href="https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21"> {props.selfPaced ? 'Buy Now' : 'Buy Now: Out of India'}</a>
+            <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center" href={props.selfPaced ?"https://www.scholarnest.in/order?ct=6a421523-c128-411f-9fa0-578357e21a21":"#"}> {props.selfPaced ? 'Buy Now' : 'Buy Now: Out of India (Coming Soon)'}</a>
             {
               props.isSelf &&
               <a class="btn rounded-pill btn-warning px-5 p-2 mx-auto text-center" href="https://www.scholarnest.in/pages/checkout-certified-big-data-engineer-ilt"> Buy Now: Within India</a>

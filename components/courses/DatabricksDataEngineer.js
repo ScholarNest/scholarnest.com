@@ -65,14 +65,14 @@ const DatabricksDataEngineer = () => {
             heading: "Just Enough Python for PySpark Developers",
             desc: "Self-paced Learning",
             imgPath: "/assets/solutions/MoreAcademySolutions/courses/justpython.jpg",
-            price: "$24.79",
+            // price: "$24.79",
             link: "just-enough-python-for-pyspark-developers"
         },
         {
             heading: "Mastering PySpark",
             desc: "Self-paced",
             imgPath: "/assets/solutions/AcademySolutions/2.png",
-            price: "$149",
+            // price: "$149",
             link: "/courses/mastering-pyspark"
         },
 
@@ -80,7 +80,7 @@ const DatabricksDataEngineer = () => {
         {
             heading: "Mastering Databricks Cloud",
             desc: "Self-paced Learning",
-            price: "$149",
+            // price: "$149",
             imgPath: "/assets/solutions/AcademySolutions/3.png",
             link: "/courses/mastering-databricks-cloud"
         }
@@ -327,12 +327,12 @@ const DatabricksDataEngineer = () => {
                                     <h2 className={classes.h3style}>Course Features</h2>
                                     <div class='mb-2 mt-3' style={{ width: "50px", height: '1px', backgroundColor: 'black', marginLeft: '10px' }}></div>
                                     <div className=' ml-2 px-3 py-2'>
-                                        <div className="d-flex my-2">
+                                        {/* <div className="d-flex my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon + " bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
                                                 <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
                                             </svg>
                                             <p class={classes.sideBox}>$36.79</p>
-                                        </div>
+                                        </div> */}
                                         <div className="d-flex my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2 "} viewBox="0 0 40 40" fill="none">
                                                 <circle cx="20" cy="20" r="17.5" fill="black" />

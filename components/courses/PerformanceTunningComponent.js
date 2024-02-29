@@ -480,12 +480,12 @@ You also need to be familier with Databricks Cloud platform features and capabil
                   <h2 className={classes.h3style}>Course Features</h2>
                   <div class='mb-2 mt-3' style={{width:"50px",height:'1px',backgroundColor:'black',marginLeft:'10px'}}></div>
                   <div className=' ml-2 px-3 py-2'>
-                    <div className="d-flex my-2">
+                    {/* <div className="d-flex my-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class={classes.sideBoxIcon+" bi mr-2 bi-tag-fill"} viewBox="0 0 16 16">
   <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
 </svg>
                   <p class={classes.sideBox}>₹28,999.00</p>
-                  </div>
+                  </div> */}
                   <div className="d-flex my-2">
                   <svg xmlns="http://www.w3.org/2000/svg" class={classes.sideBoxIcon + " mr-2"}  fill="currentColor" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"/>

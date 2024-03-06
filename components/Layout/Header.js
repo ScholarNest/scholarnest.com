@@ -221,7 +221,7 @@ const Header = () => {
             <a
               // legacyBehavior={true}
               // activeClass="active"
-              href="/scholarnest-academy"
+              href="https://www.scholarnest.in/"
               // spy={true}
               // smooth={true}
               duration={1000}
@@ -348,7 +348,7 @@ const Header = () => {
               Solutions
             </a>
             <a
-              href="/scholarnest-academy"
+              href="https://www.scholarnest.in/"
               className={
                 "px-2 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "pricing"
@@ -395,7 +395,7 @@ const Header = () => {
       {isMenuOpen && (
         <div id="rightMenu" className={classes.rightMenu}>
           <ul>
-            <li> <h3 onClick={() => { router.push("/scholarnest-academy") }}>Academy </h3></li>
+            <li> <h3 onClick={() => { router.push("https://www.scholarnest.in/") }}>Academy </h3></li>
 
             <li>
               <h3 onClick={() => { router.push("/managed-services-and-solutions") }}> Managed Services</h3></li>

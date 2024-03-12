@@ -188,7 +188,7 @@ const Header = () => {
                         </span>
                       </div>
                       <div className={classes.hoverSubmenu + " " + "py-2 m-3"} style={{ height: "97px", padding: "10px", borderLeft: "1px solid blue", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}>
-                        <span  onClick={() => router.push("/scholarnest-academy")} >
+                        <span  onClick={() => router.push("https://www.scholarnest.in/")} >
 
                           <h4 style={{ color: "black", fontSize: "1rem", fontWeight: "bold", marginBottom: "4px" }}>Academy</h4>
                           <p>  Self Paced, instructor-led and many more. </p>

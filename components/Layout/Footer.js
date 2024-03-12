@@ -72,7 +72,7 @@ const Footer = () => {
           
           <ul class={classes.footerLink}>
           <li><Link href="/company"> About Us</Link></li>
-            <li><Link href="/scholarnest-academy">Academy</Link></li>
+            <li><Link href="https://www.scholarnest.in/">Academy</Link></li>
 
             <li><Link href="/contact-us">Contact</Link></li>
           </ul>

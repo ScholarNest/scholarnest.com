@@ -60,7 +60,7 @@ const Hero = () => {
               <p style={{ color: "antiquewhite" }} className=" my-sm-4">
                 Master Data Engineering with Spark & Databricks at Scholarnest. Unlock advanced skills for seamless data processing and transformation.
               </p>
-              <button onClick={()=>{  router.push("/scholarnest-academy")}} className={classes.bannerButton +" mt-sm-3"}>Get Started</button>
+              <button onClick={()=>{  router.push("https://www.scholarnest.in/")}} className={classes.bannerButton +" mt-sm-3"}>Get Started</button>
             </div>
           </div>
           <div >

@@ -38,7 +38,7 @@ const Services = () => {
     {
       title: "Academy",
       about: "Empower your journey in data engineering at our Academy, mastering Spark and Databricks technologies. Gain hands-on expertise in crafting data-driven solutions and enhancing efficiency. Unleash your potential in the world of data with our comprehensive training.",
-      link: "/scholarnest-academy",
+      link: "https://www.scholarnest.in/",
       imgsrc: "/assets/Icon/academy-70 px.svg"
     },
     {
